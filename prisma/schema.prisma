@@ -1,0 +1,127 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Studio rental rooms/spaces
+model Room {
+  id          String    @id @default(cuid())
+  name        String
+  description String
+  capacity    Int
+  pricePerHour Float
+  amenities   String[]
+  images      String[]
+  available   Boolean   @default(true)
+  bookings    Booking[]
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([available])
+}
+
+// Booking/Rental reservations
+model Booking {
+  id          String   @id @default(cuid())
+  roomId      String
+  room        Room     @relation(fields: [roomId], references: [id], onDelete: Cascade)
+  customerName String
+  customerEmail String
+  customerPhone String?
+  startTime   DateTime
+  endTime     DateTime
+  totalPrice  Float
+  status      BookingStatus @default(PENDING)
+  notes       String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([roomId])
+  @@index([startTime, endTime])
+  @@index([status])
+}
+
+enum BookingStatus {
+  PENDING
+  CONFIRMED
+  CANCELLED
+  COMPLETED
+}
+
+// Dance instructors
+model Instructor {
+  id          String   @id @default(cuid())
+  name        String
+  bio         String
+  specialty   String   // e.g., "Ballet", "Hip Hop", "Contemporary"
+  image       String?
+  email       String   @unique
+  phone       String?
+  experience  Int      // years of experience
+  available   Boolean  @default(true)
+  classes     Class[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([available])
+  @@index([specialty])
+}
+
+// Dance classes/programs
+model Class {
+  id           String   @id @default(cuid())
+  title        String
+  description  String
+  ageGroup     AgeGroup
+  level        SkillLevel
+  instructorId String
+  instructor   Instructor @relation(fields: [instructorId], references: [id], onDelete: Cascade)
+  schedule     String   // e.g., "Mon/Wed 6-7pm"
+  duration     Int      // minutes
+  price        Float
+  maxStudents  Int
+  currentStudents Int   @default(0)
+  active       Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([ageGroup])
+  @@index([level])
+  @@index([instructorId])
+  @@index([active])
+}
+
+enum AgeGroup {
+  KIDS         // Children under 12
+  TEENS        // 13-17
+  YOUNG_ADULTS // 18-25
+  ADULTS       // 26+
+  ACTIVE_ADULTS // 50+
+  ALL_AGES
+}
+
+enum SkillLevel {
+  BEGINNER
+  INTERMEDIATE
+  ADVANCED
+  ALL_LEVELS
+}
+
+// Contact form submissions
+model ContactSubmission {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String?
+  subject   String
+  message   String
+  status    String   @default("new") // new, read, responded
+  createdAt DateTime @default(now())
+
+  @@index([status])
+  @@index([createdAt])
+}
