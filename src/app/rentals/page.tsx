@@ -20,7 +20,7 @@ export default function RentalsPage() {
       sqft: "1,200 sq ft",
       rate: "RM 120/hour",
       bestFor: "Large classes, workshops, rehearsals, performances",
-      image: "/rentals-hero/Studio A - 3.jpg",
+      image: "/rentals-hero/Studio A-Main.jpg",
       features: [
         "Wall-to-wall mirrors (3 walls)",
         "Professional sound + wireless mic",

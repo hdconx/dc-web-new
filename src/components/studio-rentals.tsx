@@ -11,7 +11,7 @@ export function StudioRentals({ onCheckAvailabilityClick }: StudioRentalsProps) 
     {
       name: "Main Space",
       id: "studio-a",
-      image: "/rentals-hero/Studio A - 3.jpg",
+      image: "/rentals-hero/Studio A-Main.jpg",
     },
     {
       name: "Intimate Studio",
