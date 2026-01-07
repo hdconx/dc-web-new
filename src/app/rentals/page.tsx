@@ -20,7 +20,7 @@ export default function RentalsPage() {
       sqft: "1,200 sq ft",
       rate: "RM 120/hour",
       bestFor: "Large classes, workshops, rehearsals, performances",
-      image: "/rentals-hero/IMG_20221116_211323.jpg",
+      image: "/rentals-hero/01-MARKETING-SELECTED/01-Studio-A-Main-Floor.jpg",
       features: [
         "Wall-to-wall mirrors (3 walls)",
         "Professional sound + wireless mic",
@@ -42,7 +42,7 @@ export default function RentalsPage() {
       sqft: "700 sq ft",
       rate: "RM 80/hour",
       bestFor: "Dance classes, fitness training, workshops",
-      image: "/rentals-hero/20231014_173116.jpg",
+      image: "/rentals-hero/01-MARKETING-SELECTED/04-Studio-D.jpg",
       features: [
         "Wall-to-wall mirrors",
         "Professional sound system",
@@ -63,7 +63,7 @@ export default function RentalsPage() {
       sqft: "400 sq ft",
       rate: "RM 60/hour",
       bestFor: "Rehearsals, small classes, content creation",
-      image: "/rentals-hero/Room B - IMG_20221116_220744.jpg",
+      image: "/rentals-hero/01-MARKETING-SELECTED/02-Studio-B.jpg",
       features: ["Wall-to-wall mirrors", "Sound system", "Connects to Room A", "Air-conditioned"],
       details: {
         capacity: "10-20 people (depending on activity type)",
@@ -80,7 +80,7 @@ export default function RentalsPage() {
       sqft: "300 sq ft",
       rate: "RM 50/hour",
       bestFor: "Private lessons, small groups, practice sessions",
-      image: "/rentals-hero/20230923_144848.jpg",
+      image: "/rentals-hero/01-MARKETING-SELECTED/03-Studio-C.jpg",
       features: ["Wall-to-wall mirrors", "Sound system", "Intimate environment", "Air-conditioned"],
       details: {
         capacity: "2-10 people (depending on activity type)",
@@ -96,44 +96,59 @@ export default function RentalsPage() {
       <Header onMenuClick={() => {}} isVisible={true} />
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-zinc-900 to-zinc-950">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          <div className="flex justify-center">
-            <Link
-              href="/"
-              className="flex items-center gap-2 text-slate-400 hover:text-slate-200 transition-colors text-sm"
-            >
-              <ChevronLeft className="w-4 h-4" />
-              Back to main site
-            </Link>
+      <section className="relative pt-0 pb-0 overflow-hidden">
+        {/* Hero Image */}
+        <div className="relative h-[70vh] min-h-[500px] max-h-[800px]">
+          <img
+            src="/rentals-hero/01-MARKETING-SELECTED/01-Studio-A-Main-Floor.jpg"
+            alt="Dance Connexions Studio A - Main Floor"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-zinc-950" />
+        </div>
+
+        {/* Hero Content Overlay */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="max-w-4xl mx-auto text-center space-y-8 px-6">
+            <div className="flex justify-center mb-4">
+              <Link
+                href="/"
+                className="flex items-center gap-2 text-slate-200 hover:text-white transition-colors text-sm bg-black/30 backdrop-blur-sm px-4 py-2 rounded-full"
+              >
+                <ChevronLeft className="w-4 h-4" />
+                Back to main site
+              </Link>
+            </div>
+
+            <h1 className="font-serif text-5xl md:text-7xl font-bold tracking-tight text-white drop-shadow-2xl">
+              Professional Dance Studio Rentals
+            </h1>
+
+            <p className="text-xl md:text-2xl text-slate-100 max-w-2xl mx-auto leading-relaxed drop-shadow-lg">
+              Flexible spaces in Bandar Sunway for dance, fitness, rehearsals & content creation
+            </p>
+
+            <div className="flex items-center justify-center gap-2 text-base text-slate-200 drop-shadow-lg">
+              <span>📍</span>
+              <span>{LOCATION.address.full}</span>
+            </div>
+
+            <div className="pt-6">
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 shadow-2xl hover:shadow-emerald-500/50"
+              >
+                <MessageCircle className="w-5 h-5" />
+                Check Availability on WhatsApp
+              </a>
+            </div>
+
+            <p className="text-sm text-slate-200 pt-4 drop-shadow-lg">
+              Flexible scheduling from morning to late night
+            </p>
           </div>
-
-          <h1 className="font-serif text-5xl md:text-6xl font-bold tracking-tight text-slate-50">
-            Professional Dance Studio Rentals
-          </h1>
-
-          <p className="text-lg md:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-            Flexible spaces in Bandar Sunway for dance, fitness, rehearsals & content creation
-          </p>
-
-          <div className="flex items-center justify-center gap-2 text-sm text-slate-400">
-            <span>📍</span>
-            <span>{LOCATION.address.full}</span>
-          </div>
-
-          <div className="pt-6">
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Check Availability on WhatsApp
-            </a>
-          </div>
-
-          <p className="text-sm text-slate-400 pt-4">Flexible scheduling from morning to late night</p>
         </div>
       </section>
 
