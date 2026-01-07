@@ -20,7 +20,7 @@ export default function RentalsPage() {
       sqft: "1,200 sq ft",
       rate: "RM 120/hour",
       bestFor: "Large classes, workshops, rehearsals, performances",
-      image: "/rentals-hero/01-MARKETING-SELECTED/01-Studio-A-Main-Floor.jpg",
+      image: "/rentals-hero/IMG_20221116_211323.jpg",
       features: [
         "Wall-to-wall mirrors (3 walls)",
         "Professional sound + wireless mic",
@@ -42,7 +42,7 @@ export default function RentalsPage() {
       sqft: "700 sq ft",
       rate: "RM 80/hour",
       bestFor: "Dance classes, fitness training, workshops",
-      image: "/rentals-hero/01-MARKETING-SELECTED/04-Studio-D.jpg",
+      image: "/rentals-hero/20231014_173116.jpg",
       features: [
         "Wall-to-wall mirrors",
         "Professional sound system",
@@ -63,7 +63,7 @@ export default function RentalsPage() {
       sqft: "400 sq ft",
       rate: "RM 60/hour",
       bestFor: "Rehearsals, small classes, content creation",
-      image: "/rentals-hero/01-MARKETING-SELECTED/02-Studio-B.jpg",
+      image: "/rentals-hero/Room B - IMG_20221116_220744.jpg",
       features: ["Wall-to-wall mirrors", "Sound system", "Connects to Room A", "Air-conditioned"],
       details: {
         capacity: "10-20 people (depending on activity type)",
@@ -80,7 +80,7 @@ export default function RentalsPage() {
       sqft: "300 sq ft",
       rate: "RM 50/hour",
       bestFor: "Private lessons, small groups, practice sessions",
-      image: "/rentals-hero/01-MARKETING-SELECTED/03-Studio-C.jpg",
+      image: "/rentals-hero/20230923_144848.jpg",
       features: ["Wall-to-wall mirrors", "Sound system", "Intimate environment", "Air-conditioned"],
       details: {
         capacity: "2-10 people (depending on activity type)",
@@ -100,7 +100,7 @@ export default function RentalsPage() {
         {/* Hero Image */}
         <div className="relative h-[70vh] min-h-[500px] max-h-[800px]">
           <img
-            src="/rentals-hero/01-MARKETING-SELECTED/01-Studio-A-Main-Floor.jpg"
+            src="/rentals-hero/IMG_20221116_211323.jpg"
             alt="Dance Connexions Studio A - Main Floor"
             className="w-full h-full object-cover"
           />
