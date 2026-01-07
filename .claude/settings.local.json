@@ -1,8 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "*",
-      "Bash(git add:*)"
+      "*"
     ],
     "deny": [
       "Bash(rm -rf /*)",
@@ -24,6 +23,7 @@
       "Bash(systemctl stop:*)",
       "Bash(systemctl disable:*)",
       "Bash(service stop:*)"
-    ]
+    ],
+    "defaultMode": "dontAsk"
   }
 }

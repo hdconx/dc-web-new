@@ -11,7 +11,7 @@ export function StudioRentals({ onCheckAvailabilityClick }: StudioRentalsProps) 
     {
       name: "Main Space",
       id: "studio-a",
-      image: "/rentals-hero/IMG_20221116_211323.jpg",
+      image: "/rentals-hero/20231014_173116.jpg",
     },
     {
       name: "Intimate Studio",
@@ -21,12 +21,12 @@ export function StudioRentals({ onCheckAvailabilityClick }: StudioRentalsProps) 
     {
       name: "Workshop Space",
       id: "studio-c",
-      image: "/rentals-hero/20230923_144848.jpg",
+      image: "/rentals-hero/IMG_20221116_215137.jpg",
     },
     {
       name: "Creation Studio",
       id: "studio-d",
-      image: "/rentals-hero/20231014_173116.jpg",
+      image: "/rentals-hero/IMG_20221116_211323.jpg",
     },
   ]
 

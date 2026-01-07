@@ -20,7 +20,7 @@ export default function RentalsPage() {
       sqft: "1,200 sq ft",
       rate: "RM 120/hour",
       bestFor: "Large classes, workshops, rehearsals, performances",
-      image: "/rentals-hero/IMG_20221116_211323.jpg",
+      image: "/rentals-hero/20231014_173116.jpg",
       features: [
         "Wall-to-wall mirrors (3 walls)",
         "Professional sound + wireless mic",
@@ -42,7 +42,7 @@ export default function RentalsPage() {
       sqft: "700 sq ft",
       rate: "RM 80/hour",
       bestFor: "Dance classes, fitness training, workshops",
-      image: "/rentals-hero/20231014_173116.jpg",
+      image: "/rentals-hero/IMG_20221116_211323.jpg",
       features: [
         "Wall-to-wall mirrors",
         "Professional sound system",
@@ -80,7 +80,7 @@ export default function RentalsPage() {
       sqft: "300 sq ft",
       rate: "RM 50/hour",
       bestFor: "Private lessons, small groups, practice sessions",
-      image: "/rentals-hero/20230923_144848.jpg",
+      image: "/rentals-hero/IMG_20221116_215137.jpg",
       features: ["Wall-to-wall mirrors", "Sound system", "Intimate environment", "Air-conditioned"],
       details: {
         capacity: "2-10 people (depending on activity type)",
@@ -98,18 +98,18 @@ export default function RentalsPage() {
       {/* Hero Section */}
       <section className="relative pt-0 pb-0 overflow-hidden">
         {/* Hero Image */}
-        <div className="relative h-[70vh] min-h-[500px] max-h-[800px]">
+        <div className="relative h-screen min-h-[600px]">
           <img
-            src="/rentals-hero/IMG_20221116_211323.jpg"
+            src="/rentals-hero/20230322_185626~2.jpg"
             alt="Dance Connexions Studio A - Main Floor"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-zinc-950" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-zinc-950" />
         </div>
 
         {/* Hero Content Overlay */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="max-w-4xl mx-auto text-center space-y-8 px-6">
+        <div className="absolute inset-0 flex items-center justify-center pt-20">
+          <div className="max-w-4xl mx-auto text-center space-y-6 px-6 pb-12">
             <div className="flex justify-center mb-4">
               <Link
                 href="/"
