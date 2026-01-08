@@ -99,13 +99,13 @@ export default function RentalsPage() {
       <section className="relative h-[90vh] min-h-[700px] overflow-hidden">
         {/* Hero Image - Full visibility */}
         <img
-          src="/rentals-hero/Studio A - 1.jpg"
+          src="/rentals-hero/Studio A-Main.jpg"
           alt="Dance Connexions Studio A"
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* Subtle gradient overlay - minimal, only for text contrast */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/60" />
+        {/* Subtle gradient overlay - minimal, only at bottom for text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/70" />
 
         {/* Back button - top left */}
         <div className="absolute top-24 left-8 z-10">
@@ -118,9 +118,9 @@ export default function RentalsPage() {
           </Link>
         </div>
 
-        {/* Hero Content - Centered vertically and horizontally */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center px-6 max-w-4xl">
+        {/* Hero Content - Positioned at lower third */}
+        <div className="absolute inset-x-0 bottom-0 pb-16 md:pb-20">
+          <div className="text-center px-6 max-w-4xl mx-auto">
             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tight leading-tight">
               Studio Rentals
             </h1>
