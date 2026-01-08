@@ -18,11 +18,11 @@ export default function RentalsPage() {
       name: "Room A",
       subtitle: "Large Studio",
       sqft: "1,200 sq ft",
-      rate: "RM 120/hour",
+      rate: "From RM 120/hour",
       bestFor: "Large classes, workshops, rehearsals, performances",
       image: "/rentals-hero/Studio A-Main.jpg",
       features: [
-        "Wall-to-wall mirrors (3 walls)",
+        "Mirrors covering 3 walls",
         "Professional sound + wireless mic",
         "Projector & screen available",
         "Air-conditioned + 6 fans",
@@ -40,7 +40,7 @@ export default function RentalsPage() {
       name: "Room D",
       subtitle: "Medium Studio (Standalone)",
       sqft: "700 sq ft",
-      rate: "RM 80/hour",
+      rate: "From RM 80/hour",
       bestFor: "Dance classes, fitness training, workshops",
       image: "/rentals-hero/studio-d-medium-standalone.jpg",
       features: [
@@ -61,7 +61,7 @@ export default function RentalsPage() {
       name: "Room B",
       subtitle: "Medium Studio (Connected)",
       sqft: "400 sq ft",
-      rate: "RM 60/hour",
+      rate: "From RM 60/hour",
       bestFor: "Rehearsals, small classes, content creation",
       image: "/rentals-hero/studio-b-medium-connected.jpg",
       features: ["Wall-to-wall mirrors", "Sound system", "Connects to Room A", "Air-conditioned"],
@@ -78,7 +78,7 @@ export default function RentalsPage() {
       name: "Room C",
       subtitle: "Small Studio",
       sqft: "300 sq ft",
-      rate: "RM 50/hour",
+      rate: "From RM 50/hour",
       bestFor: "Private lessons, small groups, practice sessions",
       image: "/rentals-hero/studio-c-small.jpg",
       features: ["Wall-to-wall mirrors", "Sound system", "Intimate environment", "Air-conditioned"],
@@ -163,9 +163,9 @@ export default function RentalsPage() {
             {/* Card 2 - Affordable */}
             <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
               <div className="text-3xl mb-3">💰</div>
-              <h3 className="text-lg font-semibold text-slate-50 mb-2">Truly Affordable Rates</h3>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">Pricing That Works For You</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                From RM 50/hour. Off-peak 10% discount. Half-day saves 15%, full-day saves 25%. Quality studios that won't break the bank.
+                From RM 50/hour with substantial discounts for multi-hour bookings, weekly classes, and long-term commitments. Contact us—we'll find a rate that fits your budget.
               </p>
             </div>
 
@@ -181,9 +181,9 @@ export default function RentalsPage() {
             {/* Card 4 - Uninterrupted Mirrors */}
             <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
               <div className="text-3xl mb-3">🪞</div>
-              <h3 className="text-lg font-semibold text-slate-50 mb-2">Wall-to-Wall Mirrors</h3>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">Built by Dancers for Dancers</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                High, uninterrupted mirrors on all walls. Perfect for choreography, form checks, and professional video content.
+                3 walls covered with high, uninterrupted mirrors. We understand what you need because we've been in your shoes.
               </p>
             </div>
 
@@ -420,84 +420,99 @@ export default function RentalsPage() {
       {/* Pricing Section */}
       <section className="py-20 px-6 bg-zinc-950">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-50 text-center mb-4">Pricing</h2>
-          <p className="text-center text-slate-400 mb-16">Transparent, flexible rates with no hidden fees</p>
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-50 text-center mb-4">Flexible Pricing</h2>
+          <p className="text-center text-slate-400 mb-6 max-w-2xl mx-auto">
+            Every renter's needs are different. We work with you to find the right rate.
+          </p>
+          <p className="text-center text-emerald-400 mb-16 font-medium">
+            Substantial discounts available—contact us for your personalized quote
+          </p>
 
           <div className="space-y-16">
-            {/* Hourly Rates */}
+            {/* Base Hourly Rates */}
             <div>
-              <h3 className="text-2xl font-semibold text-slate-50 mb-8">Hourly Rates</h3>
+              <h3 className="text-2xl font-semibold text-slate-50 mb-4">Base Hourly Rates</h3>
+              <p className="text-slate-400 text-sm mb-8">Starting rates for standard bookings</p>
               <div className="overflow-x-auto">
                 <table className="w-full text-left">
                   <thead>
                     <tr className="border-b border-slate-700">
                       <th className="pb-4 text-slate-400 text-sm font-medium">Room</th>
-                      <th className="pb-4 text-slate-400 text-sm font-medium text-right">Rate</th>
+                      <th className="pb-4 text-slate-400 text-sm font-medium text-right">From</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-800">
                     <tr className="hover:bg-zinc-900 transition-colors">
-                      <td className="py-4 text-slate-300">Room A (Large Studio)</td>
+                      <td className="py-4 text-slate-300">Room A (Large Studio, 1,200 sq ft)</td>
                       <td className="py-4 text-right text-slate-50 font-semibold">RM 120/hour</td>
                     </tr>
                     <tr className="hover:bg-zinc-900 transition-colors">
-                      <td className="py-4 text-slate-300">Room D (Medium Studio)</td>
+                      <td className="py-4 text-slate-300">Room D (Medium Studio, 700 sq ft)</td>
                       <td className="py-4 text-right text-slate-50 font-semibold">RM 80/hour</td>
                     </tr>
                     <tr className="hover:bg-zinc-900 transition-colors">
-                      <td className="py-4 text-slate-300">Room B (Medium Studio)</td>
+                      <td className="py-4 text-slate-300">Room B (Medium Studio, 400 sq ft)</td>
                       <td className="py-4 text-right text-slate-50 font-semibold">RM 60/hour</td>
                     </tr>
                     <tr className="hover:bg-zinc-900 transition-colors">
-                      <td className="py-4 text-slate-300">Room C (Small Studio)</td>
+                      <td className="py-4 text-slate-300">Room C (Small Studio, 300 sq ft)</td>
                       <td className="py-4 text-right text-slate-50 font-semibold">RM 50/hour</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-            </div>
-
-            {/* Peak & Off-Peak */}
-            <div>
-              <h3 className="text-2xl font-semibold text-slate-50 mb-8">Peak & Off-Peak Hours</h3>
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="bg-zinc-900 p-6 rounded-lg">
-                  <h4 className="font-semibold text-slate-50 mb-4">Peak Hours</h4>
-                  <ul className="space-y-2 text-slate-300 text-base">
-                    <li>Monday–Friday: 5:00 PM – 9:00 PM</li>
-                    <li>All day: Weekends & Public Holidays</li>
-                  </ul>
-                  <p className="text-slate-400 text-sm mt-4">Standard rates apply</p>
-                </div>
-                <div className="bg-zinc-900 p-6 rounded-lg">
-                  <h4 className="font-semibold text-slate-50 mb-4">Off-Peak Hours</h4>
-                  <ul className="space-y-2 text-slate-300 text-base">
-                    <li>Monday–Friday: 9:00 AM – 5:00 PM</li>
-                  </ul>
-                  <p className="text-emerald-500 font-semibold mt-4">10% discount off hourly rates</p>
-                </div>
+              <div className="mt-6 bg-emerald-900/20 border border-emerald-700/30 rounded-lg p-4">
+                <p className="text-emerald-300 text-sm">
+                  💡 <strong>Better rates available:</strong> Multi-hour bookings, weekly classes, and long-term commitments qualify for reduced rates. WhatsApp us for your personalized quote.
+                </p>
               </div>
             </div>
 
-            {/* Packages */}
+            {/* Better Rates Available */}
             <div>
-              <h3 className="text-2xl font-semibold text-slate-50 mb-8">Multi-Hour Packages</h3>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center bg-zinc-900 p-6 rounded-lg">
-                  <span className="text-slate-300">Half-Day Package (4 consecutive hours)</span>
-                  <span className="text-emerald-500 font-semibold">Save 15%</span>
+              <h3 className="text-2xl font-semibold text-slate-50 mb-8">Better Rates Available For</h3>
+              <div className="grid md:grid-cols-3 gap-6">
+                <div className="bg-zinc-900 p-6 rounded-lg border border-slate-800">
+                  <div className="text-3xl mb-3">⏱️</div>
+                  <h4 className="font-semibold text-slate-50 mb-2">Multi-Hour Sessions</h4>
+                  <p className="text-slate-400 text-sm">
+                    Booking 4+ hours? Get a better rate. The more hours, the more you save.
+                  </p>
                 </div>
-                <div className="flex justify-between items-center bg-zinc-900 p-6 rounded-lg">
-                  <span className="text-slate-300">Full-Day Package (8 consecutive hours)</span>
-                  <span className="text-emerald-500 font-semibold">Save 25%</span>
+                <div className="bg-zinc-900 p-6 rounded-lg border border-slate-800">
+                  <div className="text-3xl mb-3">📅</div>
+                  <h4 className="font-semibold text-slate-50 mb-2">Weekly Recurring</h4>
+                  <p className="text-slate-400 text-sm">
+                    Regular weekly classes? We offer special recurring rates for consistent bookings.
+                  </p>
                 </div>
-                <div className="bg-zinc-900 p-6 rounded-lg">
-                  <p className="text-slate-300 mb-3">
-                    <strong>Monthly Recurring Bookings:</strong> Custom rates available for weekly recurring rentals.
-                    Contact us for long-term package pricing.
+                <div className="bg-zinc-900 p-6 rounded-lg border border-slate-800">
+                  <div className="text-3xl mb-3">🤝</div>
+                  <h4 className="font-semibold text-slate-50 mb-2">Long-Term Commitments</h4>
+                  <p className="text-slate-400 text-sm">
+                    Monthly or yearly? Substantial discounts available. Let's discuss your needs.
                   </p>
                 </div>
               </div>
+            </div>
+
+            {/* CTA Box */}
+            <div className="bg-gradient-to-br from-emerald-900/30 to-emerald-950/30 border border-emerald-700/40 rounded-xl p-8 md:p-10 text-center">
+              <h3 className="text-2xl md:text-3xl font-bold text-slate-50 mb-4">
+                Need a Better Rate?
+              </h3>
+              <p className="text-slate-300 mb-8 max-w-2xl mx-auto">
+                Tell us your requirements (hours needed, frequency, dates) and we'll work out pricing that fits your budget.
+              </p>
+              <a
+                href={whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-4 px-10 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl text-lg"
+              >
+                <MessageCircle className="w-5 h-5" />
+                Get Your Custom Quote
+              </a>
             </div>
 
             {/* What's Included */}
