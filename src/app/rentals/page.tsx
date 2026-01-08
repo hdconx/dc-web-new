@@ -96,7 +96,7 @@ export default function RentalsPage() {
       <Header onMenuClick={() => {}} isVisible={true} />
 
       {/* Hero Section */}
-      <section className="relative h-[85vh] min-h-[600px] max-h-[900px] overflow-hidden">
+      <section className="relative h-[90vh] min-h-[700px] overflow-hidden">
         {/* Hero Image - Full visibility */}
         <img
           src="/rentals-hero/Studio A - 1.jpg"
@@ -104,34 +104,34 @@ export default function RentalsPage() {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* Minimal gradient - only at bottom for text readability */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent" />
+        {/* Subtle gradient overlay - minimal, only for text contrast */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/60" />
 
         {/* Back button - top left */}
-        <div className="absolute top-24 left-6 z-10">
+        <div className="absolute top-24 left-8 z-10">
           <Link
             href="/"
-            className="flex items-center gap-2 text-white hover:text-emerald-400 transition-colors text-sm bg-black/40 backdrop-blur-md px-4 py-2 rounded-full border border-white/20"
+            className="flex items-center gap-2 text-white/90 hover:text-white transition-colors text-sm bg-black/30 backdrop-blur-sm px-4 py-2.5 rounded-full border border-white/10 hover:border-white/30"
           >
             <ChevronLeft className="w-4 h-4" />
             Back
           </Link>
         </div>
 
-        {/* Hero Content - Bottom aligned, minimal text */}
-        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-          <div className="max-w-7xl mx-auto">
-            <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-4 tracking-tight">
+        {/* Hero Content - Centered vertically and horizontally */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-center px-6 max-w-4xl">
+            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 tracking-tight leading-tight">
               Studio Rentals
             </h1>
-            <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
-              Professional spaces for dance, fitness & creative projects in Bandar Sunway
+            <p className="text-xl md:text-2xl text-white/95 mb-10 leading-relaxed">
+              Professional spaces for dance, fitness & creative projects
             </p>
             <a
               href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-4 px-8 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl"
+              className="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-5 px-10 rounded-lg transition-all duration-200 shadow-2xl hover:shadow-emerald-500/50 text-lg"
             >
               <MessageCircle className="w-5 h-5" />
               Check Availability
