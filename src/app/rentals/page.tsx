@@ -141,37 +141,67 @@ export default function RentalsPage() {
       </section>
 
       {/* Key Differentiators Section */}
-      <section className="py-16 px-6 bg-zinc-900">
+      <section className="py-20 px-6 bg-zinc-900">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-50 text-center mb-12">
-            Why Dance Connexions
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-50 text-center mb-4">
+            Why Renters Choose Us
           </h2>
+          <p className="text-center text-slate-400 mb-16 text-lg">
+            We solve the problems other studios create
+          </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {/* Feature Card 1 */}
-            <div className="bg-zinc-800 rounded-lg p-8 border border-zinc-700 hover:border-slate-600 transition-colors">
-              <div className="text-4xl mb-4">🪞</div>
-              <h3 className="text-xl font-semibold text-slate-50 mb-3">Uninterrupted Mirrors</h3>
-              <p className="text-slate-400">
-                Full-wall mirrors for perfect choreography feedback and professional video content
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Card 1 - Flexible Policies */}
+            <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
+              <div className="text-3xl mb-3">🤝</div>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">Super Flexible Policies</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Not sure how many people will show up? Need to change your date? We get it. One-time reschedule option and flexible headcount—no stress.
               </p>
             </div>
 
-            {/* Feature Card 2 */}
-            <div className="bg-zinc-800 rounded-lg p-8 border border-zinc-700 hover:border-slate-600 transition-colors">
-              <div className="text-4xl mb-4">💡</div>
-              <h3 className="text-xl font-semibold text-slate-50 mb-3">Adjustable Lighting</h3>
-              <p className="text-slate-400">
-                Professional lighting control for dance performances, fitness classes, and content creation
+            {/* Card 2 - Affordable */}
+            <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
+              <div className="text-3xl mb-3">💰</div>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">Truly Affordable Rates</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                From RM 50/hour. Off-peak 10% discount. Half-day saves 15%, full-day saves 25%. Quality studios that won't break the bank.
               </p>
             </div>
 
-            {/* Feature Card 3 */}
-            <div className="bg-zinc-800 rounded-lg p-8 border border-zinc-700 hover:border-slate-600 transition-colors">
-              <div className="text-4xl mb-4">🎛️</div>
-              <h3 className="text-xl font-semibold text-slate-50 mb-3">Fully Customizable</h3>
-              <p className="text-slate-400">
-                Configure the space exactly how you need it—tables, chairs, dance floor arrangement all flexible
+            {/* Card 3 - Multiple Room Options */}
+            <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
+              <div className="text-3xl mb-3">🏢</div>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">4 Studios to Choose From</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Small group of 5? Large workshop of 50? We have the right size room for your exact needs and budget.
+              </p>
+            </div>
+
+            {/* Card 4 - Uninterrupted Mirrors */}
+            <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
+              <div className="text-3xl mb-3">🪞</div>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">Wall-to-Wall Mirrors</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                High, uninterrupted mirrors on all walls. Perfect for choreography, form checks, and professional video content.
+              </p>
+            </div>
+
+            {/* Card 5 - Flexible Schedule */}
+            <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
+              <div className="text-3xl mb-3">⏰</div>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">Book Anytime You Need</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Early morning yoga at 7am? Midnight dance practice? We're open when you need us—morning to late night.
+              </p>
+            </div>
+
+            {/* Card 6 - Equipment & Storage */}
+            <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
+              <div className="text-3xl mb-3">📦</div>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">Storage & Video Equipment</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">
+                Free storage rooms for your gear. Tripods, lighting, and video equipment available. Create content hassle-free.
               </p>
             </div>
           </div>
