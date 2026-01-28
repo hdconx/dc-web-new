@@ -10,7 +10,7 @@ interface Identity {
   id: string
   title: string
   ageRange: string
-  subLabel: string
+  subLabel?: string
   imageUrl: string
   href: string
 }

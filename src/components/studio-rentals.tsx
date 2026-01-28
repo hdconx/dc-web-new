@@ -4,9 +4,10 @@ import { CONTACT, LOCATION } from "@/lib/config"
 
 export interface StudioRentalsProps {
   onCheckAvailabilityClick?: () => void
+  onContactClick?: () => void
 }
 
-export function StudioRentals({ onCheckAvailabilityClick }: StudioRentalsProps) {
+export function StudioRentals({ onCheckAvailabilityClick, onContactClick }: StudioRentalsProps) {
   const studios = [
     {
       name: "Main Space",
