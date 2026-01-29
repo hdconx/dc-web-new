@@ -10,6 +10,7 @@
 
 import {
   getBusinessInfo,
+  getBusinessData,
   getContact,
   getLocation,
   getRooms,
@@ -20,6 +21,7 @@ import {
   formatPrice,
   getRoomOptions,
   getActivityOptions,
+  getPricingRules,
 } from "./data-loader"
 
 import {
@@ -36,6 +38,7 @@ import {
 // Data access
 export {
   getBusinessInfo,
+  getBusinessData,
   getContact,
   getLocation,
   getRooms,
@@ -46,6 +49,7 @@ export {
   formatPrice,
   getRoomOptions,
   getActivityOptions,
+  getPricingRules,
 }
 
 // Pricing

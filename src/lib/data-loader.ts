@@ -253,6 +253,21 @@ export function getPricingNotes(): string[] {
 }
 
 /**
+ * Get full pricing rules (all pricing data)
+ */
+export function getPricingRules() {
+  return pricingData
+}
+
+/**
+ * Get full business data
+ * Alias for getBusinessInfo for convenience
+ */
+export function getBusinessData() {
+  return businessData
+}
+
+/**
  * Get currency settings
  */
 export function getCurrency() {
