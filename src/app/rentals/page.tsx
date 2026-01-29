@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronLeft, MessageCircle, ChevronDown, Check, Quote } from "lucide-react"
+import { ChevronLeft, MessageCircle, ChevronDown, Check, Quote, Grid, Image, DollarSign, GitCompare } from "lucide-react"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -152,6 +152,42 @@ export default function RentalsPage() {
         </div>
       </section>
 
+      {/* Quick Navigation */}
+      <section className="py-6 px-6 bg-zinc-900 border-b border-zinc-800">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
+            <Link
+              href="/rentals/rooms"
+              className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-slate-300 hover:text-white px-4 py-2.5 rounded-lg transition-colors text-sm font-medium"
+            >
+              <Grid className="w-4 h-4" />
+              Browse Rooms
+            </Link>
+            <Link
+              href="/rentals/gallery"
+              className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-slate-300 hover:text-white px-4 py-2.5 rounded-lg transition-colors text-sm font-medium"
+            >
+              <Image className="w-4 h-4" />
+              Gallery
+            </Link>
+            <Link
+              href="/rentals/pricing"
+              className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-slate-300 hover:text-white px-4 py-2.5 rounded-lg transition-colors text-sm font-medium"
+            >
+              <DollarSign className="w-4 h-4" />
+              Pricing
+            </Link>
+            <Link
+              href="/rentals/compare"
+              className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-slate-300 hover:text-white px-4 py-2.5 rounded-lg transition-colors text-sm font-medium"
+            >
+              <GitCompare className="w-4 h-4" />
+              Compare
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Key Differentiators Section */}
       <section className="py-20 px-6 bg-zinc-900">
         <div className="max-w-6xl mx-auto">
@@ -297,13 +333,28 @@ export default function RentalsPage() {
       {/* Studio Showcase */}
       <section className="py-20 px-6 bg-zinc-950">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-50 text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-50 text-center mb-6">
             Choose Your Studio
           </h2>
 
-          <p className="text-center text-slate-300 mb-12 text-lg">
+          <p className="text-center text-slate-300 mb-8 text-lg">
             Four professional spaces designed for dance, fitness, and creative movement
           </p>
+
+          <div className="flex justify-center gap-4 mb-12">
+            <Link
+              href="/rentals/rooms"
+              className="text-emerald-400 hover:text-emerald-300 text-sm font-medium underline underline-offset-4"
+            >
+              View All Rooms →
+            </Link>
+            <Link
+              href="/rentals/compare"
+              className="text-slate-400 hover:text-slate-300 text-sm font-medium underline underline-offset-4"
+            >
+              Compare Rooms
+            </Link>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {studios.map((studio) => (
@@ -556,6 +607,14 @@ export default function RentalsPage() {
           <p className="text-center text-slate-400 mb-6 max-w-2xl mx-auto">
             Every renter's needs are different. We work with you to find the right rate.
           </p>
+          <div className="flex justify-center mb-8">
+            <Link
+              href="/rentals/pricing"
+              className="text-emerald-400 hover:text-emerald-300 text-sm font-medium underline underline-offset-4"
+            >
+              View Full Pricing Details →
+            </Link>
+          </div>
           <p className="text-center text-emerald-400 mb-16 font-medium">
             Substantial discounts available—contact us for your personalized quote
           </p>
