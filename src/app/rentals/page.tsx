@@ -10,7 +10,7 @@ import { getWhatsAppUrl, CONTACT, LOCATION } from "@/lib/config"
 export default function RentalsPage() {
   const [expandedStudio, setExpandedStudio] = useState<number | null>(null)
 
-  const whatsappLink = getWhatsAppUrl("rental")
+  const whatsappLink = getWhatsAppUrl("rentalInquiry")
 
   const studios = [
     {

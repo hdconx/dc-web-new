@@ -1,0 +1,166 @@
+{
+  "$schema": "./schemas/business.schema.json",
+  "_description": "Dance Connexions Business Information - Core business details",
+  "_lastUpdated": "2026-01-29",
+
+  "identity": {
+    "name": "Dance Connexions",
+    "tagline": "The Movement Ecosystem",
+    "established": 1999,
+    "yearsInBusiness": 27,
+    "type": "Dance Studio & Rental Facility",
+    "description": "Premium dance studio offering professional space rentals and dance classes for all ages in Bandar Sunway, Petaling Jaya.",
+    "mission": "To provide accessible, professional dance spaces that empower movement artists, instructors, and enthusiasts to practice, create, and grow."
+  },
+
+  "contact": {
+    "phone": {
+      "primary": "+60123223607",
+      "display": "+60 12-322 3607"
+    },
+    "whatsapp": {
+      "number": "60123223607",
+      "display": "+60 12-322 3607",
+      "preferred": true
+    },
+    "email": {
+      "rentals": "rentals@danceconnexions.com",
+      "classes": "classes@danceconnexions.com",
+      "general": "info@danceconnexions.com"
+    }
+  },
+
+  "location": {
+    "address": {
+      "line1": "21-2, Jalan PJS 11/2",
+      "line2": "Bandar Sunway",
+      "city": "Subang Jaya",
+      "postcode": "47500",
+      "state": "Selangor",
+      "country": "Malaysia",
+      "full": "21-2, Jalan PJS 11/2, Bandar Sunway, 47500 Subang Jaya, Selangor, Malaysia"
+    },
+    "coordinates": {
+      "latitude": 3.0723240659674045,
+      "longitude": 101.60068661794297
+    },
+    "maps": {
+      "google": "https://maps.app.goo.gl/9S4HNWYiTbxeTjXC9",
+      "waze": "https://waze.com/ul?ll=3.0723240659674045,101.60068661794297&navigate=yes"
+    },
+    "directions": {
+      "fromLDP": "Exit at Sunway/PJS 11. Turn into Jalan PJS 11/2. We are on the 2nd floor above the row of shops.",
+      "fromFederalHighway": "Take the Sunway exit. Follow signs to Bandar Sunway. Navigate to Jalan PJS 11/2.",
+      "landmarks": ["Near Sunway Pyramid", "Above commercial shops", "Look for our signage on 2nd floor"]
+    },
+    "parking": {
+      "type": "Street parking (MBSJ managed)",
+      "officeHours": {
+        "rate": "~RM 0.50/hour",
+        "description": "Municipal rates apply Mon-Fri 8am-6pm"
+      },
+      "afterHours": {
+        "rate": "Free",
+        "description": "Free parking after office hours, weekends, and public holidays",
+        "capacity": "40-60 vehicles can be accommodated"
+      },
+      "recommendation": "For large groups, book during evening/weekend for free parking"
+    }
+  },
+
+  "operatingHours": {
+    "general": {
+      "description": "Flexible hours from early morning to late midnight",
+      "earliest": "06:00",
+      "latest": "00:00"
+    },
+    "administration": {
+      "days": "Monday - Saturday",
+      "hours": "10:00 AM - 7:00 PM",
+      "description": "For inquiries and walk-ins"
+    },
+    "bookings": {
+      "description": "Available 7 days a week based on availability",
+      "advanceBooking": "Recommended at least 48 hours in advance"
+    }
+  },
+
+  "socialMedia": {
+    "instagram": {
+      "handle": "@danceconnexions",
+      "url": "https://instagram.com/danceconnexions"
+    },
+    "facebook": {
+      "handle": "DanceConnexions",
+      "url": "https://facebook.com/DanceConnexions"
+    },
+    "tiktok": {
+      "handle": "@danceconnexions",
+      "url": "https://tiktok.com/@danceconnexions"
+    }
+  },
+
+  "services": {
+    "studioRentals": {
+      "active": true,
+      "description": "Hourly rental of professional dance studios",
+      "rooms": 4,
+      "features": ["Mirrored walls", "Sound systems", "Air conditioning", "Wooden floors"]
+    },
+    "danceClasses": {
+      "active": true,
+      "description": "Regular dance classes for all ages and levels",
+      "ageGroups": ["Kids (5-12)", "Teens (13-17)", "Young Adults (18-25)", "Adults (26-49)", "Active Adults (50+)"],
+      "styles": ["Ballet", "Contemporary", "Hip Hop", "Jazz", "K-Pop", "Latin", "Ballroom"]
+    },
+    "workshops": {
+      "active": true,
+      "description": "Special workshops and masterclasses with guest instructors"
+    },
+    "privateEvents": {
+      "active": true,
+      "description": "Private dance parties and celebrations (dance-focused)",
+      "requiresApproval": true
+    }
+  },
+
+  "amenities": {
+    "general": [
+      "Free WiFi throughout premises",
+      "Air conditioning in all studios",
+      "Wall-to-wall mirrors",
+      "Professional sound systems",
+      "Controllable lighting"
+    ],
+    "changingFacilities": {
+      "available": true,
+      "description": "Separate changing rooms with basic amenities"
+    },
+    "waiting": {
+      "available": true,
+      "description": "Waiting area for parents/visitors"
+    },
+    "refreshments": {
+      "waterDispenser": true,
+      "vendingMachine": false,
+      "policy": "No food/drinks on dance floor"
+    }
+  },
+
+  "policies": {
+    "footwear": "Proper dance or indoor footwear required. No outdoor shoes on dance floor.",
+    "foodDrinks": "No food or drinks on the dance floor. Water bottles must have secure lids.",
+    "noise": "Respect noise levels, especially during late hours. Music must end by midnight.",
+    "supervision": "Children under 12 must be supervised by an adult.",
+    "damage": "Renters are responsible for any damage during their booking.",
+    "smoking": "Strictly no smoking on premises."
+  },
+
+  "whatsappMessages": {
+    "rentalInquiry": "Hi! I'd like to inquire about studio rental at Dance Connexions.\n\n- Preferred date:\n- Time slot:\n- Studio preference:\n- Activity type:\n- Group size:\n\nPlease let me know availability and pricing. Thank you!",
+    "rentalInterest": "Hi! I'm interested in renting studio space at Dance Connexions. Could you please share availability and pricing details?",
+    "classInquiry": "Hi! I'm interested in dance classes at Dance Connexions.\n\n- Age group:\n- Preferred dance style:\n- Experience level:\n\nCould you share the schedule and fees? Thank you!",
+    "general": "Hi! I'd like to know more about Dance Connexions.",
+    "booking": "Hi! I'd like to make a booking at Dance Connexions.\n\n- Date:\n- Time:\n- Studio:\n- Purpose:\n\nPlease confirm availability. Thank you!"
+  }
+}

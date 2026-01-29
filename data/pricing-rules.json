@@ -1,0 +1,364 @@
+{
+  "$schema": "./schemas/pricing-rules.schema.json",
+  "_description": "Dance Connexions Pricing Rules - Edit this file to update pricing logic",
+  "_lastUpdated": "2026-01-29",
+
+  "currency": {
+    "code": "MYR",
+    "symbol": "RM",
+    "format": "RM {amount}"
+  },
+
+  "timeSlots": {
+    "peakHours": {
+      "weekday": {
+        "start": "17:00",
+        "end": "22:00",
+        "description": "Monday-Friday 5pm-10pm"
+      },
+      "weekend": {
+        "allDay": true,
+        "description": "All day Saturday & Sunday"
+      },
+      "publicHolidays": {
+        "allDay": true,
+        "description": "All day on public holidays"
+      }
+    },
+    "offPeakHours": {
+      "weekday": {
+        "start": "09:00",
+        "end": "17:00",
+        "description": "Monday-Friday 9am-5pm"
+      }
+    },
+    "earlyBird": {
+      "weekday": {
+        "start": "06:00",
+        "end": "09:00",
+        "description": "Monday-Friday 6am-9am"
+      }
+    },
+    "lateNight": {
+      "daily": {
+        "start": "22:00",
+        "end": "00:00",
+        "description": "10pm-12am daily"
+      }
+    }
+  },
+
+  "timeSlotModifiers": {
+    "peak": {
+      "id": "peak",
+      "name": "Peak Hours",
+      "modifier": 1.0,
+      "description": "Standard rate during busy hours"
+    },
+    "offPeak": {
+      "id": "off-peak",
+      "name": "Off-Peak Hours",
+      "modifier": 0.85,
+      "discount": 15,
+      "description": "15% discount during quiet hours"
+    },
+    "earlyBird": {
+      "id": "early-bird",
+      "name": "Early Bird",
+      "modifier": 0.80,
+      "discount": 20,
+      "description": "20% discount for early morning bookings"
+    },
+    "lateNight": {
+      "id": "late-night",
+      "name": "Late Night",
+      "modifier": 1.15,
+      "surcharge": 15,
+      "description": "15% surcharge for late night bookings"
+    }
+  },
+
+  "durationDiscounts": {
+    "halfDay": {
+      "id": "half-day",
+      "name": "Half Day Package",
+      "minHours": 4,
+      "maxHours": 5,
+      "discount": 15,
+      "modifier": 0.85,
+      "description": "15% off for 4-5 consecutive hours"
+    },
+    "fullDay": {
+      "id": "full-day",
+      "name": "Full Day Package",
+      "minHours": 8,
+      "maxHours": 10,
+      "discount": 25,
+      "modifier": 0.75,
+      "description": "25% off for 8-10 consecutive hours"
+    },
+    "extended": {
+      "id": "extended",
+      "name": "Extended Booking",
+      "minHours": 3,
+      "maxHours": 3,
+      "discount": 10,
+      "modifier": 0.90,
+      "description": "10% off for 3 consecutive hours"
+    }
+  },
+
+  "activityTypes": {
+    "dance-class": {
+      "id": "dance-class",
+      "name": "Dance Class",
+      "category": "core",
+      "modifier": 1.0,
+      "description": "Regular dance classes (all styles)",
+      "examples": ["Ballet", "Hip Hop", "Contemporary", "Jazz", "K-Pop", "Latin"]
+    },
+    "dance-rehearsal": {
+      "id": "dance-rehearsal",
+      "name": "Dance Rehearsal",
+      "category": "core",
+      "modifier": 1.0,
+      "description": "Practice and rehearsal sessions"
+    },
+    "fitness-class": {
+      "id": "fitness-class",
+      "name": "Fitness/Workout",
+      "category": "core",
+      "modifier": 1.0,
+      "description": "Fitness classes, yoga, pilates, etc.",
+      "examples": ["Yoga", "Pilates", "Zumba", "Dance Fitness", "Aerobics"]
+    },
+    "workshop": {
+      "id": "workshop",
+      "name": "Workshop/Masterclass",
+      "category": "core",
+      "modifier": 1.1,
+      "surcharge": 10,
+      "description": "Structured workshops and masterclasses"
+    },
+    "private-lesson": {
+      "id": "private-lesson",
+      "name": "Private Lesson",
+      "category": "core",
+      "modifier": 1.0,
+      "description": "1-on-1 or small private coaching"
+    },
+    "content-creation": {
+      "id": "content-creation",
+      "name": "Content Creation",
+      "category": "secondary",
+      "modifier": 1.2,
+      "surcharge": 20,
+      "description": "TikTok, YouTube, social media content",
+      "notes": "Standard filming for personal/social media"
+    },
+    "photo-shoot": {
+      "id": "photo-shoot",
+      "name": "Photography Session",
+      "category": "secondary",
+      "modifier": 1.25,
+      "surcharge": 25,
+      "description": "Professional photography sessions",
+      "notes": "Portfolio, promotional, artistic photography"
+    },
+    "video-production": {
+      "id": "video-production",
+      "name": "Video Production",
+      "category": "commercial",
+      "modifier": 1.5,
+      "surcharge": 50,
+      "description": "Commercial video production, music videos",
+      "notes": "Requires prior approval, separate agreement may apply",
+      "requiresApproval": true
+    },
+    "audition": {
+      "id": "audition",
+      "name": "Audition/Casting",
+      "category": "secondary",
+      "modifier": 1.1,
+      "surcharge": 10,
+      "description": "Auditions, casting calls, talent screening"
+    },
+    "social-dance": {
+      "id": "social-dance",
+      "name": "Social Dance Practice",
+      "category": "core",
+      "modifier": 1.0,
+      "description": "Partner dance practice, social dancing",
+      "examples": ["Salsa", "Bachata", "Swing", "Tango"]
+    },
+    "performance-prep": {
+      "id": "performance-prep",
+      "name": "Performance Preparation",
+      "category": "core",
+      "modifier": 1.0,
+      "description": "Preparing for shows, competitions, performances"
+    },
+    "private-event": {
+      "id": "private-event",
+      "name": "Private Event",
+      "category": "event",
+      "modifier": 1.5,
+      "surcharge": 50,
+      "description": "Birthday parties, celebrations (dance-related)",
+      "notes": "Must be dance/movement focused, no general parties",
+      "requiresApproval": true
+    }
+  },
+
+  "customerTypes": {
+    "regular": {
+      "id": "regular",
+      "name": "Regular Customer",
+      "modifier": 1.0,
+      "description": "Standard pricing"
+    },
+    "instructor": {
+      "id": "instructor",
+      "name": "Dance Instructor",
+      "modifier": 0.90,
+      "discount": 10,
+      "description": "10% professional discount for instructors",
+      "requiresVerification": true
+    },
+    "student": {
+      "id": "student",
+      "name": "Student",
+      "modifier": 0.90,
+      "discount": 10,
+      "description": "10% student discount with valid ID",
+      "requiresVerification": true
+    },
+    "recurring": {
+      "id": "recurring",
+      "name": "Regular Booking",
+      "modifier": 0.85,
+      "discount": 15,
+      "description": "15% off for weekly recurring bookings",
+      "minBookingsPerMonth": 4
+    },
+    "corporate": {
+      "id": "corporate",
+      "name": "Corporate/Organization",
+      "modifier": 1.0,
+      "description": "Custom pricing for organizations",
+      "notes": "Contact for custom packages"
+    }
+  },
+
+  "packages": {
+    "starter-5": {
+      "id": "starter-5",
+      "name": "Starter Pack",
+      "hours": 5,
+      "discount": 10,
+      "modifier": 0.90,
+      "validityDays": 30,
+      "description": "5-hour package, 10% savings"
+    },
+    "regular-10": {
+      "id": "regular-10",
+      "name": "Regular Pack",
+      "hours": 10,
+      "discount": 15,
+      "modifier": 0.85,
+      "validityDays": 60,
+      "description": "10-hour package, 15% savings"
+    },
+    "pro-20": {
+      "id": "pro-20",
+      "name": "Pro Pack",
+      "hours": 20,
+      "discount": 20,
+      "modifier": 0.80,
+      "validityDays": 90,
+      "description": "20-hour package, 20% savings"
+    },
+    "unlimited-monthly": {
+      "id": "unlimited-monthly",
+      "name": "Monthly Unlimited",
+      "type": "subscription",
+      "description": "Unlimited access during off-peak hours",
+      "notes": "Contact for pricing, subject to availability"
+    }
+  },
+
+  "minimumBooking": {
+    "hours": 1,
+    "description": "Minimum booking duration is 1 hour"
+  },
+
+  "cancellationPolicy": {
+    "fullRefund": {
+      "hoursNotice": 48,
+      "refundPercent": 100,
+      "description": "Full refund if cancelled 48+ hours before"
+    },
+    "partialRefund": {
+      "hoursNotice": 24,
+      "refundPercent": 50,
+      "description": "50% refund if cancelled 24-48 hours before"
+    },
+    "noRefund": {
+      "hoursNotice": 0,
+      "refundPercent": 0,
+      "description": "No refund for cancellations less than 24 hours",
+      "notes": "Credit note may be issued at management discretion"
+    }
+  },
+
+  "deposit": {
+    "required": true,
+    "percentage": 50,
+    "description": "50% deposit required to confirm booking",
+    "paymentMethods": ["Bank Transfer", "Online Payment", "Cash (in person)"]
+  },
+
+  "additionalFees": {
+    "equipmentRental": {
+      "projector": { "perSession": 30, "description": "Projector rental" },
+      "additionalMics": { "perUnit": 15, "description": "Extra wireless mic" },
+      "tripod": { "perUnit": 10, "description": "Camera/phone tripod" },
+      "ringLight": { "perUnit": 20, "description": "Ring light for filming" }
+    },
+    "cleaning": {
+      "standard": { "amount": 0, "description": "Included in rental" },
+      "deepClean": { "amount": 50, "description": "Post-event deep cleaning if required" }
+    },
+    "overtime": {
+      "rate": 1.5,
+      "description": "1.5x rate for overtime beyond booked hours"
+    }
+  },
+
+  "specialOffers": {
+    "firstTime": {
+      "id": "first-time",
+      "name": "First Time Renter",
+      "discount": 10,
+      "modifier": 0.90,
+      "description": "10% off your first booking",
+      "autoApply": false,
+      "active": true
+    },
+    "referral": {
+      "id": "referral",
+      "name": "Referral Reward",
+      "discount": 15,
+      "description": "15% off when referred by existing customer",
+      "active": true
+    }
+  },
+
+  "pricingNotes": [
+    "All prices are in Malaysian Ringgit (RM)",
+    "GST/SST not applicable (below threshold)",
+    "Prices subject to change without notice",
+    "Custom packages available for long-term commitments",
+    "Contact us for special event pricing"
+  ]
+}

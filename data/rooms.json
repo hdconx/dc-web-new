@@ -1,0 +1,196 @@
+{
+  "$schema": "./schemas/rooms.schema.json",
+  "_description": "Dance Connexions Studio Rooms - Edit this file to update room information",
+  "_lastUpdated": "2026-01-29",
+
+  "rooms": [
+    {
+      "id": "room-a",
+      "name": "Room A",
+      "displayName": "Main Space",
+      "subtitle": "Large Studio (Primary Hall)",
+      "description": "Our flagship studio - the largest and most versatile space, perfect for large classes, workshops, performances, and events.",
+      "size": {
+        "sqft": 1200,
+        "sqm": 111.5
+      },
+      "capacity": {
+        "dance": { "min": 30, "max": 50, "optimal": 40 },
+        "workshop": { "min": 20, "max": 40, "optimal": 30 },
+        "fitness": { "min": 20, "max": 35, "optimal": 25 },
+        "event": { "min": 40, "max": 80, "optimal": 60 },
+        "filming": { "min": 5, "max": 20, "optimal": 10 }
+      },
+      "baseHourlyRate": 120,
+      "features": [
+        "Wall-to-wall mirrors (3 walls)",
+        "Professional sound system with wireless microphone",
+        "Projector & screen available",
+        "Air-conditioned with 6 ceiling fans",
+        "Sprung wooden dance floor",
+        "Controllable LED lighting",
+        "Direct access to changing rooms"
+      ],
+      "equipment": {
+        "included": ["Sound system", "Wireless mic", "Basic lighting"],
+        "available": ["Projector", "Screen", "Additional mics", "Tripods"]
+      },
+      "bestFor": [
+        "Large group dance classes",
+        "Workshops and masterclasses",
+        "Dance rehearsals and showcases",
+        "Fitness boot camps",
+        "Content creation (large scale)"
+      ],
+      "restrictions": [
+        "No food/drinks on dance floor",
+        "Proper dance/indoor footwear only",
+        "No high heels that may damage floor"
+      ],
+      "images": [
+        "/images/rooms/room-a-main.jpg",
+        "/images/rooms/room-a-mirror.jpg",
+        "/images/rooms/room-a-full.jpg"
+      ],
+      "available": true,
+      "sortOrder": 1
+    },
+    {
+      "id": "room-d",
+      "name": "Room D",
+      "displayName": "Creation Studio",
+      "subtitle": "Medium Studio (Standalone)",
+      "description": "A versatile standalone studio ideal for medium-sized classes, rehearsals, and content creation with its own private entrance.",
+      "size": {
+        "sqft": 700,
+        "sqm": 65
+      },
+      "capacity": {
+        "dance": { "min": 10, "max": 25, "optimal": 18 },
+        "workshop": { "min": 8, "max": 20, "optimal": 15 },
+        "fitness": { "min": 8, "max": 18, "optimal": 12 },
+        "filming": { "min": 3, "max": 12, "optimal": 6 }
+      },
+      "baseHourlyRate": 80,
+      "features": [
+        "Wall-to-wall mirrors (2 walls)",
+        "Professional sound system",
+        "Projector & screen available",
+        "Air-conditioned",
+        "Wooden dance floor",
+        "Controllable lighting",
+        "Separate entrance for privacy"
+      ],
+      "equipment": {
+        "included": ["Sound system", "Basic lighting"],
+        "available": ["Projector", "Screen", "Tripods", "Ring lights"]
+      },
+      "bestFor": [
+        "Medium dance classes",
+        "Private group rehearsals",
+        "Fitness training",
+        "Content creation",
+        "Small workshops"
+      ],
+      "restrictions": [
+        "No food/drinks on dance floor",
+        "Proper dance/indoor footwear only"
+      ],
+      "images": [
+        "/images/rooms/room-d-main.jpg",
+        "/images/rooms/room-d-setup.jpg"
+      ],
+      "available": true,
+      "sortOrder": 2
+    },
+    {
+      "id": "room-b",
+      "name": "Room B",
+      "displayName": "Intimate Studio",
+      "subtitle": "Medium Studio (Connected to Room A)",
+      "description": "A cozy extension space that can operate independently or connect with Room A for larger events.",
+      "size": {
+        "sqft": 400,
+        "sqm": 37
+      },
+      "capacity": {
+        "dance": { "min": 6, "max": 15, "optimal": 10 },
+        "workshop": { "min": 5, "max": 12, "optimal": 8 },
+        "fitness": { "min": 5, "max": 10, "optimal": 8 },
+        "filming": { "min": 2, "max": 8, "optimal": 4 }
+      },
+      "baseHourlyRate": 60,
+      "features": [
+        "Wall-to-wall mirrors",
+        "Sound system",
+        "Air-conditioned",
+        "Connects to Room A (can be opened)",
+        "Wooden dance floor"
+      ],
+      "equipment": {
+        "included": ["Sound system"],
+        "available": ["Portable speakers", "Tripods"]
+      },
+      "bestFor": [
+        "Small group classes",
+        "Private rehearsals",
+        "1-on-1 coaching",
+        "Content creation",
+        "Extension of Room A events"
+      ],
+      "restrictions": [
+        "No food/drinks on dance floor",
+        "Proper dance/indoor footwear only"
+      ],
+      "connectedTo": "room-a",
+      "images": [
+        "/images/rooms/room-b-main.jpg"
+      ],
+      "available": true,
+      "sortOrder": 3
+    },
+    {
+      "id": "room-c",
+      "name": "Room C",
+      "displayName": "Workshop Space",
+      "subtitle": "Small Studio (Private & Budget-Friendly)",
+      "description": "Our most affordable option - perfect for private practice, small groups, and budget-conscious renters.",
+      "size": {
+        "sqft": 300,
+        "sqm": 28
+      },
+      "capacity": {
+        "dance": { "min": 2, "max": 8, "optimal": 5 },
+        "practice": { "min": 1, "max": 6, "optimal": 3 },
+        "filming": { "min": 1, "max": 4, "optimal": 2 }
+      },
+      "baseHourlyRate": 50,
+      "features": [
+        "Wall-to-wall mirrors",
+        "Sound system",
+        "Air-conditioned",
+        "Intimate environment",
+        "Wooden floor"
+      ],
+      "equipment": {
+        "included": ["Sound system"],
+        "available": ["Portable speaker", "Tripod"]
+      },
+      "bestFor": [
+        "Private practice sessions",
+        "1-on-1 lessons",
+        "Small group rehearsals",
+        "Solo content creation",
+        "Audition preparation"
+      ],
+      "restrictions": [
+        "No food/drinks on dance floor"
+      ],
+      "images": [
+        "/images/rooms/room-c-main.jpg"
+      ],
+      "available": true,
+      "sortOrder": 4
+    }
+  ]
+}
