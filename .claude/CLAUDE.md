@@ -13,29 +13,47 @@ Premium dance studio website for Dance Connexions, a facility in Bandar Sunway, 
 - **Runtime**: Docker containers (app + db)
 - **Environment**: Windows + WSL2
 
-## Data Architecture
+## Knowledge Architecture
 
-### Dynamic Data (Easy to Update)
-All variable business data lives in JSON files:
+### Three-Tier System
 ```
-/data/
-├── business.json       # Identity, contact, location, hours
-├── rooms.json          # Room specs, features, capacity
-└── pricing-rules.json  # Pricing tiers, discounts, activity types
+/data/                    # Tier 1: Structured data (rates, specs)
+├── business.json         # Identity, contact, location, hours
+├── rooms.json            # Room specs, features, capacity
+└── pricing-rules.json    # Pricing tiers, discounts, modifiers
+
+/knowledge/               # Tier 2 & 3: Procedural & policy knowledge
+├── index.md              # Navigation guide
+├── master/               # Stable, versioned content
+│   ├── VERSION.md        # Version + changelog
+│   ├── booking.md        # Booking workflow
+│   ├── usage-rules.md    # Conduct and care
+│   ├── escalation.md     # Exceptions framework
+│   ├── pricing.md        # Pricing philosophy
+│   ├── location.md       # Access and parking
+│   └── rooms.md          # Room narratives
+└── supplemental/         # Staging for new info
+    ├── README.md         # How to add entries
+    └── entries.md        # All supplemental entries
 ```
 
 ### Code Utilities
 ```
 /src/lib/
-├── data-loader.ts       # Load and access JSON data
+├── data-loader.ts        # Load and access JSON data
 ├── pricing-calculator.ts # Calculate dynamic prices
-└── config.ts            # Unified access point (imports from above)
+└── config.ts             # Unified access point
 ```
 
-### How to Update Business Data
-1. **Change a price?** → Edit `/data/rooms.json` or `/data/pricing-rules.json`
-2. **Change contact info?** → Edit `/data/business.json`
-3. **Add a discount?** → Edit `/data/pricing-rules.json`
+### How to Update
+
+| Change Type | Where to Update |
+|-------------|-----------------|
+| Room price | `/data/rooms.json` or `/data/pricing-rules.json` |
+| Contact info | `/data/business.json` |
+| New discount rule | `/data/pricing-rules.json` |
+| Policy/procedure | `/knowledge/master/*.md` |
+| New clarification | `/knowledge/supplemental/entries.md` (staging) |
 
 **Never hardcode** prices, phone numbers, or business info in components!
 
@@ -57,13 +75,15 @@ docker compose restart  # Restart after code changes
 
 ## Skills Available
 
-### `/dc-knowledge`
-Business knowledge base for Dance Connexions:
-- `rentals/overview.md` - Business identity
-- `rentals/studios.md` - Room details
-- `rentals/pricing.md` - Pricing logic
-- `rentals/booking.md` - Booking process
-- `rentals/location.md` - Address, parking
+### `/dc-knowledge` (User-Invocable)
+Business knowledge navigator. Use for:
+- Room info, pricing, capacity
+- Booking process and policies
+- Usage rules and conduct
+- Exceptions and escalation
+- Location and parking
+
+**How it works:** Small navigator skill that reads from `/data/` and `/knowledge/` as needed (token-efficient).
 
 ### `safeguards` (Auto-Consulted)
 Stability rules for dependency management. Consult before:
