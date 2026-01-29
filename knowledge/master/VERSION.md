@@ -1,10 +1,17 @@
 # Knowledge Base Version
 
-**Current Version:** v1.0.0
-**Last Updated:** 2026-01-29
+**Current Version:** v1.2.0
+**Last Updated:** 2026-01-30
 **Status:** Initial Release
 
 ## Changelog
+
+### v1.2.0 (2026-01-30)
+- Added marketing context entries (S-2026-01-30-01 to 04)
+- Documented: starting from zero (no social proof available)
+- Documented: no competitor bashing philosophy
+- Documented: core differentiators to emphasize
+- Documented: content strategy without past customers
 
 ### v1.1.0 (2026-01-29)
 - Added target-customers.md with 18 customer segments

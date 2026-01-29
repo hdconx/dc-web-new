@@ -354,3 +354,146 @@ Philosophy: Policies are activity-dependent, not rigid.
 Allows case-by-case handling while maintaining consistency.
 
 ---
+
+## S-2026-01-30-01
+
+**Related Sections:** Marketing, Website Strategy
+**Status:** Confirmed
+**Type:** Strategic Context
+
+### Content
+
+**Marketing Position — Starting From Zero**
+
+Current reality (as of 2026-01):
+- No established social media presence
+- No existing customer reviews (Google, Facebook, etc.)
+- No customer photos or testimonials to showcase
+- No user-generated content (UGC) available
+- Previous online presence needs complete rebuild
+
+**Implication for AI/Website:**
+- Cannot rely on social proof from past customers
+- Cannot use "trusted by X renters" type messaging yet
+- Cannot showcase UGC gallery until content is collected
+- Must use creative, feature-based marketing instead
+- Website must demonstrate professionalism through design and information quality
+
+---
+
+## S-2026-01-30-02
+
+**Related Sections:** Marketing, Website Strategy
+**Status:** Confirmed
+**Type:** Philosophy
+
+### Content
+
+**Marketing Philosophy — No Competitor Bashing**
+
+Strict rule: Never disparage or negatively compare to competitors.
+
+**Not allowed:**
+- "Unlike other studios that..."
+- "While competitors charge hidden fees..."
+- Naming competitors negatively
+- Creating animosity or adversarial positioning
+
+**Preferred approach:**
+- Highlight own strengths positively
+- Let features speak for themselves
+- Focus on what DC offers, not what others lack
+- Build relationships, not rivalries
+
+**AI Guidance:** Always use positive framing. Instead of "We don't have hidden fees like others," say "Transparent pricing — the price you see is the price you pay."
+
+---
+
+## S-2026-01-30-03
+
+**Related Sections:** Marketing, Website Strategy
+**Status:** Confirmed
+**Type:** Strategic Asset
+
+### Content
+
+**Core Differentiators — What Makes DC Attractive**
+
+These are the genuine competitive advantages to emphasize in marketing:
+
+**1. Multiple Room Options**
+- 4 purpose-built studios (not converted spaces)
+- Range of sizes: 300 to 1,200 sqft
+- Different price points: RM 50-120/hr
+- Customers can choose based on exact needs
+
+**2. Affordable & Flexible Pricing**
+- Starting from RM 50/hour
+- Substantial discounts for longer bookings
+- Negotiable rates for regular renters
+- No hidden fees or booking charges
+
+**3. Flexible Policies**
+- Understanding of renter needs
+- Accommodating cancellation approach
+- One-time reschedule option
+- Case-by-case flexibility
+
+**4. Value-Added Services**
+- Storage rooms for regular renters (reduces their hassle)
+- Equipment available: tripods, lighting, etc.
+- Projector & screen in larger rooms
+- Free Wi-Fi throughout
+
+**5. Renter-Centric Approach**
+- We understand because we've been renters too
+- Designed by dancers for movement activities
+- Flexible scheduling (early morning to late night)
+- Quick response time (within 2 hours)
+
+**Marketing Message:** "We make it easy. Multiple rooms, flexible pricing, and we understand your needs."
+
+---
+
+## S-2026-01-30-04
+
+**Related Sections:** Marketing, Website Strategy
+**Status:** Confirmed
+**Type:** Strategic Guidance
+
+### Content
+
+**Content Strategy — Building Without Past Customers**
+
+Since UGC and testimonials are not available initially, focus on:
+
+**Website Strategy:**
+- Professional, well-designed pages signal credibility
+- Comprehensive information reduces uncertainty
+- Easy navigation shows competence
+- Clear pricing builds trust
+- The website itself IS the social proof (shows capable people run this)
+
+**Social Media Strategy:**
+- Create original content showcasing the spaces
+- Behind-the-scenes of the studios
+- "Day in the life" style content
+- Feature the rooms, equipment, amenities
+- Aspirational content: "Imagine running your class here"
+
+**Trust-Building Without Reviews:**
+- Emphasize longevity: "Established 1999" (25+ years)
+- Show the physical space extensively
+- Offer free viewing visits
+- Responsive communication
+- Professional website presence
+
+**Future Collection:**
+- As customers come, actively request reviews
+- Ask permission to feature their content
+- Build UGC gallery over time
+- This is a growth process, not immediate
+
+**AI Guidance:** When creating content, focus on FEATURES and POSSIBILITIES, not social proof. Show what the space can do, not what others say about it.
+
+---
