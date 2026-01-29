@@ -1,11 +1,23 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronLeft, MessageCircle, ChevronDown, Check } from "lucide-react"
+import { ChevronLeft, MessageCircle, ChevronDown, Check, Quote } from "lucide-react"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { getWhatsAppUrl, CONTACT, LOCATION } from "@/lib/config"
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
+
+// Dynamic WhatsApp link with room pre-fill
+function getWhatsAppForRoom(roomName: string, subtitle: string) {
+  const message = `Hi! I'm interested in renting ${roomName} (${subtitle}) at Dance Connexions.\n\n- Preferred date:\n- Time slot:\n- Activity type:\n- Group size:\n\nPlease let me know availability and pricing. Thank you!`
+  return `https://wa.me/${CONTACT.whatsapp.number}?text=${encodeURIComponent(message)}`
+}
 
 export default function RentalsPage() {
   const [expandedStudio, setExpandedStudio] = useState<number | null>(null)
@@ -208,6 +220,80 @@ export default function RentalsPage() {
         </div>
       </section>
 
+      {/* Testimonials Section - Placeholder */}
+      <section className="py-16 px-6 bg-zinc-950 border-t border-zinc-800">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-50 text-center mb-4">
+            What Renters Say
+          </h2>
+          <p className="text-center text-slate-400 mb-12">
+            Join hundreds of satisfied instructors and creators
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Testimonial 1 - Placeholder */}
+            <div className="bg-zinc-900 border border-slate-800 rounded-lg p-6 relative">
+              <Quote className="w-8 h-8 text-emerald-500/30 absolute top-4 right-4" />
+              <p className="text-slate-300 mb-6 leading-relaxed italic">
+                "The mirrors and sound system are exactly what we needed for our K-pop dance classes. Flexible scheduling makes it easy to run evening sessions."
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-white font-semibold">
+                  SK
+                </div>
+                <div>
+                  <p className="font-medium text-slate-50">Sarah K.</p>
+                  <p className="text-sm text-slate-400">Dance Instructor</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 2 - Placeholder */}
+            <div className="bg-zinc-900 border border-slate-800 rounded-lg p-6 relative">
+              <Quote className="w-8 h-8 text-emerald-500/30 absolute top-4 right-4" />
+              <p className="text-slate-300 mb-6 leading-relaxed italic">
+                "Great value for fitness classes. The free parking after hours is a huge plus for my students. Staff is always accommodating."
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-white font-semibold">
+                  AR
+                </div>
+                <div>
+                  <p className="font-medium text-slate-50">Ahmad R.</p>
+                  <p className="text-sm text-slate-400">Fitness Coach</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 3 - Placeholder */}
+            <div className="bg-zinc-900 border border-slate-800 rounded-lg p-6 relative">
+              <Quote className="w-8 h-8 text-emerald-500/30 absolute top-4 right-4" />
+              <p className="text-slate-300 mb-6 leading-relaxed italic">
+                "Perfect space for our dance video shoots. The controllable lighting and brand-neutral environment let us create professional content."
+              </p>
+              <div className="flex items-center gap-3">
+                <div className="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-white font-semibold">
+                  ML
+                </div>
+                <div>
+                  <p className="font-medium text-slate-50">Michelle L.</p>
+                  <p className="text-sm text-slate-400">Content Creator</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* TODO: Replace with real testimonials */}
+          {/*
+          <div className="mt-8 text-center">
+            <p className="text-slate-500 text-sm">
+              Have you rented with us? Share your experience!
+            </p>
+          </div>
+          */}
+        </div>
+      </section>
+
       {/* Studio Showcase */}
       <section className="py-20 px-6 bg-zinc-950">
         <div className="max-w-6xl mx-auto">
@@ -231,7 +317,7 @@ export default function RentalsPage() {
                     <img
                       src={studio.image || "/placeholder.svg"}
                       alt={`${studio.name} - ${studio.subtitle}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transition-all duration-500 hover:scale-105"
                     />
                   </div>
 
@@ -296,6 +382,16 @@ export default function RentalsPage() {
                             {studio.details.ideal && <>Ideal for: {studio.details.ideal}</>}
                           </p>
                         </div>
+                        <a
+                          href={getWhatsAppForRoom(studio.name, studio.subtitle)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-2.5 px-5 rounded-lg transition-all duration-200 text-sm"
+                        >
+                          <MessageCircle className="w-4 h-4" />
+                          Inquire About {studio.name}
+                        </a>
                       </div>
                     )}
                   </div>
@@ -306,113 +402,149 @@ export default function RentalsPage() {
         </div>
       </section>
 
-      {/* Ideal For Section */}
+      {/* Ideal For Section - Accordion */}
       <section className="py-20 px-6 bg-zinc-950">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-50 text-center mb-16">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-50 text-center mb-6">
             Our Studios Are Ideal For
           </h2>
+          <p className="text-center text-slate-400 mb-12">
+            Click each category to see what activities we support
+          </p>
 
-          <div className="max-w-3xl mx-auto space-y-12">
-            {/* DANCE & MOVEMENT */}
-            <div>
-              <h3 className="text-xl font-semibold text-slate-50 mb-6">Dance & Movement</h3>
-              <ul className="space-y-3">
-                {[
-                  "Dance classes (all styles - ballet, hip-hop, contemporary, ballroom, K-pop, etc.)",
-                  "Dance rehearsals & choreography development",
-                  "Private dance coaching & instruction",
-                  "Audition preparation & practice",
-                  "Performance rehearsals",
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <Accordion type="multiple" defaultValue={["dance"]} className="space-y-4">
+            <AccordionItem value="dance" className="border border-slate-800 rounded-lg bg-zinc-900 px-6">
+              <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
+                <span className="flex items-center gap-3">
+                  <span className="text-2xl">💃</span>
+                  Dance & Movement
+                </span>
+              </AccordionTrigger>
+              <AccordionContent className="pb-6">
+                <ul className="space-y-2">
+                  {[
+                    "Dance classes (all styles - ballet, hip-hop, contemporary, ballroom, K-pop, etc.)",
+                    "Dance rehearsals & choreography development",
+                    "Private dance coaching & instruction",
+                    "Audition preparation & practice",
+                    "Performance rehearsals",
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
+                      <span className="text-slate-300">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* FITNESS & WELLNESS */}
-            <div>
-              <h3 className="text-xl font-semibold text-slate-50 mb-6">Fitness & Wellness</h3>
-              <ul className="space-y-3">
-                {[
-                  "Yoga, Pilates, and barre classes",
-                  "Fitness training & conditioning",
-                  "Martial arts-inspired movement (non-contact)",
-                  "Personal training sessions",
-                  "Group fitness programs",
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <AccordionItem value="fitness" className="border border-slate-800 rounded-lg bg-zinc-900 px-6">
+              <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
+                <span className="flex items-center gap-3">
+                  <span className="text-2xl">🧘</span>
+                  Fitness & Wellness
+                </span>
+              </AccordionTrigger>
+              <AccordionContent className="pb-6">
+                <ul className="space-y-2">
+                  {[
+                    "Yoga, Pilates, and barre classes",
+                    "Fitness training & conditioning",
+                    "Martial arts-inspired movement (non-contact)",
+                    "Personal training sessions",
+                    "Group fitness programs",
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
+                      <span className="text-slate-300">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* PERFORMING ARTS */}
-            <div>
-              <h3 className="text-xl font-semibold text-slate-50 mb-6">Performing Arts</h3>
-              <ul className="space-y-3">
-                {[
-                  "Theatre & acting rehearsals",
-                  "Performance practice & run-throughs",
-                  "Modeling & runway training",
-                  "Stage movement coaching",
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <AccordionItem value="performing" className="border border-slate-800 rounded-lg bg-zinc-900 px-6">
+              <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
+                <span className="flex items-center gap-3">
+                  <span className="text-2xl">🎭</span>
+                  Performing Arts
+                </span>
+              </AccordionTrigger>
+              <AccordionContent className="pb-6">
+                <ul className="space-y-2">
+                  {[
+                    "Theatre & acting rehearsals",
+                    "Performance practice & run-throughs",
+                    "Modeling & runway training",
+                    "Stage movement coaching",
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
+                      <span className="text-slate-300">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* CONTENT CREATION */}
-            <div>
-              <h3 className="text-xl font-semibold text-slate-50 mb-6">Content Creation</h3>
-              <ul className="space-y-3">
-                {[
-                  "Dance & fitness photography",
-                  "Video shoots & tutorials",
-                  "Social media content creation",
-                  "Instructional video recording",
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <AccordionItem value="content" className="border border-slate-800 rounded-lg bg-zinc-900 px-6">
+              <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
+                <span className="flex items-center gap-3">
+                  <span className="text-2xl">📸</span>
+                  Content Creation
+                </span>
+              </AccordionTrigger>
+              <AccordionContent className="pb-6">
+                <ul className="space-y-2">
+                  {[
+                    "Dance & fitness photography",
+                    "Video shoots & tutorials",
+                    "Social media content creation",
+                    "Instructional video recording",
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
+                      <span className="text-slate-300">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* WORKSHOPS & EVENTS */}
-            <div>
-              <h3 className="text-xl font-semibold text-slate-50 mb-6">Workshops & Events</h3>
-              <ul className="space-y-3">
-                {[
-                  "Movement workshops & masterclasses",
-                  "Training sessions & seminars",
-                  "Dance socials & practice sessions",
-                  "Small group learning sessions",
-                ].map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-emerald-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-slate-300">{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <AccordionItem value="workshops" className="border border-slate-800 rounded-lg bg-zinc-900 px-6">
+              <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
+                <span className="flex items-center gap-3">
+                  <span className="text-2xl">🎓</span>
+                  Workshops & Events
+                </span>
+              </AccordionTrigger>
+              <AccordionContent className="pb-6">
+                <ul className="space-y-2">
+                  {[
+                    "Movement workshops & masterclasses",
+                    "Training sessions & seminars",
+                    "Dance socials & practice sessions",
+                    "Small group learning sessions",
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
+                      <span className="text-slate-300">{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
 
-            {/* CLOSING TEXT */}
-            <div className="pt-8 border-t border-zinc-800">
-              <p className="text-slate-300 text-lg leading-relaxed">
-                Planning something unique? We're flexible and accommodating. Contact us to discuss your specific needs
-                and we'll help you find the right setup.
-              </p>
-            </div>
+          {/* CLOSING TEXT */}
+          <div className="mt-10 text-center">
+            <p className="text-slate-300 text-lg leading-relaxed">
+              Planning something unique? We're flexible and accommodating.{" "}
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 underline">
+                Contact us
+              </a>{" "}
+              to discuss your specific needs.
+            </p>
           </div>
         </div>
       </section>
@@ -568,63 +700,83 @@ export default function RentalsPage() {
         </div>
       </section>
 
-      {/* Booking Policies Section */}
+      {/* Booking Policies Section - Accordion */}
       <section className="py-16 bg-slate-900">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-bold text-white mb-12 text-center">Booking Policies</h2>
 
-          <div className="grid md:grid-cols-2 gap-12">
-            {/* Left Column: Booking Basics */}
-            <div>
-              <h3 className="text-xl font-semibold text-slate-50 mb-6">Booking Basics</h3>
-              <div className="space-y-4 text-slate-300">
-                <div>
-                  <p className="font-semibold text-slate-50">Minimum booking</p>
-                  <p>1 hour</p>
+          <Accordion type="single" collapsible className="space-y-4">
+            <AccordionItem value="booking-basics" className="border border-slate-700 rounded-lg bg-slate-800/50 px-6">
+              <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
+                Booking Basics
+              </AccordionTrigger>
+              <AccordionContent className="text-slate-300 pb-6">
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <p className="font-medium text-slate-50">Minimum booking</p>
+                    <p>1 hour</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-slate-50">Deposit</p>
+                    <p>50% to confirm</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-slate-50">Balance</p>
+                    <p>Before or upon arrival</p>
+                  </div>
+                  <div>
+                    <p className="font-medium text-slate-50">Payment</p>
+                    <p>Transfer, card, cash</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-semibold text-slate-50">Deposit</p>
-                  <p>50% to confirm booking</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-slate-50">Balance</p>
-                  <p>Payable before or upon arrival</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-slate-50">Payment methods</p>
-                  <p>Bank transfer, credit card, cash</p>
-                </div>
-              </div>
-            </div>
+              </AccordionContent>
+            </AccordionItem>
 
-            {/* Right Column: Cancellation Policy */}
-            <div>
-              <h3 className="text-xl font-semibold text-slate-50 mb-6">Cancellation Policy</h3>
-              <div className="space-y-4 text-slate-300 mb-8">
-                <div>
-                  <p className="font-semibold text-slate-50">48+ hours notice</p>
-                  <p className="text-emerald-500">Full refund</p>
+            <AccordionItem value="cancellation" className="border border-slate-700 rounded-lg bg-slate-800/50 px-6">
+              <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
+                Cancellation & Refunds
+              </AccordionTrigger>
+              <AccordionContent className="text-slate-300 pb-6">
+                <div className="space-y-3">
+                  <div className="flex justify-between">
+                    <span>48+ hours notice</span>
+                    <span className="text-emerald-400 font-medium">Full refund</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>24-48 hours notice</span>
+                    <span className="text-emerald-400 font-medium">50% refund</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Under 24 hours</span>
+                    <span className="text-slate-400">No refund</span>
+                  </div>
+                  <p className="text-sm text-slate-400 pt-2">One-time reschedule option available</p>
                 </div>
-                <div>
-                  <p className="font-semibold text-slate-50">24-48 hours notice</p>
-                  <p className="text-emerald-500">50% refund</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-slate-50">Under 24 hours</p>
-                  <p>No refund</p>
-                </div>
-                <div className="pt-2">
-                  <p className="text-slate-400 text-sm">One-time reschedule option available</p>
-                </div>
-              </div>
+              </AccordionContent>
+            </AccordionItem>
 
-              <div className="border-t border-slate-700 pt-6 text-slate-400 text-sm space-y-2">
-                <p>• Setup & cleanup time included in your booked hours</p>
-                <p>• Overtime charged at same hourly rate if extended</p>
-                <p>• Please vacate on time to respect other bookings</p>
-              </div>
-            </div>
-          </div>
+            <AccordionItem value="time-rules" className="border border-slate-700 rounded-lg bg-slate-800/50 px-6">
+              <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
+                Time & Overtime Rules
+              </AccordionTrigger>
+              <AccordionContent className="text-slate-300 pb-6">
+                <ul className="space-y-2">
+                  <li className="flex items-start gap-2">
+                    <span className="text-emerald-500">•</span>
+                    Setup & cleanup time included in your booked hours
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-emerald-500">•</span>
+                    Overtime charged at same hourly rate if extended
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-emerald-500">•</span>
+                    Please vacate on time to respect other bookings
+                  </li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
       </section>
 

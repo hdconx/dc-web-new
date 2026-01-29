@@ -6,6 +6,12 @@
 
 ## Changelog
 
+### v1.1.0 (2026-01-29)
+- Added target-customers.md with 18 customer segments
+- Global research from NYC, London, and international sources
+- Room recommendations by segment
+- Website content implications for room pages
+
 ### v1.0.0 (2026-01-29)
 - Initial knowledge base structure
 - Migrated from Word documents:
