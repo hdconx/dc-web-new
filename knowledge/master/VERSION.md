@@ -1,12 +1,18 @@
 # Knowledge Base Version
 
-**Current Version:** v1.3.0
+**Current Version:** v1.4.0
 **Last Updated:** 2026-01-31
 **Status:** Active Development
 
 ## Changelog
 
-### v1.3.0 (2026-01-31)
+### v1.4.0 (2026-01-31 - Session 2)
+- Added 3 new supplemental entries (S-2026-01-31-07 to 09)
+- Documented: Button styling hierarchy (PRIMARY vs SECONDARY pattern)
+- Documented: Review tool production features and workflow
+- Documented: GBP optimization guide and missing rental services issue
+
+### v1.3.0 (2026-01-31 - Session 1)
 - Added 6 new supplemental entries (S-2026-01-31-01 to 06)
 - Documented: Google Business Profile current state and optimization needs
 - Documented: On-demand teacher model for class offerings

@@ -773,3 +773,141 @@ The absence of a working website explains the complete lack of online visibility
 File organization is good. Photos are available. Video creation workflow established. Ready to scale content creation across all 4 studios.
 
 ---
+
+## S-2026-01-31-07
+
+**Related Sections:** Website Development, UX Design
+**Status:** Confirmed
+**Type:** Design Pattern
+
+### Content
+
+**Button Styling Hierarchy — Website Pattern**
+
+Established consistent button hierarchy for all Dance Connexions website pages:
+
+**PRIMARY Buttons (Solid Emerald):**
+- Purpose: Generate leads, bookings, inquiries (direct conversion actions)
+- Style: `bg-emerald-600 hover:bg-emerald-500 text-white`
+- Shadow: `shadow-lg hover:shadow-xl` for major CTAs
+- Examples: "Check Availability", "Inquire About Room", "Get Custom Quote", "Book Now"
+
+**SECONDARY Buttons (Outlined):**
+- Purpose: Navigation, information access, supplementary actions
+- Style: `border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400`
+- Variant (emphasized): `border-2 border-emerald-600 text-emerald-400 hover:bg-emerald-600 hover:text-white`
+- Examples: "Browse Rooms", "View Gallery", "View Pricing", "Compare", "Open in Maps"
+
+**Rationale:**
+- Too many solid green buttons create visual noise and dilute primary CTAs
+- Outlined buttons are visible without overwhelming
+- Hover states provide clear interaction feedback
+- Material UI-inspired design feels modern and professional
+
+**AI Guidance:** When creating new pages or modifying existing ones, maintain this hierarchy. Never use solid green for non-conversion actions. All navigation should use outlined style.
+
+### Notes
+
+Applied across rentals landing page. Should be replicated on all other pages for consistency.
+
+---
+
+## S-2026-01-31-08
+
+**Related Sections:** Website Development, Review Process
+**Status:** Implemented
+**Type:** Tool & Workflow
+
+### Content
+
+**Review Tool — Production Features**
+
+Enhanced page review tool at `/admin/review` with robust persistence and workflow:
+
+**Core Features:**
+- LocalStorage auto-save (survives browser close, PC restart)
+- Export to JSON file (backup, transfer between devices)
+- Import with merge or replace options
+- Edit existing review notes
+- Filter by action type (Wrong, Change, Remove, Add, Discuss)
+- Clear current page or all notes
+- Notes count in page selector
+- Auto-save notifications
+
+**Workflow:**
+1. User opens `/admin/review`
+2. Selects page to review
+3. Opens page in new tab
+4. Adds notes: element → action → comment
+5. Notes auto-save to localStorage
+6. Export to file for backup
+7. When done: "Copy for Claude" → paste in chat
+8. AI processes feedback and applies changes
+
+**Storage:**
+- Key: `dc-review-items`
+- Format: JSON array of ReviewItem objects
+- Location: Browser localStorage
+- Backup: Manual export to dated JSON files
+
+**Benefits:**
+- No lost work (auto-save)
+- Can review over multiple days
+- Transfer between computers via export
+- Systematic approach to content correction
+
+**AI Guidance:** When user pastes review feedback, process all items and apply changes methodically. Group related changes in single commits.
+
+### Notes
+
+This tool pattern is reusable for other projects. Documentation at `/docs/REVIEW_TOOL_GUIDE.md`. User successfully used for rentals landing page review.
+
+---
+
+## S-2026-01-31-09
+
+**Related Sections:** Marketing, Google Business Profile
+**Status:** Documented
+**Type:** Reference Guide
+
+### Content
+
+**Google Business Profile Optimization — Complete Guide**
+
+Created comprehensive step-by-step GBP optimization guide at `/docs/GBP_OPTIMIZATION_GUIDE.md`.
+
+**Critical Missing Element Identified:**
+- Studio rental services are COMPLETELY ABSENT from current GBP
+- This is why rentals don't appear in search
+- Adding "Event venue" category + rental services is highest priority
+
+**Key Optimizations Documented:**
+1. Updated business description (includes classes + rentals)
+2. Studio rental services (3 new services to add)
+3. Missing dance styles (K-pop, Hip-hop, Contemporary, etc.)
+4. Photo upload strategy (15-20 photos with captions)
+5. Amenities, parking, payment methods (all currently missing)
+6. Communication (Google Messages or WhatsApp link)
+7. Social profiles (Instagram, Facebook - create if needed)
+8. Secondary categories (Event venue, Dance hall, etc.)
+9. First post template
+10. Q&A entries (5 ready-to-use)
+11. Review collection system
+
+**Implementation Time:**
+- Full optimization: 30-45 minutes
+- Quick start version: 30 minutes
+
+**Expected Impact:**
+- Appear in "studio rental Bandar Sunway" searches
+- Appear in "event space rental" searches
+- Higher local search ranking
+- More WhatsApp inquiries
+
+**AI Guidance:** Guide is copy-paste ready. User can execute independently. AI can answer questions or review profile after optimization.
+
+### Notes
+
+GBP was severely underutilized. Primary business (dance classes) represented, but secondary revenue stream (studio rentals) completely missing from profile.
+
+---
