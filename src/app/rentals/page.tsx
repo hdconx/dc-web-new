@@ -153,35 +153,35 @@ export default function RentalsPage() {
       </section>
 
       {/* Quick Navigation */}
-      <section className="py-8 px-6 bg-zinc-900 border-b border-zinc-800">
+      <section className="py-6 px-6 bg-zinc-900 border-b border-zinc-800">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
             <Link
               href="/rentals/rooms"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl text-base font-semibold"
+              className="inline-flex items-center gap-2 border-2 border-emerald-600 text-emerald-400 hover:bg-emerald-600 hover:text-white px-5 py-2.5 rounded-lg transition-all text-sm font-medium"
             >
-              <Grid className="w-5 h-5" />
+              <Grid className="w-4 h-4" />
               Browse Rooms
             </Link>
             <Link
               href="/rentals/gallery"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl text-base font-semibold"
+              className="inline-flex items-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 px-5 py-2.5 rounded-lg transition-all text-sm font-medium"
             >
-              <Image className="w-5 h-5" />
+              <Image className="w-4 h-4" />
               Gallery
             </Link>
             <Link
               href="/rentals/pricing"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl text-base font-semibold"
+              className="inline-flex items-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 px-5 py-2.5 rounded-lg transition-all text-sm font-medium"
             >
-              <DollarSign className="w-5 h-5" />
+              <DollarSign className="w-4 h-4" />
               Pricing
             </Link>
             <Link
               href="/rentals/compare"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl text-base font-semibold"
+              className="inline-flex items-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 px-5 py-2.5 rounded-lg transition-all text-sm font-medium"
             >
-              <GitCompare className="w-5 h-5" />
+              <GitCompare className="w-4 h-4" />
               Compare
             </Link>
           </div>
