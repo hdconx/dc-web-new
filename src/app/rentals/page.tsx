@@ -153,35 +153,35 @@ export default function RentalsPage() {
       </section>
 
       {/* Quick Navigation */}
-      <section className="py-6 px-6 bg-zinc-900 border-b border-zinc-800">
+      <section className="py-8 px-6 bg-zinc-900 border-b border-zinc-800">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
             <Link
               href="/rentals/rooms"
-              className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-slate-300 hover:text-white px-4 py-2.5 rounded-lg transition-colors text-sm font-medium"
+              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl text-base font-semibold"
             >
-              <Grid className="w-4 h-4" />
+              <Grid className="w-5 h-5" />
               Browse Rooms
             </Link>
             <Link
               href="/rentals/gallery"
-              className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-slate-300 hover:text-white px-4 py-2.5 rounded-lg transition-colors text-sm font-medium"
+              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl text-base font-semibold"
             >
-              <Image className="w-4 h-4" />
+              <Image className="w-5 h-5" />
               Gallery
             </Link>
             <Link
               href="/rentals/pricing"
-              className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-slate-300 hover:text-white px-4 py-2.5 rounded-lg transition-colors text-sm font-medium"
+              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl text-base font-semibold"
             >
-              <DollarSign className="w-4 h-4" />
+              <DollarSign className="w-5 h-5" />
               Pricing
             </Link>
             <Link
               href="/rentals/compare"
-              className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-slate-300 hover:text-white px-4 py-2.5 rounded-lg transition-colors text-sm font-medium"
+              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl text-base font-semibold"
             >
-              <GitCompare className="w-4 h-4" />
+              <GitCompare className="w-5 h-5" />
               Compare
             </Link>
           </div>
@@ -192,10 +192,10 @@ export default function RentalsPage() {
       <section className="py-20 px-6 bg-zinc-900">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-50 text-center mb-4">
-            Why Renters Choose Us
+            Why Choose Us
           </h2>
           <p className="text-center text-slate-400 mb-16 text-lg">
-            We solve the problems other studios create
+            Designed for your success, built with your needs in mind
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -204,7 +204,7 @@ export default function RentalsPage() {
               <div className="text-3xl mb-3">🤝</div>
               <h3 className="text-lg font-semibold text-slate-50 mb-2">Super Flexible Policies</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Not sure how many people will show up? Need to change your date? We get it. One-time reschedule option and flexible headcount—no stress.
+                We understand things may not go as planned. Need to change your booking schedule, room, or setup? Unsure about details before booking? Talk to us—we have very flexible policies and we understand your challenges.
               </p>
             </div>
 
@@ -231,7 +231,7 @@ export default function RentalsPage() {
               <div className="text-3xl mb-3">🪞</div>
               <h3 className="text-lg font-semibold text-slate-50 mb-2">Built by Dancers for Dancers</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                3 walls covered with high, uninterrupted mirrors. We understand what you need because we've been in your shoes.
+                3 walls covered with high, uninterrupted mirrors. Large mirrors let you see your full body movement, perfect posture checks, and group formations at a glance. We understand what you need because we've been in your shoes.
               </p>
             </div>
 
@@ -244,89 +244,37 @@ export default function RentalsPage() {
               </p>
             </div>
 
-            {/* Card 6 - Equipment & Storage */}
+            {/* Card 6 - Storage Space */}
             <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
               <div className="text-3xl mb-3">📦</div>
-              <h3 className="text-lg font-semibold text-slate-50 mb-2">Storage & Video Equipment</h3>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">Free Storage Space</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Free storage rooms for your gear. Tripods, lighting, and video equipment available. Create content hassle-free.
+                Storage space available for regular renters. No need to drag bulky equipment back and forth—store your gear with us and arrive light. Makes your sessions easier and saves you time.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Testimonials Section - Placeholder */}
+      {/* Testimonials Section - Coming Soon */}
       <section className="py-16 px-6 bg-zinc-950 border-t border-zinc-800">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-50 text-center mb-4">
             What Renters Say
           </h2>
           <p className="text-center text-slate-400 mb-12">
-            Join hundreds of satisfied instructors and creators
+            We're collecting feedback from our renters
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Testimonial 1 - Placeholder */}
-            <div className="bg-zinc-900 border border-slate-800 rounded-lg p-6 relative">
-              <Quote className="w-8 h-8 text-emerald-500/30 absolute top-4 right-4" />
-              <p className="text-slate-300 mb-6 leading-relaxed italic">
-                "The mirrors and sound system are exactly what we needed for our K-pop dance classes. Flexible scheduling makes it easy to run evening sessions."
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-white font-semibold">
-                  SK
-                </div>
-                <div>
-                  <p className="font-medium text-slate-50">Sarah K.</p>
-                  <p className="text-sm text-slate-400">Dance Instructor</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 2 - Placeholder */}
-            <div className="bg-zinc-900 border border-slate-800 rounded-lg p-6 relative">
-              <Quote className="w-8 h-8 text-emerald-500/30 absolute top-4 right-4" />
-              <p className="text-slate-300 mb-6 leading-relaxed italic">
-                "Great value for fitness classes. The free parking after hours is a huge plus for my students. Staff is always accommodating."
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-white font-semibold">
-                  AR
-                </div>
-                <div>
-                  <p className="font-medium text-slate-50">Ahmad R.</p>
-                  <p className="text-sm text-slate-400">Fitness Coach</p>
-                </div>
-              </div>
-            </div>
-
-            {/* Testimonial 3 - Placeholder */}
-            <div className="bg-zinc-900 border border-slate-800 rounded-lg p-6 relative">
-              <Quote className="w-8 h-8 text-emerald-500/30 absolute top-4 right-4" />
-              <p className="text-slate-300 mb-6 leading-relaxed italic">
-                "Perfect space for our dance video shoots. The controllable lighting and brand-neutral environment let us create professional content."
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-emerald-600 rounded-full flex items-center justify-center text-white font-semibold">
-                  ML
-                </div>
-                <div>
-                  <p className="font-medium text-slate-50">Michelle L.</p>
-                  <p className="text-sm text-slate-400">Content Creator</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* TODO: Replace with real testimonials */}
-          {/*
-          <div className="mt-8 text-center">
-            <p className="text-slate-500 text-sm">
-              Have you rented with us? Share your experience!
+          <div className="bg-zinc-900 border border-slate-800 rounded-lg p-8 md:p-12 text-center">
+            <Quote className="w-12 h-12 text-emerald-500/30 mx-auto mb-6" />
+            <p className="text-slate-300 text-lg mb-6 leading-relaxed">
+              We're actively collecting reviews from renters who use our studios. If you've rented with us, we'd love to hear about your experience!
+            </p>
+            <p className="text-slate-400 text-sm">
+              Have you rented our studios? <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 underline">Share your feedback on WhatsApp</a> and help others discover our space.
             </p>
           </div>
-          */}
         </div>
       </section>
 
@@ -344,14 +292,16 @@ export default function RentalsPage() {
           <div className="flex justify-center gap-4 mb-12">
             <Link
               href="/rentals/rooms"
-              className="text-emerald-400 hover:text-emerald-300 text-sm font-medium underline underline-offset-4"
+              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl font-semibold"
             >
-              View All Rooms →
+              <Grid className="w-5 h-5" />
+              View All Rooms
             </Link>
             <Link
               href="/rentals/compare"
-              className="text-slate-400 hover:text-slate-300 text-sm font-medium underline underline-offset-4"
+              className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-slate-300 hover:text-white px-6 py-3 rounded-lg transition-all border border-zinc-700 font-semibold"
             >
+              <GitCompare className="w-5 h-5" />
               Compare Rooms
             </Link>
           </div>
