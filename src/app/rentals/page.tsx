@@ -560,7 +560,7 @@ export default function RentalsPage() {
           <div className="flex justify-center mb-8">
             <Link
               href="/rentals/pricing"
-              className="text-emerald-400 hover:text-emerald-300 text-sm font-medium underline underline-offset-4"
+              className="inline-flex items-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 px-5 py-2.5 rounded-lg transition-all text-sm font-medium"
             >
               View Full Pricing Details →
             </Link>
@@ -818,7 +818,7 @@ export default function RentalsPage() {
                   href={LOCATION.googleMapsUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-sm font-medium transition-colors"
+                  className="inline-block px-4 py-2 border-2 border-emerald-600 text-emerald-400 hover:bg-emerald-600 hover:text-white rounded-lg text-sm font-medium transition-all"
                 >
                   Open in Maps
                 </a>
