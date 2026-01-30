@@ -27,11 +27,11 @@ const pages = [
 ]
 
 const actionLabels: Record<ActionType, { label: string; color: string; icon: any }> = {
-  wrong: { label: "Wrong Info", color: "bg-red-100 text-red-700 border-red-200", icon: XIcon },
-  change: { label: "Change", color: "bg-yellow-100 text-yellow-700 border-yellow-200", icon: Edit },
-  remove: { label: "Remove", color: "bg-gray-100 text-gray-700 border-gray-200", icon: Trash2 },
-  add: { label: "Add", color: "bg-green-100 text-green-700 border-green-200", icon: Plus },
-  discuss: { label: "Discuss", color: "bg-blue-100 text-blue-700 border-blue-200", icon: HelpCircle },
+  wrong: { label: "Wrong Info", color: "bg-red-900/50 text-red-300 border-red-700", icon: XIcon },
+  change: { label: "Change", color: "bg-yellow-900/50 text-yellow-300 border-yellow-700", icon: Edit },
+  remove: { label: "Remove", color: "bg-zinc-700 text-zinc-300 border-zinc-600", icon: Trash2 },
+  add: { label: "Add", color: "bg-green-900/50 text-green-300 border-green-700", icon: Plus },
+  discuss: { label: "Discuss", color: "bg-blue-900/50 text-blue-300 border-blue-700", icon: HelpCircle },
 }
 
 export default function ReviewPage() {
@@ -103,12 +103,12 @@ export default function ReviewPage() {
   const allItemsCount = items.length
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-zinc-950 text-slate-50">
       {/* Header */}
-      <div className="bg-white border-b border-gray-200 px-6 py-4">
+      <div className="bg-zinc-900 border-b border-zinc-800 px-6 py-4">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-2xl font-bold text-gray-900">Page Review Tool</h1>
-          <p className="text-gray-600 text-sm mt-1">
+          <h1 className="text-2xl font-bold text-slate-50">Page Review Tool</h1>
+          <p className="text-slate-400 text-sm mt-1">
             Select a page, open it, note what needs to change
           </p>
         </div>
@@ -116,16 +116,16 @@ export default function ReviewPage() {
 
       <div className="max-w-4xl mx-auto p-6">
         {/* Page Selector */}
-        <div className="bg-white rounded-lg border border-gray-200 p-4 mb-6">
+        <div className="bg-zinc-900 rounded-lg border border-zinc-800 p-4 mb-6">
           <div className="flex flex-wrap items-end gap-4">
             <div className="flex-1 min-w-[200px]">
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-slate-300 mb-1">
                 Select Page to Review
               </label>
               <select
                 value={selectedPage}
                 onChange={(e) => setSelectedPage(e.target.value)}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-slate-50 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
               >
                 {pages.map(page => (
                   <option key={page.id} value={page.id}>
@@ -138,7 +138,7 @@ export default function ReviewPage() {
               href={currentPage?.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg font-medium transition-colors"
             >
               <ExternalLink className="w-4 h-4" />
               Open Page
@@ -147,27 +147,27 @@ export default function ReviewPage() {
         </div>
 
         {/* Add Review Item Form */}
-        <div className="bg-white rounded-lg border border-gray-200 p-4 mb-6">
-          <h2 className="text-lg font-semibold text-gray-900 mb-4">Add Review Note</h2>
+        <div className="bg-zinc-900 rounded-lg border border-zinc-800 p-4 mb-6">
+          <h2 className="text-lg font-semibold text-slate-50 mb-4">Add Review Note</h2>
 
           <div className="space-y-4">
             {/* Element */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
-                What element/section? <span className="text-red-500">*</span>
+              <label className="block text-sm font-medium text-slate-300 mb-1">
+                What element/section? <span className="text-red-400">*</span>
               </label>
               <input
                 type="text"
                 value={element}
                 onChange={(e) => setElement(e.target.value)}
                 placeholder="e.g., Room A capacity, Hero image, Price table..."
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-slate-50 placeholder-slate-500 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
               />
             </div>
 
             {/* Action Type */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">
+              <label className="block text-sm font-medium text-slate-300 mb-2">
                 What needs to happen?
               </label>
               <div className="flex flex-wrap gap-2">
@@ -177,8 +177,8 @@ export default function ReviewPage() {
                     onClick={() => setAction(key)}
                     className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium border transition-all ${
                       action === key
-                        ? color + " ring-2 ring-offset-1 ring-gray-400"
-                        : "bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100"
+                        ? color + " ring-2 ring-offset-2 ring-offset-zinc-900 ring-emerald-500"
+                        : "bg-zinc-800 text-slate-400 border-zinc-700 hover:bg-zinc-700"
                     }`}
                   >
                     <Icon className="w-3.5 h-3.5" />
@@ -190,7 +190,7 @@ export default function ReviewPage() {
 
             {/* Comment */}
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+              <label className="block text-sm font-medium text-slate-300 mb-1">
                 Details / What should it be?
               </label>
               <textarea
@@ -204,7 +204,7 @@ export default function ReviewPage() {
                   "What needs to be discussed?"
                 }
                 rows={3}
-                className="w-full border border-gray-300 rounded-lg px-3 py-2 text-gray-900 focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                className="w-full bg-zinc-800 border border-zinc-700 rounded-lg px-3 py-2 text-slate-50 placeholder-slate-500 focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
               />
             </div>
 
@@ -212,7 +212,7 @@ export default function ReviewPage() {
             <button
               onClick={addItem}
               disabled={!element.trim()}
-              className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 disabled:bg-gray-300 disabled:cursor-not-allowed text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 disabled:bg-zinc-700 disabled:text-zinc-500 disabled:cursor-not-allowed text-white px-4 py-2 rounded-lg font-medium transition-colors"
             >
               <Plus className="w-4 h-4" />
               Add Note
@@ -221,12 +221,12 @@ export default function ReviewPage() {
         </div>
 
         {/* Review Items for Current Page */}
-        <div className="bg-white rounded-lg border border-gray-200 p-4 mb-6">
+        <div className="bg-zinc-900 rounded-lg border border-zinc-800 p-4 mb-6">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-semibold text-gray-900">
+            <h2 className="text-lg font-semibold text-slate-50">
               Notes for {currentPage?.name}
               {filteredItems.length > 0 && (
-                <span className="ml-2 text-sm font-normal text-gray-500">
+                <span className="ml-2 text-sm font-normal text-slate-500">
                   ({filteredItems.length} items)
                 </span>
               )}
@@ -234,7 +234,7 @@ export default function ReviewPage() {
           </div>
 
           {filteredItems.length === 0 ? (
-            <p className="text-gray-500 text-sm py-4 text-center">
+            <p className="text-slate-500 text-sm py-4 text-center">
               No notes for this page yet. Open the page, review it, and add notes above.
             </p>
           ) : (
@@ -242,20 +242,20 @@ export default function ReviewPage() {
               {filteredItems.map(item => {
                 const { label, color, icon: Icon } = actionLabels[item.action]
                 return (
-                  <div key={item.id} className="flex items-start gap-3 p-3 bg-gray-50 rounded-lg">
+                  <div key={item.id} className="flex items-start gap-3 p-3 bg-zinc-800/50 rounded-lg">
                     <span className={`inline-flex items-center gap-1 px-2 py-1 rounded text-xs font-medium border ${color}`}>
                       <Icon className="w-3 h-3" />
                       {label}
                     </span>
                     <div className="flex-1 min-w-0">
-                      <p className="font-medium text-gray-900">{item.element}</p>
+                      <p className="font-medium text-slate-50">{item.element}</p>
                       {item.comment && (
-                        <p className="text-sm text-gray-600 mt-1">{item.comment}</p>
+                        <p className="text-sm text-slate-400 mt-1">{item.comment}</p>
                       )}
                     </div>
                     <button
                       onClick={() => removeItem(item.id)}
-                      className="text-gray-400 hover:text-red-500 transition-colors"
+                      className="text-slate-500 hover:text-red-400 transition-colors"
                     >
                       <Trash2 className="w-4 h-4" />
                     </button>
@@ -268,25 +268,24 @@ export default function ReviewPage() {
 
         {/* Summary / Export */}
         {allItemsCount > 0 && (
-          <div className="bg-blue-50 rounded-lg border border-blue-200 p-4">
+          <div className="bg-emerald-900/20 rounded-lg border border-emerald-700/50 p-4">
             <div className="flex items-center justify-between mb-3">
-              <h2 className="text-lg font-semibold text-blue-900">
+              <h2 className="text-lg font-semibold text-emerald-300">
                 All Review Notes ({allItemsCount} total)
               </h2>
               <button
                 onClick={copyToClipboard}
-                className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-colors"
+                className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-3 py-1.5 rounded-lg text-sm font-medium transition-colors"
               >
                 <MessageSquare className="w-4 h-4" />
                 {copySuccess ? "Copied!" : "Copy for Claude"}
               </button>
             </div>
-            <p className="text-sm text-blue-700 mb-3">
+            <p className="text-sm text-emerald-400/70 mb-3">
               When done reviewing, click "Copy for Claude" and paste into the chat.
-              Claude will process all your feedback.
             </p>
-            <div className="bg-white rounded border border-blue-200 p-3 max-h-64 overflow-y-auto">
-              <pre className="text-xs text-gray-700 whitespace-pre-wrap font-mono">
+            <div className="bg-zinc-900 rounded border border-zinc-700 p-3 max-h-64 overflow-y-auto">
+              <pre className="text-xs text-slate-300 whitespace-pre-wrap font-mono">
                 {generateSummary()}
               </pre>
             </div>
@@ -294,12 +293,12 @@ export default function ReviewPage() {
         )}
 
         {/* Help */}
-        <div className="mt-6 p-4 bg-gray-100 rounded-lg">
-          <h3 className="font-medium text-gray-900 mb-2 flex items-center gap-2">
-            <AlertCircle className="w-4 h-4" />
+        <div className="mt-6 p-4 bg-zinc-800/50 rounded-lg border border-zinc-700">
+          <h3 className="font-medium text-slate-50 mb-2 flex items-center gap-2">
+            <AlertCircle className="w-4 h-4 text-slate-400" />
             How to Use
           </h3>
-          <ol className="text-sm text-gray-600 space-y-1 list-decimal list-inside">
+          <ol className="text-sm text-slate-400 space-y-1 list-decimal list-inside">
             <li>Select a page from the dropdown</li>
             <li>Click "Open Page" to view it in a new tab</li>
             <li>Review the page, note issues</li>
@@ -310,8 +309,8 @@ export default function ReviewPage() {
         </div>
 
         {/* Footer */}
-        <div className="mt-8 pt-4 border-t border-gray-200 text-center text-sm text-gray-500">
-          <a href="/rentals" className="text-blue-600 hover:underline">← Back to public site</a>
+        <div className="mt-8 pt-4 border-t border-zinc-800 text-center text-sm text-slate-500">
+          <a href="/rentals" className="text-emerald-400 hover:text-emerald-300">← Back to public site</a>
         </div>
       </div>
     </div>

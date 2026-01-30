@@ -4,6 +4,152 @@ This document tracks significant development sessions and decisions.
 
 ---
 
+## Session: 2026-01-31
+
+### Summary
+Google Business Profile optimization, video creation strategy with AI tools (Veo/Grok), and clarification of studio design features.
+
+### What Was Discovered
+
+**Google Business Profile Assessment:**
+- GBP exists but needs major updates
+- Established since Dec 1999 (25+ years credibility)
+- Basic info present: phone, address, hours
+- Critical missing: Studio rental services not listed!
+- Missing: Social profiles, amenities, payments, chat
+- Website URL points to offline danceconnexions.com
+
+**Website Status:**
+- danceconnexions.com is NOT currently live (connection refused)
+- Confirms "zero online presence" situation
+- New dc-web-new site not yet deployed
+
+**Studio A Clarification:**
+- Premium designed space (not basic)
+- Purple ceiling, red/green accents, orange seating
+- Professional theatrical aesthetic
+- Major competitive advantage
+
+### What Was Built
+
+**Review Tool:**
+- `/admin/review` — Dark theme page review tool
+- Allows systematic review of all pages
+- Export feedback for Claude
+
+**Video Analysis Tools:**
+- Python script to extract frames from videos
+- Successfully analyzed Veo-generated test video
+- Confirmed video quality suitable for professional use
+
+### Strategic Decisions
+
+**Class Offerings Strategy:**
+- List classes we CAN deliver (not just currently scheduled)
+- On-demand teacher model: K-pop, Hip-hop, Contemporary, Yoga
+- Legitimate to market capabilities even if teachers arranged on-demand
+
+**Video Creation Approach:**
+- Multi-shot strategy: 5-6 camera angles per room
+- Veo/Grok prompts focus only on camera movements
+- AI extracts room details from uploaded photos
+- Edit together into 30-60 sec showcases
+- CapCut recommended for editing
+
+**GBP Optimization Priority:**
+1. Add studio rental as service (highest priority)
+2. Update description (include classes AND rentals)
+3. Add missing dance styles (K-pop, Hip-hop, Contemporary)
+4. Link social profiles
+5. Add amenities, parking, payments
+6. Upload professional studio photos
+
+### Tools & Resources Identified
+
+**Video Creation:**
+- Google Veo 3.1 (via Gemini Advanced) - Primary tool
+- Grok Video (X platform) - Alternative
+- CapCut (FREE) - Editing tool
+- Ken Burns effect for static photos
+
+**Available Assets:**
+- Studio photos: C:\Users\nvntr\Pictures\DC Premises\Dance Studio Photos for Online Presence\
+- Test video: Successfully created with Veo
+- Website images: /public/images/rooms/
+
+### Documentation Updates
+
+**Knowledge Base Updates:**
+- Added 6 new supplemental entries (S-2026-01-31-01 to 06)
+- Updated VERSION.md to v1.3.0
+- Covered: GBP state, on-demand teachers, Studio A design, video tools, website status, asset locations
+
+### Key Insights
+
+**On GBP:**
+- Studio rental completely missing from profile
+- This explains why rentals don't appear in search
+- Adding rental services will open entirely new search visibility
+
+**On Video Content:**
+- Veo accurately recreates studios from photos
+- No need for expensive videography
+- Can scale video creation across all 4 studios
+
+**On Marketing:**
+- Studio A's premium design is major differentiator
+- Don't undersell facilities as "basic"
+- Design quality justifies pricing
+
+### Open Items for Future Sessions
+
+1. **Complete GBP Optimization:**
+   - Update description
+   - Add studio rental services
+   - Upload studio photos
+   - Link social profiles
+   - Add amenities
+
+2. **Create Videos for All Studios:**
+   - Generate multi-shot Veo videos for Studios A, B, C, D
+   - Edit into 30-60 sec showcases
+   - Upload to website and social media
+
+3. **Start Systematic Page Review:**
+   - Use /admin/review tool
+   - Review all rental pages
+   - Correct capacity and pricing descriptions
+   - Update feature lists
+
+4. **Deploy Website:**
+   - Complete content corrections
+   - Deploy to hosting
+   - Update GBP with new URL
+
+5. **Set Up Social Media:**
+   - Create Instagram account
+   - Create Facebook page
+   - Link to GBP
+   - Prepare launch content
+
+### Files Changed
+
+```
+Modified:
+- knowledge/supplemental/entries.md (added 6 new entries)
+- knowledge/master/VERSION.md (updated to v1.3.0)
+- docs/SESSION_NOTES.md (this file)
+
+Created:
+- media/frames/ (video frame extraction)
+```
+
+### Commits Recommended
+
+Should create commit with message: "Document GBP state, video strategy, and Studio A design features"
+
+---
+
 ## Session: 2026-01-30
 
 ### Summary

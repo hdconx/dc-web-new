@@ -1,10 +1,19 @@
 # Knowledge Base Version
 
-**Current Version:** v1.2.0
-**Last Updated:** 2026-01-30
-**Status:** Initial Release
+**Current Version:** v1.3.0
+**Last Updated:** 2026-01-31
+**Status:** Active Development
 
 ## Changelog
+
+### v1.3.0 (2026-01-31)
+- Added 6 new supplemental entries (S-2026-01-31-01 to 06)
+- Documented: Google Business Profile current state and optimization needs
+- Documented: On-demand teacher model for class offerings
+- Documented: Studio A premium design features (corrected misconception)
+- Documented: Video creation tools and strategy (Veo, Grok, CapCut)
+- Documented: Website currently offline status
+- Documented: Media asset locations and file organization
 
 ### v1.2.0 (2026-01-30)
 - Added marketing context entries (S-2026-01-30-01 to 04)

@@ -497,3 +497,279 @@ Since UGC and testimonials are not available initially, focus on:
 **AI Guidance:** When creating content, focus on FEATURES and POSSIBILITIES, not social proof. Show what the space can do, not what others say about it.
 
 ---
+
+## S-2026-01-31-01
+
+**Related Sections:** Marketing, Online Presence, Google Business
+**Status:** Confirmed
+**Type:** Current State Assessment
+
+### Content
+
+**Google Business Profile — Current State (as of 2026-01-31)**
+
+**What's Already Set Up:**
+- Business name: Dance Connexions
+- Primary category: Dance school
+- Phone: 012-322 3607
+- Address: 21-2, Jalan PJS 11/2, Bandar Sunway, 46150 Petaling Jaya, Selangor
+- Hours: Mon-Sat 11:00-22:30, Sun 12:00-21:00
+- Opening date: December 1999 (25+ years established)
+- Identifies as women-owned
+- Basic description (outdated)
+- Additional categories: Dance Shop, Yoga studio, Salsa Dance Class, Fitness centre, Ballroom dance instructor
+
+**Services Currently Listed:**
+- Adult lessons, Advanced classes, Beginner's classes
+- Choreography classes, Intermediate classes
+- Jazz, Private lessons, Youth classes
+- Salsa, Bachata, Latin Dance Classes
+
+**Critical Missing Elements:**
+- Studio rental services (not listed at all!)
+- Social media profiles (not linked)
+- Chat/messaging integration
+- Amenities (Wi-Fi, AC, parking not specified)
+- Payment methods not listed
+- Photos need updating with high-quality studio shots
+- K-pop, Hip-hop, Contemporary not listed
+- Wedding choreography not listed
+- Competition training not listed
+
+**Website Status:**
+- Currently points to danceconnexions.com (NOT live - connection refused)
+- Need to update once new site deployed
+
+**Priority Actions:**
+1. Add studio rental as service category
+2. Update description to include both classes AND rentals
+3. Add missing dance styles and services
+4. Link social media profiles
+5. Add amenities, parking, payment info
+6. Upload professional studio photos
+
+### Notes
+
+This represents the baseline state before optimization. GBP has been neglected but basic info is present. Major opportunity to improve discoverability by adding rental services and comprehensive information.
+
+---
+
+## S-2026-01-31-02
+
+**Related Sections:** Classes, Services, Booking
+**Status:** Confirmed
+**Type:** Business Strategy
+
+### Content
+
+**Class Offerings Strategy — On-Demand Teacher Model**
+
+Philosophy: List classes we CAN deliver, not just what's currently scheduled.
+
+**Current Regular Offerings:**
+- Ballroom, Latin, Salsa, Bachata
+- Jazz, Youth classes, Adult classes
+- Private lessons, Choreography
+
+**Can Offer On-Demand (arrange teacher if inquired):**
+- K-pop dance classes
+- Hip-hop
+- Contemporary
+- Other dance styles per request
+
+**Previously Offered, Can Offer Again:**
+- Yoga classes
+- Dance fitness (Zumba, Salsation, etc.)
+
+**Business Logic:**
+- We have the space and facilities
+- We can arrange qualified teachers
+- Better to list capabilities and fulfill on-demand
+- Than to restrict listings to currently scheduled classes only
+
+**AI Guidance:** When creating marketing materials or listing services, include K-pop, Hip-hop, Contemporary, Yoga, and Dance Fitness even if not currently scheduled. If inquired, respond: "We can arrange [class type] with qualified instructors. Let's discuss your needs."
+
+### Notes
+
+This demand-driven approach maximizes business opportunities without overpromising. As long as we can deliver (by arranging teachers), it's legitimate to list the service.
+
+---
+
+## S-2026-01-31-03
+
+**Related Sections:** Rooms, Marketing, Photography
+**Status:** Confirmed
+**Type:** Facility Clarification
+
+### Content
+
+**Studio A — Premium Design Features**
+
+**Important Correction:** Studio A is NOT a basic white-wall studio. It's a professionally designed premium space.
+
+**Actual Features:**
+- Purple/dark ceiling with recessed lighting
+- Red architectural accent strips
+- Green accent strips
+- White suspended ceiling panel with red border
+- Orange cushioned seating area
+- Red curtains
+- Polished light wooden floor
+- Floor-to-ceiling mirrors
+- Professional pendant lighting
+- Modern, theatrical aesthetic
+
+**Marketing Implication:**
+- This is a HIGH-END facility, not basic practice space
+- Design differentiates from competitors
+- Premium look justifies premium pricing
+- Photos and videos should showcase architectural features
+- This is a designed performance space, not converted room
+
+**Competitor Comparison:**
+- Most studios: basic mirrors + white walls
+- Dance Connexions Studio A: architectural design elements, color scheme, professional aesthetic
+
+**AI Guidance:** When describing Studio A, emphasize "professionally designed", "premium finishes", "architectural features", "theatrical quality space". Don't undersell by calling it "simple" or "basic".
+
+### Notes
+
+Photo location: C:\Users\nvntr\Pictures\DC Premises\Dance Studio Photos for Online Presence\02-STUDIO-A-MAIN-FLOOR\Overview\Room A.jpg
+
+This premium design is a major competitive advantage and should be highlighted in all marketing materials.
+
+---
+
+## S-2026-01-31-04
+
+**Related Sections:** Marketing, Media Creation, Website
+**Status:** Confirmed
+**Type:** Technical Tools
+
+### Content
+
+**Video Creation Tools & Strategy**
+
+**Available Tools:**
+
+1. **Google Veo 3.1** (Primary recommendation)
+   - Access via: Google Flow / Gemini Advanced (user has subscription)
+   - Capability: Generate 8-second videos from uploaded photos
+   - Strength: Accurately recreates actual studio appearance
+   - Test video created: /mnt/c/users/nvntr/documents/dc-web-new/media/Create_professional_looking_202601301338_cju2.mp4
+   - Quality: High-quality, realistic, suitable for professional use
+
+2. **Grok Video Generation** (Alternative)
+   - X/Twitter platform
+   - Similar capabilities to Veo
+   - User testing as backup option
+
+3. **CapCut** (Editing tool - FREE)
+   - Recommended for editing multiple Veo clips together
+   - Ken Burns effect for static photos
+   - Transitions, text overlays, music
+
+**Video Creation Strategy:**
+
+**Multi-Shot Approach:**
+- Generate 5-6 different camera angle shots per room (8 sec each)
+- Camera movements: dolly in/out, pan left/right, tilt up/down, diagonal sweep, zoom
+- Edit together into 30-60 second comprehensive showcase
+- More engaging than single static pan
+
+**Prompt Strategy for Veo/Grok:**
+- Upload studio photo
+- Prompt describes ONLY camera movement (not room details)
+- AI extracts room details from photo automatically
+- Example: "Slow smooth pan from left to right across the room, steady camera at eye level"
+
+**For Static Photos:**
+- Ken Burns effect (slow zoom + pan)
+- Multi-photo carousels
+- Photo + graphics overlays
+- Color grading to modernize look
+
+### Notes
+
+User has successfully tested Veo and achieved good results. This is viable path for creating professional video content without expensive videography equipment or services.
+
+---
+
+## S-2026-01-31-05
+
+**Related Sections:** Website, Online Presence, Marketing
+**Status:** Confirmed
+**Type:** Current State
+
+### Content
+
+**Website Status — Currently Offline**
+
+**danceconnexions.com Status:**
+- Connection refused (not responding)
+- Website is NOT currently live
+- Domain may exist but no hosting/server active
+
+**Implication:**
+- Zero online presence currently (confirms "starting from zero")
+- Google searches don't find Dance Connexions
+- Only competitors appear in search results
+- No existing web traffic or SEO to build on
+
+**New Website Project:**
+- Repository: dc-web-new
+- Location: C:\Users\nvntr\Documents\dc-web-new
+- Status: In development (not deployed)
+- Built with: Next.js, React, TypeScript
+
+**Next Steps:**
+1. Complete content review and corrections
+2. Deploy new website to hosting
+3. Update Google Business Profile with new URL
+4. Launch coordinated with social media setup
+
+### Notes
+
+The absence of a working website explains the complete lack of online visibility. The new website will be the foundation for entire online presence strategy.
+
+---
+
+## S-2026-01-31-06
+
+**Related Sections:** Media Assets, Content Management
+**Status:** Confirmed
+**Type:** File Organization
+
+### Content
+
+**Media Asset Locations**
+
+**Studio Photos:**
+- Primary location: C:\Users\nvntr\Pictures\DC Premises\Dance Studio Photos for Online Presence\
+- Structure: Organized by studio (02-STUDIO-A-MAIN-FLOOR, etc.)
+- Subfolders: Overview, Detail shots
+- Example: Room A.jpg at /02-STUDIO-A-MAIN-FLOOR/Overview/Room A.jpg
+- Additional photos: C:\Users\nvntr\Pictures\DC Premises\Studio Interiors\
+
+**Generated Videos:**
+- Location: C:\Users\nvntr\Documents\dc-web-new\media\
+- Test video: Create_professional_looking_202601301338_cju2.mp4
+- Extracted frames: /media/frames/frame_1.png to frame_5.png
+
+**Website Images:**
+- Public assets: /mnt/c/users/nvntr/documents/dc-web-new/public/images/rooms/
+- Used in: Room detail pages, galleries, previews
+
+**Documentation:**
+- Knowledge base: /knowledge/
+- Session notes: /docs/SESSION_NOTES.md
+- Review tracker: /docs/REVIEW_TRACKER.md
+- Online presence plan: /docs/ONLINE_PRESENCE_PLAN.md
+
+**AI Guidance:** When user requests media work, reference these standardized locations. High-quality studio photos exist and should be used for all marketing materials.
+
+### Notes
+
+File organization is good. Photos are available. Video creation workflow established. Ready to scale content creation across all 4 studios.
+
+---
