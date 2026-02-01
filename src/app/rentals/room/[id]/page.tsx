@@ -39,14 +39,14 @@ const customerScenarios = {
   "room-a": [
     { icon: "💃", title: "Dance Classes", desc: "Large group classes up to 50 students" },
     { icon: "🎬", title: "Video Production", desc: "Music videos, commercials, content shoots" },
-    { icon: "🏆", title: "Competition Prep", desc: "Dance crews preparing for showcases" },
-    { icon: "🎓", title: "Workshops", desc: "Masterclasses and certification training" },
+    { icon: "👗", title: "Fashion & Modeling", desc: "Runway training, fashion shows with stage" },
+    { icon: "🎓", title: "Workshops", desc: "Training sessions and group learning" },
   ],
   "room-d": [
     { icon: "📸", title: "Content Creation", desc: "TikTok, YouTube, Instagram shoots" },
-    { icon: "🧘", title: "Fitness Classes", desc: "Yoga, Pilates, HIIT sessions" },
+    { icon: "🧘", title: "Fitness Classes", desc: "Yoga, dance fitness, aerobics sessions" },
     { icon: "🎭", title: "Rehearsals", desc: "Theatre, acting, performance practice" },
-    { icon: "💄", title: "Beauty Workshops", desc: "Makeup masterclasses with mirrors" },
+    { icon: "💄", title: "Beauty Workshops", desc: "Makeup tutorials with mirrors" },
   ],
   "room-b": [
     { icon: "👯", title: "Small Groups", desc: "Private classes and small rehearsals" },
@@ -208,7 +208,7 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
                 </table>
               </div>
               <p className="text-sm text-slate-500 mt-3">
-                * Capacity varies based on activity intensity and setup requirements
+                * These capacities are just a rough guide and vary based on activity type and setup requirements
               </p>
             </section>
 
@@ -254,22 +254,6 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
               </div>
             </section>
 
-            {/* Rules & Restrictions */}
-            {room.restrictions && room.restrictions.length > 0 && (
-              <section>
-                <h2 className="text-2xl font-semibold text-slate-50 mb-6">Studio Rules</h2>
-                <div className="bg-amber-900/20 border border-amber-700/30 rounded-lg p-5">
-                  <ul className="space-y-2">
-                    {room.restrictions.map((rule, idx) => (
-                      <li key={idx} className="flex items-start gap-3 text-amber-200">
-                        <span className="text-amber-500">•</span>
-                        {rule}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </section>
-            )}
 
             {/* Gallery Placeholder */}
             <section>
@@ -300,20 +284,32 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
               {/* Pricing Card */}
               <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-slate-50 mb-4">Pricing</h3>
-                <div className="space-y-3 mb-6">
-                  <div className="flex justify-between">
-                    <span className="text-slate-400">Hourly rate</span>
-                    <span className="text-slate-50 font-semibold">From {formatPrice(room.baseHourlyRate)}</span>
+                <div className="mb-4">
+                  <div className="flex items-baseline gap-2 mb-2">
+                    <span className="text-2xl font-bold text-emerald-400">
+                      {formatPrice(room.baseHourlyRate)}
+                    </span>
+                    <span className="text-slate-400">/hour</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span className="text-slate-400">Half-day (4hrs)</span>
-                    <span className="text-emerald-400">15% off</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-slate-400">Full-day (8hrs)</span>
-                    <span className="text-emerald-400">25% off</span>
-                  </div>
+                  <p className="text-sm text-slate-500">Standard rate before discounts</p>
                 </div>
+
+                <div className="mb-6 bg-emerald-900/20 border border-emerald-700/30 rounded-lg p-4">
+                  <p className="text-emerald-300 text-sm font-medium mb-2">
+                    💡 Substantial discounts available:
+                  </p>
+                  <ul className="text-xs text-slate-300 space-y-1">
+                    <li>• Multi-hour bookings</li>
+                    <li>• Weekly recurring classes</li>
+                    <li>• Long-term commitments</li>
+                    <li>• Students, seniors, members</li>
+                    <li>• Plus many other discount opportunities!</li>
+                  </ul>
+                  <p className="text-xs text-emerald-200/70 mt-3 italic">
+                    Special promos during festive seasons (New Year, etc.). Contact us to discuss your needs!
+                  </p>
+                </div>
+
                 <a
                   href={getWhatsAppForRoom(room.name)}
                   target="_blank"
@@ -324,7 +320,7 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
                   Check Availability
                 </a>
                 <p className="text-xs text-slate-500 text-center mt-3">
-                  Recurring & long-term rates available
+                  Contact us for your personalized quote
                 </p>
               </div>
 
@@ -340,10 +336,10 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <Link
-                    href="/rentals/pricing"
+                    href="/rentals/gallery"
                     className="flex items-center justify-between py-2 text-slate-300 hover:text-emerald-400 transition-colors"
                   >
-                    Full Pricing Details
+                    Studio Gallery
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                   <Link

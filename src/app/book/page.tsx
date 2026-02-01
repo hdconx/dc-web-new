@@ -80,10 +80,10 @@ export default function BookPage() {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <Link
-              href="/rentals/pricing"
+              href="/rentals/compare"
               className="inline-flex items-center justify-center gap-2 text-slate-400 hover:text-emerald-400 transition-colors"
             >
-              View Pricing
+              Compare Rooms
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>

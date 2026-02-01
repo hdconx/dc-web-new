@@ -911,3 +911,548 @@ Created comprehensive step-by-step GBP optimization guide at `/docs/GBP_OPTIMIZA
 GBP was severely underutilized. Primary business (dance classes) represented, but secondary revenue stream (studio rentals) completely missing from profile.
 
 ---
+
+## S-2026-02-01-01
+
+**Related Sections:** Rooms, Equipment
+**Status:** Confirmed
+**Type:** Addition
+**Date:** 2026-02-01
+
+### Content
+
+**Updated Facilities and Equipment Inventory**
+
+**Included with Every Booking:**
+- Professional sound system
+- Air-conditioning & ventilation
+- Wall-to-wall mirrors
+- HPL AC3 Grade Flooring (professional dance flooring)
+- Free Wi-Fi throughout premises
+- Parking (free after office hours, weekends & holidays)
+- Reverse Osmosis Water Dispenser
+
+**Available Upon Request:**
+- Projector & screen (Room A & D)
+- Tripods & lighting equipment
+- Photography/video accessories
+- Wireless microphone (Room A)
+- Custom room setup assistance
+- Large Cooler For F&B
+- Equipment Storage (for regular renters)
+- Tables and Chairs
+- Stage platform (Room A)
+- Colorful LED Lighting / Controlled RGB lighting (Room A)
+
+### Notes
+
+Equipment list updated during 2026-02-01 landing page review. HPL AC3 Grade flooring and RO water dispenser are standard amenities that differentiate the studios. Stage platform and RGB lighting in Room A enable fashion shows, modeling training, and theatrical productions.
+
+---
+
+## S-2026-02-01-02
+
+**Related Sections:** Usage Rules, Target Customers
+**Status:** Confirmed
+**Type:** Clarification - Activities NOT Suitable
+**Date:** 2026-02-01
+
+### Content
+
+**Activities Explicitly NOT Suitable for Our Studios**
+
+The following activities should NOT be marketed or accepted due to safety concerns or competitive disadvantages:
+
+**NOT Suitable - Safety Reasons:**
+- **Pilates**: Cannot compete with nearby well-equipped Pilates studios
+- **Martial arts / Boxing**: Wall-to-wall mirrors are fragile; no rubber protection mats; dangerous for customers
+- **Ballet**: No barres/bars available; equipment-dependent
+- **Barre classes**: No equipment; not popular in local market
+- **High-impact activities requiring protective flooring**: No specialized mats
+
+**Why These Are Restricted:**
+- Mirrors cover 3 walls (Room A) and are fragile
+- No protective rubber mats or padding
+- No specialized equipment (barres, boxing bags, etc.)
+- Better-equipped competitors nearby for some activities
+
+**Safe Alternatives to Market:**
+- Dance fitness (Zumba, Salsation) - YES
+- Yoga - YES (gentle, mirror-friendly)
+- Fitness training & personal training - YES
+- Stretching & flexibility training - YES
+
+### Notes
+
+Critical safety clarification added 2026-02-01. Studios are purpose-built for dance and movement-based activities that benefit from mirrors, NOT for impact sports or activities requiring specialized protective equipment.
+
+---
+
+## S-2026-02-01-03
+
+**Related Sections:** Booking, Pricing
+**Status:** Confirmed
+**Type:** Policy Update
+**Date:** 2026-02-01
+
+### Content
+
+**Flexible Booking Policies - Event-Specific Approach**
+
+**Deposit & Payment:**
+- NOT a fixed 50% deposit rule
+- Deposit and balance payment are **event-specific**
+- Factors considered: proximity of event, type of setup required, recurring status, customer relationship
+- Policy: "Contact us for details applicable to your event"
+
+**Payment Methods Accepted:**
+- DuitNow
+- eWallet (Touch 'n Go / TnG)
+- Bank Transfer
+- Cash
+
+**Cancellation & Rescheduling:**
+- NOT a rigid 48hr/24hr refund table
+- Flexible policies depending on: event proximity, setup type, recurring status, other factors
+- Approach: "Contact us to discuss your specific situation"
+
+**Extensions:**
+- Subject to room availability
+- Can be extended at same hourly rate
+- No requirement for full 1-hour increments (can be flexible)
+
+**Setup & Cleanup Time:**
+- NOT automatically included for all bookings
+- Provided for specific booking types
+- Sometimes complimentary additional hours
+- Sometimes purchasable as add-on
+- Decision made case-by-case
+
+### Notes
+
+Policy flexibility clarified during 2026-02-01 review. Owner prefers accommodating, personalized approach over rigid published rules. This allows negotiation and customization based on customer needs and event requirements.
+
+---
+
+## S-2026-02-01-04
+
+**Related Sections:** Rooms, Target Customers
+**Status:** Confirmed
+**Type:** Enhancement
+**Date:** 2026-02-01
+
+### Content
+
+**Room A - Large Studio Enhanced Features**
+
+**New/Clarified Features:**
+- **Controlled RGB Lighting**: Enables fashion shows, theatrical productions, parties, content creation with customizable ambiance
+- **Stage/Platform Available**: Supports modeling runway training, catwalk practice, fashion shows, performances
+- **Purpose-Built for Visual Activities**: 3 walls of mirrors (10ft wide × 7ft high) specifically designed for activities requiring visual feedback
+
+**Expanded Target Markets:**
+- Modeling runway training
+- Catwalk practice
+- Fashion shows
+- Theatrical productions
+- Dance classes (all styles except ballet)
+- Fitness workshops
+- Performance training
+- Auditions
+- Large events
+
+**Removed from Marketing:**
+- "Masterclasses" (term is unclear to general public)
+
+### Notes
+
+Room A positioning enhanced to highlight fashion/modeling capabilities, leveraging RGB lighting and stage platform. These features differentiate Room A as suitable for professional fashion and theatrical events, not just dance.
+
+---
+
+## S-2026-02-01-05
+
+**Related Sections:** Rooms
+**Status:** Confirmed
+**Type:** Clarification
+**Date:** 2026-02-01
+
+### Content
+
+**Room C - Small Studio Privacy Emphasis**
+
+**Updated Positioning:**
+- Feature description changed from "Intimate environment" to **"Private & intimate setting"**
+- Emphasis: Suitable for rentals requiring privacy
+- Target use cases: one-on-one classes, personal training, private practice
+- Ideal for activities where privacy is a key requirement
+
+### Notes
+
+Room C repositioned to emphasize privacy as a selling point, not just size. Appeals to customers seeking personal training, private lessons, or confidential practice sessions.
+
+---
+
+## S-2026-02-01-06
+
+**Related Sections:** Target Customers, Marketing
+**Status:** Confirmed
+**Type:** Content Strategy
+**Date:** 2026-02-01
+
+### Content
+
+**Refined Activity Categories for Marketing**
+
+**Principles Applied:**
+1. Use popular, recognizable examples (not niche terms)
+2. Show breadth without appearing limited
+3. Avoid unclear terminology ("masterclasses", "movement workshops", "stage movement coaching")
+4. Include obvious mainstream activities
+5. Don't list activities requiring specialized heavy equipment
+
+**Dance & Movement:**
+- Removed: Ballet (no barres)
+- Emphasis: Hip-hop, contemporary, ballroom, K-pop, line dancing, belly dancing, Latin dance
+
+**Fitness & Wellness:**
+- Lead with: Dance fitness (Zumba, Salsation)
+- Include: Yoga, fitness training, aerobics, stretching
+- Removed: Pilates (can't compete), barre (no equipment), martial arts (safety), conditioning (too specific)
+
+**Performing Arts:**
+- Added: Theatre & drama classes, fashion shows, catwalk practice, talent showcases
+- Removed: "Performance practice & run-throughs" (unclear), "Stage movement coaching" (unclear)
+
+**Content Creation:**
+- Specify platforms: TikTok, Instagram Reels, YouTube
+- Include: Product launches, livestream sessions, online course recording
+- Broadened from just "dance & fitness photography"
+
+**Workshops & Studio Parties:**
+- Section renamed from "Workshops & Events"
+- Added: Birthday parties, team building, corporate events
+- Removed: "Masterclasses" (unclear), "movement workshops" (unclear), "small group learning" (misleading about capacity)
+
+### Notes
+
+Content strategy refined during 2026-02-01 landing page review. Focus shifted to mainstream, popular activities with clear terminology. Removes confusion and broadens appeal to wider audience.
+
+---
+
+## S-2026-02-01-07
+
+**Related Sections:** Pricing
+**Status:** Confirmed
+**Type:** Clarification
+**Date:** 2026-02-01
+
+### Content
+
+**Base Hourly Rates Clarity**
+
+**Table Header Changes:**
+- Subtitle: "One-hour rental rates (starting prices)" 
+- Column header: "Per Hour" (not "From")
+
+**Purpose:**
+Clearly communicate that published rates are for ONE HOUR rentals, avoiding confusion about whether rates are per hour, per session, or per day.
+
+**Discount Messaging:**
+"Substantial discounts available" for:
+- Multi-hour bookings
+- Weekly classes  
+- Long-term commitments
+- Students, seniors, studio members, non-profits, regulars
+- Off-peak timing, bulk bookings
+- Custom packages for unique needs
+
+### Notes
+
+Pricing transparency improved to set correct expectations upfront. Word "substantial" emphasizes that significant savings are available for most renters.
+
+---
+## S-2026-02-02-01
+
+**Related Sections:** Pricing
+**Status:** Confirmed
+**Type:** Strategic Change
+**Date:** 2026-02-02
+
+### Content
+
+**Pricing Page Strategy - Shift to Customized Quotes Only**
+
+**Decision:** 
+Removed percentage-based discount tables from public pricing page. Strategy shifted to personalized pricing upon contact only.
+
+**Rationale:**
+1. Discount criteria is complex and scenario-dependent
+2. Public transparency makes it difficult to justify different pricing strategies for different customers
+3. Different rental types require different considerations (event proximity, setup, customer type, duration, frequency)
+4. Better to keep discount criteria internal and provide correct rate upon customer contact
+
+**New Pricing Page Approach:**
+- Explains WHY pricing is customized (affordability, flexibility, willingness to discuss needs)
+- Shows base rates as reference starting points only
+- Emphasizes substantial discounts available
+- Encourages contact for personalized quotes
+- Lists seasonal promotions and special rates
+
+**All "View Pricing" Links Removed From:**
+- Rentals landing page (quick links section & pricing section)
+- Rooms listing page
+- Room detail pages (replaced with "Studio Gallery")
+- Compare page (replaced with single "View All Rooms" button)
+- Book page (replaced with "Compare Rooms")
+
+### Notes
+
+Major strategic shift decided during 2026-02-02 gallery/compare/pricing page review. Prioritizes flexibility and relationship-building over rigid published rates.
+
+---
+
+## S-2026-02-02-02
+
+**Related Sections:** Rooms
+**Status:** Confirmed
+**Type:** Technical Correction
+**Date:** 2026-02-02
+
+### Content
+
+**Room Features & Equipment - Technical Specifications Corrected**
+
+**Flooring Clarification:**
+- REMOVED: "Sprung wooden dance floor" (incorrect - we don't have sprung flooring)
+- CORRECT: "High-quality HPL AC3 Grade flooring with rubber underlay"
+- Applied to: All rooms (A, B, C, D)
+
+**Mirror Configuration:**
+- All rooms have "Wall-to-wall mirrors (3 walls)" consistently
+- Previous inconsistent descriptions (2 walls, unspecified) corrected
+
+**Changing Rooms / Privacy:**
+- Room A: "Direct access to changing rooms" (only Room A has this)
+- Room B, C, D: "Privacy curtains available" (no dedicated changing rooms)
+
+**Connected Rooms:**
+- Room B text updated: "Connected to Room A (can be opened for larger events)"
+- Clarifies that Room B can function as extension of Room A
+
+**Equipment Removed:**
+- Portable speaker (removed from all rooms - not available)
+- "Separate entrance for privacy" (removed from Room D - not a key differentiator)
+
+**Equipment Available for ALL Rooms (from reception area):**
+- Large cooler for F&B
+- Tripods
+- Photography/videography lighting
+- Tables and chairs
+- Equipment storage capability
+
+### Notes
+
+Technical accuracy corrections made during compare page review. Ensures all room specifications are accurate and consistent across all pages.
+
+---
+
+## S-2026-02-02-03
+
+**Related Sections:** Rooms, Capacity
+**Status:** Confirmed
+**Type:** Clarification
+**Date:** 2026-02-02
+
+### Content
+
+**Capacity Guidelines - Specific Scenarios Instead of Broad Categories**
+
+**Problem with Previous Approach:**
+- Broad terms like "Dance" are too generic
+- Ballroom dancing (couples) has different capacity than K-pop (individual dancers)
+- Different activities have very different space requirements
+
+**New Approach - Specific Realistic Scenarios:**
+- "K-pop / Hip-hop dance classes" (individual dancers, active movement)
+- "Ballroom dancing (couples)" - capacity shown as number of couples, not individuals
+- "Workshops & training sessions" (seated/semi-active)
+- "Yoga / Zumba / Group fitness" (mat-based or structured exercise)
+- "Content creation / Video shoots" (crew, equipment, subjects)
+
+**Capacity Display Format:**
+- REMOVED: Minimum capacity (not necessary)
+- SHOW: Ideal capacity (bold) and maximum capacity (smaller text)
+- Example: "25 (max 35)" means 25 ideal, 35 maximum
+
+**Disclaimer Added:**
+"These are ballpark guidance figures only. Actual capacity varies based on activity type, setup requirements, and comfort preferences."
+
+### Notes
+
+Shift from generic to specific scenarios provides more realistic guidance for renters. Helps them visualize actual use cases rather than abstract categories.
+
+---
+
+## S-2026-02-02-04
+
+**Related Sections:** Rooms
+**Status:** Confirmed
+**Type:** Content Refinement
+**Date:** 2026-02-02
+
+### Content
+
+**Room "Best For" Lists - Consolidated and Reduced**
+
+**Previous Problem:**
+- 22 separate use cases across all rooms
+- High redundancy (e.g., "Content creation" vs "Content creation (large scale)" vs "Solo content creation")
+- Overlapping categories ("Small group classes" vs "Medium dance classes")
+- Too long for compare page
+
+**New Consolidated List (7 main categories):**
+1. **Group classes with size ranges**
+   - "Large group classes (30-50 people)" - Room A
+   - "Medium group classes (10-25 people)" - Room D
+   - "Small group classes (6-15 people)" - Room B
+   - "Small group classes (2-8 people)" - Room C
+
+2. **Workshops and training events** - Room A, D
+
+3. **Private rehearsals and coaching** - Room B, C, D
+
+4. **Fitness and wellness classes** - Room A, D
+
+5. **Video and content production** - All rooms
+
+6. **Dance rehearsals and performances** - Room A
+
+7. **Fashion shows and runway practice** - Room A only
+
+8. **Theatrical productions** - Room A only
+
+**Removed Redundant Items:**
+- "Extension of Room A events" (only applicable to Room B, too specific)
+- Separate "Private practice sessions" and "1-on-1 lessons" (consolidated into "Private rehearsals and coaching")
+- "Audition preparation" (covered under private coaching)
+- Multiple variations of content creation
+
+### Notes
+
+Streamlined from 22 items to ~7-8 core categories. Easier to scan on compare page while maintaining clarity about which rooms suit which activities.
+
+---
+
+## S-2026-02-02-05
+
+**Related Sections:** Rooms, Navigation
+**Status:** Confirmed
+**Type:** Organizational Change
+**Date:** 2026-02-02
+
+### Content
+
+**Room Sorting Order - Alphabetical (A, B, C, D)**
+
+**Decision:** 
+Changed from size-based sorting to alphabetical sorting.
+
+**Previous Order (by size):**
+- Room A (1,200 sqft) - sortOrder: 1
+- Room D (700 sqft) - sortOrder: 2
+- Room B (400 sqft) - sortOrder: 3
+- Room C (300 sqft) - sortOrder: 4
+
+**New Order (alphabetical):**
+- Room A - sortOrder: 1
+- Room B - sortOrder: 2
+- Room C - sortOrder: 3
+- Room D - sortOrder: 4
+
+**Rationale:**
+- Alphabetical order is easier to remember and navigate
+- Consistent with natural room naming convention
+- Trade-off: Room D (2nd largest) now appears last, but simplicity wins
+
+**Applies To:**
+- Compare page column order
+- Rooms listing page
+- Landing page studio cards
+- All navigation and room selection interfaces
+
+### Notes
+
+User chose alphabetical over size-based sorting when presented with options. Prioritizes simplicity and memorability over showcasing room hierarchy by size.
+
+---
+
+## S-2026-02-02-06
+
+**Related Sections:** Technical, Gallery
+**Status:** Confirmed
+**Type:** Bug Fixes
+**Date:** 2026-02-02
+
+### Content
+
+**Gallery Page Technical Improvements**
+
+**Accessibility Fix:**
+- Added DialogTitle component to gallery lightbox dialog
+- Title is visually hidden but accessible to screen readers
+- Resolves Radix UI accessibility warning about missing DialogTitle
+- Title format: "[Image caption] - [Room name]"
+
+**Photo Centering Improvement:**
+- Updated dialog content styling to properly center images in viewport
+- Added flex container with justify-center and items-center
+- Adjusted image max dimensions for better visual balance
+- Images now properly centered vertically and horizontally in lightbox
+
+**Removed Incorrect Photos:**
+- Room B: Removed placeholder "/medium-dance-studio-connected-to-larger-space.jpg" (not actual Room B photo)
+- Room C: Removed placeholder "/small-intimate-dance-studio-with-mirrors.jpg" (not actual Room C photo)
+- Both rooms now show only verified actual photos
+- TODO comments added for future photo additions
+
+**Future Content Needed:**
+- More photos for all rooms (A, B, C, D) galleries
+- Video tours for all rooms (mentioned in gallery page as "Coming Soon")
+
+### Notes
+
+Technical fixes and content cleanup during gallery page review. Ensures accessibility compliance and removes misleading placeholder images.
+
+---
+
+## S-2026-02-02-07
+
+**Related Sections:** Pricing, Rooms
+**Status:** Confirmed
+**Type:** Addition
+**Date:** 2026-02-02
+
+### Content
+
+**Additional Discount Opportunities and Seasonal Promos**
+
+**Room A Pricing Section Enhanced:**
+Added notes beyond the standard discount categories:
+- "Plus many other discount opportunities!"
+- "Special promos during festive seasons (New Year, etc.). Contact us to discuss your needs!"
+
+**Rationale:**
+- Standard discount list (multi-hour, weekly, long-term, students/seniors/members) doesn't capture all scenarios
+- Many edge cases and special circumstances warrant discounts
+- Seasonal promotions (New Year, CNY, etc.) are planned but not yet defined
+- Keeps door open for negotiations without committing to specific percentage discounts
+
+**Reminder for Future:**
+New Year promo strategy needs discussion and formal planning.
+
+### Notes
+
+Acknowledges that discount opportunities extend beyond the published list. Maintains flexibility while setting positive expectations for potential renters.
+
+---

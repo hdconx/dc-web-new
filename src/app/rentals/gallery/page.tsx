@@ -9,6 +9,7 @@ import { getAvailableRooms } from "@/lib/config"
 import {
   Dialog,
   DialogContent,
+  DialogTitle,
 } from "@/components/ui/dialog"
 
 // Gallery images for each room (using actual photos)
@@ -22,11 +23,11 @@ const galleryImages: Record<string, { src: string; caption: string }[]> = {
   ],
   "room-b": [
     { src: "/rentals-hero/01-MARKETING-SELECTED/02-Studio-B.jpg", caption: "Studio B - connected to Room A" },
-    { src: "/medium-dance-studio-connected-to-larger-space.jpg", caption: "Intimate studio space" },
+    // TODO: Add more Room B photos
   ],
   "room-c": [
     { src: "/rentals-hero/01-MARKETING-SELECTED/03-Studio-C.jpg", caption: "Studio C - compact & private" },
-    { src: "/small-intimate-dance-studio-with-mirrors.jpg", caption: "Perfect for private practice" },
+    // TODO: Add more Room C photos
   ],
   "room-d": [
     { src: "/rentals-hero/01-MARKETING-SELECTED/04-Studio-D.jpg", caption: "Studio D - standalone medium studio" },
@@ -186,10 +187,13 @@ export default function GalleryPage() {
       {/* Lightbox Dialog */}
       <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
         <DialogContent
-          className="max-w-[95vw] max-h-[95vh] w-auto h-auto p-0 bg-black/95 border-none"
+          className="max-w-[95vw] max-h-[95vh] w-auto h-auto p-0 bg-black/95 border-none flex items-center justify-center"
           showCloseButton={false}
         >
-          <div className="relative">
+          <DialogTitle className="sr-only">
+            {currentImages[lightboxIndex]?.caption || "Studio image"} - {currentRoom?.name}
+          </DialogTitle>
+          <div className="relative w-full h-full flex items-center justify-center">
             {/* Close button */}
             <button
               onClick={() => setLightboxOpen(false)}
@@ -218,11 +222,11 @@ export default function GalleryPage() {
 
             {/* Image */}
             {currentImages[lightboxIndex] && (
-              <div className="flex flex-col items-center">
+              <div className="flex flex-col items-center justify-center min-h-[50vh]">
                 <img
                   src={currentImages[lightboxIndex].src}
                   alt={currentImages[lightboxIndex].caption}
-                  className="max-w-[90vw] max-h-[80vh] object-contain"
+                  className="max-w-[85vw] max-h-[75vh] w-auto h-auto object-contain"
                   onError={(e) => {
                     e.currentTarget.src = "/placeholder.jpg"
                   }}

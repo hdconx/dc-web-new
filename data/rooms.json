@@ -25,22 +25,25 @@
       "features": [
         "Wall-to-wall mirrors (3 walls)",
         "Professional sound system with wireless microphone",
+        "Controlled RGB lighting",
+        "Stage/Platform available",
         "Projector & screen available",
-        "Air-conditioned with 6 ceiling fans",
-        "Sprung wooden dance floor",
-        "Controllable LED lighting",
+        "Air-conditioned",
+        "High-quality HPL AC3 Grade flooring with rubber underlay",
         "Direct access to changing rooms"
       ],
       "equipment": {
-        "included": ["Sound system", "Wireless mic", "Basic lighting"],
-        "available": ["Projector", "Screen", "Additional mics", "Tripods"]
+        "included": ["Sound system", "Wireless mic", "RGB lighting"],
+        "available": ["Projector", "Screen", "Stage platform", "Additional mics", "Tripods", "Colorful LED lighting", "Tables and chairs", "Large cooler for F&B", "Equipment storage"]
       },
       "bestFor": [
-        "Large group dance classes",
-        "Workshops and masterclasses",
-        "Dance rehearsals and showcases",
-        "Fitness boot camps",
-        "Content creation (large scale)"
+        "Large group classes (30-50 people)",
+        "Workshops and training events",
+        "Dance rehearsals and performances",
+        "Fitness and wellness classes",
+        "Video and content production",
+        "Fashion shows and runway practice",
+        "Theatrical productions"
       ],
       "restrictions": [
         "No food/drinks on dance floor",
@@ -48,9 +51,9 @@
         "No high heels that may damage floor"
       ],
       "images": [
-        "/images/rooms/room-a-main.jpg",
-        "/images/rooms/room-a-mirror.jpg",
-        "/images/rooms/room-a-full.jpg"
+        "/rentals-hero/Studio A-Main.jpg",
+        "/rentals-hero/Studio A - 1.jpg",
+        "/rentals-hero/Studio A - 3.jpg"
       ],
       "available": true,
       "sortOrder": 1
@@ -73,35 +76,33 @@
       },
       "baseHourlyRate": 80,
       "features": [
-        "Wall-to-wall mirrors (2 walls)",
+        "Wall-to-wall mirrors (3 walls)",
         "Professional sound system",
         "Projector & screen available",
         "Air-conditioned",
-        "Wooden dance floor",
-        "Controllable lighting",
-        "Separate entrance for privacy"
+        "High-quality HPL AC3 Grade flooring with rubber underlay",
+        "Controllable lighting"
       ],
       "equipment": {
         "included": ["Sound system", "Basic lighting"],
-        "available": ["Projector", "Screen", "Tripods", "Ring lights"]
+        "available": ["Projector", "Screen", "Tripods", "Photography/videography lighting", "Tables and chairs", "Large cooler for F&B", "Equipment storage"]
       },
       "bestFor": [
-        "Medium dance classes",
+        "Medium group classes (10-25 people)",
         "Private group rehearsals",
-        "Fitness training",
-        "Content creation",
-        "Small workshops"
+        "Fitness and wellness classes",
+        "Video and content production",
+        "Workshops and training events"
       ],
       "restrictions": [
         "No food/drinks on dance floor",
         "Proper dance/indoor footwear only"
       ],
       "images": [
-        "/images/rooms/room-d-main.jpg",
-        "/images/rooms/room-d-setup.jpg"
+        "/rentals-hero/studio-d-medium-standalone.jpg"
       ],
       "available": true,
-      "sortOrder": 2
+      "sortOrder": 4
     },
     {
       "id": "room-b",
@@ -121,22 +122,23 @@
       },
       "baseHourlyRate": 60,
       "features": [
-        "Wall-to-wall mirrors",
-        "Sound system",
+        "Wall-to-wall mirrors (3 walls)",
+        "Professional sound system",
+        "Adjustable lighting",
         "Air-conditioned",
-        "Connects to Room A (can be opened)",
-        "Wooden dance floor"
+        "Connected to Room A (can be opened for larger events)",
+        "High-quality HPL AC3 Grade flooring with rubber underlay",
+        "Privacy curtains available"
       ],
       "equipment": {
         "included": ["Sound system"],
-        "available": ["Portable speakers", "Tripods"]
+        "available": ["Tripods", "Photography/videography lighting", "Tables and chairs", "Large cooler for F&B", "Equipment storage"]
       },
       "bestFor": [
-        "Small group classes",
-        "Private rehearsals",
-        "1-on-1 coaching",
-        "Content creation",
-        "Extension of Room A events"
+        "Small group classes (6-15 people)",
+        "Private rehearsals and coaching",
+        "Video and content production",
+        "Extension of Room A events (connected rooms)"
       ],
       "restrictions": [
         "No food/drinks on dance floor",
@@ -144,10 +146,10 @@
       ],
       "connectedTo": "room-a",
       "images": [
-        "/images/rooms/room-b-main.jpg"
+        "/rentals-hero/studio-b-medium-connected.jpg"
       ],
       "available": true,
-      "sortOrder": 3
+      "sortOrder": 2
     },
     {
       "id": "room-c",
@@ -166,31 +168,31 @@
       },
       "baseHourlyRate": 50,
       "features": [
-        "Wall-to-wall mirrors",
-        "Sound system",
+        "Wall-to-wall mirrors (3 walls)",
+        "Professional sound system",
         "Air-conditioned",
-        "Intimate environment",
-        "Wooden floor"
+        "Private & intimate setting",
+        "High-quality HPL AC3 Grade flooring with rubber underlay",
+        "Privacy curtains available"
       ],
       "equipment": {
         "included": ["Sound system"],
-        "available": ["Portable speaker", "Tripod"]
+        "available": ["Tripods", "Photography/videography lighting", "Tables and chairs", "Large cooler for F&B", "Equipment storage"]
       },
       "bestFor": [
-        "Private practice sessions",
-        "1-on-1 lessons",
-        "Small group rehearsals",
-        "Solo content creation",
-        "Audition preparation"
+        "Private practice and self-tape recording",
+        "1-on-1 coaching and personal training",
+        "Small group classes (2-8 people)",
+        "Video and content production"
       ],
       "restrictions": [
         "No food/drinks on dance floor"
       ],
       "images": [
-        "/images/rooms/room-c-main.jpg"
+        "/rentals-hero/studio-c-small.jpg"
       ],
       "available": true,
-      "sortOrder": 4
+      "sortOrder": 3
     }
   ]
 }

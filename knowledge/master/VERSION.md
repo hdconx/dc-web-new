@@ -1,10 +1,30 @@
 # Knowledge Base Version
 
-**Current Version:** v1.4.0
-**Last Updated:** 2026-01-31
+**Current Version:** v1.6.0
+**Last Updated:** 2026-02-02
 **Status:** Active Development
 
 ## Changelog
+
+### v1.6.0 (2026-02-02 - Gallery, Compare & Pricing Page Review)
+- Added 7 new supplemental entries (S-2026-02-02-01 to 07)
+- Documented: Pricing page strategy shift to customized quotes only (no public percentage-based discounts)
+- Documented: Room features & equipment technical corrections (HPL flooring, mirrors, privacy curtains)
+- Documented: Capacity guidelines with specific scenarios (K-pop, ballroom, yoga, etc.)
+- Documented: Room "Best For" lists consolidated from 22 to 7-8 core categories
+- Documented: Room sorting changed to alphabetical (A, B, C, D)
+- Documented: Gallery page technical improvements (accessibility, centering, removed placeholder photos)
+- Documented: Additional discount opportunities and seasonal promos acknowledgment
+
+### v1.5.0 (2026-02-01 - Landing Page Review)
+- Added 7 new supplemental entries (S-2026-02-01-01 to 07)
+- Documented: Updated facilities and equipment inventory (HPL flooring, RO water, RGB lighting, stage)
+- Documented: Activities NOT suitable (Pilates, martial arts, ballet, boxing - safety reasons)
+- Documented: Flexible booking policies (event-specific deposits, cancellation, extensions)
+- Documented: Room A enhancements (RGB lighting, stage/platform, modeling/fashion capabilities)
+- Documented: Room C privacy emphasis
+- Documented: Refined activity categories for marketing (removed unclear terms)
+- Documented: Base hourly rates clarity improvements
 
 ### v1.4.0 (2026-01-31 - Session 2)
 - Added 3 new supplemental entries (S-2026-01-31-07 to 09)

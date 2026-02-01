@@ -31,20 +31,22 @@ export default function RentalsPage() {
       subtitle: "Large Studio",
       sqft: "1,200 sq ft",
       rate: "From RM 120/hour",
-      bestFor: "Large classes, workshops, rehearsals, performances",
+      bestFor: "Large classes, workshops, rehearsals, performances, events",
       image: "/rentals-hero/Studio A-Main.jpg",
       features: [
         "Mirrors covering 3 walls",
         "Professional sound + wireless mic",
+        "Controlled RGB lighting",
+        "Stage/Platform available",
         "Projector & screen available",
-        "Air-conditioned + 6 fans",
+        "Air-conditioned",
       ],
       details: {
         dimensions: "Approx. 40ft x 50ft",
         capacity: "40-60 people (depending on activity type)",
-        equipment: "High-quality sound system, wireless microphone, projector & large screen",
+        equipment: "High-quality sound system, wireless microphone, projector & large screen, controllable RGB lighting, stage platform",
         climate: "Fully air-conditioned with 6 wall-mounted fans",
-        ideal: "Large dance classes, fitness workshops, rehearsals, masterclasses, auditions, performance training",
+        ideal: "Large dance classes, fitness workshops, rehearsals, auditions, performance training, modeling runway training, catwalk practice, fashion shows, theatrical productions",
       },
     },
     {
@@ -93,12 +95,12 @@ export default function RentalsPage() {
       rate: "From RM 50/hour",
       bestFor: "Private lessons, small groups, practice sessions",
       image: "/rentals-hero/studio-c-small.jpg",
-      features: ["Wall-to-wall mirrors", "Sound system", "Intimate environment", "Air-conditioned"],
+      features: ["Wall-to-wall mirrors", "Sound system", "Private & intimate setting", "Air-conditioned"],
       details: {
         capacity: "2-10 people (depending on activity type)",
         equipment: "Sound system",
         climate: "Fully air-conditioned",
-        ideal: "Private dance lessons, one-on-one coaching, small group fitness, practice sessions",
+        ideal: "Private dance lessons, one-on-one coaching, personal training sessions, practice requiring privacy",
       },
     },
   ]
@@ -158,7 +160,7 @@ export default function RentalsPage() {
           <div className="flex flex-wrap items-center justify-center gap-3 md:gap-4">
             <Link
               href="/rentals/rooms"
-              className="inline-flex items-center gap-2 border-2 border-emerald-600 text-emerald-400 hover:bg-emerald-600 hover:text-white px-5 py-2.5 rounded-lg transition-all text-sm font-medium"
+              className="inline-flex items-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 px-5 py-2.5 rounded-lg transition-all text-sm font-medium"
             >
               <Grid className="w-4 h-4" />
               Browse Rooms
@@ -169,13 +171,6 @@ export default function RentalsPage() {
             >
               <Image className="w-4 h-4" />
               Gallery
-            </Link>
-            <Link
-              href="/rentals/pricing"
-              className="inline-flex items-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 px-5 py-2.5 rounded-lg transition-all text-sm font-medium"
-            >
-              <DollarSign className="w-4 h-4" />
-              Pricing
             </Link>
             <Link
               href="/rentals/compare"
@@ -195,7 +190,7 @@ export default function RentalsPage() {
             Why Choose Us
           </h2>
           <p className="text-center text-slate-400 mb-16 text-lg">
-            Designed for your success, built with your needs in mind
+            Here's what makes our studios stand out
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -229,9 +224,9 @@ export default function RentalsPage() {
             {/* Card 4 - Uninterrupted Mirrors */}
             <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
               <div className="text-3xl mb-3">🪞</div>
-              <h3 className="text-lg font-semibold text-slate-50 mb-2">Built by Dancers for Dancers</h3>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">Purpose-Built for Visual Learning</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                3 walls covered with high, uninterrupted mirrors. Large mirrors let you see your full body movement, perfect posture checks, and group formations at a glance. We understand what you need because we've been in your shoes.
+                Three walls covered with 10ft wide × 7ft high wall-to-wall mirrors—purpose-built by dancers who understand the importance of seeing every movement. Perfect for dance, modeling, acting, drama workshops, performance training, and any activity that relies on visual feedback. Our mirror setup provides unmatched advantages for movement-based learning and practice.
               </p>
             </div>
 
@@ -256,28 +251,6 @@ export default function RentalsPage() {
         </div>
       </section>
 
-      {/* Testimonials Section - Coming Soon */}
-      <section className="py-16 px-6 bg-zinc-950 border-t border-zinc-800">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-50 text-center mb-4">
-            What Renters Say
-          </h2>
-          <p className="text-center text-slate-400 mb-12">
-            We're collecting feedback from our renters
-          </p>
-
-          <div className="bg-zinc-900 border border-slate-800 rounded-lg p-8 md:p-12 text-center">
-            <Quote className="w-12 h-12 text-emerald-500/30 mx-auto mb-6" />
-            <p className="text-slate-300 text-lg mb-6 leading-relaxed">
-              We're actively collecting reviews from renters who use our studios. If you've rented with us, we'd love to hear about your experience!
-            </p>
-            <p className="text-slate-400 text-sm">
-              Have you rented our studios? <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 underline">Share your feedback on WhatsApp</a> and help others discover our space.
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Studio Showcase */}
       <section className="py-20 px-6 bg-zinc-950">
         <div className="max-w-6xl mx-auto">
@@ -286,20 +259,20 @@ export default function RentalsPage() {
           </h2>
 
           <p className="text-center text-slate-300 mb-8 text-lg">
-            Four professional spaces designed for dance, fitness, and creative movement
+            Four versatile studios for classes, rehearsals, workshops, content creation, and events
           </p>
 
           <div className="flex justify-center gap-4 mb-12">
             <Link
               href="/rentals/rooms"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-6 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl font-semibold"
+              className="inline-flex items-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 px-6 py-3 rounded-lg transition-all font-semibold"
             >
               <Grid className="w-5 h-5" />
               View All Rooms
             </Link>
             <Link
               href="/rentals/compare"
-              className="inline-flex items-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-slate-300 hover:text-white px-6 py-3 rounded-lg transition-all border border-zinc-700 font-semibold"
+              className="inline-flex items-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 px-6 py-3 rounded-lg transition-all font-semibold"
             >
               <GitCompare className="w-5 h-5" />
               Compare Rooms
@@ -424,7 +397,7 @@ export default function RentalsPage() {
               <AccordionContent className="pb-6">
                 <ul className="space-y-2">
                   {[
-                    "Dance classes (all styles - ballet, hip-hop, contemporary, ballroom, K-pop, etc.)",
+                    "Dance classes (all styles - hip-hop, contemporary, ballroom, K-pop, line dancing, belly dancing, Latin dance, etc.)",
                     "Dance rehearsals & choreography development",
                     "Private dance coaching & instruction",
                     "Audition preparation & practice",
@@ -449,11 +422,12 @@ export default function RentalsPage() {
               <AccordionContent className="pb-6">
                 <ul className="space-y-2">
                   {[
-                    "Yoga, Pilates, and barre classes",
-                    "Fitness training & conditioning",
-                    "Martial arts-inspired movement (non-contact)",
-                    "Personal training sessions",
-                    "Group fitness programs",
+                    "Dance fitness classes (Zumba, Salsation, dance exercise)",
+                    "Yoga sessions",
+                    "Fitness training & personal training",
+                    "Group fitness classes",
+                    "Aerobics & cardio sessions",
+                    "Stretching & flexibility training",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
@@ -474,10 +448,12 @@ export default function RentalsPage() {
               <AccordionContent className="pb-6">
                 <ul className="space-y-2">
                   {[
-                    "Theatre & acting rehearsals",
-                    "Performance practice & run-throughs",
+                    "Theatre & drama classes",
+                    "Acting rehearsals & training",
                     "Modeling & runway training",
-                    "Stage movement coaching",
+                    "Fashion shows & catwalk practice",
+                    "Audition preparations",
+                    "Talent showcases",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
@@ -498,10 +474,12 @@ export default function RentalsPage() {
               <AccordionContent className="pb-6">
                 <ul className="space-y-2">
                   {[
-                    "Dance & fitness photography",
                     "Video shoots & tutorials",
-                    "Social media content creation",
-                    "Instructional video recording",
+                    "Social media content (TikTok, Instagram Reels, YouTube)",
+                    "Professional photoshoots",
+                    "Product launches & promotional videos",
+                    "Online course recording",
+                    "Livestream sessions",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
@@ -516,16 +494,18 @@ export default function RentalsPage() {
               <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
                 <span className="flex items-center gap-3">
                   <span className="text-2xl">🎓</span>
-                  Workshops & Events
+                  Workshops & Studio Parties
                 </span>
               </AccordionTrigger>
               <AccordionContent className="pb-6">
                 <ul className="space-y-2">
                   {[
-                    "Movement workshops & masterclasses",
-                    "Training sessions & seminars",
+                    "Training workshops & seminars",
                     "Dance socials & practice sessions",
-                    "Small group learning sessions",
+                    "Birthday parties & celebrations",
+                    "Team building activities",
+                    "Corporate events & gatherings",
+                    "Learning sessions & skill development",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
@@ -557,14 +537,6 @@ export default function RentalsPage() {
           <p className="text-center text-slate-400 mb-6 max-w-2xl mx-auto">
             Every renter's needs are different. We work with you to find the right rate.
           </p>
-          <div className="flex justify-center mb-8">
-            <Link
-              href="/rentals/pricing"
-              className="inline-flex items-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 px-5 py-2.5 rounded-lg transition-all text-sm font-medium"
-            >
-              View Full Pricing Details →
-            </Link>
-          </div>
           <p className="text-center text-emerald-400 mb-16 font-medium">
             Substantial discounts available—contact us for your personalized quote
           </p>
@@ -573,13 +545,20 @@ export default function RentalsPage() {
             {/* Base Hourly Rates */}
             <div>
               <h3 className="text-2xl font-semibold text-slate-50 mb-4">Base Hourly Rates</h3>
-              <p className="text-slate-400 text-sm mb-8">Starting rates for standard bookings</p>
+              <p className="text-slate-400 text-sm mb-6">Standard hourly rates before discounts</p>
+
+              <div className="mb-6 bg-emerald-900/20 border border-emerald-700/30 rounded-lg p-4">
+                <p className="text-emerald-300 text-sm">
+                  💡 <strong>Substantial discounts available:</strong> Multi-hour bookings, weekly classes, and long-term commitments qualify for reduced rates. WhatsApp us for your personalized quote.
+                </p>
+              </div>
+
               <div className="overflow-x-auto">
                 <table className="w-full text-left">
                   <thead>
                     <tr className="border-b border-slate-700">
                       <th className="pb-4 text-slate-400 text-sm font-medium">Room</th>
-                      <th className="pb-4 text-slate-400 text-sm font-medium text-right">From</th>
+                      <th className="pb-4 text-slate-400 text-sm font-medium text-right">Per Hour</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-800">
@@ -602,36 +581,31 @@ export default function RentalsPage() {
                   </tbody>
                 </table>
               </div>
-              <div className="mt-6 bg-emerald-900/20 border border-emerald-700/30 rounded-lg p-4">
-                <p className="text-emerald-300 text-sm">
-                  💡 <strong>Better rates available:</strong> Multi-hour bookings, weekly classes, and long-term commitments qualify for reduced rates. WhatsApp us for your personalized quote.
-                </p>
-              </div>
             </div>
 
             {/* Better Rates Available */}
             <div>
-              <h3 className="text-2xl font-semibold text-slate-50 mb-8">Better Rates Available For</h3>
+              <h3 className="text-2xl font-semibold text-slate-50 mb-8">Who Qualifies for Discounts?</h3>
               <div className="grid md:grid-cols-3 gap-6">
                 <div className="bg-zinc-900 p-6 rounded-lg border border-slate-800">
                   <div className="text-3xl mb-3">⏱️</div>
-                  <h4 className="font-semibold text-slate-50 mb-2">Multi-Hour Sessions</h4>
+                  <h4 className="font-semibold text-slate-50 mb-2">Flexible Discounts</h4>
                   <p className="text-slate-400 text-sm">
-                    Booking 4+ hours? Get a better rate. The more hours, the more you save.
+                    Multi-hour bookings, bulk reservations, and off-peak timing all qualify for better rates. The more you book, the more you save.
                   </p>
                 </div>
                 <div className="bg-zinc-900 p-6 rounded-lg border border-slate-800">
-                  <div className="text-3xl mb-3">📅</div>
-                  <h4 className="font-semibold text-slate-50 mb-2">Weekly Recurring</h4>
+                  <div className="text-3xl mb-3">🎓</div>
+                  <h4 className="font-semibold text-slate-50 mb-2">Special Groups</h4>
                   <p className="text-slate-400 text-sm">
-                    Regular weekly classes? We offer special recurring rates for consistent bookings.
+                    Students, seniors, studio members, non-profits, and regular renters receive special consideration. Let us know your situation.
                   </p>
                 </div>
                 <div className="bg-zinc-900 p-6 rounded-lg border border-slate-800">
                   <div className="text-3xl mb-3">🤝</div>
-                  <h4 className="font-semibold text-slate-50 mb-2">Long-Term Commitments</h4>
+                  <h4 className="font-semibold text-slate-50 mb-2">Custom Packages</h4>
                   <p className="text-slate-400 text-sm">
-                    Monthly or yearly? Substantial discounts available. Let's discuss your needs.
+                    Long-term partnerships, unique requirements, or recurring bookings? We'll create a package that works for your budget and needs.
                   </p>
                 </div>
               </div>
@@ -667,9 +641,10 @@ export default function RentalsPage() {
                       "Professional sound system",
                       "Air-conditioning & ventilation",
                       "Wall-to-wall mirrors",
+                      "HPL AC3 Grade Flooring",
                       "Free Wi-Fi throughout premises",
                       "Parking (free after office hours, weekends & holidays)",
-                      "15-minute setup/cleanup buffer included in rental time",
+                      "Reverse Osmosis Water Dispenser",
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <span className="text-emerald-500 font-bold mt-1">✓</span>
@@ -687,6 +662,11 @@ export default function RentalsPage() {
                       "Photography/video accessories",
                       "Wireless microphone (Room A)",
                       "Custom room setup assistance",
+                      "Large Cooler For F&B",
+                      "Equipment Storage",
+                      "Tables and Chairs",
+                      "Stage platform",
+                      "Colorful LED Lighting",
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <span className="text-slate-500 mt-1">•</span>
@@ -720,22 +700,18 @@ export default function RentalsPage() {
                 Booking Basics
               </AccordionTrigger>
               <AccordionContent className="text-slate-300 pb-6">
-                <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4">
                   <div>
-                    <p className="font-medium text-slate-50">Minimum booking</p>
+                    <p className="font-medium text-slate-50 mb-1">Minimum booking</p>
                     <p>1 hour</p>
                   </div>
                   <div>
-                    <p className="font-medium text-slate-50">Deposit</p>
-                    <p>50% to confirm</p>
+                    <p className="font-medium text-slate-50 mb-1">Deposit and Balance Payment</p>
+                    <p>Event specific. Contact us for the details.</p>
                   </div>
                   <div>
-                    <p className="font-medium text-slate-50">Balance</p>
-                    <p>Before or upon arrival</p>
-                  </div>
-                  <div>
-                    <p className="font-medium text-slate-50">Payment</p>
-                    <p>Transfer, card, cash</p>
+                    <p className="font-medium text-slate-50 mb-1">Payment Methods</p>
+                    <p>DuitNow, eWallet (TnG), Bank Transfer, Cash</p>
                   </div>
                 </div>
               </AccordionContent>
@@ -743,144 +719,26 @@ export default function RentalsPage() {
 
             <AccordionItem value="cancellation" className="border border-slate-700 rounded-lg bg-slate-800/50 px-6">
               <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
-                Cancellation & Refunds
+                Cancellation & Rescheduling
               </AccordionTrigger>
               <AccordionContent className="text-slate-300 pb-6">
-                <div className="space-y-3">
-                  <div className="flex justify-between">
-                    <span>48+ hours notice</span>
-                    <span className="text-emerald-400 font-medium">Full refund</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>24-48 hours notice</span>
-                    <span className="text-emerald-400 font-medium">50% refund</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Under 24 hours</span>
-                    <span className="text-slate-400">No refund</span>
-                  </div>
-                  <p className="text-sm text-slate-400 pt-2">One-time reschedule option available</p>
-                </div>
+                <p className="leading-relaxed">
+                  We have flexible cancellation and rescheduling policies depending on event details such as proximity of the event, type of setup, recurring status, and other factors. Contact us to discuss your specific situation and the applicable policy.
+                </p>
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="time-rules" className="border border-slate-700 rounded-lg bg-slate-800/50 px-6">
               <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
-                Time & Overtime Rules
+                Extensions & Timing
               </AccordionTrigger>
               <AccordionContent className="text-slate-300 pb-6">
-                <ul className="space-y-2">
-                  <li className="flex items-start gap-2">
-                    <span className="text-emerald-500">•</span>
-                    Setup & cleanup time included in your booked hours
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-emerald-500">•</span>
-                    Overtime charged at same hourly rate if extended
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-emerald-500">•</span>
-                    Please vacate on time to respect other bookings
-                  </li>
-                </ul>
+                <p className="leading-relaxed">
+                  Subject to room availability, rentals can be extended at the same hourly rate. Contact us if you need additional time during your session.
+                </p>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
-        </div>
-      </section>
-
-      {/* Location & Parking Section */}
-      <section className="py-20 border-t border-slate-800">
-        <div className="max-w-6xl mx-auto px-4 md:px-6">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-50 text-center mb-16">
-            Location & Parking
-          </h2>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-            {/* Left Column - Location Info */}
-            <div>
-              <div className="flex items-center gap-3 mb-8">
-                <span className="text-4xl">📍</span>
-                <h3 className="text-2xl font-semibold text-slate-50">Easy to Find</h3>
-              </div>
-
-              <div className="bg-zinc-900 rounded-lg p-8 border border-slate-800 mb-8">
-                <p className="text-slate-300 mb-6 leading-relaxed">
-                  <strong className="text-slate-50">{LOCATION.address.street}</strong>
-                  <br />
-                  {LOCATION.address.city}
-                  <br />
-                  {LOCATION.address.postcode} {LOCATION.address.state.split(',')[0]}
-                  <br />
-                  {LOCATION.address.state.split(',')[1]?.trim()}, {LOCATION.address.country}
-                </p>
-                <a
-                  href={LOCATION.googleMapsUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-4 py-2 border-2 border-emerald-600 text-emerald-400 hover:bg-emerald-600 hover:text-white rounded-lg text-sm font-medium transition-all"
-                >
-                  Open in Maps
-                </a>
-              </div>
-
-              <div className="space-y-4">
-                <h4 className="font-semibold text-slate-50 text-lg">Features</h4>
-                {[
-                  "Accessible via major highways",
-                  "Public transport routes nearby",
-                  "Surrounded by shopping, dining & amenities",
-                  "Well-known Bandar Sunway area",
-                ].map((feature, idx) => (
-                  <div key={idx} className="flex items-start gap-3">
-                    <span className="text-emerald-500 font-bold mt-1">✓</span>
-                    <span className="text-slate-300">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Right Column - Embedded Map */}
-            <div className="w-full h-96 rounded-lg overflow-hidden border border-slate-800">
-              <iframe
-                src={LOCATION.googleMapsEmbedUrl}
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-              />
-            </div>
-          </div>
-
-          {/* Parking Info Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-16">
-            {/* After Hours Parking */}
-            <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-6">
-              <h4 className="font-semibold text-emerald-400 mb-3">After Office Hours & Weekends</h4>
-              <p className="text-slate-300 mb-2">
-                <strong className="text-emerald-300">FREE parking</strong> for 40-60 vehicles right at our premises
-              </p>
-              <p className="text-slate-400 text-sm">Mon-Fri after 5pm, All day Sat-Sun, Public holidays</p>
-            </div>
-
-            {/* Office Hours Parking */}
-            <div className="bg-zinc-900 border border-slate-700 rounded-lg p-6">
-              <h4 className="font-semibold text-slate-50 mb-3">Office Hours (Mon-Fri 9am-5pm)</h4>
-              <p className="text-slate-300">
-                Street parking available at MBSJ rates (approx. <strong>RM 0.50/hour</strong>)
-              </p>
-            </div>
-          </div>
-
-          {/* Recommendation */}
-          <div className="bg-zinc-800 rounded-lg p-6 border border-slate-700 mt-8">
-            <p className="text-slate-300">
-              <strong className="text-slate-50">💡 Recommendation:</strong> For large groups (30+ people), we recommend
-              evening or weekend bookings to ensure free parking for all participants.
-            </p>
-          </div>
         </div>
       </section>
 
@@ -914,9 +772,9 @@ export default function RentalsPage() {
                   2
                 </div>
               </div>
-              <h3 className="text-xl font-semibold text-slate-50 mb-3">Confirm & Pay Deposit</h3>
+              <h3 className="text-xl font-semibold text-slate-50 mb-3">Confirm & Make Payment</h3>
               <p className="text-slate-400">
-                We'll confirm availability and send payment details. 50% deposit secures your booking.
+                We'll confirm availability and send payment details. Make payment to secure your booking.
               </p>
             </div>
 
@@ -936,21 +794,10 @@ export default function RentalsPage() {
           </div>
 
           {/* Supporting Information */}
-          <div className="bg-slate-800/50 rounded-lg p-6 md:p-8 border border-slate-700 mb-12">
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <p className="text-slate-300 mb-2">
-                  <span className="font-semibold">⏱️ Response Time:</span> We respond within 2 hours during business
-                  hours
-                </p>
-              </div>
-              <div>
-                <p className="text-slate-300">
-                  <span className="font-semibold">📅 Booking Timeline:</span> Most bookings are made 1-2 weeks in
-                  advance. Last-minute bookings available subject to availability.
-                </p>
-              </div>
-            </div>
+          <div className="bg-slate-800/50 rounded-lg p-6 md:p-8 border border-slate-700 mb-12 text-center">
+            <p className="text-slate-300">
+              <span className="font-semibold">📱 Response Time:</span> We'll get back to you as soon as possible
+            </p>
           </div>
 
           {/* Primary CTA */}
@@ -976,11 +823,35 @@ export default function RentalsPage() {
             {[
               {
                 q: "Can I visit the studio before booking?",
-                a: "Yes! Free 10-minute viewing available. Contact us on WhatsApp to schedule a quick tour.",
+                a: "Absolutely! We welcome you to view our facilities by appointment to ensure they suit your needs. This also allows us to discuss your specific requirements and help you choose the right space.",
               },
               {
                 q: "Is parking available?",
-                a: "Yes, ample parking available. FREE parking for 40-60 vehicles after office hours (Mon-Fri after 5pm), all day weekends, and public holidays. During office hours, street parking available at MBSJ rates (approx. RM 0.50/hour).",
+                a: "Yes, ample convenient parking available. FREE parking after office hours (Mon-Fri evenings), all day weekends, and public holidays. During office hours, street parking available at MBSJ rates (approx. RM 0.50/hour).",
+              },
+              {
+                q: "What are your studio availability hours?",
+                a: "Very flexible! Our studios are available from early morning to late midnight. We schedule based on your activity needs—whether it's 8am yoga, afternoon rehearsal, or midnight dance party.",
+              },
+              {
+                q: "What's the minimum booking duration?",
+                a: "Minimum booking is 1 hour.",
+              },
+              {
+                q: "Can I extend my rental if I need more time?",
+                a: "You're welcome to extend your rental duration! We do our best to accommodate extensions subject to room availability. Contact us if you need additional time.",
+              },
+              {
+                q: "Is the studio accessible for people with mobility issues?",
+                a: "Our studios are located on the 2nd floor and the building does not have elevator access. Please contact us to discuss your specific accessibility needs.",
+              },
+              {
+                q: "Can I book for groups of different sizes?",
+                a: "Yes! We have 4 studios ranging from 300 to 1,200 sq ft, accommodating groups from 2 to 60 people. We'll help you find the right size for your needs and budget.",
+              },
+              {
+                q: "What's your cancellation and rescheduling policy?",
+                a: "We have very accommodating cancellation and rescheduling policies. Contact us to find out more about the policy applicable to your event type.",
               },
               {
                 q: "Is Wi-Fi available?",
@@ -995,24 +866,8 @@ export default function RentalsPage() {
                 a: "Yes, projector and large screen are available in Room A and Room D upon request.",
               },
               {
-                q: "What's the minimum booking duration?",
-                a: "Minimum booking is 1 hour. Your rental time includes setup and cleanup.",
-              },
-              {
                 q: "Can I bring my own equipment?",
                 a: "You can bring your own equipment. We also have tripods, lighting accessories, and photography/video support tools available upon request.",
-              },
-              {
-                q: "Can I book recurring weekly time slots?",
-                a: "Yes! We offer special monthly packages with better rates for recurring weekly bookings. Contact us to discuss your schedule.",
-              },
-              {
-                q: "What if I need more time than I originally booked?",
-                a: "Subject to availability, we can extend your booking. Extensions are charged at the same hourly rate. Contact us immediately if you need more time.",
-              },
-              {
-                q: "How flexible is the scheduling?",
-                a: "Very flexible! Our studios are available from early morning to late midnight. We schedule based on your activity needs - whether it's 8am yoga, afternoon rehearsal, or midnight dance party.",
               },
             ].map((item, idx) => (
               <div
@@ -1070,27 +925,28 @@ export default function RentalsPage() {
           </div>
 
           {/* SECONDARY: Email link */}
-          <div className="mb-4">
+          <div className="mb-4 flex items-center justify-center gap-2">
+            <svg className="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+            </svg>
             <a
               href={`mailto:${CONTACT.email.rentals}`}
               className="text-slate-300 hover:text-emerald-400 underline transition-colors text-base"
             >
-              Prefer email? Contact us at {CONTACT.email.rentals}
+              {CONTACT.email.rentals}
             </a>
           </div>
 
           {/* TERTIARY: Phone */}
-          <div className="text-slate-400 text-sm mb-8">
-            Or call:{" "}
-            <a href={`tel:${CONTACT.phone.tel}`} className="hover:text-slate-300 transition-colors">
+          <div className="text-slate-300 text-base mb-8 flex items-center justify-center gap-2">
+            <svg className="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+            </svg>
+            <a href={`tel:${CONTACT.phone.tel}`} className="hover:text-emerald-400 transition-colors font-semibold text-lg">
               {CONTACT.phone.display}
             </a>
           </div>
 
-          {/* Supporting text */}
-          <p className="text-slate-400 text-sm">
-            We respond within 2 hours during business hours. Most bookings confirmed same day.
-          </p>
         </div>
       </section>
 

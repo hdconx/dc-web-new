@@ -89,7 +89,13 @@ export default function RoomsListingPage() {
                 {/* Room Image */}
                 <div className="relative h-56 md:h-64 overflow-hidden bg-zinc-800">
                   <img
-                    src={room.images[0] || `/rentals-hero/${room.id === "room-a" ? "Studio A-Main.jpg" : `studio-${room.id.split("-")[1]}-${room.subtitle.toLowerCase().includes("small") ? "small" : "medium"}.jpg`}`}
+                    src={
+                      room.id === "room-a" ? "/rentals-hero/Studio A-Main.jpg" :
+                      room.id === "room-d" ? "/rentals-hero/studio-d-medium-standalone.jpg" :
+                      room.id === "room-b" ? "/rentals-hero/studio-b-medium-connected.jpg" :
+                      room.id === "room-c" ? "/rentals-hero/studio-c-small.jpg" :
+                      "/rentals-hero/Studio A-Main.jpg"
+                    }
                     alt={room.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     onError={(e) => {
@@ -196,15 +202,15 @@ export default function RoomsListingPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/rentals/compare"
-              className="inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 font-medium py-3 px-6 rounded-lg transition-all"
             >
               Compare Rooms
             </Link>
             <Link
-              href="/rentals/pricing"
-              className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+              href="/rentals/gallery"
+              className="inline-flex items-center justify-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 font-medium py-3 px-6 rounded-lg transition-all"
             >
-              View Pricing
+              View Gallery
             </Link>
           </div>
         </div>

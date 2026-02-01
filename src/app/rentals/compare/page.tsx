@@ -199,10 +199,15 @@ export default function ComparePage() {
           {/* Capacity Section */}
           {activeSection === "capacity" && (
             <div className="bg-zinc-900 rounded-xl border border-zinc-800 overflow-hidden">
+              <div className="bg-emerald-900/20 border-b border-emerald-700/30 p-3">
+                <p className="text-emerald-300 text-xs">
+                  ℹ️ These are ballpark guidance figures only. Actual capacity varies based on activity type, setup requirements, and comfort preferences.
+                </p>
+              </div>
               <table className="w-full">
                 <thead>
                   <tr className="border-b border-zinc-800">
-                    <th className="text-left py-4 px-4 text-slate-400 font-medium">Activity</th>
+                    <th className="text-left py-4 px-4 text-slate-400 font-medium">Activity Type</th>
                     {rooms.map((room) => (
                       <th key={room.id} className="text-center py-4 px-4 text-slate-400 font-medium">
                         {room.name}
@@ -211,17 +216,31 @@ export default function ComparePage() {
                   </tr>
                 </thead>
                 <tbody>
-                  {["dance", "workshop", "fitness", "filming"].map((activity) => (
-                    <tr key={activity} className="border-b border-zinc-800/50">
-                      <td className="py-4 px-4 text-slate-300 capitalize">{activity}</td>
+                  {[
+                    { key: "dance", label: "K-pop / Hip-hop dance classes" },
+                    { key: "dance", label: "Ballroom dancing (couples)", suffix: " couples" },
+                    { key: "workshop", label: "Workshops & training sessions" },
+                    { key: "fitness", label: "Yoga / Zumba / Group fitness" },
+                    { key: "filming", label: "Content creation / Video shoots" },
+                  ].map((activity, idx) => (
+                    <tr key={idx} className="border-b border-zinc-800/50">
+                      <td className="py-4 px-4 text-slate-300 text-sm">{activity.label}</td>
                       {rooms.map((room) => {
-                        const cap = room.capacity[activity as keyof typeof room.capacity]
+                        const cap = room.capacity[activity.key as keyof typeof room.capacity]
                         return (
                           <td key={room.id} className="text-center py-4 px-4">
                             {cap ? (
-                              <div>
-                                <span className="text-emerald-400 font-semibold">{cap.optimal}</span>
-                                <span className="text-slate-400 text-sm"> ({cap.min}-{cap.max})</span>
+                              <div className="flex flex-col">
+                                <span className="text-emerald-400 font-semibold">
+                                  {activity.key === "dance" && activity.label.includes("Ballroom")
+                                    ? `${Math.floor(cap.optimal / 2)}${activity.suffix || ""}`
+                                    : cap.optimal}
+                                </span>
+                                <span className="text-slate-500 text-xs">
+                                  {activity.key === "dance" && activity.label.includes("Ballroom")
+                                    ? `max ${Math.floor(cap.max / 2)}${activity.suffix || ""}`
+                                    : `max ${cap.max}`}
+                                </span>
                               </div>
                             ) : (
                               <span className="text-slate-500">-</span>
@@ -234,7 +253,7 @@ export default function ComparePage() {
                 </tbody>
               </table>
               <p className="text-xs text-slate-500 p-4">
-                Numbers show optimal capacity (min-max range)
+                Numbers show ideal capacity and maximum capacity. Larger bold number = ideal, smaller number = maximum.
               </p>
             </div>
           )}
@@ -362,15 +381,9 @@ export default function ComparePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/rentals/rooms"
-              className="inline-flex items-center justify-center gap-2 bg-zinc-800 hover:bg-zinc-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 font-medium py-3 px-6 rounded-lg transition-all"
             >
               View All Rooms
-            </Link>
-            <Link
-              href="/rentals/pricing"
-              className="inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-3 px-6 rounded-lg transition-colors"
-            >
-              View Pricing
             </Link>
           </div>
         </div>
