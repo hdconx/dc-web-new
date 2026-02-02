@@ -201,9 +201,9 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
                           <p className="text-emerald-300 text-sm font-medium mb-1">
                             Find Your Perfect Fit
                           </p>
-                          <p className="text-emerald-200/70 text-xs">
-                            Select your activity type to see how many people this room comfortably holds.
-                            Based on industry-standard space requirements.
+                          <p className="text-emerald-200/70 text-xs leading-relaxed">
+                            Select the activity type that most closely matches your needs. These are reference samples
+                            - choose the closest match for a reliable capacity estimate.
                           </p>
                         </div>
                       </div>
@@ -239,10 +239,23 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
                         <div className="flex items-start gap-4 mb-4">
                           <span className="text-5xl">{activity.icon}</span>
                           <div className="flex-1">
-                            <h3 className="text-xl font-semibold text-slate-50 mb-1">
+                            <h3 className="text-xl font-semibold text-slate-50 mb-3">
                               {activity.name}
                             </h3>
-                            <p className="text-sm text-slate-400">{activity.description}</p>
+                            <div className="space-y-2 text-sm">
+                              <div className="flex items-start gap-2">
+                                <span className="text-emerald-300 font-medium">📏 Spacing:</span>
+                                <span className="text-slate-300">{activity.spacing}</span>
+                              </div>
+                              <div className="flex items-start gap-2">
+                                <span className="text-emerald-300 font-medium">💡 Includes:</span>
+                                <span className="text-slate-300">{activity.breakdown}</span>
+                              </div>
+                              <div className="flex items-start gap-2">
+                                <span className="text-emerald-300 font-medium">📊 Similar to:</span>
+                                <span className="text-slate-400 text-xs">{activity.similarTo}</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
 
@@ -263,8 +276,7 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
 
                         <div className="mt-4 pt-4 border-t border-emerald-700/30">
                           <p className="text-xs text-slate-500 text-center">
-                            Based on {activity.spacePerPerson} sqft per {activity.unit} •
-                            Includes comfort factor and circulation space
+                            💡 Calculated using industry-standard spacing • Includes 15% comfort buffer for safety
                           </p>
                         </div>
                       </div>

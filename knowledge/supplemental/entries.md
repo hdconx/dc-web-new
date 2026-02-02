@@ -1456,3 +1456,48 @@ New Year promo strategy needs discussion and formal planning.
 Acknowledges that discount opportunities extend beyond the published list. Maintains flexibility while setting positive expectations for potential renters.
 
 ---
+
+## S-2026-02-02-08
+
+**Related Sections:** Usage Rules, Target Customers, Capacity Calculator
+**Status:** Confirmed - CRITICAL RESTRICTION
+**Type:** Strategic Exclusion
+**Date:** 2026-02-02
+
+### Content
+
+**NEVER Include These Activities in Any Offerings or Calculators**
+
+**PILATES:**
+- REASON: Multiple well-equipped Pilates studios nearby (impossible to compete)
+- Competitors have specialized equipment (reformers, Cadillac, chairs)
+- Cannot offer competitive Pilates experience
+- DO NOT include in: Capacity calculator, activity lists, marketing materials, room recommendations
+
+**MARTIAL ARTS / BOXING / COMBAT SPORTS:**
+- REASON 1: Safety - Wall-to-wall mirrors are fragile and dangerous for martial arts
+- REASON 2: Equipment - No protective rubber mats, no punching bags, no padding
+- REASON 3: Competition - Martial arts dojos and weight gyms nearby are better equipped
+- DO NOT include in: Capacity calculator, activity lists, marketing materials
+
+**WEIGHT TRAINING / GYM ACTIVITIES:**
+- REASON: Weight gyms nearby are better equipped
+- We have no weight equipment, benches, or gym facilities
+- DO NOT market as gym alternative
+
+**CORPORATE / BUSINESS WORKSHOPS (Non-Dance):**
+- REASON: These are offered separately in event space business website
+- DO NOT include seated workshops, business training, corporate events in dance studio offerings
+- ONLY include: Dance workshops, movement training, performance workshops
+
+**ACTION REQUIRED:**
+- Review all marketing materials and remove these activities
+- Update capacity calculator to exclude these categories
+- Train AI/staff to never suggest these activities
+- If customer inquires about these, explain we specialize in dance/movement activities
+
+### Notes
+
+This restriction reinforced during capacity calculator implementation (2026-02-02). Previously documented in S-2026-02-01-02 but needs stronger emphasis as it keeps appearing in activity lists. This is a STRATEGIC decision based on competitive landscape and facility limitations.
+
+---

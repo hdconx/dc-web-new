@@ -215,9 +215,9 @@ export default function ComparePage() {
                       <p className="text-emerald-300 text-sm font-medium mb-1">
                         Interactive Capacity Calculator
                       </p>
-                      <p className="text-emerald-200/70 text-xs">
-                        Select your activity type below to see recommended capacity for each room.
-                        Calculations based on industry-standard space requirements per person/couple.
+                      <p className="text-emerald-200/70 text-xs leading-relaxed">
+                        Select the activity type that most closely matches your needs. These are reference samples
+                        based on industry-standard spacing - choose the closest match for a reliable estimate.
                       </p>
                     </div>
                   </div>
@@ -255,17 +255,27 @@ export default function ComparePage() {
                   return (
                     <div className="bg-zinc-900 rounded-xl border border-zinc-800 overflow-hidden">
                       {/* Activity Details Header */}
-                      <div className="bg-zinc-800/50 border-b border-zinc-700 p-4">
-                        <div className="flex items-start gap-3">
-                          <span className="text-3xl">{activity?.icon}</span>
+                      <div className="bg-zinc-800/50 border-b border-zinc-700 p-5">
+                        <div className="flex items-start gap-4">
+                          <span className="text-4xl">{activity?.icon}</span>
                           <div className="flex-1">
-                            <h3 className="text-lg font-semibold text-slate-50 mb-1">
+                            <h3 className="text-xl font-semibold text-slate-50 mb-3">
                               {activity?.name}
                             </h3>
-                            <p className="text-sm text-slate-400">{activity?.description}</p>
-                            <p className="text-xs text-slate-500 mt-2">
-                              Space requirement: {activity?.spacePerPerson} sqft per {activity?.unit}
-                            </p>
+                            <div className="space-y-2 text-sm">
+                              <div className="flex items-start gap-2">
+                                <span className="text-emerald-400 font-medium min-w-[80px]">📏 Spacing:</span>
+                                <span className="text-slate-300">{activity?.spacing}</span>
+                              </div>
+                              <div className="flex items-start gap-2">
+                                <span className="text-emerald-400 font-medium min-w-[80px]">💡 Includes:</span>
+                                <span className="text-slate-300">{activity?.breakdown}</span>
+                              </div>
+                              <div className="flex items-start gap-2">
+                                <span className="text-emerald-400 font-medium min-w-[80px]">📊 Similar to:</span>
+                                <span className="text-slate-400 text-xs">{activity?.similarTo}</span>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>

@@ -24,6 +24,7 @@ const pages = [
   { id: "pricing", name: "Pricing Page", url: "/rentals/pricing" },
   { id: "compare", name: "Compare Page", url: "/rentals/compare" },
   { id: "gallery", name: "Gallery Page", url: "/rentals/gallery" },
+  { id: "others", name: "Others (General Notes)", url: "#" },
 ]
 
 const actionLabels: Record<ActionType, { label: string; color: string; icon: any }> = {
@@ -274,15 +275,17 @@ export default function ReviewPage() {
                 })}
               </select>
             </div>
-            <a
-              href={currentPage?.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg font-medium transition-colors"
-            >
-              <ExternalLink className="w-4 h-4" />
-              Open Page
-            </a>
+            {currentPage?.url !== "#" && (
+              <a
+                href={currentPage?.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              >
+                <ExternalLink className="w-4 h-4" />
+                Open Page
+              </a>
+            )}
           </div>
         </div>
 
@@ -362,23 +365,34 @@ export default function ReviewPage() {
             </div>
 
             {/* Add/Update Button */}
-            <button
-              onClick={addItem}
-              disabled={!element.trim()}
-              className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 disabled:bg-zinc-700 disabled:text-zinc-500 disabled:cursor-not-allowed text-white px-4 py-2 rounded-lg font-medium transition-colors"
-            >
-              {editingId ? (
-                <>
-                  <Save className="w-4 h-4" />
-                  Update Note
-                </>
-              ) : (
-                <>
-                  <Plus className="w-4 h-4" />
-                  Add Note
-                </>
+            <div className="flex items-center gap-3">
+              <button
+                onClick={addItem}
+                disabled={!element.trim()}
+                className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 disabled:bg-zinc-700 disabled:text-zinc-500 disabled:cursor-not-allowed text-white px-4 py-2 rounded-lg font-medium transition-colors"
+              >
+                {editingId ? (
+                  <>
+                    <Save className="w-4 h-4" />
+                    Update Note
+                  </>
+                ) : (
+                  <>
+                    <Plus className="w-4 h-4" />
+                    Add Note
+                  </>
+                )}
+              </button>
+              {editingId && (
+                <button
+                  onClick={cancelEdit}
+                  className="inline-flex items-center gap-2 border-2 border-slate-600 text-slate-300 hover:border-emerald-600 hover:text-emerald-400 px-4 py-2 rounded-lg font-medium transition-colors"
+                >
+                  <XIcon className="w-4 h-4" />
+                  Cancel
+                </button>
               )}
-            </button>
+            </div>
           </div>
         </div>
 

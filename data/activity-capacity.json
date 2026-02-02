@@ -1,107 +1,108 @@
 {
   "$schema": "./schemas/activity-capacity.schema.json",
-  "_description": "Activity-based capacity calculator data - Edit to add/remove activities or adjust space requirements",
+  "_description": "Activity-based capacity calculator - Reference samples for common studio uses",
   "_lastUpdated": "2026-02-02",
+  "_notes": "NEVER include: Pilates (competitors nearby), Martial arts (safety + competitors), Corporate workshops (offered separately in event space)",
 
   "activities": [
     {
-      "id": "yoga",
-      "name": "Yoga / Pilates / Stretching",
-      "category": "Fitness & Wellness",
-      "spacePerPerson": 28,
+      "id": "solo-practice",
+      "name": "Solo Practice / Self-Tape",
+      "category": "Solo Activities",
+      "spacePerPerson": 350,
       "unit": "person",
-      "description": "Mat-based activities requiring personal space for floor work",
-      "icon": "🧘"
+      "spacing": "Full room for movement and camera angles",
+      "breakdown": "Includes space for: Multiple takes, camera setup, props",
+      "similarTo": "Audition prep, choreography creation, vocal practice",
+      "icon": "🎯"
     },
     {
-      "id": "zumba",
-      "name": "Zumba / Dance Fitness / Aerobics",
-      "category": "Fitness & Wellness",
-      "spacePerPerson": 38,
+      "id": "dance-active",
+      "name": "Dance Class - Active Movement",
+      "category": "Dance Classes",
+      "spacePerPerson": 40,
       "unit": "person",
-      "description": "High-energy cardio with dynamic arm and leg movements",
+      "spacing": "6ft x 6ft per person (moderate spacing)",
+      "breakdown": "Allows for: Arm reach, turning, small jumps, personal space",
+      "similarTo": "Hip-hop, K-pop, Jazz, Bollywood, Contemporary, Urban",
       "icon": "💃"
     },
     {
-      "id": "kpop",
-      "name": "K-Pop / J-Pop Dance Classes",
+      "id": "dance-compact",
+      "name": "Dance Class - Compact Style",
       "category": "Dance Classes",
-      "spacePerPerson": 37,
+      "spacePerPerson": 30,
       "unit": "person",
-      "description": "Structured choreography with formations and synchronized movements",
-      "icon": "🎵"
+      "spacing": "5.5ft x 5.5ft per person (closer formation)",
+      "breakdown": "Works for: Line dancing, folk dance, light aerobics",
+      "similarTo": "Cultural dance, beginner classes, lower-intensity movement",
+      "icon": "🎶"
     },
     {
-      "id": "hiphop",
-      "name": "Hip-Hop / Street Dance",
-      "category": "Dance Classes",
-      "spacePerPerson": 45,
-      "unit": "person",
-      "description": "Dynamic freestyle and choreographed urban dance styles",
-      "icon": "🎤"
-    },
-    {
-      "id": "contemporary",
-      "name": "Contemporary / Jazz Dance",
-      "category": "Dance Classes",
-      "spacePerPerson": 50,
-      "unit": "person",
-      "description": "Expressive dance with floor work and expansive movements",
-      "icon": "🩰"
-    },
-    {
-      "id": "latin-partner",
-      "name": "Salsa / Bachata / Latin Dance",
+      "id": "partner-latin",
+      "name": "Partner Dance - Latin Style",
       "category": "Partner Dance",
       "spacePerPerson": 55,
       "unit": "couple",
-      "description": "Latin-style partner dancing with turns and compact patterns",
+      "spacing": "7.5ft x 7.5ft per couple (compact patterns)",
+      "breakdown": "Allows for: Turns, dips, basic patterns, couple spacing",
+      "similarTo": "Salsa, Bachata, Cha-cha, Merengue, Social Latin",
       "icon": "💑"
     },
     {
-      "id": "ballroom-standard",
-      "name": "Waltz / Foxtrot / Standard Ballroom",
+      "id": "partner-ballroom",
+      "name": "Partner Dance - Ballroom",
       "category": "Partner Dance",
       "spacePerPerson": 110,
       "unit": "couple",
-      "description": "Classic ballroom with large sweeping movements across the floor",
+      "spacing": "10.5ft x 10.5ft per couple (large movements)",
+      "breakdown": "Required for: Sweeping movements, traveling steps, rise/fall",
+      "similarTo": "Waltz, Foxtrot, Quickstep, Viennese Waltz",
       "icon": "👫"
     },
     {
-      "id": "tango",
-      "name": "Argentine Tango",
+      "id": "partner-tango",
+      "name": "Partner Dance - Tango",
       "category": "Partner Dance",
       "spacePerPerson": 65,
       "unit": "couple",
-      "description": "Intimate partner dance with moderate space for movements",
+      "spacing": "8ft x 8ft per couple (medium space)",
+      "breakdown": "Allows for: Close embrace, linear patterns, moderate travel",
+      "similarTo": "Argentine Tango, Social tango",
       "icon": "🌹"
     },
     {
-      "id": "bollywood",
-      "name": "Bollywood / Indian Dance",
-      "category": "Cultural Dance",
-      "spacePerPerson": 40,
+      "id": "fitness-dance",
+      "name": "Zumba / Dance Fitness",
+      "category": "Fitness & Wellness",
+      "spacePerPerson": 38,
       "unit": "person",
-      "description": "Energetic fusion dance with expressive arm and body movements",
-      "icon": "🪔"
+      "spacing": "6ft x 6ft per person (high energy)",
+      "breakdown": "Needs space for: Arm extensions, jumping, cardio movements",
+      "similarTo": "Zumba, Salsation, Aerobics, Dance cardio, HIIT dance",
+      "icon": "🔥"
     },
     {
-      "id": "belly-dance",
-      "name": "Belly Dance / Middle Eastern",
-      "category": "Cultural Dance",
-      "spacePerPerson": 35,
+      "id": "yoga-mat",
+      "name": "Yoga / Mat-Based Exercise",
+      "category": "Fitness & Wellness",
+      "spacePerPerson": 28,
       "unit": "person",
-      "description": "Isolated movements requiring moderate personal space",
-      "icon": "🧿"
+      "spacing": "5ft x 5ft per person (mat + buffer)",
+      "breakdown": "Includes: Yoga mat, arm reach all directions, personal zone",
+      "similarTo": "Yoga, Stretching, Floor exercises, Meditation",
+      "icon": "🧘"
     },
     {
-      "id": "line-dance",
-      "name": "Line Dancing",
-      "category": "Social Dance",
-      "spacePerPerson": 30,
+      "id": "workshop-movement",
+      "name": "Workshop - Dance/Movement",
+      "category": "Workshops & Training",
+      "spacePerPerson": 45,
       "unit": "person",
-      "description": "Synchronized group dance in lines and patterns",
-      "icon": "🤠"
+      "spacing": "6.5ft x 6.5ft per person (active learning)",
+      "breakdown": "Space for: Demonstrations, practice attempts, instructor movement",
+      "similarTo": "Dance workshops, movement training, technique sessions",
+      "icon": "🎓"
     },
     {
       "id": "content-solo",
@@ -109,92 +110,50 @@
       "category": "Content Production",
       "spacePerPerson": 400,
       "unit": "person",
-      "description": "Full room space for camera angles, lighting, and creative shots",
+      "spacing": "Full room for camera setup and angles",
+      "breakdown": "Allows for: Multiple camera positions, lighting, props, crew space",
+      "similarTo": "TikTok, Instagram Reels, YouTube videos, dance covers",
       "icon": "📹"
     },
     {
       "id": "content-group",
-      "name": "Content Creation - Group (3-8 performers)",
+      "name": "Content Creation - Group (3-8 people)",
       "category": "Content Production",
       "spacePerPerson": 50,
       "unit": "person",
-      "description": "Group performances with space for performers and crew",
+      "spacing": "7ft x 7ft per performer + crew space",
+      "breakdown": "Includes: Formation spacing, camera crew area (2-3 people)",
+      "similarTo": "Group dance videos, team collaborations, music videos",
       "icon": "🎬"
-    },
-    {
-      "id": "photoshoot",
-      "name": "Photography / Modeling Shoot",
-      "category": "Content Production",
-      "spacePerPerson": 300,
-      "unit": "person",
-      "description": "Professional shoots with equipment and backdrop space",
-      "icon": "📸"
-    },
-    {
-      "id": "workshop-seated",
-      "name": "Workshop - Seated (Theory/Lecture)",
-      "category": "Workshops & Events",
-      "spacePerPerson": 18,
-      "unit": "person",
-      "description": "Classroom-style seating with tables and chairs",
-      "icon": "📚"
-    },
-    {
-      "id": "workshop-active",
-      "name": "Workshop - Active Movement",
-      "category": "Workshops & Events",
-      "spacePerPerson": 40,
-      "unit": "person",
-      "description": "Interactive workshops with physical activities and demonstrations",
-      "icon": "🎓"
     },
     {
       "id": "rehearsal",
       "name": "Performance Rehearsal",
-      "category": "Rehearsals",
+      "category": "Rehearsals & Events",
       "spacePerPerson": 45,
       "unit": "person",
-      "description": "Stage blocking and choreography practice",
+      "spacing": "6.5ft x 6.5ft per person (blocking + choreography)",
+      "breakdown": "Space for: Stage blocking, choreography, formation changes",
+      "similarTo": "Dance showcases, theatrical productions, recital prep",
       "icon": "🎭"
     },
     {
-      "id": "audition",
-      "name": "Audition / Self-Tape Recording",
-      "category": "Rehearsals",
-      "spacePerPerson": 350,
-      "unit": "person",
-      "description": "Solo practice with space for multiple takes and camera setup",
-      "icon": "🎬"
-    },
-    {
-      "id": "party-active",
-      "name": "Dance Party / Social Dancing",
-      "category": "Events & Parties",
+      "id": "party-dance",
+      "name": "Dance Party / Social Event",
+      "category": "Rehearsals & Events",
       "spacePerPerson": 25,
       "unit": "person",
-      "description": "Social event with dancing, mingling, and movement",
+      "spacing": "5ft x 5ft per person (social mingling)",
+      "breakdown": "Allows for: Dancing, mingling, movement between areas",
+      "similarTo": "Birthday parties, celebrations, social dancing events",
       "icon": "🎉"
-    },
-    {
-      "id": "party-mixed",
-      "name": "Birthday Party / Celebration (Mixed)",
-      "category": "Events & Parties",
-      "spacePerPerson": 20,
-      "unit": "person",
-      "description": "Social gathering with both seated and standing areas",
-      "icon": "🎂"
     }
   ],
 
-  "notes": {
-    "methodology": "Capacity calculated as: (Usable Floor Space / Space per Person) × Comfort Factor (0.85)",
-    "comfortFactor": 0.85,
+  "methodology": {
+    "formula": "(Room Floor Space × 90%) ÷ Space Per Person × 85% Comfort Factor",
     "usableSpacePercentage": 0.90,
-    "assumptions": [
-      "Usable floor space assumes 10% reduction for furniture, equipment, circulation",
-      "Comfort factor (0.85) prevents overcrowding and maintains safety",
-      "Partner dance capacities shown as number of couples",
-      "Content creation activities assume minimal crew (add 2-3 for larger productions)"
-    ]
+    "comfortFactor": 0.85,
+    "explanation": "We reduce total space by 10% for furniture and circulation, then apply 15% comfort buffer for safety and movement freedom"
   }
 }

@@ -6,7 +6,9 @@ export interface Activity {
   category: string
   spacePerPerson: number
   unit: "person" | "couple"
-  description: string
+  spacing: string
+  breakdown: string
+  similarTo: string
   icon: string
 }
 
