@@ -260,18 +260,13 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
                         </div>
 
                         <div className="bg-zinc-900/50 rounded-lg p-6 text-center border border-emerald-700/30">
-                          <p className="text-slate-400 text-sm mb-2">Recommended Capacity</p>
-                          <div className="flex items-baseline justify-center gap-2 mb-3">
+                          <p className="text-slate-400 text-sm mb-2">Estimated Capacity</p>
+                          <div className="flex items-baseline justify-center gap-2">
                             <span className="text-5xl font-bold text-emerald-400">
                               {result.capacity}
                             </span>
                             <span className="text-slate-300 text-lg">{result.unit}</span>
                           </div>
-                          {result.note && (
-                            <p className="text-emerald-300 text-sm font-medium">
-                              {result.note}
-                            </p>
-                          )}
                         </div>
 
                         <div className="mt-4 pt-4 border-t border-emerald-700/30">

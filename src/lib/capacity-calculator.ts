@@ -17,8 +17,6 @@ export interface CapacityResult {
   roomName: string
   capacity: number
   unit: string
-  isIdeal: boolean
-  note?: string
 }
 
 const COMFORT_FACTOR = 0.85
@@ -78,27 +76,11 @@ export function calculateCapacityForActivity(
   return rooms.map((room) => {
     const capacity = calculateCapacity(room.size.sqft, activity.spacePerPerson)
 
-    // Determine if this room is ideal for this activity
-    const isIdeal = capacity >= 8 // Arbitrary threshold for "viable"
-
-    // Add notes for special cases
-    let note: string | undefined
-
-    if (capacity < 4) {
-      note = "Too small for this activity"
-    } else if (capacity >= 30) {
-      note = "Excellent - plenty of space"
-    } else if (capacity >= 15) {
-      note = "Good capacity"
-    }
-
     return {
       roomId: room.id,
       roomName: room.name,
       capacity,
       unit: activity.unit === "couple" ? "couples" : "people",
-      isIdeal,
-      note,
     }
   })
 }

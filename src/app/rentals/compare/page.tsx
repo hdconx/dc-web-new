@@ -286,29 +286,16 @@ export default function ComparePage() {
                           {capacityResults.map((result) => (
                             <div
                               key={result.roomId}
-                              className={`bg-zinc-800/50 rounded-lg p-4 border-2 ${
-                                result.isIdeal
-                                  ? "border-emerald-500/50"
-                                  : "border-zinc-700"
-                              }`}
+                              className="bg-zinc-800/50 rounded-lg p-4 border border-zinc-700 hover:border-emerald-500/50 transition-colors"
                             >
                               <div className="text-center">
                                 <p className="text-slate-400 text-sm mb-2">{result.roomName}</p>
-                                <div className="flex items-baseline justify-center gap-1 mb-1">
-                                  <span className={`text-3xl font-bold ${
-                                    result.isIdeal ? "text-emerald-400" : "text-slate-500"
-                                  }`}>
+                                <div className="flex items-baseline justify-center gap-1">
+                                  <span className="text-3xl font-bold text-emerald-400">
                                     {result.capacity}
                                   </span>
-                                  <span className="text-slate-400 text-sm">{result.unit}</span>
+                                  <span className="text-slate-300 text-sm">{result.unit}</span>
                                 </div>
-                                {result.note && (
-                                  <p className={`text-xs mt-2 ${
-                                    result.isIdeal ? "text-emerald-300" : "text-slate-500"
-                                  }`}>
-                                    {result.note}
-                                  </p>
-                                )}
                               </div>
                             </div>
                           ))}
