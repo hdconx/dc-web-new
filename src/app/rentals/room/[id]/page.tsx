@@ -1,6 +1,6 @@
 "use client"
 
-import { use } from "react"
+import { use, useState } from "react"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import {
@@ -19,10 +19,12 @@ import {
   GraduationCap,
   PartyPopper,
   Video,
+  Calculator,
 } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { getRoom, getAvailableRooms, formatPrice, CONTACT } from "@/lib/config"
+import { getActivitiesByCategory, calculateCapacityForActivity } from "@/lib/capacity-calculator"
 
 // Activity icons mapping
 const activityIcons: Record<string, React.ReactNode> = {
@@ -71,6 +73,7 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
   const { id } = use(params)
   const room = getRoom(id)
   const allRooms = getAvailableRooms()
+  const [selectedActivity, setSelectedActivity] = useState<string>("")
 
   if (!room) {
     notFound()
@@ -175,41 +178,111 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
               </div>
             </section>
 
-            {/* Capacity by Activity */}
+            {/* Capacity Calculator - Interactive */}
             <section>
-              <h2 className="text-2xl font-semibold text-slate-50 mb-6">Capacity by Activity</h2>
-              <div className="bg-zinc-900 border border-zinc-800 rounded-lg overflow-hidden">
-                <table className="w-full">
-                  <thead className="bg-zinc-800">
-                    <tr>
-                      <th className="text-left py-3 px-4 text-slate-400 font-medium">Activity Type</th>
-                      <th className="text-center py-3 px-4 text-slate-400 font-medium">Min</th>
-                      <th className="text-center py-3 px-4 text-slate-400 font-medium">Optimal</th>
-                      <th className="text-center py-3 px-4 text-slate-400 font-medium">Max</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-zinc-800">
-                    {Object.entries(room.capacity).map(([activity, cap]) => (
-                      <tr key={activity} className="hover:bg-zinc-800/50 transition-colors">
-                        <td className="py-3 px-4">
-                          <div className="flex items-center gap-3">
-                            <span className="text-emerald-500">
-                              {activityIcons[activity] || <Users className="w-5 h-5" />}
-                            </span>
-                            <span className="text-slate-300 capitalize">{activity}</span>
+              <h2 className="text-2xl font-semibold text-slate-50 mb-6">Capacity Calculator</h2>
+
+              {(() => {
+                const activitiesByCategory = getActivitiesByCategory()
+                const capacityResults = selectedActivity
+                  ? calculateCapacityForActivity(selectedActivity, [room])
+                  : []
+                const result = capacityResults[0]
+                const activities = Object.values(activitiesByCategory).flat()
+                const activity = activities.find((a) => a.id === selectedActivity)
+
+                return (
+                  <div className="space-y-4">
+                    {/* Info Banner */}
+                    <div className="bg-emerald-900/20 border border-emerald-700/30 rounded-lg p-4">
+                      <div className="flex items-start gap-3">
+                        <Calculator className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                        <div>
+                          <p className="text-emerald-300 text-sm font-medium mb-1">
+                            Find Your Perfect Fit
+                          </p>
+                          <p className="text-emerald-200/70 text-xs">
+                            Select your activity type to see how many people this room comfortably holds.
+                            Based on industry-standard space requirements.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Activity Selector */}
+                    <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-5">
+                      <label htmlFor="room-activity-select" className="block text-slate-200 font-medium mb-3">
+                        What activity are you planning?
+                      </label>
+                      <select
+                        id="room-activity-select"
+                        value={selectedActivity}
+                        onChange={(e) => setSelectedActivity(e.target.value)}
+                        className="w-full bg-zinc-800 border border-zinc-700 text-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                      >
+                        <option value="">-- Select your activity type --</option>
+                        {Object.entries(activitiesByCategory).map(([category, acts]) => (
+                          <optgroup key={category} label={category}>
+                            {acts.map((act) => (
+                              <option key={act.id} value={act.id}>
+                                {act.icon} {act.name}
+                              </option>
+                            ))}
+                          </optgroup>
+                        ))}
+                      </select>
+                    </div>
+
+                    {/* Result Display */}
+                    {result && activity && (
+                      <div className="bg-gradient-to-br from-emerald-900/30 to-zinc-900 border-2 border-emerald-500/50 rounded-xl p-6">
+                        <div className="flex items-start gap-4 mb-4">
+                          <span className="text-5xl">{activity.icon}</span>
+                          <div className="flex-1">
+                            <h3 className="text-xl font-semibold text-slate-50 mb-1">
+                              {activity.name}
+                            </h3>
+                            <p className="text-sm text-slate-400">{activity.description}</p>
                           </div>
-                        </td>
-                        <td className="text-center py-3 px-4 text-slate-400">{cap.min}</td>
-                        <td className="text-center py-3 px-4 text-emerald-400 font-medium">{cap.optimal}</td>
-                        <td className="text-center py-3 px-4 text-slate-400">{cap.max}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-              <p className="text-sm text-slate-500 mt-3">
-                * These capacities are just a rough guide and vary based on activity type and setup requirements
-              </p>
+                        </div>
+
+                        <div className="bg-zinc-900/50 rounded-lg p-6 text-center border border-emerald-700/30">
+                          <p className="text-slate-400 text-sm mb-2">Recommended Capacity</p>
+                          <div className="flex items-baseline justify-center gap-2 mb-3">
+                            <span className="text-5xl font-bold text-emerald-400">
+                              {result.capacity}
+                            </span>
+                            <span className="text-slate-300 text-lg">{result.unit}</span>
+                          </div>
+                          {result.note && (
+                            <p className="text-emerald-300 text-sm font-medium">
+                              {result.note}
+                            </p>
+                          )}
+                        </div>
+
+                        <div className="mt-4 pt-4 border-t border-emerald-700/30">
+                          <p className="text-xs text-slate-500 text-center">
+                            Based on {activity.spacePerPerson} sqft per {activity.unit} •
+                            Includes comfort factor and circulation space
+                          </p>
+                        </div>
+                      </div>
+                    )}
+
+                    {/* Placeholder */}
+                    {!selectedActivity && (
+                      <div className="bg-zinc-900 border border-zinc-800 rounded-lg p-8 text-center">
+                        <Calculator className="w-10 h-10 text-slate-600 mx-auto mb-3" />
+                        <p className="text-slate-400 mb-1">Select an activity to see capacity</p>
+                        <p className="text-slate-500 text-sm">
+                          Choose from 20+ activity types to get accurate capacity recommendations
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                )
+              })()}
             </section>
 
             {/* Features */}
