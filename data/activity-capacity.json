@@ -1,0 +1,200 @@
+{
+  "$schema": "./schemas/activity-capacity.schema.json",
+  "_description": "Activity-based capacity calculator data - Edit to add/remove activities or adjust space requirements",
+  "_lastUpdated": "2026-02-02",
+
+  "activities": [
+    {
+      "id": "yoga",
+      "name": "Yoga / Pilates / Stretching",
+      "category": "Fitness & Wellness",
+      "spacePerPerson": 28,
+      "unit": "person",
+      "description": "Mat-based activities requiring personal space for floor work",
+      "icon": "🧘"
+    },
+    {
+      "id": "zumba",
+      "name": "Zumba / Dance Fitness / Aerobics",
+      "category": "Fitness & Wellness",
+      "spacePerPerson": 38,
+      "unit": "person",
+      "description": "High-energy cardio with dynamic arm and leg movements",
+      "icon": "💃"
+    },
+    {
+      "id": "kpop",
+      "name": "K-Pop / J-Pop Dance Classes",
+      "category": "Dance Classes",
+      "spacePerPerson": 37,
+      "unit": "person",
+      "description": "Structured choreography with formations and synchronized movements",
+      "icon": "🎵"
+    },
+    {
+      "id": "hiphop",
+      "name": "Hip-Hop / Street Dance",
+      "category": "Dance Classes",
+      "spacePerPerson": 45,
+      "unit": "person",
+      "description": "Dynamic freestyle and choreographed urban dance styles",
+      "icon": "🎤"
+    },
+    {
+      "id": "contemporary",
+      "name": "Contemporary / Jazz Dance",
+      "category": "Dance Classes",
+      "spacePerPerson": 50,
+      "unit": "person",
+      "description": "Expressive dance with floor work and expansive movements",
+      "icon": "🩰"
+    },
+    {
+      "id": "latin-partner",
+      "name": "Salsa / Bachata / Latin Dance",
+      "category": "Partner Dance",
+      "spacePerPerson": 55,
+      "unit": "couple",
+      "description": "Latin-style partner dancing with turns and compact patterns",
+      "icon": "💑"
+    },
+    {
+      "id": "ballroom-standard",
+      "name": "Waltz / Foxtrot / Standard Ballroom",
+      "category": "Partner Dance",
+      "spacePerPerson": 110,
+      "unit": "couple",
+      "description": "Classic ballroom with large sweeping movements across the floor",
+      "icon": "👫"
+    },
+    {
+      "id": "tango",
+      "name": "Argentine Tango",
+      "category": "Partner Dance",
+      "spacePerPerson": 65,
+      "unit": "couple",
+      "description": "Intimate partner dance with moderate space for movements",
+      "icon": "🌹"
+    },
+    {
+      "id": "bollywood",
+      "name": "Bollywood / Indian Dance",
+      "category": "Cultural Dance",
+      "spacePerPerson": 40,
+      "unit": "person",
+      "description": "Energetic fusion dance with expressive arm and body movements",
+      "icon": "🪔"
+    },
+    {
+      "id": "belly-dance",
+      "name": "Belly Dance / Middle Eastern",
+      "category": "Cultural Dance",
+      "spacePerPerson": 35,
+      "unit": "person",
+      "description": "Isolated movements requiring moderate personal space",
+      "icon": "🧿"
+    },
+    {
+      "id": "line-dance",
+      "name": "Line Dancing",
+      "category": "Social Dance",
+      "spacePerPerson": 30,
+      "unit": "person",
+      "description": "Synchronized group dance in lines and patterns",
+      "icon": "🤠"
+    },
+    {
+      "id": "content-solo",
+      "name": "Content Creation - Solo/Duo",
+      "category": "Content Production",
+      "spacePerPerson": 400,
+      "unit": "person",
+      "description": "Full room space for camera angles, lighting, and creative shots",
+      "icon": "📹"
+    },
+    {
+      "id": "content-group",
+      "name": "Content Creation - Group (3-8 performers)",
+      "category": "Content Production",
+      "spacePerPerson": 50,
+      "unit": "person",
+      "description": "Group performances with space for performers and crew",
+      "icon": "🎬"
+    },
+    {
+      "id": "photoshoot",
+      "name": "Photography / Modeling Shoot",
+      "category": "Content Production",
+      "spacePerPerson": 300,
+      "unit": "person",
+      "description": "Professional shoots with equipment and backdrop space",
+      "icon": "📸"
+    },
+    {
+      "id": "workshop-seated",
+      "name": "Workshop - Seated (Theory/Lecture)",
+      "category": "Workshops & Events",
+      "spacePerPerson": 18,
+      "unit": "person",
+      "description": "Classroom-style seating with tables and chairs",
+      "icon": "📚"
+    },
+    {
+      "id": "workshop-active",
+      "name": "Workshop - Active Movement",
+      "category": "Workshops & Events",
+      "spacePerPerson": 40,
+      "unit": "person",
+      "description": "Interactive workshops with physical activities and demonstrations",
+      "icon": "🎓"
+    },
+    {
+      "id": "rehearsal",
+      "name": "Performance Rehearsal",
+      "category": "Rehearsals",
+      "spacePerPerson": 45,
+      "unit": "person",
+      "description": "Stage blocking and choreography practice",
+      "icon": "🎭"
+    },
+    {
+      "id": "audition",
+      "name": "Audition / Self-Tape Recording",
+      "category": "Rehearsals",
+      "spacePerPerson": 350,
+      "unit": "person",
+      "description": "Solo practice with space for multiple takes and camera setup",
+      "icon": "🎬"
+    },
+    {
+      "id": "party-active",
+      "name": "Dance Party / Social Dancing",
+      "category": "Events & Parties",
+      "spacePerPerson": 25,
+      "unit": "person",
+      "description": "Social event with dancing, mingling, and movement",
+      "icon": "🎉"
+    },
+    {
+      "id": "party-mixed",
+      "name": "Birthday Party / Celebration (Mixed)",
+      "category": "Events & Parties",
+      "spacePerPerson": 20,
+      "unit": "person",
+      "description": "Social gathering with both seated and standing areas",
+      "icon": "🎂"
+    }
+  ],
+
+  "notes": {
+    "methodology": "Capacity calculated as: (Usable Floor Space / Space per Person) × Comfort Factor (0.85)",
+    "comfortFactor": 0.85,
+    "usableSpacePercentage": 0.90,
+    "assumptions": [
+      "Usable floor space assumes 10% reduction for furniture, equipment, circulation",
+      "Comfort factor (0.85) prevents overcrowding and maintains safety",
+      "Partner dance capacities shown as number of couples",
+      "Content creation activities assume minimal crew (add 2-3 for larger productions)"
+    ]
+  }
+}

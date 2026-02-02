@@ -2,10 +2,11 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ChevronLeft, Check, X, Plus, Square, Users, DollarSign, Sparkles, Wrench, Target } from "lucide-react"
+import { ChevronLeft, Check, X, Plus, Square, Users, DollarSign, Sparkles, Wrench, Target, Calculator } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { getAvailableRooms, formatPrice } from "@/lib/config"
+import { getActivitiesByCategory, calculateCapacityForActivity } from "@/lib/capacity-calculator"
 
 type CompareSection = "overview" | "capacity" | "features" | "equipment" | "bestFor"
 
@@ -13,6 +14,7 @@ export default function ComparePage() {
   const allRooms = getAvailableRooms()
   const [selectedRooms, setSelectedRooms] = useState<string[]>(["room-a", "room-d"])
   const [activeSection, setActiveSection] = useState<CompareSection>("overview")
+  const [selectedActivity, setSelectedActivity] = useState<string>("")
 
   const rooms = allRooms.filter((r) => selectedRooms.includes(r.id))
 
@@ -196,67 +198,138 @@ export default function ComparePage() {
             </div>
           )}
 
-          {/* Capacity Section */}
-          {activeSection === "capacity" && (
-            <div className="bg-zinc-900 rounded-xl border border-zinc-800 overflow-hidden">
-              <div className="bg-emerald-900/20 border-b border-emerald-700/30 p-3">
-                <p className="text-emerald-300 text-xs">
-                  ℹ️ These are ballpark guidance figures only. Actual capacity varies based on activity type, setup requirements, and comfort preferences.
-                </p>
-              </div>
-              <table className="w-full">
-                <thead>
-                  <tr className="border-b border-zinc-800">
-                    <th className="text-left py-4 px-4 text-slate-400 font-medium">Activity Type</th>
-                    {rooms.map((room) => (
-                      <th key={room.id} className="text-center py-4 px-4 text-slate-400 font-medium">
-                        {room.name}
-                      </th>
+          {/* Capacity Section - Interactive Calculator */}
+          {activeSection === "capacity" && (() => {
+            const activitiesByCategory = getActivitiesByCategory()
+            const capacityResults = selectedActivity
+              ? calculateCapacityForActivity(selectedActivity, rooms)
+              : []
+
+            return (
+              <div className="space-y-6">
+                {/* Info Banner */}
+                <div className="bg-emerald-900/20 border border-emerald-700/30 rounded-xl p-4">
+                  <div className="flex items-start gap-3">
+                    <Calculator className="w-5 h-5 text-emerald-400 flex-shrink-0 mt-0.5" />
+                    <div>
+                      <p className="text-emerald-300 text-sm font-medium mb-1">
+                        Interactive Capacity Calculator
+                      </p>
+                      <p className="text-emerald-200/70 text-xs">
+                        Select your activity type below to see recommended capacity for each room.
+                        Calculations based on industry-standard space requirements per person/couple.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Activity Selector */}
+                <div className="bg-zinc-900 rounded-xl border border-zinc-800 p-6">
+                  <label htmlFor="activity-select" className="block text-slate-200 font-medium mb-3">
+                    What activity are you planning?
+                  </label>
+                  <select
+                    id="activity-select"
+                    value={selectedActivity}
+                    onChange={(e) => setSelectedActivity(e.target.value)}
+                    className="w-full bg-zinc-800 border border-zinc-700 text-slate-200 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent"
+                  >
+                    <option value="">-- Select an activity type --</option>
+                    {Object.entries(activitiesByCategory).map(([category, activities]) => (
+                      <optgroup key={category} label={category}>
+                        {activities.map((activity) => (
+                          <option key={activity.id} value={activity.id}>
+                            {activity.icon} {activity.name}
+                          </option>
+                        ))}
+                      </optgroup>
                     ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    { key: "dance", label: "K-pop / Hip-hop dance classes" },
-                    { key: "dance", label: "Ballroom dancing (couples)", suffix: " couples" },
-                    { key: "workshop", label: "Workshops & training sessions" },
-                    { key: "fitness", label: "Yoga / Zumba / Group fitness" },
-                    { key: "filming", label: "Content creation / Video shoots" },
-                  ].map((activity, idx) => (
-                    <tr key={idx} className="border-b border-zinc-800/50">
-                      <td className="py-4 px-4 text-slate-300 text-sm">{activity.label}</td>
-                      {rooms.map((room) => {
-                        const cap = room.capacity[activity.key as keyof typeof room.capacity]
-                        return (
-                          <td key={room.id} className="text-center py-4 px-4">
-                            {cap ? (
-                              <div className="flex flex-col">
-                                <span className="text-emerald-400 font-semibold">
-                                  {activity.key === "dance" && activity.label.includes("Ballroom")
-                                    ? `${Math.floor(cap.optimal / 2)}${activity.suffix || ""}`
-                                    : cap.optimal}
-                                </span>
-                                <span className="text-slate-500 text-xs">
-                                  {activity.key === "dance" && activity.label.includes("Ballroom")
-                                    ? `max ${Math.floor(cap.max / 2)}${activity.suffix || ""}`
-                                    : `max ${cap.max}`}
-                                </span>
+                  </select>
+                </div>
+
+                {/* Results */}
+                {selectedActivity && capacityResults.length > 0 && (() => {
+                  const activities = Object.values(activitiesByCategory).flat()
+                  const activity = activities.find((a) => a.id === selectedActivity)
+
+                  return (
+                    <div className="bg-zinc-900 rounded-xl border border-zinc-800 overflow-hidden">
+                      {/* Activity Details Header */}
+                      <div className="bg-zinc-800/50 border-b border-zinc-700 p-4">
+                        <div className="flex items-start gap-3">
+                          <span className="text-3xl">{activity?.icon}</span>
+                          <div className="flex-1">
+                            <h3 className="text-lg font-semibold text-slate-50 mb-1">
+                              {activity?.name}
+                            </h3>
+                            <p className="text-sm text-slate-400">{activity?.description}</p>
+                            <p className="text-xs text-slate-500 mt-2">
+                              Space requirement: {activity?.spacePerPerson} sqft per {activity?.unit}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Capacity Results Grid */}
+                      <div className="p-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                          {capacityResults.map((result) => (
+                            <div
+                              key={result.roomId}
+                              className={`bg-zinc-800/50 rounded-lg p-4 border-2 ${
+                                result.isIdeal
+                                  ? "border-emerald-500/50"
+                                  : "border-zinc-700"
+                              }`}
+                            >
+                              <div className="text-center">
+                                <p className="text-slate-400 text-sm mb-2">{result.roomName}</p>
+                                <div className="flex items-baseline justify-center gap-1 mb-1">
+                                  <span className={`text-3xl font-bold ${
+                                    result.isIdeal ? "text-emerald-400" : "text-slate-500"
+                                  }`}>
+                                    {result.capacity}
+                                  </span>
+                                  <span className="text-slate-400 text-sm">{result.unit}</span>
+                                </div>
+                                {result.note && (
+                                  <p className={`text-xs mt-2 ${
+                                    result.isIdeal ? "text-emerald-300" : "text-slate-500"
+                                  }`}>
+                                    {result.note}
+                                  </p>
+                                )}
                               </div>
-                            ) : (
-                              <span className="text-slate-500">-</span>
-                            )}
-                          </td>
-                        )
-                      })}
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-              <p className="text-xs text-slate-500 p-4">
-                Numbers show ideal capacity and maximum capacity. Larger bold number = ideal, smaller number = maximum.
-              </p>
-            </div>
-          )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+
+                      {/* Disclaimer Footer */}
+                      <div className="border-t border-zinc-800 p-4 bg-zinc-800/30">
+                        <p className="text-xs text-slate-500 text-center">
+                          ℹ️ Capacities are calculated guidance only. Actual capacity varies based on setup requirements,
+                          equipment placement, and comfort preferences. Contact us to discuss your specific needs.
+                        </p>
+                      </div>
+                    </div>
+                  )
+                })()}
+
+                {/* Placeholder when no activity selected */}
+                {!selectedActivity && (
+                  <div className="bg-zinc-900 rounded-xl border border-zinc-800 p-12 text-center">
+                    <Calculator className="w-12 h-12 text-slate-600 mx-auto mb-4" />
+                    <p className="text-slate-400 text-lg mb-2">Select an activity to see capacity recommendations</p>
+                    <p className="text-slate-500 text-sm">
+                      Choose from 20+ activity types including dance classes, partner dancing,
+                      fitness, workshops, and content creation.
+                    </p>
+                  </div>
+                )}
+              </div>
+            )
+          })()}
 
           {/* Features Section */}
           {activeSection === "features" && (

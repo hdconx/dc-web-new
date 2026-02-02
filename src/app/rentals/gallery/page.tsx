@@ -194,28 +194,28 @@ export default function GalleryPage() {
             {currentImages[lightboxIndex]?.caption || "Studio image"} - {currentRoom?.name}
           </DialogTitle>
           <div className="relative w-full h-full flex items-center justify-center">
-            {/* Close button */}
+            {/* Close button - positioned at top-right corner */}
             <button
               onClick={() => setLightboxOpen(false)}
-              className="absolute top-4 right-4 z-10 bg-black/50 backdrop-blur-sm p-2 rounded-full text-white hover:bg-black/70 transition-colors"
+              className="fixed top-6 right-6 z-50 bg-black/70 backdrop-blur-sm p-3 rounded-full text-white hover:bg-black/90 transition-colors shadow-lg"
             >
               <X className="w-6 h-6" />
             </button>
 
-            {/* Navigation arrows */}
+            {/* Navigation arrows - positioned at left and right edges */}
             {currentImages.length > 1 && (
               <>
                 <button
                   onClick={prevImage}
-                  className="absolute left-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 backdrop-blur-sm p-3 rounded-full text-white hover:bg-black/70 transition-colors"
+                  className="fixed left-6 top-1/2 -translate-y-1/2 z-50 bg-black/70 backdrop-blur-sm p-4 rounded-full text-white hover:bg-black/90 transition-colors shadow-lg"
                 >
-                  <ChevronLeft className="w-6 h-6" />
+                  <ChevronLeft className="w-7 h-7" />
                 </button>
                 <button
                   onClick={nextImage}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 z-10 bg-black/50 backdrop-blur-sm p-3 rounded-full text-white hover:bg-black/70 transition-colors"
+                  className="fixed right-6 top-1/2 -translate-y-1/2 z-50 bg-black/70 backdrop-blur-sm p-4 rounded-full text-white hover:bg-black/90 transition-colors shadow-lg"
                 >
-                  <ChevronRight className="w-6 h-6" />
+                  <ChevronRight className="w-7 h-7" />
                 </button>
               </>
             )}

@@ -24,13 +24,12 @@
       "baseHourlyRate": 120,
       "features": [
         "Wall-to-wall mirrors (3 walls)",
-        "Professional sound system with wireless microphone",
-        "Controlled RGB lighting",
+        "High power audio system with wireless microphone",
+        "Adjustable lighting (RGB)",
         "Stage/Platform available",
         "Projector & screen available",
         "Air-conditioned",
-        "High-quality HPL AC3 Grade flooring with rubber underlay",
-        "Direct access to changing rooms"
+        "High-quality HPL AC3 Grade flooring with rubber underlay"
       ],
       "equipment": {
         "included": ["Sound system", "Wireless mic", "RGB lighting"],
@@ -77,11 +76,11 @@
       "baseHourlyRate": 80,
       "features": [
         "Wall-to-wall mirrors (3 walls)",
-        "Professional sound system",
+        "Sound system with Bluetooth receivers",
         "Projector & screen available",
         "Air-conditioned",
         "High-quality HPL AC3 Grade flooring with rubber underlay",
-        "Controllable lighting"
+        "Adjustable lighting"
       ],
       "equipment": {
         "included": ["Sound system", "Basic lighting"],
@@ -108,7 +107,7 @@
       "id": "room-b",
       "name": "Room B",
       "displayName": "Intimate Studio",
-      "subtitle": "Medium Studio (Connected to Room A)",
+      "subtitle": "Medium Studio (Can Be Connected to Room A)",
       "description": "A cozy extension space that can operate independently or connect with Room A for larger events.",
       "size": {
         "sqft": 400,
@@ -123,7 +122,7 @@
       "baseHourlyRate": 60,
       "features": [
         "Wall-to-wall mirrors (3 walls)",
-        "Professional sound system",
+        "Sound system with Bluetooth receivers",
         "Adjustable lighting",
         "Air-conditioned",
         "Connected to Room A (can be opened for larger events)",
@@ -169,7 +168,7 @@
       "baseHourlyRate": 50,
       "features": [
         "Wall-to-wall mirrors (3 walls)",
-        "Professional sound system",
+        "Sound system with Bluetooth receivers",
         "Air-conditioned",
         "Private & intimate setting",
         "High-quality HPL AC3 Grade flooring with rubber underlay",

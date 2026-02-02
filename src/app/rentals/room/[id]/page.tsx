@@ -306,7 +306,7 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
                     <li>• Plus many other discount opportunities!</li>
                   </ul>
                   <p className="text-xs text-emerald-200/70 mt-3 italic">
-                    Special promos during festive seasons (New Year, etc.). Contact us to discuss your needs!
+                    Contact us to find out our latest special promotions!
                   </p>
                 </div>
 
