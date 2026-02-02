@@ -1,10 +1,18 @@
 # Knowledge Base Version
 
-**Current Version:** v1.6.0
-**Last Updated:** 2026-02-02
+**Current Version:** v1.7.0
+**Last Updated:** 2026-02-03
 **Status:** Active Development
 
 ## Changelog
+
+### v1.7.0 (2026-02-03 - Capacity Calculator UX Improvements)
+- Added supplemental entry S-2026-02-03-01
+- Documented: Capacity calculator subjective labels removal (critical UX fix)
+- Removed: "Good", "Excellent", "Too small" labels that made assumptions about user needs
+- Removed: Color coding that highlighted "ideal" results in green and grayed out others
+- Changed: "Recommended Capacity" → "Estimated Capacity" for neutral tone
+- Future enhancement planned: Optimal vs Maximum capacity range display
 
 ### v1.6.0 (2026-02-02 - Gallery, Compare & Pricing Page Review)
 - Added 7 new supplemental entries (S-2026-02-02-01 to 07)

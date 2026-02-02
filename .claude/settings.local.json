@@ -11,7 +11,8 @@
       "Bash(xargs kill -9)",
       "Bash(fuser:*)",
       "Bash(netstat:*)",
-      "Bash(docker compose:*)"
+      "Bash(docker compose:*)",
+      "Bash(du:*)"
     ],
     "additionalDirectories": [
       "/mnt/c/users/nvntr/documents/dc-web-new - Copy"

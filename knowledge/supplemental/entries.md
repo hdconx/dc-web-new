@@ -1501,3 +1501,45 @@ Acknowledges that discount opportunities extend beyond the published list. Maint
 This restriction reinforced during capacity calculator implementation (2026-02-02). Previously documented in S-2026-02-01-02 but needs stronger emphasis as it keeps appearing in activity lists. This is a STRATEGIC decision based on competitive landscape and facility limitations.
 
 ---
+
+## S-2026-02-03-01
+
+**Related Sections:** Capacity Calculator, Compare Page, Room Detail Pages
+**Status:** Confirmed
+**Type:** UX Improvement
+**Date:** 2026-02-03
+
+### Content
+
+**Capacity Calculator - Remove Subjective Labels and Color Coding**
+
+**Problem Identified:**
+Capacity calculator was highlighting results as "good" or "ideal" with green color coding and graying out "non-ideal" results. This was flawed because:
+- System doesn't know how many attendees the user actually needs
+- Someone needing 8 people doesn't care that a room fits 30
+- Someone needing 25 people doesn't want smaller capacities grayed out as "bad"
+- Subjective labels ("Good capacity", "Excellent - plenty of space", "Too small") were presumptuous
+
+**Changes Made:**
+- Removed ALL subjective labels and notes
+- Removed color coding that differentiated "ideal" vs "non-ideal" results
+- Display all capacity numbers equally with consistent emerald color
+- Changed "Recommended Capacity" → "Estimated Capacity" (more neutral)
+- Added subtle hover effect for better UX
+- Let users make their own decisions based on objective numbers
+
+**Implementation:**
+- Updated `src/lib/capacity-calculator.ts` - removed `isIdeal` and `note` fields
+- Updated `src/app/rentals/compare/page.tsx` - equal display for all results
+- Updated `src/app/rentals/room/[id]/page.tsx` - removed subjective note display
+
+**Future Enhancement Planned:**
+- Show BOTH optimal capacity (comfortable spacing) AND maximum capacity (tighter spacing)
+- Give users range instead of single number
+- Let them choose based on their comfort level and budget
+
+### Notes
+
+Critical UX fix based on user feedback. Calculator now shows objective data only without making assumptions about user needs. Future enhancement will provide optimal vs maximum capacity range for even more flexibility.
+
+---
