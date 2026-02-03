@@ -1,7 +1,6 @@
 "use client"
 
-import { useState } from "react"
-import { ChevronLeft, MessageCircle, ChevronDown, Check, Quote, Grid, Image, DollarSign, GitCompare, Tag } from "lucide-react"
+import { ChevronLeft, MessageCircle, Check, Grid, Image, GitCompare, Tag, ArrowRight } from "lucide-react"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -13,20 +12,22 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion"
 
-// Dynamic WhatsApp link with room pre-fill
-function getWhatsAppForRoom(roomName: string, subtitle: string) {
-  const message = `Hi! I'm interested in renting ${roomName} (${subtitle}) at Dance Connexions.\n\n- Preferred date:\n- Time slot:\n- Activity type:\n- Group size:\n\nPlease let me know availability and pricing. Thank you!`
-  return `https://wa.me/${CONTACT.whatsapp.number}?text=${encodeURIComponent(message)}`
+const DETAIL_LABELS: Record<string, string> = {
+  dimensions: "Dimensions",
+  capacity: "Capacity",
+  equipment: "Equipment",
+  climate: "Climate",
+  special: "Note",
+  ideal: "Ideal for",
 }
 
 export default function RentalsPage() {
-  const [expandedStudio, setExpandedStudio] = useState<number | null>(null)
-
   const whatsappLink = getWhatsAppUrl("rentalInquiry")
 
   const studios = [
     {
       id: 1,
+      roomId: "room-a",
       name: "Room A",
       subtitle: "Large Studio",
       sqft: "1,200 sq ft",
@@ -51,6 +52,7 @@ export default function RentalsPage() {
     },
     {
       id: 2,
+      roomId: "room-d",
       name: "Room D",
       subtitle: "Medium Studio (Standalone)",
       sqft: "700 sq ft",
@@ -72,6 +74,7 @@ export default function RentalsPage() {
     },
     {
       id: 3,
+      roomId: "room-b",
       name: "Room B",
       subtitle: "Medium Studio (Connected)",
       sqft: "400 sq ft",
@@ -89,6 +92,7 @@ export default function RentalsPage() {
     },
     {
       id: 4,
+      roomId: "room-c",
       name: "Room C",
       subtitle: "Small Studio",
       sqft: "300 sq ft",
@@ -288,35 +292,26 @@ export default function RentalsPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {studios.map((studio) => (
-              <button
+              <Link
                 key={studio.id}
-                onClick={() => setExpandedStudio(expandedStudio === studio.id ? null : studio.id)}
-                className="text-left focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-zinc-950 rounded-lg"
+                href={`/rentals/room/${studio.roomId}`}
+                className="group block"
               >
-                <div className="bg-zinc-900 border border-slate-800 rounded-lg overflow-hidden hover:border-slate-600 transition-all duration-300 cursor-pointer h-full">
+                <div className="bg-zinc-900 border border-slate-800 rounded-lg overflow-hidden hover:border-emerald-500/50 transition-all duration-300 h-full">
                   <div className="relative h-48 md:h-56 overflow-hidden rounded-t-lg bg-slate-800">
                     <img
                       src={studio.image || "/placeholder.svg"}
                       alt={`${studio.name} - ${studio.subtitle}`}
-                      className="w-full h-full object-cover transition-all duration-500 hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
 
                   <div className="p-6 space-y-4">
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <h3 className="text-xl font-semibold text-slate-50">
-                          {studio.name} <span className="text-slate-400 font-normal">- {studio.subtitle}</span>
-                        </h3>
-                        <p className="text-sm text-slate-400 mt-1">{studio.sqft}</p>
-                      </div>
-                      <div className="flex-shrink-0">
-                        <ChevronDown
-                          className={`w-5 h-5 text-slate-500 transition-transform duration-300 ${
-                            expandedStudio === studio.id ? "rotate-180" : ""
-                          }`}
-                        />
-                      </div>
+                    <div>
+                      <h3 className="text-xl font-semibold text-slate-50 group-hover:text-emerald-400 transition-colors">
+                        {studio.name} <span className="text-slate-400 font-normal">- {studio.subtitle}</span>
+                      </h3>
+                      <p className="text-sm text-slate-400 mt-1">{studio.sqft}</p>
                     </div>
 
                     <p className="text-sm text-slate-300 font-medium">Best for: {studio.bestFor}</p>
@@ -330,54 +325,32 @@ export default function RentalsPage() {
                       ))}
                     </div>
 
-                    <div className="text-xs text-slate-500 font-medium flex items-center gap-1">
-                      <ChevronDown className="w-3 h-3" />
-                      {expandedStudio === studio.id ? "Hide Details" : "View Details"}
+                    <div className="pt-4 border-t border-slate-800">
+                      <h4 className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-2">
+                        Additional Details
+                      </h4>
+                      <ul className="space-y-1.5">
+                        {Object.entries(studio.details).map(([key, value]) => (
+                          <li key={key} className="flex items-start gap-2 text-sm text-slate-300">
+                            <span className="text-emerald-500 mt-0.5">•</span>
+                            <span>
+                              <span className="text-slate-400 font-medium">{DETAIL_LABELS[key] || key}:</span>{" "}
+                              {value}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
 
-                    {expandedStudio === studio.id && (
-                      <div className="pt-4 border-t border-slate-800 space-y-4 mt-4">
-                        <div>
-                          <h4 className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-1">
-                            Additional Details
-                          </h4>
-                          <p className="text-sm text-slate-300">
-                            {studio.details.capacity && (
-                              <>
-                                Capacity: {studio.details.capacity}
-                                <br />
-                              </>
-                            )}
-                            {studio.details.equipment && (
-                              <>
-                                Equipment: {studio.details.equipment}
-                                <br />
-                              </>
-                            )}
-                            {studio.details.climate && (
-                              <>
-                                Climate: {studio.details.climate}
-                                <br />
-                              </>
-                            )}
-                            {studio.details.ideal && <>Ideal for: {studio.details.ideal}</>}
-                          </p>
-                        </div>
-                        <a
-                          href={getWhatsAppForRoom(studio.name, studio.subtitle)}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={(e) => e.stopPropagation()}
-                          className="inline-flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-2.5 px-5 rounded-lg transition-all duration-200 text-sm"
-                        >
-                          <MessageCircle className="w-4 h-4" />
-                          Inquire About {studio.name}
-                        </a>
-                      </div>
-                    )}
+                    <div className="flex items-center pt-4 border-t border-slate-800">
+                      <span className="text-emerald-400 font-medium group-hover:text-emerald-300 transition-colors flex items-center gap-2">
+                        View Details
+                        <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </button>
+              </Link>
             ))}
           </div>
         </div>
