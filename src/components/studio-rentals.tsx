@@ -12,22 +12,22 @@ export function StudioRentals({ onCheckAvailabilityClick, onContactClick }: Stud
     {
       name: "Main Space",
       id: "studio-a",
-      image: "/rentals-hero/Studio A-Main.jpg",
+      image: "/images/studios/01-Studio-A-Main-Floor.webp",
     },
     {
       name: "Intimate Studio",
       id: "studio-b",
-      image: "/rentals-hero/studio-b-medium-connected.jpg",
+      image: "/images/studios/02-Studio-B.webp",
     },
     {
       name: "Workshop Space",
       id: "studio-c",
-      image: "/rentals-hero/studio-c-small.jpg",
+      image: "/images/studios/03-Studio-C.webp",
     },
     {
       name: "Creation Studio",
       id: "studio-d",
-      image: "/rentals-hero/studio-d-medium-standalone.jpg",
+      image: "/images/studios/04-Studio-D.webp",
     },
   ]
 

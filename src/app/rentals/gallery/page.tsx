@@ -15,23 +15,21 @@ import {
 // Gallery images for each room (using actual photos)
 const galleryImages: Record<string, { src: string; caption: string }[]> = {
   "room-a": [
-    { src: "/rentals-hero/01-MARKETING-SELECTED/01-Studio-A-Main-Floor.jpg", caption: "Main dance floor with 3-wall mirrors" },
-    { src: "/rentals-hero/Studio A-Main.jpg", caption: "Full studio view" },
-    { src: "/rentals-hero/01-MARKETING-SELECTED/05-Studio-A-Seating-Setup.jpg", caption: "Workshop seating configuration" },
-    { src: "/rentals-hero/01-MARKETING-SELECTED/06-Studio-A-Event-Setup.jpg", caption: "Event setup with chairs" },
-    { src: "/rentals-hero/Studio A - 1.jpg", caption: "Studio A from entrance" },
+    { src: "/images/studios/01-Studio-A-Main-Floor.webp", caption: "Main dance floor with 3-wall mirrors" },
+    { src: "/images/studios/05-Studio-A-Seating-Setup.webp", caption: "Workshop seating configuration" },
+    { src: "/images/studios/06-Studio-A-Event-Setup.webp", caption: "Event setup with chairs" },
+    { src: "/images/studios/Studio A - 1.webp", caption: "Studio A from entrance" },
   ],
   "room-b": [
-    { src: "/rentals-hero/01-MARKETING-SELECTED/02-Studio-B.jpg", caption: "Studio B - connected to Room A" },
+    { src: "/images/studios/02-Studio-B.webp", caption: "Studio B - connected to Room A" },
     // TODO: Add more Room B photos
   ],
   "room-c": [
-    { src: "/rentals-hero/01-MARKETING-SELECTED/03-Studio-C.jpg", caption: "Studio C - compact & private" },
+    { src: "/images/studios/03-Studio-C.webp", caption: "Studio C - compact & private" },
     // TODO: Add more Room C photos
   ],
   "room-d": [
-    { src: "/rentals-hero/01-MARKETING-SELECTED/04-Studio-D.jpg", caption: "Studio D - standalone medium studio" },
-    { src: "/rentals-hero/studio-d-medium-standalone.jpg", caption: "Versatile creation space" },
+    { src: "/images/studios/04-Studio-D.webp", caption: "Studio D - standalone medium studio" },
   ],
 }
 

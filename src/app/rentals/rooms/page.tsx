@@ -87,19 +87,19 @@ export default function RoomsListingPage() {
                 className="group bg-zinc-900 border border-zinc-800 rounded-xl overflow-hidden hover:border-emerald-500/50 transition-all duration-300"
               >
                 {/* Room Image */}
-                <div className="relative h-56 md:h-64 overflow-hidden bg-zinc-800">
+                <div className="relative h-56 md:h-64 overflow-hidden rounded-t-xl bg-zinc-800">
                   <img
                     src={
-                      room.id === "room-a" ? "/rentals-hero/Studio A-Main.jpg" :
-                      room.id === "room-d" ? "/rentals-hero/studio-d-medium-standalone.jpg" :
-                      room.id === "room-b" ? "/rentals-hero/studio-b-medium-connected.jpg" :
-                      room.id === "room-c" ? "/rentals-hero/studio-c-small.jpg" :
-                      "/rentals-hero/Studio A-Main.jpg"
+                      room.id === "room-a" ? "/images/studios/01-Studio-A-Main-Floor.webp" :
+                      room.id === "room-d" ? "/images/studios/04-Studio-D.webp" :
+                      room.id === "room-b" ? "/images/studios/02-Studio-B.webp" :
+                      room.id === "room-c" ? "/images/studios/03-Studio-C.webp" :
+                      "/images/studios/01-Studio-A-Main-Floor.webp"
                     }
                     alt={room.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     onError={(e) => {
-                      e.currentTarget.src = "/rentals-hero/Studio A-Main.jpg"
+                      e.currentTarget.src = "/images/studios/01-Studio-A-Main-Floor.webp"
                     }}
                   />
                   {/* Price Badge */}

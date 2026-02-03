@@ -50,9 +50,9 @@
         "No high heels that may damage floor"
       ],
       "images": [
-        "/rentals-hero/Studio A-Main.jpg",
-        "/rentals-hero/Studio A - 1.jpg",
-        "/rentals-hero/Studio A - 3.jpg"
+        "/images/studios/01-Studio-A-Main-Floor.webp",
+        "/images/studios/Studio A - 1.webp",
+        "/images/studios/Studio A - 3.webp"
       ],
       "available": true,
       "sortOrder": 1
@@ -98,7 +98,7 @@
         "Proper dance/indoor footwear only"
       ],
       "images": [
-        "/rentals-hero/studio-d-medium-standalone.jpg"
+        "/images/studios/04-Studio-D.webp"
       ],
       "available": true,
       "sortOrder": 4
@@ -145,7 +145,7 @@
       ],
       "connectedTo": "room-a",
       "images": [
-        "/rentals-hero/studio-b-medium-connected.jpg"
+        "/images/studios/02-Studio-B.webp"
       ],
       "available": true,
       "sortOrder": 2
@@ -188,7 +188,7 @@
         "No food/drinks on dance floor"
       ],
       "images": [
-        "/rentals-hero/studio-c-small.jpg"
+        "/images/studios/03-Studio-C.webp"
       ],
       "available": true,
       "sortOrder": 3

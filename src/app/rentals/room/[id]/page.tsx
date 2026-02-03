@@ -89,11 +89,11 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
       {/* Hero Section */}
       <section className="relative h-[50vh] min-h-[400px] overflow-hidden">
         <img
-          src={room.images[0] || `/rentals-hero/Studio A-Main.jpg`}
+          src={room.images[0] || `/images/studios/01-Studio-A-Main-Floor.webp`}
           alt={room.name}
           className="absolute inset-0 w-full h-full object-cover"
           onError={(e) => {
-            e.currentTarget.src = "/rentals-hero/Studio A-Main.jpg"
+            e.currentTarget.src = "/images/studios/01-Studio-A-Main-Floor.webp"
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/50 to-transparent" />
@@ -465,11 +465,11 @@ export default function RoomDetailPage({ params }: { params: Promise<{ id: strin
               >
                 <div className="h-32 bg-zinc-700 overflow-hidden">
                   <img
-                    src={otherRoom.images[0] || "/rentals-hero/Studio A-Main.jpg"}
+                    src={otherRoom.images[0] || "/images/studios/01-Studio-A-Main-Floor.webp"}
                     alt={otherRoom.name}
                     className="w-full h-full object-cover transition-transform group-hover:scale-105"
                     onError={(e) => {
-                      e.currentTarget.src = "/rentals-hero/Studio A-Main.jpg"
+                      e.currentTarget.src = "/images/studios/01-Studio-A-Main-Floor.webp"
                     }}
                   />
                 </div>

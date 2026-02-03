@@ -32,7 +32,7 @@ export default function RentalsPage() {
       sqft: "1,200 sq ft",
       rate: "From RM 120/hour",
       bestFor: "Large classes, workshops, rehearsals, performances, events",
-      image: "/rentals-hero/Studio A-Main.jpg",
+      image: "/images/studios/01-Studio-A-Main-Floor.webp",
       features: [
         "Mirrors covering 3 walls",
         "Professional sound + wireless mic",
@@ -56,7 +56,7 @@ export default function RentalsPage() {
       sqft: "700 sq ft",
       rate: "From RM 80/hour",
       bestFor: "Dance classes, fitness training, workshops",
-      image: "/rentals-hero/studio-d-medium-standalone.jpg",
+      image: "/images/studios/04-Studio-D.webp",
       features: [
         "Wall-to-wall mirrors",
         "Professional sound system",
@@ -77,7 +77,7 @@ export default function RentalsPage() {
       sqft: "400 sq ft",
       rate: "From RM 60/hour",
       bestFor: "Rehearsals, small classes, content creation",
-      image: "/rentals-hero/studio-b-medium-connected.jpg",
+      image: "/images/studios/02-Studio-B.webp",
       features: ["Wall-to-wall mirrors", "Sound system", "Connects to Room A", "Air-conditioned"],
       details: {
         capacity: "10-20 people (depending on activity type)",
@@ -94,7 +94,7 @@ export default function RentalsPage() {
       sqft: "300 sq ft",
       rate: "From RM 50/hour",
       bestFor: "Private lessons, small groups, practice sessions",
-      image: "/rentals-hero/studio-c-small.jpg",
+      image: "/images/studios/03-Studio-C.webp",
       features: ["Wall-to-wall mirrors", "Sound system", "Private & intimate setting", "Air-conditioned"],
       details: {
         capacity: "2-10 people (depending on activity type)",
@@ -113,7 +113,7 @@ export default function RentalsPage() {
       <section className="relative h-[90vh] min-h-[700px] overflow-hidden">
         {/* Hero Image - Full visibility */}
         <img
-          src="/rentals-hero/Studio A-Main.jpg"
+          src="/images/studios/01-Studio-A-Main-Floor.webp"
           alt="Dance Connexions Studio A"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -287,7 +287,7 @@ export default function RentalsPage() {
                 className="text-left focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2 focus:ring-offset-zinc-950 rounded-lg"
               >
                 <div className="bg-zinc-900 border border-slate-800 rounded-lg overflow-hidden hover:border-slate-600 transition-all duration-300 cursor-pointer h-full">
-                  <div className="relative h-48 md:h-56 overflow-hidden bg-slate-800">
+                  <div className="relative h-48 md:h-56 overflow-hidden rounded-t-lg bg-slate-800">
                     <img
                       src={studio.image || "/placeholder.svg"}
                       alt={`${studio.name} - ${studio.subtitle}`}
