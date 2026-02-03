@@ -1,0 +1,51 @@
+{
+  "$schema": "./schemas/promotions.schema.json",
+  "_description": "Active promotions and discounts for Dance Connexions",
+  "_lastUpdated": "2026-02-04",
+  "_notes": "Set active: false to hide a promo. Poster images go in media/raw/promos/ → run optimize.py",
+
+  "promotions": [
+    {
+      "id": "new-user",
+      "title": "New Renter Welcome Discount",
+      "badge": "NEW",
+      "discount": "30%",
+      "tagline": "Try any studio at 30% off your first booking!",
+      "description": "First-time renters enjoy 30% off their very first rental session. Valid on any room, any duration. No minimum spend.",
+      "eligibility": "First-time renters only. One-time use per person.",
+      "howToClaim": "Simply mention this promotion when contacting us to book. No code needed.",
+      "poster": "",
+      "active": true
+    },
+    {
+      "id": "student",
+      "title": "Student Discount",
+      "badge": "STUDENT",
+      "discount": "15%",
+      "tagline": "Students get 15% off every session!",
+      "description": "Show a valid student ID and enjoy 15% off every rental. Applicable to all rooms and session types.",
+      "eligibility": "Must present valid student ID at time of booking.",
+      "howToClaim": "Mention student discount when contacting us. Have your student ID ready.",
+      "poster": "",
+      "active": false
+    },
+    {
+      "id": "senior",
+      "title": "Senior Citizen Discount",
+      "badge": "SENIOR",
+      "discount": "20%",
+      "tagline": "Senior citizens enjoy 20% off!",
+      "description": "Seniors aged 60 and above receive 20% off all rental sessions. A great way to stay active and enjoy movement.",
+      "eligibility": "Aged 60 and above. Valid ID required.",
+      "howToClaim": "Mention senior discount when contacting us. Have valid ID ready.",
+      "poster": "",
+      "active": false
+    }
+  ],
+
+  "bannerPromo": {
+    "id": "new-user",
+    "message": "NEW HERE? Get 30% off your first rental!",
+    "cta": "Claim 30% Off"
+  }
+}

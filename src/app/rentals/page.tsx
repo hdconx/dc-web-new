@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { ChevronLeft, MessageCircle, ChevronDown, Check, Quote, Grid, Image, DollarSign, GitCompare } from "lucide-react"
+import { ChevronLeft, MessageCircle, ChevronDown, Check, Quote, Grid, Image, DollarSign, GitCompare, Tag } from "lucide-react"
 import Link from "next/link"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -178,6 +178,13 @@ export default function RentalsPage() {
             >
               <GitCompare className="w-4 h-4" />
               Compare
+            </Link>
+            <Link
+              href="/rentals/promos"
+              className="inline-flex items-center gap-2 border-2 border-emerald-600 text-emerald-400 hover:bg-emerald-600/20 px-5 py-2.5 rounded-lg transition-all text-sm font-medium"
+            >
+              <Tag className="w-4 h-4" />
+              Promotions
             </Link>
           </div>
         </div>

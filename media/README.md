@@ -32,6 +32,7 @@ public/images/            ← Auto-generated optimized images (do not edit manua
 | Room/studio shots | `media/raw/studios/` |
 | Gallery images | `media/raw/gallery/` |
 | Event/party photos | `media/raw/events/` |
+| Promo posters (from Canva/PostermyWall) | `media/raw/promos/` |
 
 ## What the Optimizer Does
 
@@ -45,6 +46,7 @@ public/images/            ← Auto-generated optimized images (do not edit manua
 | Studios  | 1920px    | 82           |
 | Gallery  | 1200px    | 80           |
 | Events   | 1440px    | 80           |
+| Promos   | 1200px    | 85           |
 
 ## After Processing
 

@@ -27,6 +27,7 @@ PRESETS = {
     "studios": {"max_width": 1920, "quality": 82},
     "gallery": {"max_width": 1200, "quality": 80},
     "events":  {"max_width": 1440, "quality": 80},
+    "promos":  {"max_width": 1200, "quality": 85},
 }
 
 RAW_ROOT = BASE_DIR / "media" / "raw"
