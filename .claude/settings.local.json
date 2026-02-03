@@ -12,10 +12,10 @@
       "Bash(fuser:*)",
       "Bash(netstat:*)",
       "Bash(docker compose:*)",
-      "Bash(du:*)"
+      "Bash(du:*)",
+      "Bash(rsync:*)",
+      "Bash(tar:*)"
     ],
-    "additionalDirectories": [
-      "/mnt/c/users/nvntr/documents/dc-web-new - Copy"
-    ]
+    "additionalDirectories": []
   }
 }
