@@ -511,8 +511,11 @@ export default function RentalsPage() {
       <section className="py-20 px-6 bg-zinc-950">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-50 text-center mb-4">Studio Rates</h2>
-          <p className="text-center text-slate-400 mb-16 max-w-2xl mx-auto">
-            Rates shown are a range — long-term renters enjoy the lower end. Contact us and we'll quote based on your needs.
+          <p className="text-center text-slate-400 mb-4 max-w-2xl mx-auto">
+            Transparent, affordable pricing with flexible rates to suit a wide range of schedules and booking needs.
+          </p>
+          <p className="text-center text-emerald-400 font-semibold mb-16">
+            Studios starting from RM 40/hour
           </p>
 
           <div className="space-y-16">
@@ -567,18 +570,15 @@ export default function RentalsPage() {
                 </table>
               </div>
 
-              <p className="text-slate-500 text-sm mt-4">
-                Lower rates are available for long-term bookings. Your rate depends on how often and how long you book.
-              </p>
             </div>
 
             {/* CTA Box */}
             <div className="bg-gradient-to-br from-emerald-900/30 to-emerald-950/30 border border-emerald-700/40 rounded-xl p-8 md:p-10 text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-slate-50 mb-4">
-                Not Sure What You'll Pay?
+                Get Your Exact Rate
               </h3>
               <p className="text-slate-300 mb-8 max-w-2xl mx-auto">
-                Tell us your needs — which studio, how often, and for how long — and we'll give you a straightforward quote. No hidden fees.
+                Tell us which studio you need and your schedule — we'll provide a clear, no-obligation quote.
               </p>
               <a
                 href={whatsappLink}
