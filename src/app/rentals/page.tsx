@@ -363,7 +363,7 @@ export default function RentalsPage() {
             Our Studios Are Ideal For
           </h2>
           <p className="text-center text-slate-400 mb-12">
-            Click each category to see what activities we support
+            Click each category to explore supported activities
           </p>
 
           <Accordion type="multiple" defaultValue={["dance"]} className="space-y-4">
@@ -377,11 +377,11 @@ export default function RentalsPage() {
               <AccordionContent className="pb-6">
                 <ul className="space-y-2">
                   {[
-                    "Dance classes (all styles - hip-hop, contemporary, ballroom, K-pop, line dancing, belly dancing, Latin dance, etc.)",
-                    "Dance rehearsals & choreography development",
-                    "Private dance coaching & instruction",
+                    "Dance classes (all styles – Ballroom, Latin, Hip Hop, Contemporary, K-Pop, Line Dance, Belly Dance & more)",
+                    "Dance rehearsals & choreography creation",
+                    "Private dance lessons & coaching",
                     "Audition preparation & practice",
-                    "Performance rehearsals",
+                    "Performance & competition rehearsals",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
@@ -402,12 +402,11 @@ export default function RentalsPage() {
               <AccordionContent className="pb-6">
                 <ul className="space-y-2">
                   {[
-                    "Dance fitness classes (Zumba, Salsation, dance exercise)",
-                    "Yoga sessions",
-                    "Fitness training & personal training",
-                    "Group fitness classes",
-                    "Aerobics & cardio sessions",
-                    "Stretching & flexibility training",
+                    "Dance fitness classes (Zumba, Salsation, cardio dance)",
+                    "Yoga & mat-based sessions",
+                    "Group fitness & aerobics",
+                    "Personal training & small group training",
+                    "Stretching, mobility & flexibility training",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
@@ -429,11 +428,10 @@ export default function RentalsPage() {
                 <ul className="space-y-2">
                   {[
                     "Theatre & drama classes",
-                    "Acting rehearsals & training",
-                    "Modeling & runway training",
-                    "Fashion shows & catwalk practice",
-                    "Audition preparations",
-                    "Talent showcases",
+                    "Acting rehearsals & performance training",
+                    "Modelling & runway training",
+                    "Fashion show & catwalk practice",
+                    "Audition preparation & talent showcases",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
@@ -448,18 +446,17 @@ export default function RentalsPage() {
               <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
                 <span className="flex items-center gap-3">
                   <span className="text-2xl">📸</span>
-                  Content Creation
+                  Content Creation & Media
                 </span>
               </AccordionTrigger>
               <AccordionContent className="pb-6">
                 <ul className="space-y-2">
                   {[
-                    "Video shoots & tutorials",
+                    "Dance video shoots & tutorials",
                     "Social media content (TikTok, Instagram Reels, YouTube)",
                     "Professional photoshoots",
-                    "Product launches & promotional videos",
-                    "Online course recording",
-                    "Livestream sessions",
+                    "Promotional & marketing videos",
+                    "Online course recording & livestream sessions",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
@@ -474,18 +471,18 @@ export default function RentalsPage() {
               <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
                 <span className="flex items-center gap-3">
                   <span className="text-2xl">🎓</span>
-                  Workshops & Studio Parties
+                  Workshops, Events & Studio Use
                 </span>
               </AccordionTrigger>
               <AccordionContent className="pb-6">
                 <ul className="space-y-2">
                   {[
-                    "Training workshops & seminars",
-                    "Dance socials & practice sessions",
-                    "Birthday parties & celebrations",
+                    "Dance workshops & training intensives",
+                    "Practice sessions & dance socials",
+                    "Birthday parties & private celebrations",
                     "Team building activities",
                     "Corporate events & gatherings",
-                    "Learning sessions & skill development",
+                    "Seminars, talks & learning sessions",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
                       <Check className="w-4 h-4 text-emerald-500 flex-shrink-0 mt-1" />
@@ -500,9 +497,9 @@ export default function RentalsPage() {
           {/* CLOSING TEXT */}
           <div className="mt-10 text-center">
             <p className="text-slate-300 text-lg leading-relaxed">
-              Planning something unique? We're flexible and accommodating.{" "}
+              Planning something different? Our studios are flexible and suitable for many movement-based and creative activities.{" "}
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-emerald-400 hover:text-emerald-300 underline">
-                Contact us
+                📩 Contact us
               </a>{" "}
               to discuss your specific needs.
             </p>
