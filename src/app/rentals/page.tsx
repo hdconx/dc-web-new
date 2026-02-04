@@ -575,10 +575,10 @@ export default function RentalsPage() {
             {/* CTA Box */}
             <div className="bg-gradient-to-br from-emerald-900/30 to-emerald-950/30 border border-emerald-700/40 rounded-xl p-8 md:p-10 text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-slate-50 mb-4">
-                Get Your Exact Rate
+                Request a Quote
               </h3>
               <p className="text-slate-300 mb-8 max-w-2xl mx-auto">
-                Tell us which studio you need and your schedule — we'll provide a clear, no-obligation quote.
+                Tell us which studio you prefer and your schedule — we will provide a personalised, no-obligation quote.
               </p>
               <a
                 href={whatsappLink}
