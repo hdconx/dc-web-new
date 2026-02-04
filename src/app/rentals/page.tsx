@@ -510,91 +510,75 @@ export default function RentalsPage() {
       {/* Pricing Section */}
       <section className="py-20 px-6 bg-zinc-950">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-50 text-center mb-4">Flexible Pricing</h2>
-          <p className="text-center text-slate-400 mb-6 max-w-2xl mx-auto">
-            Every renter's needs are different. We work with you to find the right rate.
-          </p>
-          <p className="text-center text-emerald-400 mb-16 font-medium">
-            Substantial discounts available—contact us for your personalized quote
+          <h2 className="text-4xl md:text-5xl font-serif font-bold text-slate-50 text-center mb-4">Studio Rates</h2>
+          <p className="text-center text-slate-400 mb-16 max-w-2xl mx-auto">
+            Rates shown are a range — long-term renters enjoy the lower end. Contact us and we'll quote based on your needs.
           </p>
 
           <div className="space-y-16">
-            {/* Base Hourly Rates */}
+            {/* Hourly Rates */}
             <div>
-              <h3 className="text-2xl font-semibold text-slate-50 mb-4">Base Hourly Rates</h3>
-              <p className="text-slate-400 text-sm mb-6">Standard hourly rates before discounts</p>
-
-              <div className="mb-6 bg-emerald-900/20 border border-emerald-700/30 rounded-lg p-4">
-                <p className="text-emerald-300 text-sm">
-                  💡 <strong>Substantial discounts available:</strong> Multi-hour bookings, weekly classes, and long-term commitments qualify for reduced rates. WhatsApp us for your personalized quote.
-                </p>
-              </div>
-
               <div className="overflow-x-auto">
                 <table className="w-full text-left">
                   <thead>
                     <tr className="border-b border-slate-700">
-                      <th className="pb-4 text-slate-400 text-sm font-medium">Room</th>
-                      <th className="pb-4 text-slate-400 text-sm font-medium text-right">Per Hour</th>
+                      <th className="pb-4 text-slate-400 text-sm font-medium">Studio</th>
+                      <th className="pb-4 text-slate-400 text-sm font-medium text-right">Hourly Rate</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-800">
                     <tr className="hover:bg-zinc-900 transition-colors">
-                      <td className="py-4 text-slate-300">Room A (Large Studio, 1,200 sq ft)</td>
-                      <td className="py-4 text-right text-slate-50 font-semibold">RM 120/hour</td>
+                      <td className="py-4 text-slate-300">Room A — Large Studio, 1,200 sq ft</td>
+                      <td className="py-4 text-right">
+                        <span className="text-emerald-400 font-semibold">RM 80</span>
+                        <span className="text-slate-500"> – </span>
+                        <span className="text-slate-50 font-semibold">RM 120</span>
+                        <span className="text-slate-500 text-sm"> /hr</span>
+                      </td>
                     </tr>
                     <tr className="hover:bg-zinc-900 transition-colors">
-                      <td className="py-4 text-slate-300">Room D (Medium Studio, 700 sq ft)</td>
-                      <td className="py-4 text-right text-slate-50 font-semibold">RM 80/hour</td>
+                      <td className="py-4 text-slate-300">Room D — Medium Studio, 700 sq ft</td>
+                      <td className="py-4 text-right">
+                        <span className="text-emerald-400 font-semibold">RM 60</span>
+                        <span className="text-slate-500"> – </span>
+                        <span className="text-slate-50 font-semibold">RM 80</span>
+                        <span className="text-slate-500 text-sm"> /hr</span>
+                      </td>
                     </tr>
                     <tr className="hover:bg-zinc-900 transition-colors">
-                      <td className="py-4 text-slate-300">Room B (Medium Studio, 400 sq ft)</td>
-                      <td className="py-4 text-right text-slate-50 font-semibold">RM 60/hour</td>
+                      <td className="py-4 text-slate-300">Room B — Medium Studio, 400 sq ft</td>
+                      <td className="py-4 text-right">
+                        <span className="text-emerald-400 font-semibold">RM 50</span>
+                        <span className="text-slate-500"> – </span>
+                        <span className="text-slate-50 font-semibold">RM 60</span>
+                        <span className="text-slate-500 text-sm"> /hr</span>
+                      </td>
                     </tr>
                     <tr className="hover:bg-zinc-900 transition-colors">
-                      <td className="py-4 text-slate-300">Room C (Small Studio, 300 sq ft)</td>
-                      <td className="py-4 text-right text-slate-50 font-semibold">RM 50/hour</td>
+                      <td className="py-4 text-slate-300">Room C — Small Studio, 300 sq ft</td>
+                      <td className="py-4 text-right">
+                        <span className="text-emerald-400 font-semibold">RM 40</span>
+                        <span className="text-slate-500"> – </span>
+                        <span className="text-slate-50 font-semibold">RM 50</span>
+                        <span className="text-slate-500 text-sm"> /hr</span>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-            </div>
 
-            {/* Better Rates Available */}
-            <div>
-              <h3 className="text-2xl font-semibold text-slate-50 mb-8">Who Qualifies for Discounts?</h3>
-              <div className="grid md:grid-cols-3 gap-6">
-                <div className="bg-zinc-900 p-6 rounded-lg border border-slate-800">
-                  <div className="text-3xl mb-3">⏱️</div>
-                  <h4 className="font-semibold text-slate-50 mb-2">Flexible Discounts</h4>
-                  <p className="text-slate-400 text-sm">
-                    Multi-hour bookings, bulk reservations, and off-peak timing all qualify for better rates. The more you book, the more you save.
-                  </p>
-                </div>
-                <div className="bg-zinc-900 p-6 rounded-lg border border-slate-800">
-                  <div className="text-3xl mb-3">🎓</div>
-                  <h4 className="font-semibold text-slate-50 mb-2">Special Groups</h4>
-                  <p className="text-slate-400 text-sm">
-                    Students, seniors, studio members, non-profits, and regular renters receive special consideration. Let us know your situation.
-                  </p>
-                </div>
-                <div className="bg-zinc-900 p-6 rounded-lg border border-slate-800">
-                  <div className="text-3xl mb-3">🤝</div>
-                  <h4 className="font-semibold text-slate-50 mb-2">Custom Packages</h4>
-                  <p className="text-slate-400 text-sm">
-                    Long-term partnerships, unique requirements, or recurring bookings? We'll create a package that works for your budget and needs.
-                  </p>
-                </div>
-              </div>
+              <p className="text-slate-500 text-sm mt-4">
+                Lower rates are available for long-term bookings. Your rate depends on how often and how long you book.
+              </p>
             </div>
 
             {/* CTA Box */}
             <div className="bg-gradient-to-br from-emerald-900/30 to-emerald-950/30 border border-emerald-700/40 rounded-xl p-8 md:p-10 text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-slate-50 mb-4">
-                Need a Better Rate?
+                Not Sure What You'll Pay?
               </h3>
               <p className="text-slate-300 mb-8 max-w-2xl mx-auto">
-                Tell us your requirements (hours needed, frequency, dates) and we'll work out pricing that fits your budget.
+                Tell us your needs — which studio, how often, and for how long — and we'll give you a straightforward quote. No hidden fees.
               </p>
               <a
                 href={whatsappLink}
@@ -603,7 +587,7 @@ export default function RentalsPage() {
                 className="inline-flex items-center gap-3 bg-emerald-600 hover:bg-emerald-500 text-white font-semibold py-4 px-10 rounded-lg transition-all duration-200 shadow-xl hover:shadow-2xl text-lg"
               >
                 <MessageCircle className="w-5 h-5" />
-                Get Your Custom Quote
+                WhatsApp Us
               </a>
             </div>
 
