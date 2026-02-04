@@ -363,10 +363,10 @@ export default function RentalsPage() {
             Our Studios Are Ideal For
           </h2>
           <p className="text-center text-slate-400 mb-12">
-            Click each category to explore supported activities
+            Collapse any category you don't need
           </p>
 
-          <Accordion type="multiple" defaultValue={["dance"]} className="space-y-4">
+          <Accordion type="multiple" defaultValue={["dance", "fitness", "performing", "content", "workshops"]} className="space-y-4">
             <AccordionItem value="dance" className="border border-slate-800 rounded-lg bg-zinc-900 px-6">
               <AccordionTrigger className="text-lg font-semibold text-slate-50 hover:text-emerald-400 py-5">
                 <span className="flex items-center gap-3">
