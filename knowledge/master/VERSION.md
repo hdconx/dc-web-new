@@ -1,10 +1,19 @@
 # Knowledge Base Version
 
-**Current Version:** v1.8.0
-**Last Updated:** 2026-02-04
+**Current Version:** v1.9.0
+**Last Updated:** 2026-02-11
 **Status:** Active Development
 
 ## Changelog
+
+### v1.9.0 (2026-02-11 - Review Feedback Round 1)
+- Added supplemental entry S-2026-02-11-01
+- Documented: Hero image swap (RGB lighting, no watermark), hero subtitle update
+- Documented: Why Choose Us — subtitle + 3 card rewrites (pricing, studios, mirrors)
+- Documented: Available Upon Request — removed custom setup, wireless mic qualifier, RGB lighting rename
+- Documented: Accordion subtitle — "just some examples" framing, added dance practice parties
+- Documented: Room B controllable lighting confirmed and updated in rooms.json
+- Documented: Pricing table width constrained on desktop
 
 ### v1.8.0 (2026-02-04 - Promotions System, Pricing Rewrite & Landing Page UX)
 - Added 6 supplemental entries (S-2026-02-04-01 to 06)

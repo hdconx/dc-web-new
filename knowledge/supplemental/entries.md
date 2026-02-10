@@ -1820,3 +1820,48 @@ The project uses a two-stage image pipeline: raw photos → optimized WebP.
 The `promos` category was added when the promotions system was built. All categories use the same script — adding a new category requires only adding an entry to the `PRESETS` dict in optimize.py and creating the corresponding `media/raw/{category}/` directory.
 
 ---
+
+## S-2026-02-11-01
+
+**Related Sections:** Rentals Landing Page, Why Choose Us, Accordion, Pricing, Room Equipment
+**Status:** Confirmed
+**Type:** Content + Copy Update
+**Date:** 2026-02-11
+
+### Content
+
+**Review Feedback Applied — Rentals Landing Page**
+
+The following changes were made to `src/app/rentals/page.tsx` and `data/rooms.json` based on owner review.
+
+**Hero section:**
+- Image changed from `01-Studio-A-Main-Floor.webp` (had baked-in "Studio A" watermark) to `Studio A - 1.webp` (clean, no watermark, shows RGB ceiling lighting on — dramatic and vibrant)
+- Subtitle changed from "Professional spaces for dance, fitness & creative projects" to "Purpose-built studios with flexible rates to suit different bookings and schedules."
+
+**Pricing table:**
+- Table container constrained to `max-w-xl` (576px) and centered — was stretching to full `max-w-6xl` container creating excessive gap between studio name and rate columns on desktop
+
+**Why Choose Us section:**
+- Subtitle: "Here's what makes our studios stand out" → "What you'll find at our studios" (less boastful)
+- Card "Pricing That Works For You" → "Very Affordable Rates" (more natural for Malaysian audience); body updated from "RM 50/hour with substantial discounts" to "Studios from RM 40/hour, flexible rates for regular and long-term bookings" (aligned with pricing rewrite decision)
+- Card "4 Studios to Choose From" → "A Studio for Every Size and Budget"; body now mentions room switching flexibility
+- Card "Purpose-Built for Visual Learning" → "Built by Dancers, for Dancers"; body shortened and simplified
+
+**Available Upon Request list:**
+- Removed: "Custom room setup assistance"
+- "Wireless microphone (Room A)" → "Wireless microphone" (removed room qualifier)
+- "Colorful LED Lighting" → "Colorful RGB Party Lighting"
+
+**"Ideal For" accordion:**
+- Subtitle: "Collapse any category you don't need" → "These are just some examples — our studios welcome many more activities" (conveys that the listed items are a sample, not an exhaustive list)
+- Added "Dance practice parties & studio socials" to Dance & Movement category
+- "Dance fitness classes (Zumba, Salsation, cardio dance)" → added "& more" at end
+
+**Room B equipment (data/rooms.json):**
+- "Adjustable lighting" → "Controllable lighting" (Room B confirmed to have controllable lighting; this also updates the Compare page which reads from rooms.json)
+
+### Notes
+
+The "Available Upon Request" change removes "Custom room setup assistance" because it was considered too generic and implied extra work. Wireless microphone is not exclusive to Room A — removing the qualifier avoids limiting expectation. RGB Party Lighting is more descriptive and marketable than "LED Lighting."
+
+---
