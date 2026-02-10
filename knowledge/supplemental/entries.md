@@ -1543,3 +1543,280 @@ Capacity calculator was highlighting results as "good" or "ideal" with green col
 Critical UX fix based on user feedback. Calculator now shows objective data only without making assumptions about user needs. Future enhancement will provide optimal vs maximum capacity range for even more flexibility.
 
 ---
+
+## S-2026-02-04-01
+
+**Related Sections:** Promotions, Website Features
+**Status:** Confirmed
+**Type:** New Feature
+**Date:** 2026-02-04
+
+### Content
+
+**Promotions System — Sticky Banner + Dedicated Page**
+
+A site-wide promotions system was added to the rentals section.
+
+**Components created:**
+- `src/components/promo-bar.tsx` — Sticky top banner (emerald, 44px height). Fixed position, z-50. Shows current active promotion message + CTA button linking to /rentals/promos. Dismissible via X button; dismissal persists in sessionStorage (`dc-promo-bar-dismissed`). Sets CSS custom property `--promo-bar-height` on `<html>` so Header can shift down dynamically.
+- `src/app/rentals/layout.tsx` — Layout wrapper that renders `<PromoBar />` above all rental sub-pages (landing, room details, compare, promos, etc.)
+- `src/app/rentals/promos/page.tsx` — Dedicated promotions page. Client Component (`"use client"` required because it passes `onMenuClick` to Header). Reads from `data/promotions.json`. Displays active promo card(s) and shows inactive promos as greyed out.
+
+**Data source:**
+- `data/promotions.json` — Single source of truth for all promotions. Structure:
+  - `bannerPromo`: `{ message, cta, link }` — controls the sticky banner text
+  - `activePromotions[]`: Array of promo objects with `{ id, title, discount, code, description, validFrom, validTo, active, type, targetAudience, conditions }`
+  - `inactivePromotions[]`: Same structure, shown as archived on promos page
+
+**Header integration:**
+- `src/components/header.tsx` uses `style={{ top: "var(--promo-bar-height, 0px)" }}` instead of hardcoded `top-0` so it shifts below the promo bar when visible
+
+**Bug fixed during implementation:**
+- promos/page.tsx initially had no `"use client"` directive. Passing `onMenuClick={() => {}}` to Header (a Client Component) caused: "Event handlers cannot be passed to Client Component props". Fixed by adding `"use client"` as first line.
+
+### Notes
+
+PromoBar is session-scoped (dismissal resets on new tab/session). Banner text and CTA are driven entirely by `data/promotions.json` — no hardcoding. To change what the banner says, edit `bannerPromo` in that file.
+
+---
+
+## S-2026-02-04-02
+
+**Related Sections:** Studio Cards, Navigation, Landing Page
+**Status:** Confirmed
+**Type:** UX Change
+**Date:** 2026-02-04
+
+### Content
+
+**Studio Cards Made Clickable — Navigate to Room Detail Pages**
+
+The "Choose Your Studio" cards on the rentals landing page (`src/app/rentals/page.tsx`) were converted from expand/collapse toggle buttons to clickable navigation links.
+
+**Before:**
+- Cards were `<button>` elements
+- Clicking toggled an expanded panel showing additional details inline
+- Required `useState` for `expandedStudio` tracking
+- Details displayed as plain text separated by `<br/>`
+
+**After:**
+- Cards are `<Link>` elements pointing to `/rentals/room/{roomId}`
+- Each studio object has a `roomId` field: `room-a`, `room-d`, `room-b`, `room-c`
+- Details are always visible as a bulleted list using `Object.entries(studio.details)` with a `DETAIL_LABELS` map for human-readable keys
+- "View Details →" link at card bottom has ArrowRight icon with `group-hover:translate-x-1` animation
+- Hover effects: emerald border glow, image scale-up, title color shift
+
+**Removed:**
+- `useState`, `expandedStudio` state
+- `ChevronDown` icon import
+- `getWhatsAppForRoom` function (was unused after toggle removal)
+
+**DETAIL_LABELS map** (maps detail object keys to display labels):
+```
+dimensions → Dimensions
+capacity → Capacity
+equipment → Equipment
+climate → Climate
+special → Note
+ideal → Ideal for
+```
+
+### Notes
+
+This change aligns the landing page cards with the existing room detail pages at `/rentals/room/[id]/`. Users can now browse studios at a glance on the landing page and click through for full details.
+
+---
+
+## S-2026-02-04-03
+
+**Related Sections:** Landing Page, SEO, Accordion
+**Status:** Confirmed
+**Type:** Content + UX Change
+**Date:** 2026-02-04
+
+### Content
+
+**"Ideal For" Accordion — All Panels Open by Default + SEO Copy Update**
+
+Two changes were made to the "Ideal For" accordion section on the rentals landing page:
+
+**1. All panels open by default**
+
+Radix UI AccordionContent is NOT rendered in the server-side HTML until a panel has been opened at least once. This meant search engine crawlers could not see any of the activity keywords on initial page load.
+
+Fix: Set `defaultValue` to include all 5 panel IDs:
+```tsx
+defaultValue={["dance", "fitness", "performing", "content", "workshops"]}
+```
+
+Subtitle changed from "Click each category to explore supported activities" to "Collapse any category you don't need" — reframes the interaction from discovery to refinement.
+
+**2. Activity copy updated for SEO**
+
+All 5 category panels had their item lists rewritten with SEO-optimised phrasing. Two category titles also changed:
+- "Content Creation" → "Content Creation & Media"
+- "Workshops & Studio Parties" → "Workshops, Events & Studio Use"
+
+Two corrections were made before deploying the user's copy:
+- Kept "dance" in "Private dance lessons & coaching" (original draft had dropped it)
+- Kept "Corporate events & gatherings" as a separate line item (draft had merged it into team building)
+
+Closing text updated to: "...a range of movement-based and creative activities" with 📩 emoji on the contact link.
+
+### Notes
+
+All 8 primary SEO target phrases (dance studio rental, private dance studio, studio for events, dance class venue, etc.) are now present in the initial server-rendered HTML. This was verified after implementation by checking page source.
+
+---
+
+## S-2026-02-04-04
+
+**Related Sections:** Pricing, Landing Page, Marketing Strategy
+**Status:** Confirmed
+**Type:** Strategic Change
+**Date:** 2026-02-04
+
+### Content
+
+**Pricing Section Rewrite — Range Table Strategy**
+
+The pricing table on the rentals landing page was fundamentally restructured from a single base-rate column to a price range format.
+
+**Decision:** Show price ranges (low–high) instead of single base rates.
+
+**Rationale:**
+- Base rates (A=120, D=80, B=60, C=50) feel high compared to competitors when shown alone
+- Committed renters consistently pay less than base (see S-2026-02-04-05 for confirmed floors)
+- Showing only base rates discourages initial contact; showing only low rates feels misleading
+- Range format is honest AND front-loads the attractive number
+
+**Range format (as displayed):**
+| Studio | Rate |
+|--------|------|
+| Studio A | RM 80 – RM 120 /hr |
+| Studio D | RM 60 – RM 80 /hr |
+| Studio B | RM 50 – RM 60 /hr |
+| Studio C | RM 40 – RM 50 /hr |
+
+**Visual treatment:**
+- Low end of range: emerald-400, font-semibold (reads first, left-to-right)
+- Dash: slate-500
+- High end of range: slate-50, font-semibold
+- "/hr": slate-500, text-sm
+
+**Language rules enforced (see also S-2026-02-04-05):**
+- The word "discount" does not appear anywhere on the page
+- No percentage-based pricing language
+- No "Who Qualifies" section
+- The bottom note "Lower rates are available for long-term bookings..." was also removed after review — it was flagged as redundant (the subtitle already says this) and subtle redundancy creates doubt, not confidence
+
+**Section structure after rewrite:**
+1. Heading: "Studio Rates"
+2. Subtitle: "Transparent, affordable pricing with flexible rates to suit a wide range of schedules and booking needs."
+3. Anchor line: "Studios starting from RM 40/hour" (emerald-400, font-semibold)
+4. Range table
+5. CTA box: "Request a Quote" headline, subtext: "Tell us which studio you prefer and your schedule — we will provide a personalised, no-obligation quote." WhatsApp button.
+
+### Notes
+
+"Affordable" was flagged as a potential risk word (could feel contradictory next to RM 120). The decision to keep it was made because "Studios starting from RM 40/hour" immediately below backs it up with a concrete number. The anchor line does the credibility work that "affordable" promises.
+
+---
+
+## S-2026-02-04-05
+
+**Related Sections:** Pricing, Business Rules
+**Status:** Confirmed
+**Type:** Business Rule
+**Date:** 2026-02-04
+
+### Content
+
+**Pricing Rules — Confirmed Cut-Off Floors & Website Pricing Constraints**
+
+**Confirmed minimum rates (cannot go lower — these are the best-case scenario):**
+| Studio | Cut-Off Floor |
+|--------|--------------|
+| Studio A | RM 80/hr |
+| Studio D | RM 60/hr |
+| Studio B | RM 50/hr |
+| Studio C | RM 40/hr |
+
+These rates are given to long-term committed renters. Example: Studio A renter paying RM 80/hr on a 52-session commitment, renewed for 3 consecutive years.
+
+**Critical website pricing rules:**
+1. **No percentage-based discounts on the website.** The modifiers in `pricing-rules.json` (activity surcharges, time-slot multipliers, duration discounts) are internal business logic — they are NOT displayed to website visitors. Actual rates are negotiated case-by-case when customers make contact.
+2. **The word "discount" must not appear** on the rentals landing page. It invites price-shopping behaviour and sets an expectation that the listed rate is inflated.
+3. **"Substantial discounts available"** — this phrase has been removed from the website entirely. Do not re-add it.
+4. **Rate negotiation happens via contact** — the website's job is to show a credible range and prompt the visitor to reach out. The actual rate discussion happens through WhatsApp/phone/email after contact.
+
+**What pricing-rules.json IS used for:**
+- Internal pricing calculator logic (staff-facing)
+- `pricing-calculator.ts` utility (not rendered on public pages)
+- Future admin/booking tools may surface these rules
+
+**What pricing-rules.json is NOT used for:**
+- Any text or number displayed on the public website
+- The landing page range table
+- The promotions page
+
+### Notes
+
+This entry supersedes the discount-related messaging in S-2026-02-01-07 (which documented "Substantial discounts available" messaging that has since been removed). It also clarifies that pricing-rules.json modifiers are internal only — the website intentionally does not expose the calculation logic.
+
+**⚠️ Outdated entries to flag for integration review:**
+- S-2026-01-30-03: States "Starting from RM 50/hour" — the website now shows "Studios starting from RM 40/hour". Update needed.
+- S-2026-02-01-07: Documents "Substantial discounts available" messaging and discount qualifying criteria. This language has been removed from the website as of 2026-02-04. Mark as superseded by S-2026-02-04-04 and S-2026-02-04-05.
+- `knowledge/master/pricing.md`: States "Discounts are rule-based, not negotiated." This is incorrect — rates ARE negotiated case-by-case upon customer contact. Master file needs updating at next integration review.
+
+---
+
+## S-2026-02-04-06
+
+**Related Sections:** Media, Image Pipeline
+**Status:** Confirmed
+**Type:** Technical Reference
+**Date:** 2026-02-04
+
+### Content
+
+**Image Optimization Pipeline — optimize.py**
+
+The project uses a two-stage image pipeline: raw photos → optimized WebP.
+
+**Script:** `media/optimize.py`
+**Raw input directory:** `media/raw/{category}/`
+**Output directory:** `public/images/{category}/`
+
+**Categories and settings:**
+| Category | Max Width | WebP Quality | Use Case |
+|----------|-----------|--------------|----------|
+| studios | 1920px | 82 | Room/studio photos |
+| gallery | 1200px | 80 | Gallery images |
+| events | 1440px | 80 | Event/party photos |
+| promos | 1200px | 85 | Promo posters (Canva/PostermyWall) |
+
+**Workflow:**
+1. Drop raw photos into `media/raw/{category}/`
+2. Run: `python3 media/optimize.py`
+3. Optimized WebP files appear in `public/images/{category}/`
+4. Reference in code as `/images/{category}/{filename}.webp`
+
+**Flags:**
+- `--force`: Re-processes all images (ignores cache check)
+- Default: Skips images where output is newer than source
+
+**What the optimizer does:**
+- Converts to WebP format
+- Downsizes if wider than max_width (never upscales)
+- Converts RGBA/P/LA to RGB with white background before saving
+- Strips EXIF data (automatic with WebP save)
+- Reports compression savings per file
+
+**Dependencies:** Pillow (PIL)
+
+### Notes
+
+The `promos` category was added when the promotions system was built. All categories use the same script — adding a new category requires only adding an entry to the `PRESETS` dict in optimize.py and creating the corresponding `media/raw/{category}/` directory.
+
+---

@@ -1,10 +1,20 @@
 # Knowledge Base Version
 
-**Current Version:** v1.7.0
-**Last Updated:** 2026-02-03
+**Current Version:** v1.8.0
+**Last Updated:** 2026-02-04
 **Status:** Active Development
 
 ## Changelog
+
+### v1.8.0 (2026-02-04 - Promotions System, Pricing Rewrite & Landing Page UX)
+- Added 6 supplemental entries (S-2026-02-04-01 to 06)
+- Documented: Promotions system (PromoBar sticky banner, promos page, promotions.json data source)
+- Documented: Studio cards converted to clickable Links with bullet-style details
+- Documented: "Ideal For" accordion — all panels open by default for SEO; activity copy updated
+- Documented: Pricing section rewrite — range table format (low–high), removed all "discount" language
+- Documented: Confirmed pricing cut-off floors (A=80, D=60, B=50, C=40) and website pricing constraints
+- Documented: Image optimization pipeline (optimize.py) including promos category
+- ⚠️ Flagged for integration review: S-2026-01-30-03 ("RM 50" → now "RM 40"), S-2026-02-01-07 (discount messaging removed), master pricing.md ("rule-based not negotiated" is incorrect)
 
 ### v1.7.0 (2026-02-03 - Capacity Calculator UX Improvements)
 - Added supplemental entry S-2026-02-03-01

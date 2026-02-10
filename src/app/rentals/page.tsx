@@ -521,7 +521,7 @@ export default function RentalsPage() {
           <div className="space-y-16">
             {/* Hourly Rates */}
             <div>
-              <div className="overflow-x-auto">
+              <div className="overflow-x-auto max-w-xl mx-auto">
                 <table className="w-full text-left">
                   <thead>
                     <tr className="border-b border-slate-700">
