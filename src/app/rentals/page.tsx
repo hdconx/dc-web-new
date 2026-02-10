@@ -117,7 +117,7 @@ export default function RentalsPage() {
       <section className="relative h-[90vh] min-h-[700px] overflow-hidden">
         {/* Hero Image - Full visibility */}
         <img
-          src="/images/studios/01-Studio-A-Main-Floor.webp"
+          src="/images/studios/Studio%20A%20-%201.webp"
           alt="Dance Connexions Studio A"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -143,7 +143,7 @@ export default function RentalsPage() {
               Studio Rentals
             </h1>
             <p className="text-xl md:text-2xl text-white/95 mb-10 leading-relaxed">
-              Professional spaces for dance, fitness & creative projects
+              Purpose-built studios with flexible rates to suit different bookings and schedules.
             </p>
             <a
               href={whatsappLink}
@@ -201,7 +201,7 @@ export default function RentalsPage() {
             Why Choose Us
           </h2>
           <p className="text-center text-slate-400 mb-16 text-lg">
-            Here's what makes our studios stand out
+            What you'll find at our studios
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -217,27 +217,27 @@ export default function RentalsPage() {
             {/* Card 2 - Affordable */}
             <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
               <div className="text-3xl mb-3">💰</div>
-              <h3 className="text-lg font-semibold text-slate-50 mb-2">Pricing That Works For You</h3>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">Very Affordable Rates</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                From RM 50/hour with substantial discounts for multi-hour bookings, weekly classes, and long-term commitments. Contact us—we'll find a rate that fits your budget.
+                Studios from RM 40/hour, with flexible rates for regular and long-term bookings. The more you book, the better your rate — contact us for a personalised quote.
               </p>
             </div>
 
             {/* Card 3 - Multiple Room Options */}
             <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
               <div className="text-3xl mb-3">🏢</div>
-              <h3 className="text-lg font-semibold text-slate-50 mb-2">4 Studios to Choose From</h3>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">A Studio for Every Size and Budget</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Small group of 5? Large workshop of 50? We have the right size room for your exact needs and budget.
+                4 studios from 300 to 1,200 sq ft — right for groups of 2 to 60. Scale up for a big event, scale down to save costs. Switch rooms anytime as your needs change.
               </p>
             </div>
 
             {/* Card 4 - Uninterrupted Mirrors */}
             <div className="bg-zinc-800 rounded-lg p-6 border border-zinc-700 hover:border-emerald-500/50 transition-all">
               <div className="text-3xl mb-3">🪞</div>
-              <h3 className="text-lg font-semibold text-slate-50 mb-2">Purpose-Built for Visual Learning</h3>
+              <h3 className="text-lg font-semibold text-slate-50 mb-2">Built by Dancers, for Dancers</h3>
               <p className="text-slate-400 text-sm leading-relaxed">
-                Three walls covered with 10ft wide × 7ft high wall-to-wall mirrors—purpose-built by dancers who understand the importance of seeing every movement. Perfect for dance, modeling, acting, drama workshops, performance training, and any activity that relies on visual feedback. Our mirror setup provides unmatched advantages for movement-based learning and practice.
+                Three walls of floor-to-ceiling mirrors for a full view of every movement. Large open spaces with professional-grade flooring — built by people who understand what dancers and fitness instructors actually need.
               </p>
             </div>
 
@@ -363,7 +363,7 @@ export default function RentalsPage() {
             Our Studios Are Ideal For
           </h2>
           <p className="text-center text-slate-400 mb-12">
-            Collapse any category you don't need
+            These are just some examples — our studios welcome many more activities
           </p>
 
           <Accordion type="multiple" defaultValue={["dance", "fitness", "performing", "content", "workshops"]} className="space-y-4">
@@ -380,6 +380,7 @@ export default function RentalsPage() {
                     "Dance classes (all styles – Ballroom, Latin, Hip Hop, Contemporary, K-Pop, Line Dance, Belly Dance & more)",
                     "Dance rehearsals & choreography creation",
                     "Private dance lessons & coaching",
+                    "Dance practice parties & studio socials",
                     "Audition preparation & practice",
                     "Performance & competition rehearsals",
                   ].map((item, idx) => (
@@ -402,7 +403,7 @@ export default function RentalsPage() {
               <AccordionContent className="pb-6">
                 <ul className="space-y-2">
                   {[
-                    "Dance fitness classes (Zumba, Salsation, cardio dance)",
+                    "Dance fitness classes (Zumba, Salsation, cardio dance & more)",
                     "Yoga & mat-based sessions",
                     "Group fitness & aerobics",
                     "Personal training & small group training",
@@ -621,13 +622,12 @@ export default function RentalsPage() {
                       "Projector & screen (Room A & D)",
                       "Tripods & lighting equipment",
                       "Photography/video accessories",
-                      "Wireless microphone (Room A)",
-                      "Custom room setup assistance",
+                      "Wireless microphone",
                       "Large Cooler For F&B",
                       "Equipment Storage",
                       "Tables and Chairs",
                       "Stage platform",
-                      "Colorful LED Lighting",
+                      "Colorful RGB Party Lighting",
                     ].map((item, idx) => (
                       <li key={idx} className="flex items-start gap-3">
                         <span className="text-slate-500 mt-1">•</span>
