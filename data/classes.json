@@ -1,0 +1,612 @@
+{
+  "_description": "Dance Connexions Class Information - All demographic content, styles, pricing, and FAQs",
+  "_lastUpdated": "2026-02-13",
+
+  "classPricing": {
+    "monthly": {
+      "price": 300,
+      "display": "RM 300",
+      "period": "per month",
+      "note": "4 classes per month, weekly recurring sessions"
+    },
+    "introFourSession": {
+      "price": 160,
+      "display": "RM 160",
+      "period": "4 sessions",
+      "note": "Intro pack for new students — commit when you're ready"
+    },
+    "dropIn": {
+      "price": 50,
+      "display": "RM 50",
+      "period": "single class",
+      "note": "Try any class, any time, no commitment required"
+    },
+    "privateIndividual": {
+      "price": 180,
+      "display": "RM 180",
+      "period": "per hour",
+      "note": "One-on-one private session"
+    },
+    "privateCouple": {
+      "price": 200,
+      "display": "RM 200",
+      "period": "per hour",
+      "note": "Private session for two — ideal for couples or duo practice"
+    }
+  },
+
+  "classDuration": {
+    "group": 60,
+    "groupDisplay": "1-hour sessions"
+  },
+
+  "demographics": [
+    {
+      "id": "kids",
+      "name": "Kids",
+      "ageRange": "Ages 5–12",
+      "slug": "kids",
+      "headline": "Where Little Ones Fall in Love with Dance",
+      "subheadline": "Fun, safe, and age-appropriate classes designed for children in Sunway.",
+      "overview": "Our kids classes are designed for children aged 5 to 12, taught in a safe, encouraging environment where movement is explored through play and music. Classes are structured to be age-appropriate — building coordination, rhythm, and confidence without pressure or competition.",
+      "whatsappMessage": "Hi! I'm interested in kids dance classes at Dance Connexions.\n\n- Child's age:\n- Dance style interest:\n- Any prior experience:\n\nCould you share the schedule and fees? Thank you!",
+      "accentClass": "from-rose-900",
+      "styles": [
+        {
+          "slug": "creative-movement",
+          "name": "Creative Movement",
+          "tagline": "Discover rhythm through imagination",
+          "cardDescription": "No technique pressure — just music, movement, and creativity. The perfect first dance experience.",
+          "fullDescription": "Creative Movement is the ideal starting point for young children. There are no rigid steps to memorise — instead, children explore how their bodies respond to music, rhythm, and imagination. Classes use games, stories, and props to make movement feel natural and joyful. It builds body awareness and coordination in a completely pressure-free environment.",
+          "whatYoullLearn": [
+            "Listening to music and responding with movement",
+            "Spatial awareness — moving safely in a shared space",
+            "Basic rhythm and timing",
+            "Body coordination and balance",
+            "Confidence expressing yourself through movement"
+          ],
+          "whoItsFor": "Best for children aged 5–8, especially those with no prior dance experience. Also great for shy or anxious children who need a gentle, playful introduction.",
+          "whatsappMessage": "Hi! I'm interested in Creative Movement classes for kids at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "ballet-basics",
+          "name": "Ballet Basics",
+          "tagline": "Grace, posture, and the joy of classical movement",
+          "cardDescription": "Foundational classical technique — building posture, musicality, and discipline in a fun, pressure-free setting.",
+          "fullDescription": "Our Ballet Basics classes for kids introduce the foundations of classical dance in a fun, age-appropriate way. We focus on posture, listening skills, coordination, and the joy of moving to music — not competition or performance pressure. This is not a pre-professional programme. It is designed to give children a strong movement foundation and a genuine love of dance. All classes are flat-shoe only — no pointe work.",
+          "whatYoullLearn": [
+            "Basic ballet positions and terminology",
+            "Posture and body alignment",
+            "Musicality — moving in time with music",
+            "Graceful arm and leg movements",
+            "Focus, listening skills, and gentle discipline"
+          ],
+          "whoItsFor": "Best for children aged 6–12. No prior experience needed. Particularly suited to children who enjoy structure, elegance, and classical music.",
+          "whatsappMessage": "Hi! I'm interested in Ballet Basics classes for kids at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "hip-hop",
+          "name": "Hip Hop Kids",
+          "tagline": "Big energy, bigger confidence",
+          "cardDescription": "High energy, age-appropriate hip hop moves. Builds rhythm, confidence, and personality — zero pressure.",
+          "fullDescription": "Hip Hop Kids is one of our most popular classes — and for good reason. Children love the music, the moves, and the energy. Our classes teach age-appropriate hip hop choreography, from foundational grooves to basic freestyle elements. Beyond the moves, hip hop builds confidence, stage presence, and the ability to express personality through movement. Classes are fun-first, high energy, and pressure-free.",
+          "whatYoullLearn": [
+            "Basic hip hop grooves and footwork",
+            "Age-appropriate choreography to popular music",
+            "Freestyle fundamentals",
+            "Performance confidence and stage presence",
+            "Rhythm and musicality"
+          ],
+          "whoItsFor": "Best for children aged 6–12 who love music and movement. No experience required — just energy and enthusiasm.",
+          "whatsappMessage": "Hi! I'm interested in Hip Hop Kids classes at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "kpop",
+          "name": "K-Pop Dance",
+          "tagline": "Learn the moves your kids already love",
+          "cardDescription": "Choreography from popular K-pop tracks. Group energy, stage-ready moves, and incredibly fun.",
+          "fullDescription": "K-Pop Dance classes teach children the choreography styles made famous by Korean pop artists — hugely popular across Malaysia and Southeast Asia. Classes focus on group synchronisation, performance quality, and above all, having fun. Children learn actual choreo from popular tracks, which makes classes immediately exciting and motivating. An excellent way for kids to build teamwork, coordination, and a love of performance.",
+          "whatYoullLearn": [
+            "K-pop style choreography from popular songs",
+            "Group synchronisation and timing",
+            "Stage presence and performance quality",
+            "Coordination and rhythm through structured moves",
+            "Teamwork and working with a group"
+          ],
+          "whoItsFor": "Best for children aged 7–12. Especially popular with kids who already love K-pop music and videos. No prior dance experience needed.",
+          "whatsappMessage": "Hi! I'm interested in K-Pop Dance classes for kids at Dance Connexions. Could you share the schedule? Thank you!"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What age can my child start?",
+          "answer": "Our kids classes are designed for children aged 5 to 12. We recommend Creative Movement for the youngest children (5–7) and any style for those aged 8 and above."
+        },
+        {
+          "question": "Does my child need any prior dance experience?",
+          "answer": "Not at all. All of our kids classes are designed for beginners. Children with prior experience are also welcome — classes are paced to accommodate different levels."
+        },
+        {
+          "question": "What should my child wear?",
+          "answer": "Comfortable, stretchy clothing is ideal — leggings, shorts, or tracksuit bottoms. For Ballet Basics, a leotard is preferred but not required to start. Indoor shoes or bare feet are fine. No outdoor shoes on the dance floor."
+        },
+        {
+          "question": "How long is each class?",
+          "answer": "Each class runs for approximately 1 hour."
+        },
+        {
+          "question": "Can I watch my child's class?",
+          "answer": "We have a waiting area for parents. Whether parents can observe the class itself depends on the class — please ask us when you enquire, as some children focus better without parents in the room."
+        },
+        {
+          "question": "What if my child is shy or nervous?",
+          "answer": "Completely normal — and our instructors are experienced with this. We recommend starting with Creative Movement, which is the most relaxed and playful class. Most children warm up very quickly once they see how fun it is."
+        },
+        {
+          "question": "Is there a trial class option?",
+          "answer": "Yes. Our drop-in rate (RM 50 per class) is the easiest way to try before committing to a monthly package. Contact us on WhatsApp to find a suitable class to start with."
+        },
+        {
+          "question": "Do classes follow school holidays?",
+          "answer": "Classes run on a flexible weekly schedule. We keep parents informed of any breaks or changes. Generally, classes continue through school breaks unless otherwise announced."
+        }
+      ]
+    },
+    {
+      "id": "teens",
+      "name": "Teens",
+      "ageRange": "Ages 13–17",
+      "slug": "teens",
+      "headline": "Dance Your Way",
+      "subheadline": "Find your style. Build your skills. Classes for teens in Sunway.",
+      "overview": "Our teen classes are built for 13 to 17 year olds who want to dance on their own terms. Whether you're into K-pop, hip hop, street jazz, or something more expressive — there is a class for you. No pressure, no judgment. Just good music and real skills.",
+      "whatsappMessage": "Hi! I'm interested in teen dance classes at Dance Connexions.\n\n- Age:\n- Dance style interest:\n- Any prior experience:\n\nCould you share the schedule and fees? Thank you!",
+      "accentClass": "from-blue-900",
+      "styles": [
+        {
+          "slug": "kpop",
+          "name": "K-Pop",
+          "tagline": "Stage-ready choreo from your favourite tracks",
+          "cardDescription": "Full group choreography from popular K-pop tracks. High energy, precise, and deeply satisfying to perform.",
+          "fullDescription": "Our Teen K-Pop classes focus on learning full choreography from current and classic K-pop songs. Classes cover synchronisation, performance quality, facial expression, and the group energy that makes K-pop so compelling to watch. Teens also learn how to break down and retain choreography efficiently — a skill that transfers to all dance styles. Classes are energetic, social, and one of the most rewarding ways to develop as a performer.",
+          "whatYoullLearn": [
+            "Full K-pop choreography from popular current tracks",
+            "Group synchronisation and precision",
+            "Stage performance quality and facial expression",
+            "How to learn and retain choreography efficiently",
+            "Confidence performing in a group setting"
+          ],
+          "whoItsFor": "For teens aged 13–17 who love K-pop and want to learn real choreography. Suitable from complete beginner to intermediate.",
+          "whatsappMessage": "Hi! I'm interested in K-Pop classes for teens at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "hip-hop",
+          "name": "Hip Hop",
+          "tagline": "Foundation, freestyle, and everything in between",
+          "cardDescription": "Street-based technique with freestyle elements. Build real hip hop foundations and develop your own style.",
+          "fullDescription": "Teen Hip Hop classes build real street dance technique — not just moves, but understanding the culture and foundation behind them. Classes cover foundational grooves, musicality, freestyle fundamentals, and building your personal style. This is not just learning choreography — it is about developing genuine hip hop sensibility. If you want to express yourself and have the tools to dance to any song, this is the class.",
+          "whatYoullLearn": [
+            "Hip hop foundation — grooves, isolations, footwork",
+            "Freestyle fundamentals and building your own style",
+            "Musicality — how to listen and respond to beats",
+            "Cypher culture and how to hold your own",
+            "Performance presence and confidence"
+          ],
+          "whoItsFor": "For teens who want authentic hip hop technique rather than just choreography. All levels welcome — no prior experience needed.",
+          "whatsappMessage": "Hi! I'm interested in Hip Hop classes for teens at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "street-jazz",
+          "name": "Street Jazz",
+          "tagline": "Where jazz technique meets street attitude",
+          "cardDescription": "A blend of jazz foundations and street-style movement. Versatile, expressive, and highly performable.",
+          "fullDescription": "Street Jazz is one of the most versatile and commercially relevant dance styles — seen widely in music videos, performances, and competitions. Our teen classes combine jazz technique (turns, leaps, body isolations) with the attitude and styling of street dance. The result is a style that looks great, feels great, and builds a wide technical range. Great for teens who want to be well-rounded dancers with real performance ability.",
+          "whatYoullLearn": [
+            "Jazz technique fundamentals — turns, leaps, kicks",
+            "Street-style attitude, character, and flavour",
+            "Body isolations and sharp, clean movements",
+            "Commercial choreography style and presentation",
+            "Versatility to adapt across different music and moods"
+          ],
+          "whoItsFor": "For teens who want technical dance skills with a cool, contemporary edge. Works well for those interested in performing or competitions. Beginner to intermediate.",
+          "whatsappMessage": "Hi! I'm interested in Street Jazz classes for teens at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "contemporary",
+          "name": "Contemporary",
+          "tagline": "Move with intention. Dance with meaning.",
+          "cardDescription": "Emotion-driven, artistic movement for teens who want depth and expression beyond set choreography.",
+          "fullDescription": "Contemporary dance for teens is about more than learning steps — it is about developing your movement voice. Classes explore how to use the body expressively, how movement communicates emotion, and how to move with genuine intention. We blend elements from modern dance, release technique, and improvisation. Ideal for teens who want artistic depth, who already dance and want to grow creatively, or who find traditional structured classes too rigid.",
+          "whatYoullLearn": [
+            "Expressive movement and emotional communication through dance",
+            "Modern dance technique and body mechanics",
+            "Improvisation and spontaneous movement",
+            "Floor work and dynamic use of levels",
+            "Developing a personal movement style"
+          ],
+          "whoItsFor": "For teens who want artistic expression alongside (or instead of) structured choreography. Some prior movement experience is helpful but not required.",
+          "whatsappMessage": "Hi! I'm interested in Contemporary classes for teens at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "breaking",
+          "name": "Breaking",
+          "tagline": "Toprock. Footwork. Freeze. Power.",
+          "cardDescription": "Foundational b-boy and b-girl technique. Toprock, footwork, freezes, and power move basics.",
+          "fullDescription": "Breaking — also known as b-boying or b-girling — is one of the original hip hop disciplines and is now recognised as an Olympic sport. Our teen classes cover the four fundamentals: toprock (standing movement), footwork (floor patterns), freezes (held positions), and the basics of power moves. Classes teach proper technique and safe conditioning, so students build strength and skill progressively. A physically demanding, deeply individual, and culturally rich style.",
+          "whatYoullLearn": [
+            "Toprock — foundational standing movement and style",
+            "Footwork — basic floor patterns (6-step and variations)",
+            "Freeze positions — baby freeze, chair freeze",
+            "Power move entries and conditioning basics",
+            "The culture and etiquette of breaking"
+          ],
+          "whoItsFor": "For teens aged 13–17 interested in physical challenge, individual expression, and the culture of hip hop. No prior experience needed. Physical fitness helps but is not required.",
+          "whatsappMessage": "Hi! I'm interested in Breaking classes for teens at Dance Connexions. Could you share the schedule? Thank you!"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do I need prior dance experience?",
+          "answer": "No experience is needed for any of our teen classes. All styles are taught from foundations upward. If you have prior experience, let us know — we can guide you to the right entry point."
+        },
+        {
+          "question": "Can I come with friends?",
+          "answer": "Absolutely. Many students join with friends and it makes classes even more enjoyable. Let us know when you enquire and we will make sure you are in the same class."
+        },
+        {
+          "question": "Can I try a class before committing?",
+          "answer": "Yes. Drop-in at RM 50 per class, no commitment required. Contact us to find out which upcoming class to join as a first session."
+        },
+        {
+          "question": "What do I wear?",
+          "answer": "Comfortable, flexible clothing — tracksuit bottoms, shorts, or leggings. Sneakers or dance shoes for hip hop, breaking, K-pop, and street jazz. Bare feet or socks are fine for contemporary."
+        },
+        {
+          "question": "Are there evening and weekend classes?",
+          "answer": "We schedule classes to work around school hours. Contact us and we will match you with a schedule that works for you."
+        },
+        {
+          "question": "I want to compete — can the studio help with that?",
+          "answer": "We are primarily a training and development space. Students who want to enter competitions can absolutely build their skills here. Speak to us about your goals when you enquire."
+        },
+        {
+          "question": "How personal are the classes?",
+          "answer": "Our classes are focused and personal — not large group fitness-style sessions. Contact us for current availability and scheduling."
+        }
+      ]
+    },
+    {
+      "id": "young-adults",
+      "name": "Young Adults",
+      "ageRange": "Ages 18–30",
+      "slug": "young-adults",
+      "headline": "Your After-Hours Studio",
+      "subheadline": "Flexible classes, no experience needed. Sunway's dance space for young adults.",
+      "overview": "Dance Connexions offers a range of classes for young adults aged 18 to 30 — from social Latin to K-pop, contemporary to heels style. Classes are designed to be fun, accessible, and social. No experience required, and no pressure. Come with friends or come alone and make new ones.",
+      "whatsappMessage": "Hi! I'm interested in young adult dance classes at Dance Connexions.\n\n- Dance style interest:\n- Any prior experience:\n- Preferred time (day/evening/weekend):\n\nCould you share the schedule and fees? Thank you!",
+      "accentClass": "from-purple-900",
+      "styles": [
+        {
+          "slug": "salsa",
+          "name": "Salsa & Latin Social",
+          "tagline": "Dance with anyone, anywhere",
+          "cardDescription": "Social Latin dance — Salsa, Bachata, Merengue basics. Partner or solo. Immediately useful at social events.",
+          "fullDescription": "Salsa and Latin social dance classes for young adults focus on the social dancing experience — the kind you can actually use at parties, events, and social nights. Classes cover Salsa fundamentals (Cuban and LA style), Bachata basics, and Merengue. You do not need a partner to join — classes are designed to work solo or in rotation. The goal is to feel comfortable and confident dancing socially, not to be a competition dancer.",
+          "whatYoullLearn": [
+            "Salsa basic steps and timing (Cuban and LA style)",
+            "Bachata fundamentals and close partner connection",
+            "Lead and follow technique for partner dancing",
+            "How to social dance confidently with anyone",
+            "Footwork patterns and Latin body movement"
+          ],
+          "whoItsFor": "For young adults who want to dance socially — at events, parties, and social nights. Also great for couples. No partner required to join.",
+          "whatsappMessage": "Hi! I'm interested in Salsa and Latin Social classes at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "kpop",
+          "name": "K-Pop",
+          "tagline": "Learn the choreo, feel the energy",
+          "cardDescription": "Group K-pop choreography for adults. Trend-forward, social, and a genuinely great workout.",
+          "fullDescription": "K-Pop classes for young adults go beyond just learning steps — they focus on the full performance package. Classes cover current and classic choreography, group timing and synchronisation, and the performance style that makes K-pop so visually compelling. It is also one of the most social and motivating group classes available — there is a natural energy when a group moves together to music everyone loves. Great for fitness, fun, and making friends.",
+          "whatYoullLearn": [
+            "Full K-pop choreography from current popular tracks",
+            "Group synchronisation and timing",
+            "Performance presence and expression",
+            "Efficient choreography learning techniques",
+            "Cardio fitness through sustained dance movement"
+          ],
+          "whoItsFor": "For young adults aged 18–30 who enjoy K-pop music and want to learn real choreography in a social setting. All levels welcome.",
+          "whatsappMessage": "Hi! I'm interested in K-Pop classes for young adults at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "contemporary",
+          "name": "Contemporary",
+          "tagline": "Move beyond steps — find your expression",
+          "cardDescription": "Expressive, flowing movement. A genuine creative outlet for young adults who want depth over choreography.",
+          "fullDescription": "Contemporary dance for young adults is one of the most rewarding classes we offer. Less about learning fixed choreography and more about developing real movement skill and personal expression. Classes combine modern technique, improvisation, partnering, and floor work. Many students find contemporary to be both physically satisfying and genuinely therapeutic — a real outlet for stress and emotion.",
+          "whatYoullLearn": [
+            "Modern and contemporary technique foundations",
+            "Movement improvisation and personal expression",
+            "Floor work and dynamic use of levels",
+            "Partner work and contact improvisation basics",
+            "Body awareness and release-based movement"
+          ],
+          "whoItsFor": "For young adults who want artistic expression and movement depth. Some prior movement background is helpful but not required.",
+          "whatsappMessage": "Hi! I'm interested in Contemporary classes at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "hip-hop",
+          "name": "Hip Hop",
+          "tagline": "Real technique, real culture, real fun",
+          "cardDescription": "Foundational hip hop technique with freestyle elements. Build real skills and develop your own style.",
+          "fullDescription": "Our young adult Hip Hop classes focus on building genuine hip hop dance technique — not just performing set choreography, but understanding the movement vocabulary and developing individual style. Classes cover foundational grooves, isolations, footwork, freestyle, and the cultural context of hip hop. High energy but structured, with real skill progression. A great workout and a great social activity.",
+          "whatYoullLearn": [
+            "Hip hop foundations — grooves, toprock, footwork",
+            "Freestyle technique and developing personal style",
+            "Musicality and beat-matching",
+            "Improvisation and cipher culture",
+            "Cardio fitness through high-energy movement"
+          ],
+          "whoItsFor": "For young adults who love hip hop music and culture. All levels from total beginner welcome.",
+          "whatsappMessage": "Hi! I'm interested in Hip Hop classes at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "heels",
+          "name": "Heels Style",
+          "tagline": "Confidence. Strength. Command the room.",
+          "cardDescription": "Empowerment-focused feminine movement. Heels or flats — it is about how you carry yourself.",
+          "fullDescription": "Heels Style classes focus on confident, powerful feminine movement. The class is not about the shoes (flats are absolutely fine) — it is about the quality of movement: deliberate, commanding, and expressive. Classes draw from jazz, commercial dance, and sensual Latin movement, combining technical foundations with an emphasis on confidence and presence. One of our most empowering classes.",
+          "whatYoullLearn": [
+            "Feminine movement technique — isolations, extensions, presence",
+            "Commercial choreography with attitude and character",
+            "Body confidence and stage presence",
+            "Strength and balance — with or without heels",
+            "How to carry yourself with intention and power"
+          ],
+          "whoItsFor": "For women aged 18–30 who want to develop confidence and powerful feminine movement. No prior dance experience required.",
+          "whatsappMessage": "Hi! I'm interested in Heels Style classes at Dance Connexions. Could you share the schedule? Thank you!"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "I've never danced before — is this still for me?",
+          "answer": "Yes, absolutely. Most of our young adult students start with zero dance experience. Our classes are designed to take you from no experience to real skill. The only requirement is showing up."
+        },
+        {
+          "question": "What if I have two left feet?",
+          "answer": "Everyone feels that way at first. Two or three classes in and most students are surprised by how quickly they progress. There is no such thing as someone who fundamentally cannot dance — just people who haven't started yet."
+        },
+        {
+          "question": "Are there evening and weekend classes?",
+          "answer": "Yes. We schedule classes to suit working and student schedules. Contact us and we will find a time that works for you."
+        },
+        {
+          "question": "Can I bring a friend?",
+          "answer": "Yes — and we encourage it. Classes are more fun with friends. Let us know when you enquire and we will put you in the same session."
+        },
+        {
+          "question": "Is this more like cardio or actual dance?",
+          "answer": "Genuine dance — you will get a workout, but the focus is on skill and enjoyment, not burning calories. That said, regular classes are excellent exercise."
+        },
+        {
+          "question": "Do I need a partner for Salsa?",
+          "answer": "No. Our Salsa classes are designed to work with or without a fixed partner. You will learn lead and follow technique, which means you can dance with anyone."
+        },
+        {
+          "question": "How quickly will I learn?",
+          "answer": "Most students feel comfortable with the basics within 4–6 classes. Progress varies by style and individual — consistent attendance is the biggest factor."
+        }
+      ]
+    },
+    {
+      "id": "adults",
+      "name": "Adults",
+      "ageRange": "Ages 30–55",
+      "slug": "adults",
+      "headline": "Dance at Your Own Pace",
+      "subheadline": "Expert-led classes in Sunway, designed around your schedule.",
+      "overview": "Our adult classes are designed for people aged 30 to 55 who want to learn dance properly — not rush through beginner content, but genuinely develop skill and real enjoyment. Classes are structured, quality-focused, and flexible. We understand you have a busy life. Our scheduling works around you.",
+      "whatsappMessage": "Hi! I'm interested in adult dance classes at Dance Connexions.\n\n- Dance style interest:\n- Any prior experience:\n- Preferred schedule (day/evening/weekend):\n\nCould you share the schedule and fees? Thank you!",
+      "accentClass": "from-emerald-900",
+      "styles": [
+        {
+          "slug": "ballroom-latin",
+          "name": "Ballroom & Latin",
+          "tagline": "Elegant, structured, and deeply satisfying",
+          "cardDescription": "Cha-Cha, Waltz, Rumba, and more. Proper ballroom technique taught for adult beginners and intermediates.",
+          "fullDescription": "Ballroom and Latin classes for adults cover the core social and competitive dance styles — Waltz, Foxtrot, Cha-Cha, Rumba, and Samba. Classes are taught with proper technique from the start, building a real foundation rather than just surface moves. The teaching here draws on over 30 years of competitive ballroom experience — so what you learn is genuine, structured, and correctly grounded. Classes are structured but not intimidating.",
+          "whatYoullLearn": [
+            "Waltz — timing, rise and fall, natural turn basics",
+            "Cha-Cha — Latin timing, hip action, basic patterns",
+            "Rumba — the slow Latin style, timing and expression",
+            "Lead and follow technique for partner dancing",
+            "Posture, frame, and the feeling of partnership connection"
+          ],
+          "whoItsFor": "For adults who want to learn proper ballroom and Latin technique — for personal enjoyment, social events, or eventual competition. Beginner to intermediate.",
+          "whatsappMessage": "Hi! I'm interested in Ballroom and Latin classes for adults at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "salsa",
+          "name": "Salsa",
+          "tagline": "The most social dance you will ever learn",
+          "cardDescription": "Cuban and LA style Salsa — partner or solo. Practical, fun, and immediately useful at social events.",
+          "fullDescription": "Adult Salsa classes focus on building real social dancing ability — the kind that lets you walk into any Latin social event and dance confidently. We cover both Cuban style (circular, rhythmic) and LA style (in a line, more theatrical), with structured progression through partner rotation and regular freestyle practice. Skills become natural, not just memorised sequences.",
+          "whatYoullLearn": [
+            "Salsa basic timing and step patterns (Cuban and LA)",
+            "Bachata fundamentals",
+            "Partner connection and lead/follow technique",
+            "Social dance confidence and etiquette",
+            "Footwork variations and simple turn patterns"
+          ],
+          "whoItsFor": "For adults who want to dance socially — at parties, events, or social dance nights. Solo or with a partner. All levels from beginner.",
+          "whatsappMessage": "Hi! I'm interested in Salsa classes for adults at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "contemporary",
+          "name": "Contemporary",
+          "tagline": "Movement with meaning, at any age",
+          "cardDescription": "Expressive, technique-grounded movement for adults. A creative outlet that builds real physical skill.",
+          "fullDescription": "Contemporary dance for adults is both an artistic practice and a physical one. Classes build genuine movement technique — body mechanics, coordination, spatial awareness, and the ability to move with intention and expression. The style draws from modern dance, release technique, and improvisation. For adults who want a creative physical outlet that is distinctly different from the gym, contemporary dance is deeply rewarding.",
+          "whatYoullLearn": [
+            "Modern dance technique — alignment, coordination, transitions",
+            "Movement improvisation and personal expression",
+            "Floor work and the use of gravity in movement",
+            "Breath and physical release as movement tools",
+            "Creative composition and individual movement voice"
+          ],
+          "whoItsFor": "For adults aged 30–55 who want artistic and physical depth. Prior movement experience is helpful but the class is open to committed beginners.",
+          "whatsappMessage": "Hi! I'm interested in Contemporary classes for adults at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "barre",
+          "name": "Barre Fitness",
+          "tagline": "Ballet-inspired fitness. Low impact, high results.",
+          "cardDescription": "Posture, core strength, and flexibility — ballet technique applied as fitness. No dance experience needed.",
+          "fullDescription": "Barre Fitness applies the principles of ballet technique — small controlled movements, core engagement, and postural alignment — as a fitness practice. No dance experience required. Classes work through sequences that target core strength, leg endurance, flexibility, and posture. Low impact and highly effective. Particularly popular with adults who want a challenging workout that also improves how they stand, move, and feel day to day.",
+          "whatYoullLearn": [
+            "Core strength and abdominal engagement",
+            "Leg strength and endurance through controlled sequences",
+            "Posture correction and body alignment",
+            "Flexibility and controlled stretching",
+            "Balance and body awareness"
+          ],
+          "whoItsFor": "For adults of any fitness level who want a low-impact but genuinely challenging workout. No dance experience needed at all.",
+          "whatsappMessage": "Hi! I'm interested in Barre Fitness classes at Dance Connexions. Could you share the schedule? Thank you!"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Am I too old to start dancing?",
+          "answer": "No. We have students who started in their 40s and 50s with no prior experience who are now confident, capable dancers. Age is never a barrier — consistency is what matters."
+        },
+        {
+          "question": "How long before I can dance properly?",
+          "answer": "For social dancing — Salsa, Ballroom basics — most adults feel comfortable within 8–12 classes. For more technical styles, the journey is longer but the progression is clear and measurable."
+        },
+        {
+          "question": "I have a bad knee or back — are classes suitable?",
+          "answer": "Please speak to us before joining. Many of our classes are low impact and can be adapted for physical limitations. We can guide you to the most suitable class and flag any considerations to your instructor."
+        },
+        {
+          "question": "Can my spouse or partner join the same class?",
+          "answer": "Yes, and for Ballroom and Salsa it is ideal. You do not need to bring a partner — but if you do, it accelerates progress for both of you."
+        },
+        {
+          "question": "What is the difference between group and private sessions?",
+          "answer": "Group classes are structured sessions with other students — great for social learning and consistent progress. Private sessions give one-on-one time to work on specific goals or progress at your own pace. Many students do both."
+        },
+        {
+          "question": "Do you offer Ballroom for absolute beginners?",
+          "answer": "Yes. Our Ballroom and Latin classes start from the very beginning. You do not need to know anything to start — not even what a Cha-Cha is."
+        }
+      ]
+    },
+    {
+      "id": "active-adults",
+      "name": "Active Adults",
+      "ageRange": "Ages 55 and above",
+      "slug": "active-adults",
+      "headline": "Keep Moving. Keep Dancing.",
+      "subheadline": "Gentle, welcoming classes designed for active adults in Sunway.",
+      "overview": "Our Active Adults classes are designed for people aged 55 and above who want to keep moving, stay social, and enjoy dance in a gentle, welcoming environment. Classes are paced carefully with full attention to comfort and safety. No prior dance experience needed — and absolutely no pressure.",
+      "whatsappMessage": "Hi! I'm interested in active adult dance classes at Dance Connexions.\n\n- Dance style interest:\n- Any health considerations we should know:\n- Preferred schedule:\n\nCould you share the schedule and fees? Thank you!",
+      "accentClass": "from-amber-900",
+      "styles": [
+        {
+          "slug": "ballroom",
+          "name": "Ballroom Basics",
+          "tagline": "The joy of ballroom, at your pace",
+          "cardDescription": "Waltz, Foxtrot, and ballroom basics taught gently. Posture, grace, and genuine enjoyment — no competition pressure.",
+          "fullDescription": "Ballroom Basics for Active Adults brings the elegance and joy of ballroom dance to older students in a gentle, structured class. We cover Waltz, Foxtrot, and selected basics at a pace that allows real learning without physical strain. The focus is on posture, partnership, and the genuine pleasure of moving well to music — not competition or performance. Classes are social, friendly, and one of the most enjoyable ways to stay active.",
+          "whatYoullLearn": [
+            "Waltz — basic timing, natural turn, and footwork",
+            "Foxtrot — slow, smooth, and highly accessible",
+            "Posture and body alignment for comfortable, confident dancing",
+            "Partner connection and basic lead/follow",
+            "Musicality — moving in time with live and recorded music"
+          ],
+          "whoItsFor": "For adults aged 55 and above, with or without a partner. No prior dance experience required. Physically gentle and fully accessible.",
+          "whatsappMessage": "Hi! I'm interested in Ballroom Basics classes for active adults at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "line-dancing",
+          "name": "Line Dancing",
+          "tagline": "No partner needed — just good music and good company",
+          "cardDescription": "Fun group line dancing — no partner required. Great for memory, coordination, and social connection.",
+          "fullDescription": "Line Dancing is one of the most accessible social dance forms for older adults — and one of the most enjoyable. No partner is required. Classes are done in lines, everyone learning and performing the same patterns together. The social atmosphere is warm and inclusive. Line dancing is genuinely good for cognitive health — the patterns engage memory, coordination, and focus. Classes are beginner-friendly and immediately fun.",
+          "whatYoullLearn": [
+            "Classic and modern line dance patterns and sequences",
+            "Footwork patterns — grapevines, shuffles, step-touches",
+            "Directional changes and sequence memory",
+            "Coordination and timing to music",
+            "Social connection through shared movement"
+          ],
+          "whoItsFor": "For adults aged 55 and above. No partner needed. No experience needed. One of our most social and accessible classes.",
+          "whatsappMessage": "Hi! I'm interested in Line Dancing classes at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "latin-rhythm",
+          "name": "Latin Rhythm",
+          "tagline": "Feel the beat. Move with it.",
+          "cardDescription": "Cha-Cha and Rumba basics at a relaxed, gentle pace. Fun, rhythmic, and wonderfully social.",
+          "fullDescription": "Latin Rhythm classes for Active Adults introduce the joy of Latin dance — Cha-Cha and Rumba primarily — at a pace appropriate for older students. The focus is on rhythm, footwork, and the pleasure of moving to Latin music, not technical precision or competition. Classes are warm, social, and genuinely fun. Latin dancing is well known for its benefits to balance and coordination — and these classes deliver those benefits in a completely enjoyable way.",
+          "whatYoullLearn": [
+            "Cha-Cha basic timing and step patterns",
+            "Rumba — the slow, expressive Latin style",
+            "Latin body movement (introduced gently and progressively)",
+            "Simple footwork patterns",
+            "Rhythm and musicality through Latin music"
+          ],
+          "whoItsFor": "For adults aged 55 and above who want to enjoy Latin music and movement. With or without a partner. All levels welcome.",
+          "whatsappMessage": "Hi! I'm interested in Latin Rhythm classes for active adults at Dance Connexions. Could you share the schedule? Thank you!"
+        },
+        {
+          "slug": "social-dance",
+          "name": "Social Dance",
+          "tagline": "Dance for the joy of it",
+          "cardDescription": "A gentle mix of partner dances — Foxtrot, Slow Waltz, easy social steps. Community and connection first.",
+          "fullDescription": "Social Dance is our broadest class for Active Adults — a gentle, friendly class covering a relaxed mix of easy partner dances including Foxtrot, Slow Waltz, and simple social steps from various styles. The emphasis is entirely on enjoyment, connection, and community. Content adapts to what the group enjoys. If you want to move, be social, and have fun with like-minded adults, this is the class. Many students describe it as the highlight of their week.",
+          "whatYoullLearn": [
+            "Foxtrot and Slow Waltz basics",
+            "Simple partner dance patterns and connections",
+            "Social dance etiquette and confidence",
+            "Light footwork and gentle movement sequences",
+            "Connection with partners and the group"
+          ],
+          "whoItsFor": "For adults aged 55 and above who want gentle movement and social connection above all else. All levels welcome. Partner or no partner.",
+          "whatsappMessage": "Hi! I'm interested in Social Dance classes for active adults at Dance Connexions. Could you share the schedule? Thank you!"
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Do I need a dance partner?",
+          "answer": "No. All of our Active Adult classes can be attended without a partner. In partner-based classes, we rotate or adapt for solo participants. If you have a partner, bring them — it is even more enjoyable."
+        },
+        {
+          "question": "Is it physically demanding?",
+          "answer": "Our Active Adult classes are designed to be gentle and low-impact. We move at a pace that allows everyone to participate comfortably. Over time, regular dancing does build fitness, balance, and coordination."
+        },
+        {
+          "question": "What if I have a health condition?",
+          "answer": "Please let us know when you enquire. Many conditions are no obstacle to dancing — but we want to be informed so we can guide you appropriately. We recommend consulting your doctor if you are unsure."
+        },
+        {
+          "question": "What do I wear?",
+          "answer": "Comfortable clothing and soft-soled indoor shoes. Avoid thick rubber soles that may grip the floor. Leather-soled or smooth-soled shoes are ideal for ballroom styles."
+        },
+        {
+          "question": "How personal are the classes?",
+          "answer": "Our classes are small and personal — not large group fitness-style sessions. Contact us for current availability."
+        },
+        {
+          "question": "Is this social? Will I meet people?",
+          "answer": "Very much so. Our Active Adult classes are some of our most social sessions. Many students have formed lasting friendships through classes here."
+        },
+        {
+          "question": "I used to dance years ago — can I pick it up again?",
+          "answer": "Absolutely, and you will probably be surprised how quickly it comes back. Muscle memory is very real. Students who danced in the past typically progress faster even after long breaks."
+        }
+      ]
+    }
+  ]
+}
