@@ -1,10 +1,20 @@
 # Knowledge Base Version
 
-**Current Version:** v2.3.0
+**Current Version:** v2.4.0
 **Last Updated:** 2026-02-13
 **Status:** Active Development
 
 ## Changelog
+
+### v2.4.0 (2026-02-13 - Dance Classes Section Built)
+- Added S-2026-02-13-01: Full dance classes section architecture documented
+- 5 demographic sections built: /kids, /teens, /young-adults, /adults, /active-adults
+- 18 style sub-pages built with dynamic routing
+- 5 FAQ pages built
+- data/classes.json created with all content, pricing, and 23 AI image prompts
+- ImagePlaceholder component documents where real photos go
+- Key decisions: no instructor photos, no class size limits stated, WhatsApp as conversion goal
+- Pending: /classes router page (last to build), real images to replace placeholders
 
 ### v2.3.0 (2026-02-13 - Principal Info + Image Strategy + Key Principles)
 - Added S-2026-02-11-10: Principal credentials (Ms. Som Phon — ISTD-UK, DMIA-AU, 30+ years, founded 1999)

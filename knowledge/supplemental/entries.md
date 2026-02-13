@@ -4,6 +4,88 @@
 
 ---
 
+## S-2026-02-13-01
+
+**Related Sections:** Dance Classes, Website Architecture, Image Strategy
+**Status:** Confirmed
+**Date:** 2026-02-13
+**Source:** Session — Dance classes section built
+
+### Dance Classes Section — Fully Built
+
+The dance classes section is now live with the following architecture:
+
+**Data file:** `data/classes.json`
+- Contains all content for 5 demographics: Kids, Teens, Young Adults, Adults, Active Adults
+- Each demographic has: headline, subheadline, overview, WhatsApp pre-filled message, hero image prompt, styles array, FAQs
+- Pricing stored centrally: RM 300/month, RM 160 intro 4-session, RM 50 drop-in, RM 180 private individual, RM 200 private couple
+- Each style has: slug, name, tagline, cardDescription, fullDescription, whatYoullLearn[], whoItsFor, whatsappMessage, imagePrompt
+- 23 AI image prompts total: 5 hero images + 18 style page images
+
+**Shared components in `src/components/classes/`:**
+- `demographic-landing.tsx` — full landing page for each demographic (hero, style cards, how it works, pricing, FAQ preview, CTA)
+- `style-page.tsx` — individual dance style sub-page (hero, about, what you'll learn, who it's for, class details, pricing, related styles, CTA)
+- `faq-page.tsx` — full FAQ accordion page for each demographic
+- `image-placeholder.tsx` — shows where real images go, with the AI generation prompt embedded. Replace with `<Image>` when real photos are ready.
+
+**Pages built (all return HTTP 200):**
+
+| Demographic | Landing | Styles | FAQ |
+|-------------|---------|--------|-----|
+| /kids | ✓ | creative-movement, ballet-basics, hip-hop, kpop | ✓ |
+| /teens | ✓ | kpop, hip-hop, street-jazz, contemporary, breaking | ✓ |
+| /young-adults | ✓ | salsa, kpop, contemporary, hip-hop, heels | ✓ |
+| /adults | ✓ | ballroom-latin, salsa, contemporary, barre | ✓ |
+| /active-adults | ✓ | ballroom, line-dancing, latin-rhythm, social-dance | ✓ |
+
+**URL pattern:** `/{demographic}/{style}` and `/{demographic}/faq`
+
+**What is NOT built yet:**
+- `/classes` — the router/demographic selector page (built LAST, after all 5 sections are reviewed)
+- Real images — all pages currently show ImagePlaceholder with prompt text
+
+### Image Strategy Confirmed
+
+- No instructor photos anywhere — instructors change, so only environment/student/action shots
+- Primarily Chinese Malaysian (~95%), with Indian, Malay, Western diversity
+- Each placeholder shows its AI prompt — copy prompt, generate image, save to `/public/images/classes/[name].webp`, replace ImagePlaceholder with `<Image>`
+- Tools: Grok (realistic human scenes), Midjourney v6 (editorial/artistic), Adobe Firefly (group shots)
+- Ethnicity rotation: 3 Chinese Malaysian : 1 other per group of 4 images
+
+### Dance Classes Pricing (Confirmed)
+
+| Option | Price |
+|--------|-------|
+| Monthly (4 classes) | RM 300/month |
+| Intro 4-Session Pack | RM 160 |
+| Drop-In | RM 50/class |
+| Private (individual) | RM 180/hour |
+| Private (duo/couple) | RM 200/hour |
+
+Class duration: 1 hour (55 min actual, 5 min buffer between classes)
+Group class sizes: NOT mentioned on website — do not state a limit or imply capacity constraint
+
+### Dance Styles by Demographic (Confirmed)
+
+**Kids (5–12):** Creative Movement, Ballet Basics, Hip Hop Kids, K-Pop Dance
+**Teens (13–17):** K-Pop, Hip Hop, Street Jazz, Contemporary, Breaking
+**Young Adults (18–30):** Salsa & Latin Social, K-Pop, Contemporary, Hip Hop, Heels Style
+**Adults (30–55):** Ballroom & Latin, Salsa, Contemporary, Barre Fitness
+**Active Adults (55+):** Ballroom Basics, Line Dancing, Latin Rhythm, Social Dance
+
+Note: Same dance style can appear in multiple demographics (e.g. Salsa in Young Adults and Adults, K-Pop in Teens and Young Adults). The descriptions differ per demographic — teaching approach, pace, and goals are rewritten for each age group.
+
+### Key Principles Confirmed (Session)
+
+1. **No instructor photos** — instructors change frequently
+2. **No class size limits stated** — problem is lack of students, not excess
+3. **WhatsApp is the conversion goal** — every CTA opens WhatsApp with a pre-filled message
+4. **Focus on what we offer** — never highlight absence of reviews, photos, or videos
+5. **Credentials mentioned subtly on /adults page only** — "30+ years experience, national titles, ISTD-UK/DMIA-AU certified"
+6. **Trial class = drop-in at RM 50** — not a blanket free trial
+
+---
+
 ## S-2026-01-29-01
 
 **Related Sections:** Rooms, Pricing, Location

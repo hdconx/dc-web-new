@@ -2,7 +2,40 @@
 
 Items agreed upon but deferred — waiting for content, a discussion session, or scheduled for a future sprint.
 
-**Last updated:** 2026-02-11
+**Last updated:** 2026-02-13
+
+---
+
+## Dance Classes — Pending
+
+### CLASSES-01: `/classes` — Demographic Router Page
+**Priority:** High
+**Status:** Agreed — build LAST after all 5 demographic sections are reviewed
+**What it is:** A visually striking landing page where visitors choose their demographic group. Full-screen grid of 5 cards (or vertical scroll of 5 sections). Each card: background image, age group label, 1-line hook, hover state reveals dance styles, click goes to that demographic's page.
+**Decision:** Build this only after all 5 demographic pages are reviewed and content is approved. It is the "face" of the classes section.
+**Affects:** Need to create `src/app/classes/page.tsx`
+
+### CLASSES-02: Real Images — Replace All Placeholders
+**Priority:** High
+**Blocked by:** AI image generation by owner
+**How to replace:**
+1. Open any page (e.g. `/kids`) — every placeholder shows its exact AI prompt
+2. Copy the prompt, generate image in Grok / Midjourney v6 / Adobe Firefly
+3. Save optimised image to `/public/images/classes/[filename].webp`
+4. In the relevant page component, replace `<ImagePlaceholder ... />` with `<Image src="..." alt="..." fill className="object-cover" />`
+**Prompt source:** `data/classes.json` — `heroImagePrompt` per demographic, `imagePrompt` per style (23 prompts total)
+**Ethnicity guidance:** ~3 Chinese Malaysian : 1 other (Malay/Indian/Western) per group of 4 images
+
+### CLASSES-03: Nav Links — Add Dance Classes to Main Navigation
+**Priority:** Medium
+**Status:** Not started
+**What is needed:** Add dance classes links to the site header/navigation so visitors can reach the classes section. Currently no nav links point to /kids, /teens, etc.
+**Affects:** `src/components/header.tsx`
+
+### CLASSES-04: `/adults/schedule-pricing` Page
+**Priority:** Low
+**Status:** Placeholder link exists in old adults page (now replaced) — can be ignored or built later
+**Note:** Current /adults page has all pricing inline. A dedicated schedule page can be added later if needed.
 
 ---
 
