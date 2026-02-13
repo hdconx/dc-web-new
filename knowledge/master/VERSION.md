@@ -1,10 +1,18 @@
 # Knowledge Base Version
 
-**Current Version:** v2.0.0
+**Current Version:** v2.1.0
 **Last Updated:** 2026-02-11
 **Status:** Active Development
 
 ## Changelog
+
+### v2.1.0 (2026-02-11 - Competitor & Design Research Saved)
+- Added 4 supplemental entries (S-2026-02-11-05 to 08)
+- S-2026-02-11-05: Competitor landscape (Sole To Soul, REDMOUSE, Tutu Toe, Shall We Dance) + gaps
+- S-2026-02-11-06: AI imagery strategy — Midjourney prompts, multi-ethnic requirements, visual style per demographic
+- S-2026-02-11-07: Router page design research — card layout, hover states, global examples
+- S-2026-02-11-08: Malaysian-specific design (multi-ethnic imagery, modest attire, WhatsApp conversion, SEO keywords, how families decide)
+- Critical insight: WhatsApp is the conversion goal, not online booking — simplifies Phase 1 build
 
 ### v2.0.0 (2026-02-11 - Dance Classes Phase Begins)
 - Added 3 supplemental entries (S-2026-02-11-02 to 04)

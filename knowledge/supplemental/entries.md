@@ -1821,6 +1821,199 @@ The `promos` category was added when the promotions system was built. All catego
 
 ---
 
+## S-2026-02-11-05
+
+**Related Sections:** Marketing, Competitors, Strategy
+**Status:** Confirmed — Perplexity research 2026-02-11
+**Type:** Competitor Intelligence
+**Date:** 2026-02-11
+
+### Content
+
+**Competitor Landscape — Bandar Sunway / PJ / Subang Jaya (within 10km)**
+
+| Competitor | Location | Strengths | Weaknesses |
+|---|---|---|---|
+| **Sole To Soul Dance Studio** | Petaling Jaya | Mobile-friendly site, schedules, promotions, beginner confidence messaging | No demographic segmentation, dated design, weak visuals |
+| **REDMOUSE Dance Academy** | Dataran Mentari, Sunway | Active Facebook community (6k likes), trendy K-pop/hip-hop, all ages | No website at all — Facebook only, no SEO, no booking |
+| **Tutu Toe Dance Academy** | Sunway Square | Professional ballet/jazz, trial CTAs for kids/adults | Text-heavy, no social proof visuals, no seniors offering |
+| **Shall We Dance Studio** | PJ area | Events and championships | Sparse website, no kids/teens, weak online presence |
+
+**Critical gaps no competitor is filling:**
+- No competitor uses demographic router/segmentation pages
+- No competitor targets seniors/Active Adults (50+) — completely open market
+- Weak or no online booking across all competitors
+- Minimal Malaysian multi-ethnic imagery on any competitor site
+- REDMOUSE has no website at all despite strong social following — DC can own SEO
+
+**Dance Connexions competitive advantages to emphasise:**
+- Only studio with dedicated demographic sections (unique in area)
+- Only studio with senior-focused gentle classes
+- Operating since 1999 — outlasted many competitors (stated subtly, not boastfully)
+- 4 studios (largest floor space variety in area)
+- Standalone studio D (can operate independently)
+- Easy parking and central Sunway location
+
+**What Sole To Soul does well to learn from:**
+- Clear class schedule visibility
+- Promotions and trial class CTAs
+- Beginner-friendly language and confidence messaging
+
+### Notes
+
+REDMOUSE's Facebook-only strategy is a major gap Dance Connexions can exploit through SEO. Anyone searching Google for "dance classes Sunway" or "K-pop dance Subang" will find no REDMOUSE website — DC should own those keywords. Senior classes are a completely untapped segment in this area.
+
+---
+
+## S-2026-02-11-06
+
+**Related Sections:** Website Development, AI Imagery, Design Research
+**Status:** Research findings — Perplexity 2026-02-11
+**Type:** Development Reference
+**Date:** 2026-02-11
+
+### Content
+
+**AI Image Generation for Dance Connexions Website**
+
+Since no real student photos are available (privacy policy), all imagery will be AI-generated.
+
+**Recommended tools:**
+- **Midjourney** (primary) — most realistic dance movement imagery
+- **Adobe Firefly** (alternative) — good for commercial-safe images
+- **MyPixAI** — studio-specific aesthetics
+
+**Prompt template structure:**
+`[ethnicity + age + attire description], [dance style + specific move], [setting], [lighting], [mood], [camera angle], [realism style], [no contact / modest / no faces if needed]`
+
+**Parameters:** `--ar 16:9 --v 6 --q 2` for realism in Midjourney
+
+**CRITICAL for Malaysian context:**
+- Prompts must specify multi-ethnic representation: rotate between "Chinese Malaysian", "Malay Malaysian", "Indian Malaysian" across images
+- Attire must be modest (no exposed midriff, no sleeveless for Malay dancers)
+- No physical contact / PDA between dancers shown
+- The Perplexity prompts below defaulted to "Chinese" only — this must be corrected to represent all ethnicities
+
+**Verified Midjourney prompts (multi-ethnic adaptation needed):**
+
+Kids 5-9:
+`Group of joyful multi-ethnic Malaysian children aged 5-9 in loose colourful t-shirts and shorts, performing playful hip-hop moves solo in bright dance studio, soft natural window light, happy mood, wide-angle lens, hyper-realistic, modest attire no contact --ar 16:9 --v 6`
+
+Teens K-Pop:
+`Energetic Malay Malaysian teen girl 14 in baggy streetwear hoodie and joggers, striking K-pop pose solo, urban studio backdrop blurred, neon studio lights cool blue, confident trendy mood, dynamic three-quarter angle, ultra-detailed realistic modest --ar 16:9 --v 6`
+
+Young Adults Latin:
+`Graceful Indian Malaysian woman 25 in elegant knee-length flowy dress, solo Latin rumba hip sway, modern dance studio wood floors, warm ambient lighting, empowering mood, cinematic medium shot, realistic modest no partner --ar 16:9 --v 6`
+
+Adults 30-49 Ballroom:
+`Poised Chinese Malaysian adult woman 38 in modest midi dress with sleeves, solo ballroom waltz frame pose, elegant studio setting, soft chandelier glow, sophisticated relaxed mood, elegant side profile, hyper-real no contact --ar 16:9 --v 6`
+
+Active Adults 50+:
+`Smiling group of multi-ethnic Malaysian seniors 55+ in comfortable polo shirts and capri pants, simple line dance grapevine step, sunny studio with large windows, gentle morning light, cheerful social mood, eye-level wide shot, photorealistic modest no touching --ar 16:9 --v 6`
+
+**Visual style recommendations per demographic:**
+- Kids: Bright, warm colours, soft lighting, wide shots showing movement
+- Teens: Dark background, neon accents, high-energy dynamic poses, motion blur
+- Young Adults: Cinematic, energetic reds/oranges, sophisticated
+- Adults: Warm gold/neutral tones, elegant, soft lighting, relatable not glamorous
+- Active Adults: Soft greens/beiges, large readable scenes, serene, sunny
+
+---
+
+## S-2026-02-11-07
+
+**Related Sections:** Website Development, Router Page, UX Design
+**Status:** Research findings — Perplexity 2026-02-11
+**Type:** Development Reference
+**Date:** 2026-02-11
+
+### Content
+
+**Router/Home Page — Design Research**
+
+The router page's job: get the right visitor to click their segment card within 5 seconds, while being interesting enough to explore briefly.
+
+**Hero question that works:**
+"Who are you dancing for?" — immediately prompts self-identification
+
+**Card design principles:**
+- Each card = approx 20% of screen width on desktop (5 segments visible at once)
+- Distinct AI-generated hero image per demographic (instantly recognisable)
+- Single 1-sentence hook below the image ("Fun foundations for ages 5–9")
+- Hover state: slight zoom + colour shift + brief tagline reveal
+- One-click to demographic section — no intermediate pages
+- Micro-animations on load (staggered card entrance) increase dwell time
+
+**Psychological design:** Reduces bounce 30–50% when visitors self-identify via visuals rather than text menus.
+
+**Best real-world examples to draw inspiration from:**
+- **DivaDance.com** — genre/age cards with video previews, quick trial CTAs
+- **Orangetheory Fitness** — goal selector cards (weight loss, performance, endurance)
+- **BetterHelp.com** — demographic matching quiz approach
+- **MasterClass.com** — category previews with celebrity thumbnails (aspirational imagery)
+- **Coursera.org** — skill/age filters, goal-based routing
+
+**Key difference from competitors:** No dance studio in the Sunway/PJ area uses any form of demographic routing. This is a genuine differentiator.
+
+**Additional router page elements:**
+- Brief studio intro above or below cards: "Dance Connexions — Bandar Sunway's home for dance since 1999"
+- Subtle scroll-to-explore prompt below the fold
+- Footer with quick links to all sections (safety net for confused visitors)
+
+---
+
+## S-2026-02-11-08
+
+**Related Sections:** Website Development, Marketing, Malaysia Context
+**Status:** Confirmed — research-backed
+**Type:** Cultural & Market Reference
+**Date:** 2026-02-11
+
+### Content
+
+**Malaysian-Specific Website Design Considerations**
+
+**Design & UX:**
+- Mobile-first is non-negotiable — Malaysian internet usage is predominantly mobile
+- Clean layouts preferred over busy/flashy Western-style designs
+- Both Bahasa Malaysia and English copy recommended (English primary for Sunway/PJ demographic, BM accessible)
+- WhatsApp contact is expected and preferred over email forms for first contact
+
+**Imagery:**
+- Multi-ethnic representation essential: Malay, Chinese, Indian in roughly equal balance across all pages
+- Modest attire required in all dance imagery — no exposed midriff, appropriate coverage
+- No PDA or physical affection between dancers shown in images
+- Avoid imagery that could be culturally insensitive during major festivals
+
+**Pricing:**
+- Display in RM (Malaysian Ringgit) — always "RM" prefix, never "$"
+- "No hidden fees" and transparent pricing builds significant trust
+- Installment/payment plan options via FPX or GrabPay increase conversion
+- Monthly package pricing (vs per-session) is the norm Malaysian families expect
+
+**How Malaysian families decide on dance classes:**
+1. Facebook groups/posts → word of mouth online
+2. Google search → website visit
+3. Information they need in order: location + transport, schedule, trial class availability, fees, teacher qualifications
+4. WhatsApp inquiry before committing (rarely book cold from website)
+5. Implication: website must answer first 4 questions clearly, then funnel to WhatsApp
+
+**SEO keywords to target (Sunway/PJ area):**
+- "dance classes Sunway"
+- "dance classes Subang Jaya"
+- "K-pop dance class PJ"
+- "kids dance class Bandar Sunway"
+- "ballroom dancing Petaling Jaya"
+- "dance studio rental Sunway"
+- "adult dance class near me Subang"
+- "senior dance class Subang Jaya"
+
+### Notes
+
+WhatsApp as the primary conversion tool (not online booking form) is confirmed by multiple research sources. The website's job is to build enough trust that the visitor sends a WhatsApp message — not to complete a full booking online. This simplifies the build significantly: no complex booking system needed in Phase 1.
+
+---
+
 ## S-2026-02-11-02
 
 **Related Sections:** Classes, Pricing, Scheduling, Trial Policy
