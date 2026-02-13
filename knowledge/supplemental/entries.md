@@ -1821,6 +1821,191 @@ The `promos` category was added when the promotions system was built. All catego
 
 ---
 
+## S-2026-02-11-02
+
+**Related Sections:** Classes, Pricing, Scheduling, Trial Policy
+**Status:** Confirmed (placeholder — subject to refinement per class type)
+**Type:** Business Rules
+**Date:** 2026-02-11
+
+### Content
+
+**Dance Classes — Pricing Structure (Placeholder)**
+
+These are starting-point prices. Final pricing will vary by class type, instructor, level, and arrangement. The system must be flexible enough to show different prices for different classes.
+
+| Class Type | Price (RM) | Notes |
+|---|---|---|
+| Monthly group class | RM 300/month | Regular enrollment, typically 4 sessions/month |
+| Intro/trial package (4 sessions) | RM 160 | Discounted entry package to try out |
+| Private lesson — individual | RM 180/session | One-on-one with instructor |
+| Private lesson — couple | RM 200/session | Two people, same session |
+| Drop-in (single class) | RM 50/class | Walk-in, no commitment |
+
+**Important:** These are placeholder rates. The website's pricing display must be flexible — different classes can have different rates depending on instructor (external vs. in-house), class level, style, and format.
+
+**Trial Class Policy (Flexible):**
+- Beginner-level classes offered by in-house instructors: generally FREE trial available
+- Classes with external/guest instructors: trial may not be free or may not be available
+- Higher-level or specialized classes: no free trial (quality protection)
+- Trial decisions are made case-by-case — website should say "trial available for selected classes" rather than blanket "free trial"
+
+**Scheduling (Flexible):**
+- Typical format: weekly, once per week per class
+- Variations allowed: twice per week, back-to-back sessions on same day, intensive formats
+- Private lessons: fully flexible — student sets their own schedule
+- Website must NOT show a fixed timetable in the initial build — focus on structure first, timetable content added later per class
+
+**Website Build Principle:**
+Build the section structure and content framework first. Deep dive into individual class details, timetables, and specific pricing per class AFTER the main structure is approved.
+
+### Notes
+
+Owner confirmed all pricing is placeholder — the architecture must support per-class pricing overrides. Do not hardcode any prices in components. All pricing to flow from data files (expandable later per class type).
+
+---
+
+## S-2026-02-11-03
+
+**Related Sections:** Classes, Demographics, Marketing
+**Status:** Confirmed — research-backed + owner-approved framework
+**Type:** Business Strategy + Research
+**Date:** 2026-02-11
+
+### Content
+
+**Dance Classes — Styles by Demographic**
+
+Based on Malaysia dance school market research (2026) and owner confirmation. Follows the on-demand teacher model (S-2026-01-31-02) — list what can be arranged, not only what is currently scheduled.
+
+**Core principle:** Dance styles are not rigidly exclusive to one demographic. However, marketing materials must emphasise styles that resonate with each audience to feel personally relevant.
+
+---
+
+**Kids (Ages 5–9)**
+Primary buyer: Parent (not the child)
+Key selling points: Fun, confidence, coordination, social skills, structured learning
+
+Styles to offer:
+- Creative Movement & Rhythm (foundation, pre-dance)
+- Hip-Hop (high energy, age-appropriate choreography)
+- Contemporary (expressive, free movement)
+- Jazz (fun, rhythmic, upbeat)
+- K-Pop Kids (simplified, trend-following)
+
+❌ NOT offered: Ballet (no barres — restricted, S-2026-02-01-02), Ballroom (too formal for this age)
+
+---
+
+**Teens (Ages 10–17)**
+Primary buyer: Teen (with parent approval)
+Key selling points: Trending styles, social/friend groups, performance, competition pathway
+
+Styles to offer:
+- K-Pop (highest demand in this demographic in Malaysia)
+- Hip-Hop / Street Dance / Urban Choreography
+- Contemporary
+- Jazz / Street Jazz
+- Latin (intro level — Salsa, Cha Cha)
+- Competitive Ballroom / Dancesport (for competition-minded teens)
+
+---
+
+**Young Adults (Ages 18–30)**
+Primary buyer: Themselves
+Key selling points: Fitness, social life, stress relief, skill building, trending styles
+
+Styles to offer:
+- K-Pop (still popular at this age)
+- Hip-Hop / Street Dance
+- Latin (Salsa, Bachata, Cha Cha, Rumba)
+- Contemporary
+- Dance Fitness (Zumba, Salsation)
+- Ballroom — social/recreational
+
+---
+
+**Adults (Ages 30–49)**
+Primary buyer: Themselves
+Key selling points: Flexible schedule, welcoming atmosphere, fitness, no judgment, partner dancing
+
+Styles to offer:
+- Latin (Salsa, Bachata, Rumba, Cha Cha, Samba, Paso Doble, Jive)
+- Ballroom (Waltz, Tango, Foxtrot, Quickstep, Viennese Waltz)
+- Dance Fitness (Zumba, Salsation, cardio dance)
+- Contemporary (self-expression, stress relief)
+- Private lessons (most flexible format for busy schedules)
+
+---
+
+**Active Adults (Ages 50+)**
+Primary buyer: Themselves (or family encouraging them)
+Key selling points: Health benefits, social connection, gentle movement, mental stimulation, not too intense
+
+Styles to offer:
+- Ballroom — social (Waltz, Foxtrot, Slow Foxtrot — smooth styles)
+- Latin — gentle versions (Rumba, Cha Cha at relaxed pace)
+- Line Dance (social, no partner needed)
+- Contemporary — gentle/expressive (not high-impact)
+
+❌ NOT offered to this group: K-Pop, Hip-Hop, high-impact styles
+
+---
+
+**Cross-demographic note:**
+Ballroom and Latin are genuinely suitable across ALL demographics (with appropriate level adjustments). These are the studio's strongest heritage offerings (since 1999) and should be featured prominently in every section.
+
+### Notes
+
+Research source: Malaysian dance schools (DancePot, MY Dancesport, Neo Dynasty Academy, Sole to Soul, DanceSteps). Styles list reflects what is genuinely popular in the Klang Valley/Sunway area market. K-Pop is confirmed as highest demand among teens and young adults in Malaysia 2026. Line Dance is a strong draw for Active Adults demographic in Malaysia specifically.
+
+---
+
+## S-2026-02-11-04
+
+**Related Sections:** Classes, Website Development, Architecture
+**Status:** Confirmed
+**Type:** Development Decision
+**Date:** 2026-02-11
+
+### Content
+
+**Dance Classes Website — Development Approach**
+
+**Strategy confirmed by owner:**
+1. Build each demographic section individually, fully tailored to that audience
+2. Router/home page built LAST, after all sections are complete
+3. Social media ads link DIRECTLY to demographic pages (not the router) — each page must work as a standalone entry point, not assuming visitor has seen the router
+
+**Development order:**
+1. Kids (5–9)
+2. Teens (10–17)
+3. Young Adults (18–30)
+4. Adults (30–49)
+5. Active Adults (50+)
+6. Router/home page (last)
+
+**Each demographic page must:**
+- Work as a complete standalone landing page (for social media traffic)
+- Briefly introduce Dance Connexions (for cold visitors)
+- Immediately confirm "this section is for you" for the specific demographic
+- Have demographic-appropriate tone, imagery, and CTA language
+- Link to the other sections (navigation) without requiring the router as a middle step
+- Be visually distinct in feel while sharing the same brand DNA
+
+**Design ambition:** Among the best dance school websites in the country — sensible, easy to maintain, built to grow. Clean and focused in early stages, with structure to add depth later.
+
+**Content build principle:**
+Phase 1 = Structure and framework per section (styles listed, pricing placeholder, CTA)
+Phase 2 = Deep content per class (individual class pages, timetables, instructor bios)
+Phase 3 = Router page and cross-linking
+
+### Notes
+
+Owner specifically requested that the website not be generic. The demographic-routing approach is the core differentiator. No other dance studio website in Malaysia currently does this at the level being planned.
+
+---
+
 ## S-2026-02-11-01
 
 **Related Sections:** Rentals Landing Page, Why Choose Us, Accordion, Pricing, Room Equipment

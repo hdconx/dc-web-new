@@ -1,10 +1,20 @@
 # Knowledge Base Version
 
-**Current Version:** v1.9.0
+**Current Version:** v2.0.0
 **Last Updated:** 2026-02-11
 **Status:** Active Development
 
 ## Changelog
+
+### v2.0.0 (2026-02-11 - Dance Classes Phase Begins)
+- Added 3 supplemental entries (S-2026-02-11-02 to 04)
+- Documented: Class pricing structure (placeholder — flexible per class)
+- Documented: Trial class policy (case-by-case, not blanket free trial)
+- Documented: Scheduling flexibility (weekly, flexible, private = student-controlled)
+- Documented: Dance styles by demographic (Kids/Teens/Young Adults/Adults/Active Adults)
+- Documented: Website development approach — demographic sections first, router last
+- Documented: Social media direct-link strategy (ads → demographic pages, not router)
+- Major version bump: dance classes phase is second major pillar of the website
 
 ### v1.9.0 (2026-02-11 - Review Feedback Round 1)
 - Added supplemental entry S-2026-02-11-01
