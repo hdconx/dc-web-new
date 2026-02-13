@@ -1,10 +1,16 @@
 # Knowledge Base Version
 
-**Current Version:** v2.1.0
+**Current Version:** v2.2.0
 **Last Updated:** 2026-02-11
 **Status:** Active Development
 
 ## Changelog
+
+### v2.2.0 (2026-02-11 - SEO Keywords + Credibility Strategy Saved)
+- Added S-2026-02-11-09: SEO keywords by demographic (bilingual EN+BM), Google Business Profile setup, 7 trust signals for zero-review credibility
+- Key confirmed: WhatsApp is the conversion goal — no booking system needed in Phase 1
+- Key confirmed: 30-second studio walkthrough video is highest-impact trust asset available now
+- Research phase complete — ready to begin building Kids page
 
 ### v2.1.0 (2026-02-11 - Competitor & Design Research Saved)
 - Added 4 supplemental entries (S-2026-02-11-05 to 08)

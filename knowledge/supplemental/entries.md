@@ -1821,6 +1821,66 @@ The `promos` category was added when the promotions system was built. All catego
 
 ---
 
+## S-2026-02-11-09
+
+**Related Sections:** SEO, Marketing, Credibility
+**Status:** Confirmed — Perplexity research 2026-02-11
+**Type:** SEO + Trust Strategy
+**Date:** 2026-02-11
+
+### Content
+
+**SEO Keywords by Demographic — Bandar Sunway / PJ / Subang Jaya**
+
+Include these naturally in page titles, H1s, meta descriptions, and AI image alt text. Bilingual (English + BM) coverage is important.
+
+| Demographic | Target Keywords |
+|---|---|
+| **General/Local** | "dance studio sunway", "kelas dance bandar sunway", "sunway dance classes near me", "dance class subang jaya" |
+| **Kids / Parents** | "kids dance classes sunway", "trial dance class kids subang jaya", "children dance class bandar sunway", "kelas tarian kanak-kanak sunway" |
+| **Teens** | "kpop dance class sunway teens", "hip hop classes subang jaya", "street dance pj teenagers", "kelas kpop dance remaja sunway" |
+| **Adults** | "beginner latin dance sunway adults", "ballroom classes petaling jaya", "dance fitness sunway adults", "kelas ballroom sunway dewasa" |
+| **Active Adults / Seniors** | "senior line dance sunway", "gentle ballroom classes pj 50+", "dance for seniors subang jaya" |
+| **Rentals** | "dance studio rental sunway", "studio rent subang jaya per hour" |
+
+**Page title format that works:**
+`"Kids Dance Classes Sunway | Free Trial — Dance Connexions"`
+`"K-Pop & Hip-Hop Dance Classes Sunway Teens | Dance Connexions"`
+
+**Google Business Profile setup:**
+- Primary category: Dance Studio (or School of Dance)
+- Secondary: Arts & Entertainment, Fitness Studio
+- Key attributes: Free trial class, Family-friendly, Kids classes, Group classes, Wheelchair accessible
+- Add: 1999 founding year in description, Sunway address, bilingual hours
+- Upload: AI-generated studio images (the actual room photos we have are good for this)
+
+---
+
+**Credibility Without Reviews — 7 Trust Signals**
+
+New site with no reviews. Target 7+ signals to reduce bounce 20–30%:
+
+1. **"Serving Sunway families since 1999"** — subtle badge or footer line. Timeline graphic optional. Never phrased as "oldest" or "best."
+2. **Instructor bios** — name, photo (AI or real), credentials (ISTD qualified if applicable), years teaching. "20+ years teaching kids" is credible without reviews.
+3. **Studio tour** — even a 30-second phone video of the actual studios walking through the space. No dancers needed — just the mirrors, floors, equipment. This is the single most trust-building asset available right now.
+4. **Clear, transparent pricing** — RM amounts, "nett price, no hidden fees" stated explicitly. Refund/cancellation policy visible.
+5. **WhatsApp contact visible on every page** — Malaysian visitors expect this. A visible WhatsApp link signals a real, accessible business.
+6. **Affiliations/certifications** — any dance org memberships, ISTD, etc. Even "Member of [org]" logos.
+7. **HTTPS, fast load, mobile-first, custom domain** — design signals that a site is legitimate. These are invisible trust signals that reduce bounce.
+
+**Content credibility (bonus):**
+- A free tips blog post ("5 Easy K-Pop Moves to Try at Home") establishes authority
+- Class schedule (even placeholder) shows the business is active
+- FAQ section answers the questions families ask before WhatsApp-ing
+
+**Key insight:** The website's conversion goal is NOT a completed booking. It is a WhatsApp message. Every trust signal, every CTA, every page should funnel toward: "Send us a WhatsApp." This simplifies the entire build — no booking system, no payment gateway needed in Phase 1.
+
+### Notes
+
+Studio tour video (actual rooms, no people needed) is the single highest-impact thing that can be added immediately without waiting for any content to be created. Even a 30-second phone walkthrough of Studio A with the RGB lights on would be extremely effective on the landing pages.
+
+---
+
 ## S-2026-02-11-05
 
 **Related Sections:** Marketing, Competitors, Strategy
