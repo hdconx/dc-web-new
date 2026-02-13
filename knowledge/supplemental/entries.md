@@ -1821,6 +1821,54 @@ The `promos` category was added when the promotions system was built. All catego
 
 ---
 
+## S-2026-02-11-10
+
+**Related Sections:** About, Principal, Credibility, Marketing
+**Status:** Confirmed from portfolio document
+**Type:** Business Info — Principal
+**Date:** 2026-02-11
+
+### Content
+
+**Principal — Ms. Som Phon (Founder)**
+
+**What we know (from portfolio):**
+- Began dancing career early 1990s — International Latin American Ballroom Dancing
+- Multiple national competition titles (1993–1999) — 1st place at Malaysian Open, National Cup, etc.
+- International competitor — Indonesia, Singapore, Thailand, KL championships
+- Commissioned judge at major Malaysian Dancesport championships (2001–2008)
+- Certified: ISTD-UK (Imperial Society of Teachers of Dancing — United Kingdom)
+- Certified: DMIA-AU (Dance Master International Association — Australia)
+- Member: Malaysian Ballroom Dance Teachers Berhad (highest authority on ballroom in Malaysia)
+- Trained students for competitions and international examination bodies
+- Conducts classes/workshops at universities, colleges, clubs, associations, corporations
+- Founded Dance Connexions in 1999, located in Bandar Sunway
+
+**How to use this on the website (generalised — owner's instruction):**
+- Do NOT list specific competition titles, judging records, or detailed CV
+- Do NOT over-emphasise the principal or make it feel like a one-person show
+- DO convey credibility through: certifications, longevity, and student outcomes
+- Suggested web copy: "Led by an ISTD-UK certified instructor with over 30 years of dance experience, Dance Connexions has been nurturing dancers in Bandar Sunway since 1999."
+- Certifications ISTD-UK and DMIA-AU can be mentioned as logos/badges — they are internationally recognised
+- Focus the website on what the STUDIO OFFERS, not on individual accomplishments
+
+**Key principle — owner's instruction:**
+> "Our lack of teachers, lack of videos and photos, and lack of listed accomplishments should NOT be highlighted. What we want to DO and what we OFFER is what should be highlighted."
+
+This means: no "coming soon" placeholders, no apologies for missing content, no sections that draw attention to gaps. Build only what is ready and confident.
+
+**Image diversity — owner's instruction:**
+- Primarily Chinese Malaysian (reflects ~95% of actual student base)
+- Include Indian Malaysian and Malay Malaysian for diversity representation
+- Include some Western/foreign faces where appropriate (international feel)
+- All images: modest attire, no PDA, no physical contact between dancers in images
+
+**URL structure — confirmed:**
+- Keep existing short URLs: /kids, /teens, /young-adults, /adults, /active-adults
+- No need to change to /for-parents or similar
+
+---
+
 ## S-2026-02-11-09
 
 **Related Sections:** SEO, Marketing, Credibility

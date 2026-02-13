@@ -1,10 +1,17 @@
 # Knowledge Base Version
 
-**Current Version:** v2.2.0
-**Last Updated:** 2026-02-11
+**Current Version:** v2.3.0
+**Last Updated:** 2026-02-13
 **Status:** Active Development
 
 ## Changelog
+
+### v2.3.0 (2026-02-13 - Principal Info + Image Strategy + Key Principles)
+- Added S-2026-02-11-10: Principal credentials (Ms. Som Phon — ISTD-UK, DMIA-AU, 30+ years, founded 1999)
+- Confirmed: Present credentials subtly — generalize, no detailed CV on website
+- Confirmed: Image diversity — primarily Chinese Malaysian (~95%), include Indian/Malay/Western
+- Confirmed: Keep short URLs — /kids, /teens, /young-adults, /adults, /active-adults
+- Confirmed: "Focus on what we offer, not what we lack" — never highlight absence of reviews/photos/videos
 
 ### v2.2.0 (2026-02-11 - SEO Keywords + Credibility Strategy Saved)
 - Added S-2026-02-11-09: SEO keywords by demographic (bilingual EN+BM), Google Business Profile setup, 7 trust signals for zero-review credibility
