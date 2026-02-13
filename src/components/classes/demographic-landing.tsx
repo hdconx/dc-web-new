@@ -89,7 +89,7 @@ export function DemographicLanding({ demo, pricing }: DemographicLandingProps) {
     <main className="min-h-screen bg-black">
 
       {/* ── Hero ── */}
-      <section className={`relative min-h-screen flex flex-col justify-center bg-gradient-to-br ${demo.accentClass} via-zinc-950 to-black`}>
+      <section className={`relative bg-gradient-to-br ${demo.accentClass} via-zinc-950 to-zinc-900`}>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(255,255,255,0.04)_0%,transparent_60%)]" />
 
         {/* Nav back link */}
@@ -103,7 +103,7 @@ export function DemographicLanding({ demo, pricing }: DemographicLandingProps) {
         </div>
 
         {/* Hero content — split layout */}
-        <div className="relative z-10 px-8 md:px-16 lg:px-24 pt-24 pb-16 grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto w-full">
+        <div className="relative z-10 px-8 md:px-16 lg:px-24 pt-32 pb-20 grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto w-full">
           {/* Left: text */}
           <div>
             <p className="text-slate-400 tracking-[0.3em] text-sm uppercase mb-4">{demo.ageRange}</p>
@@ -147,7 +147,7 @@ export function DemographicLanding({ demo, pricing }: DemographicLandingProps) {
 
       {/* ── Overview ── */}
       <section className="py-20 px-8 md:px-16 lg:px-24 bg-zinc-950">
-        <div className="max-w-3xl">
+        <div className="max-w-3xl mx-auto">
           <div className="h-px w-16 bg-white/20 mb-8" />
           <p className="text-lg md:text-xl text-slate-300 leading-relaxed">{demo.overview}</p>
         </div>

@@ -1,6 +1,6 @@
 "use client"
 
-import { Menu } from "lucide-react"
+import { Menu, User } from "lucide-react"
 import Link from "next/link"
 
 interface HeaderProps {
@@ -17,19 +17,50 @@ export function Header({ onMenuClick, isVisible }: HeaderProps) {
       style={{ top: "var(--promo-bar-height, 0px)" }}
     >
       <div className="flex items-center justify-between px-6 py-4 bg-black/80 backdrop-blur-md border-b border-white/10">
+
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <h1 className="font-serif text-lg tracking-tighter text-slate-50">DANCE CONNEXIONS</h1>
+          <span className="font-serif text-lg tracking-tighter text-slate-50">DANCE CONNEXIONS</span>
         </Link>
 
-        {/* Hamburger Menu */}
-        <button
-          onClick={onMenuClick}
-          className="p-2 rounded-lg bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition-all"
-          aria-label="Open menu"
-        >
-          <Menu className="w-5 h-5 text-slate-50" />
-        </button>
+        {/* Desktop nav */}
+        <nav className="hidden md:flex items-center gap-8">
+          <Link href="/#hero-grid" className="text-sm text-slate-300 hover:text-white transition-colors tracking-wide">
+            Dance Classes
+          </Link>
+          <Link href="/rentals" className="text-sm text-slate-300 hover:text-white transition-colors tracking-wide">
+            Studio Rentals
+          </Link>
+          <Link href="/#contact" className="text-sm text-slate-300 hover:text-white transition-colors tracking-wide">
+            Contact
+          </Link>
+          <Link
+            href="/dashboard"
+            className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 text-slate-50 text-sm transition-all"
+          >
+            <User className="w-4 h-4" />
+            My Portal
+          </Link>
+        </nav>
+
+        {/* Mobile: login icon + hamburger */}
+        <div className="flex items-center gap-3 md:hidden">
+          <Link
+            href="/dashboard"
+            className="p-2 rounded-lg bg-white/10 hover:bg-white/20 border border-white/20 transition-all"
+            aria-label="My Portal"
+          >
+            <User className="w-4 h-4 text-slate-50" />
+          </Link>
+          <button
+            onClick={onMenuClick}
+            className="p-2 rounded-lg bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 transition-all"
+            aria-label="Open menu"
+          >
+            <Menu className="w-5 h-5 text-slate-50" />
+          </button>
+        </div>
+
       </div>
     </header>
   )

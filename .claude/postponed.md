@@ -2,7 +2,7 @@
 
 Items agreed upon but deferred — waiting for content, a discussion session, or scheduled for a future sprint.
 
-**Last updated:** 2026-02-13
+**Last updated:** 2026-02-14
 
 ---
 
@@ -113,3 +113,46 @@ Items agreed upon but deferred — waiting for content, a discussion session, or
 - Items under "Needs Discussion" should be the first agenda item in a review session before any code changes
 - Knowledge Base master file updates (KB-01, KB-02) can be done independently at any time — they are low-risk edits to markdown files
 - When picking up HERO-01 or CONTENT-01, first check if a suitable carousel/slideshow library is already in the project dependencies before adding new ones
+
+---
+
+## Homepage — Pending Redesign
+
+### HOME-01: Homepage Redesign — Awaiting Design Decision
+**Priority:** High
+**Status:** Blocked — owner consulting multiple AI models for design direction
+**What is needed:** Owner is gathering input from Claude Opus and other AI models on homepage redesign. Once a direction is chosen, implementation will proceed.
+
+**Current homepage state (as of 2026-02-14):**
+- Identity Grid (6 tiles, full viewport) — KEEP, non-negotiable
+- Header with nav: Dance Classes | Studio Rentals | Contact | My Portal — KEEP
+- 3 alternating editorial rows (Move better / People worth knowing / Express yourself) — PLACEHOLDER, will be replaced
+- BeginnerReassurance — PLACEHOLDER, may be replaced
+- StudioPremises — PLACEHOLDER, may be replaced
+- StudioRentals teaser — PLACEHOLDER, may be replaced
+- Student portal strip — KEEP (or move to nav only)
+- QuickAccessStrip — LIKELY TO DELETE
+- Footer — KEEP
+
+**Agreed constraints for redesign:**
+- No credentials (ISTD-UK, DMIA-AU, Est. 1999) on homepage
+- No location/nationality-specific taglines
+- No pricing
+- No instructor photos
+- Universal emotional messaging — why people want to dance (joy, freedom, expression, community, confidence)
+- WhatsApp as the only CTA
+- Dark premium aesthetic maintained
+
+**Opus full recommendation saved in:** `knowledge/supplemental/entries.md` → S-2026-02-14-01
+
+### HOME-02: Homepage Hero Tagline
+**Priority:** Medium
+**Status:** Needs decision
+**Current:** "Dance Classes · Studio Rentals · Bandar Sunway" (feature list, cold)
+**Rejected:** "Teaching Malaysians to move since 1999" (too specific)
+**Required:** Universal emotional tagline that makes any visitor feel there is something here for them
+**Examples to explore:** "Movement for every age. Space for every vision." or similar
+
+### CLASSES-01: `/classes` — Demographic Router Page
+**Status:** RESOLVED — `/classes` now redirects to `/` homepage. Homepage IS the router.
+

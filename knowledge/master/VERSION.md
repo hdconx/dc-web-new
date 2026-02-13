@@ -1,10 +1,22 @@
 # Knowledge Base Version
 
-**Current Version:** v2.4.0
-**Last Updated:** 2026-02-13
+**Current Version:** v2.5.0
+**Last Updated:** 2026-02-14
 **Status:** Active Development
 
 ## Changelog
+
+### v2.5.0 (2026-02-14 - Homepage Consolidated + Navigation Built)
+- Homepage is now the single router page for both classes and rentals
+- `/classes` redirects to `/` — homepage IS the router
+- Header rebuilt: desktop nav (Dance Classes, Studio Rentals, Contact, My Portal), mobile user icon + hamburger
+- New pages: `/privacy`, `/terms`, `/sitemap`, `/classes` (redirect)
+- `universal-benefits.tsx` deleted — replaced with alternating editorial rows (placeholder pending redesign)
+- `BeginnerReassurance` simplified, external image URL fixed
+- Student/Renter portal strip added to homepage
+- QuickAccessStrip fixed: Classes & Schedule → `/`
+- Homepage redesign PENDING: owner consulting AI models for direction. Constraints: no credentials, no dates, universal emotional messaging. See S-2026-02-14-01.
+- Postponed: HOME-01 (redesign), HOME-02 (tagline decision)
 
 ### v2.4.0 (2026-02-13 - Dance Classes Section Built)
 - Added S-2026-02-13-01: Full dance classes section architecture documented

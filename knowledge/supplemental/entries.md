@@ -2433,3 +2433,60 @@ The following changes were made to `src/app/rentals/page.tsx` and `data/rooms.js
 The "Available Upon Request" change removes "Custom room setup assistance" because it was considered too generic and implied extra work. Wireless microphone is not exclusive to Room A — removing the qualifier avoids limiting expectation. RGB Party Lighting is more descriptive and marketable than "LED Lighting."
 
 ---
+
+---
+
+## S-2026-02-14-01
+**Related Sections:** Homepage, Navigation, Dance Classes, Website Architecture
+**Status:** In Progress — awaiting AI design input before implementation
+**Date:** 2026-02-14
+**Source:** Session — Homepage consolidation and redesign discussion
+
+### Homepage Restructure — Decisions Made
+
+**Completed this session:**
+- `/classes` route now redirects (307) to `/` — homepage IS the router
+- Header updated: Desktop nav with Dance Classes, Studio Rentals, Contact, My Portal button. Mobile: user icon + hamburger.
+- Added subtitle line under studio name: "Dance Classes · Studio Rentals · Bandar Sunway"
+- Removed `UniversalBenefits` component (deleted file) — replaced with 3 alternating editorial rows in page.tsx
+- Simplified `BeginnerReassurance` — fixed external image URL, cut to one paragraph
+- Added Student/Renter portal strip above footer
+- Built `/privacy`, `/terms`, `/sitemap` pages
+- Fixed QuickAccessStrip: "Classes & Schedule" now links to `/`
+- Removed `/sitemap-page` (unused directory)
+
+**Pages now live (HTTP 200):**
+- `/` — Homepage (main router)
+- `/kids`, `/teens`, `/young-adults`, `/adults`, `/active-adults` — demographic landing pages
+- `/[demo]/[style]` — 18 style sub-pages
+- `/[demo]/faq` — 5 FAQ pages
+- `/rentals` and all sub-pages — complete
+- `/privacy`, `/terms`, `/sitemap` — new utility pages
+- `/dashboard` — Customer Portal (Coming Soon)
+- `/classes` → redirects to `/`
+
+### Homepage Redesign — PENDING AI CONSULTATION
+
+Owner is consulting multiple AI models (Claude Opus, others) using a detailed design brief to get homepage redesign ideas. Decision NOT yet made on final layout.
+
+**What is agreed:**
+- Keep Identity Grid (full-viewport 6-tile routing grid) — non-negotiable
+- No pricing on homepage
+- No instructor photos
+- No credentials or "Est. 1999" type signals — owner does not want to highlight these
+- No country/location-specific taglines
+- Messaging should be universal emotional appeal — why people want to dance (joy, movement, expression, community) — applicable to ALL demographics
+- WhatsApp remains the only conversion CTA
+
+**What Opus recommended (for reference — not yet approved):**
+1. Credibility bar → REJECTED (owner doesn't want credentials/dates)
+2. "The Promise" section — text-only emotional statement → DIRECTION APPROVED in principle
+3. Dual-path split (Dance vs Rentals cards) → UNDER CONSIDERATION
+4. "The Space" — full-bleed studio image with facility facts overlay → UNDER CONSIDERATION
+5. Single WhatsApp CTA section → APPROVED in principle
+6. Delete: alternating rows, BeginnerReassurance, StudioPremises, StudioRentals, QuickAccessStrip
+
+**Tagline decision:** "Teaching Malaysians to move since 1999" → REJECTED. Owner wants universal emotional messaging, not location/date specific.
+
+**Status:** Waiting for owner to gather AI design input. Next session: review proposals, agree on direction, then implement.
+

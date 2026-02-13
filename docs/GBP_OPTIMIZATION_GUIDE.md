@@ -186,7 +186,6 @@ Make your business stand out with attributes.
 1. Go to **"Info"** → **"More"** or **"Attributes"**
 2. Add these (if options available):
    - ✅ "Good for kids" (if offering youth classes)
-   - ✅ "LGBTQ+ friendly"
    - ✅ "Family-friendly"
    - ✅ "Beginner-friendly"
 

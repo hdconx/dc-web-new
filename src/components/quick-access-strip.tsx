@@ -4,7 +4,7 @@ import Link from "next/link"
 export function QuickAccessStrip() {
   const links = [
     { icon: MapPin, label: "Location & Parking", href: "#location" },
-    { icon: Calendar, label: "Classes & Schedule", href: "#schedule" },
+    { icon: Calendar, label: "Classes & Schedule", href: "/classes" },
     { icon: Building2, label: "Studio Rental", href: "/rentals" },
     { icon: MessageSquare, label: "Contact Us", href: "#contact" },
   ]
