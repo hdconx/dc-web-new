@@ -51,6 +51,7 @@
       "overview": "Our kids classes are designed for children aged 5 to 12, taught in a safe, encouraging environment where movement is explored through play and music. Classes are structured to be age-appropriate — building coordination, rhythm, and confidence without pressure or competition.",
       "whatsappMessage": "Hi! I'm interested in kids dance classes at Dance Connexions.\n\n- Child's age:\n- Dance style interest:\n- Any prior experience:\n\nCould you share the schedule and fees? Thank you!",
       "accentClass": "from-rose-900",
+      "heroImagePrompt": "Young Chinese Malaysian girl aged 7–9, joyful expression, colorful dance outfit, leaping or spinning in a bright mirrored dance studio in Malaysia, warm natural lighting, candid and natural feel, professional photography, wide 16:9",
       "styles": [
         {
           "slug": "creative-movement",
@@ -66,7 +67,8 @@
             "Confidence expressing yourself through movement"
           ],
           "whoItsFor": "Best for children aged 5–8, especially those with no prior dance experience. Also great for shy or anxious children who need a gentle, playful introduction.",
-          "whatsappMessage": "Hi! I'm interested in Creative Movement classes for kids at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Creative Movement classes for kids at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Chinese Malaysian child aged 6–8, arms spread wide in joyful free movement, bright mirrored dance studio, colourful clothing, natural warm lighting, movement blur, genuine happiness, professional photography, 3:2"
         },
         {
           "slug": "ballet-basics",
@@ -82,7 +84,8 @@
             "Focus, listening skills, and gentle discipline"
           ],
           "whoItsFor": "Best for children aged 6–12. No prior experience needed. Particularly suited to children who enjoy structure, elegance, and classical music.",
-          "whatsappMessage": "Hi! I'm interested in Ballet Basics classes for kids at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Ballet Basics classes for kids at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Chinese Malaysian girl aged 8–10, basic ballet first position in a mirrored studio, pink leotard, focused and graceful expression, soft studio lighting, clean background, professional photography, 3:2"
         },
         {
           "slug": "hip-hop",
@@ -98,7 +101,8 @@
             "Rhythm and musicality"
           ],
           "whoItsFor": "Best for children aged 6–12 who love music and movement. No experience required — just energy and enthusiasm.",
-          "whatsappMessage": "Hi! I'm interested in Hip Hop Kids classes at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Hip Hop Kids classes at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Chinese Malaysian boy aged 9–11, hip hop freeze pose in a studio with colourful RGB lighting, baggy streetwear, confident expression, low angle shot, dynamic energy, professional photography, 3:2"
         },
         {
           "slug": "kpop",
@@ -114,7 +118,8 @@
             "Teamwork and working with a group"
           ],
           "whoItsFor": "Best for children aged 7–12. Especially popular with kids who already love K-pop music and videos. No prior dance experience needed.",
-          "whatsappMessage": "Hi! I'm interested in K-Pop Dance classes for kids at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in K-Pop Dance classes for kids at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Group of Malaysian children aged 8–12, mixed Chinese and Malay ethnicity, matching outfits, synchronized K-pop pose in a bright mirrored studio, joyful and energetic group performance energy, professional photography, 3:2"
         }
       ],
       "faqs": [
@@ -162,6 +167,7 @@
       "overview": "Our teen classes are built for 13 to 17 year olds who want to dance on their own terms. Whether you're into K-pop, hip hop, street jazz, or something more expressive — there is a class for you. No pressure, no judgment. Just good music and real skills.",
       "whatsappMessage": "Hi! I'm interested in teen dance classes at Dance Connexions.\n\n- Age:\n- Dance style interest:\n- Any prior experience:\n\nCould you share the schedule and fees? Thank you!",
       "accentClass": "from-blue-900",
+      "heroImagePrompt": "Group of Malaysian teenagers aged 14–17, mixed Chinese and Malay ethnicity, mid K-pop choreography in a modern mirrored dance studio, synchronized movement, high energy, dynamic studio lighting, editorial photography, wide 16:9",
       "styles": [
         {
           "slug": "kpop",
@@ -177,7 +183,8 @@
             "Confidence performing in a group setting"
           ],
           "whoItsFor": "For teens aged 13–17 who love K-pop and want to learn real choreography. Suitable from complete beginner to intermediate.",
-          "whatsappMessage": "Hi! I'm interested in K-Pop classes for teens at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in K-Pop classes for teens at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Malaysian teenage girls aged 14–17, mixed Chinese and Malay, matching dance outfits, synchronized K-pop performance pose in a mirrored studio, vibrant lighting, stage-ready energy, professional photography, 3:2"
         },
         {
           "slug": "hip-hop",
@@ -193,7 +200,8 @@
             "Performance presence and confidence"
           ],
           "whoItsFor": "For teens who want authentic hip hop technique rather than just choreography. All levels welcome — no prior experience needed.",
-          "whatsappMessage": "Hi! I'm interested in Hip Hop classes for teens at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Hip Hop classes for teens at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Chinese Malaysian teen aged 15–17, hip hop groove stance in a professional studio, streetwear, confident and expressive body language, studio lighting, authentic urban dance feel, 3:2"
         },
         {
           "slug": "street-jazz",
@@ -209,7 +217,8 @@
             "Versatility to adapt across different music and moods"
           ],
           "whoItsFor": "For teens who want technical dance skills with a cool, contemporary edge. Works well for those interested in performing or competitions. Beginner to intermediate.",
-          "whatsappMessage": "Hi! I'm interested in Street Jazz classes for teens at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Street Jazz classes for teens at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Malaysian teenage girl aged 14–17, street jazz pose — sharp body angle, attitude, stylish dancewear, mirrored studio, commercial dance aesthetic, dramatic studio lighting, 3:2"
         },
         {
           "slug": "contemporary",
@@ -225,7 +234,8 @@
             "Developing a personal movement style"
           ],
           "whoItsFor": "For teens who want artistic expression alongside (or instead of) structured choreography. Some prior movement experience is helpful but not required.",
-          "whatsappMessage": "Hi! I'm interested in Contemporary classes for teens at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Contemporary classes for teens at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Malaysian teenager, Chinese ethnicity, flowing contemporary dance movement, expressive floor work, soft dramatic studio lighting, artistic and emotional quality, fine art photography style, 3:2"
         },
         {
           "slug": "breaking",
@@ -241,7 +251,8 @@
             "The culture and etiquette of breaking"
           ],
           "whoItsFor": "For teens aged 13–17 interested in physical challenge, individual expression, and the culture of hip hop. No prior experience needed. Physical fitness helps but is not required.",
-          "whatsappMessage": "Hi! I'm interested in Breaking classes for teens at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Breaking classes for teens at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Malaysian teenage boy aged 14–17, Chinese ethnicity, breaking baby freeze position on studio floor, athletic form, focused expression, dramatic low-angle perspective, professional photography, 3:2"
         }
       ],
       "faqs": [
@@ -285,6 +296,7 @@
       "overview": "Dance Connexions offers a range of classes for young adults aged 18 to 30 — from social Latin to K-pop, contemporary to heels style. Classes are designed to be fun, accessible, and social. No experience required, and no pressure. Come with friends or come alone and make new ones.",
       "whatsappMessage": "Hi! I'm interested in young adult dance classes at Dance Connexions.\n\n- Dance style interest:\n- Any prior experience:\n- Preferred time (day/evening/weekend):\n\nCould you share the schedule and fees? Thank you!",
       "accentClass": "from-purple-900",
+      "heroImagePrompt": "Young Malaysian adults aged 20–28, mixed Chinese and Indian and Malay ethnicity, laughing and dancing together in a spacious professional dance studio, evening warm lighting, lifestyle photography, joyful social atmosphere, wide 16:9",
       "styles": [
         {
           "slug": "salsa",
@@ -300,7 +312,8 @@
             "Footwork patterns and Latin body movement"
           ],
           "whoItsFor": "For young adults who want to dance socially — at events, parties, and social nights. Also great for couples. No partner required to join.",
-          "whatsappMessage": "Hi! I'm interested in Salsa and Latin Social classes at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Salsa and Latin Social classes at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Young Malaysian couple aged 22–28, Chinese man and Indian woman, salsa dance close hold in a warmly lit professional studio, joyful expressions, social dance energy, lifestyle photography, 3:2"
         },
         {
           "slug": "kpop",
@@ -316,7 +329,8 @@
             "Cardio fitness through sustained dance movement"
           ],
           "whoItsFor": "For young adults aged 18–30 who enjoy K-pop music and want to learn real choreography in a social setting. All levels welcome.",
-          "whatsappMessage": "Hi! I'm interested in K-Pop classes for young adults at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in K-Pop classes for young adults at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Young adult Malaysian women aged 20–26, mixed Chinese and Malay, group K-pop choreography in a mirrored studio, synchronized and energetic, stylish outfits, performance quality, professional photography, 3:2"
         },
         {
           "slug": "contemporary",
@@ -332,7 +346,8 @@
             "Body awareness and release-based movement"
           ],
           "whoItsFor": "For young adults who want artistic expression and movement depth. Some prior movement background is helpful but not required.",
-          "whatsappMessage": "Hi! I'm interested in Contemporary classes at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Contemporary classes at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Young Malaysian woman aged 22–28, Chinese ethnicity, contemporary dance floor work, expressive and flowing movement, soft dramatic studio lighting, artistic photography, emotional quality, 3:2"
         },
         {
           "slug": "hip-hop",
@@ -348,7 +363,8 @@
             "Cardio fitness through high-energy movement"
           ],
           "whoItsFor": "For young adults who love hip hop music and culture. All levels from total beginner welcome.",
-          "whatsappMessage": "Hi! I'm interested in Hip Hop classes at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Hip Hop classes at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Young Malaysian man aged 22–28, Chinese ethnicity, hip hop groove in a professional dance studio, authentic street style clothing, confident body language, studio lighting, urban dance culture feel, 3:2"
         },
         {
           "slug": "heels",
@@ -364,7 +380,8 @@
             "How to carry yourself with intention and power"
           ],
           "whoItsFor": "For women aged 18–30 who want to develop confidence and powerful feminine movement. No prior dance experience required.",
-          "whatsappMessage": "Hi! I'm interested in Heels Style classes at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Heels Style classes at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Malaysian woman aged 22–30, Chinese ethnicity, heels style dance pose in a mirrored studio, confident and powerful feminine presence, seen from behind or side angle, dramatic studio lighting, high heels, 3:2"
         }
       ],
       "faqs": [
@@ -408,6 +425,7 @@
       "overview": "Our adult classes are designed for people aged 30 to 55 who want to learn dance properly — not rush through beginner content, but genuinely develop skill and real enjoyment. Classes are structured, quality-focused, and flexible. We understand you have a busy life. Our scheduling works around you.",
       "whatsappMessage": "Hi! I'm interested in adult dance classes at Dance Connexions.\n\n- Dance style interest:\n- Any prior experience:\n- Preferred schedule (day/evening/weekend):\n\nCould you share the schedule and fees? Thank you!",
       "accentClass": "from-emerald-900",
+      "heroImagePrompt": "Chinese Malaysian couple in their late 30s to early 40s, practicing ballroom dance hold in a professional studio, elegant posture and frame, warm studio lighting, mirrors visible in background, graceful and refined, editorial photography, wide 16:9",
       "styles": [
         {
           "slug": "ballroom-latin",
@@ -423,7 +441,8 @@
             "Posture, frame, and the feeling of partnership connection"
           ],
           "whoItsFor": "For adults who want to learn proper ballroom and Latin technique — for personal enjoyment, social events, or eventual competition. Beginner to intermediate.",
-          "whatsappMessage": "Hi! I'm interested in Ballroom and Latin classes for adults at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Ballroom and Latin classes for adults at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Chinese Malaysian couple aged 38–48, waltz hold in a professional mirrored studio, elegant posture and connection, formal-ish but not competition, warm studio lighting, graceful movement, 3:2"
         },
         {
           "slug": "salsa",
@@ -439,7 +458,8 @@
             "Footwork variations and simple turn patterns"
           ],
           "whoItsFor": "For adults who want to dance socially — at parties, events, or social dance nights. Solo or with a partner. All levels from beginner.",
-          "whatsappMessage": "Hi! I'm interested in Salsa classes for adults at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Salsa classes for adults at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Malaysian couple aged 35–45, mixed Chinese and Malay, salsa dance in a professional studio, warm lighting, social dance joy, mid-turn moment, lifestyle photography, 3:2"
         },
         {
           "slug": "contemporary",
@@ -455,7 +475,8 @@
             "Creative composition and individual movement voice"
           ],
           "whoItsFor": "For adults aged 30–55 who want artistic and physical depth. Prior movement experience is helpful but the class is open to committed beginners.",
-          "whatsappMessage": "Hi! I'm interested in Contemporary classes for adults at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Contemporary classes for adults at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Malaysian woman aged 38–48, Chinese ethnicity, contemporary dance movement — expressive and grounded, soft dramatic studio lighting, artistic and intentional, editorial photography, 3:2"
         },
         {
           "slug": "barre",
@@ -471,7 +492,8 @@
             "Balance and body awareness"
           ],
           "whoItsFor": "For adults of any fitness level who want a low-impact but genuinely challenging workout. No dance experience needed at all.",
-          "whatsappMessage": "Hi! I'm interested in Barre Fitness classes at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Barre Fitness classes at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Malaysian women aged 35–50, mixed Chinese and Malay ethnicity, barre exercise positions at a studio barre, focused and elegant, bright professional studio lighting, workout attire, 3:2"
         }
       ],
       "faqs": [
@@ -511,6 +533,7 @@
       "overview": "Our Active Adults classes are designed for people aged 55 and above who want to keep moving, stay social, and enjoy dance in a gentle, welcoming environment. Classes are paced carefully with full attention to comfort and safety. No prior dance experience needed — and absolutely no pressure.",
       "whatsappMessage": "Hi! I'm interested in active adult dance classes at Dance Connexions.\n\n- Dance style interest:\n- Any health considerations we should know:\n- Preferred schedule:\n\nCould you share the schedule and fees? Thank you!",
       "accentClass": "from-amber-900",
+      "heroImagePrompt": "Two Chinese Malaysian women aged 58–65, smiling warmly and dancing together in a bright professional studio, community warmth, genuine joy, soft warm lighting, lifestyle photography, wide 16:9",
       "styles": [
         {
           "slug": "ballroom",
@@ -526,7 +549,8 @@
             "Musicality — moving in time with live and recorded music"
           ],
           "whoItsFor": "For adults aged 55 and above, with or without a partner. No prior dance experience required. Physically gentle and fully accessible.",
-          "whatsappMessage": "Hi! I'm interested in Ballroom Basics classes for active adults at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Ballroom Basics classes for active adults at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Chinese Malaysian couple aged 62–70, gentle waltz hold in a bright studio, graceful and relaxed posture, warm lighting, smiling and enjoying movement together, lifestyle photography, 3:2"
         },
         {
           "slug": "line-dancing",
@@ -542,7 +566,8 @@
             "Social connection through shared movement"
           ],
           "whoItsFor": "For adults aged 55 and above. No partner needed. No experience needed. One of our most social and accessible classes.",
-          "whatsappMessage": "Hi! I'm interested in Line Dancing classes at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Line Dancing classes at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Group of Malaysian active adults aged 58–72, mixed Chinese and Malay, in a line formation dancing together in a bright studio, smiling and moving in sync, community warmth, lifestyle photography, 3:2"
         },
         {
           "slug": "latin-rhythm",
@@ -558,7 +583,8 @@
             "Rhythm and musicality through Latin music"
           ],
           "whoItsFor": "For adults aged 55 and above who want to enjoy Latin music and movement. With or without a partner. All levels welcome.",
-          "whatsappMessage": "Hi! I'm interested in Latin Rhythm classes for active adults at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Latin Rhythm classes for active adults at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Chinese Malaysian couple aged 60–68, gentle Cha-Cha steps in a bright studio, smiling and relaxed, warm soft lighting, rhythmic energy without strain, lifestyle photography, 3:2"
         },
         {
           "slug": "social-dance",
@@ -574,7 +600,8 @@
             "Connection with partners and the group"
           ],
           "whoItsFor": "For adults aged 55 and above who want gentle movement and social connection above all else. All levels welcome. Partner or no partner.",
-          "whatsappMessage": "Hi! I'm interested in Social Dance classes for active adults at Dance Connexions. Could you share the schedule? Thank you!"
+          "whatsappMessage": "Hi! I'm interested in Social Dance classes for active adults at Dance Connexions. Could you share the schedule? Thank you!",
+          "imagePrompt": "Small group of Malaysian active adults aged 60+, mixed Chinese and Malay, social dancing together in a warm bright studio, genuine connection and joy, some in partner hold, community feel, lifestyle photography, 3:2"
         }
       ],
       "faqs": [

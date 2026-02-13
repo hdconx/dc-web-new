@@ -4,12 +4,14 @@ import Link from "next/link"
 import { ArrowRight, ChevronDown } from "lucide-react"
 import { useState } from "react"
 import { CONTACT } from "@/lib/config"
+import { ImagePlaceholder } from "./image-placeholder"
 
 interface Style {
   slug: string
   name: string
   tagline: string
   cardDescription: string
+  imagePrompt?: string
 }
 
 interface Faq {
@@ -27,6 +29,7 @@ export interface DemographicData {
   overview: string
   whatsappMessage: string
   accentClass: string
+  heroImagePrompt?: string
   styles: Style[]
   faqs: Faq[]
 }
@@ -86,7 +89,7 @@ export function DemographicLanding({ demo, pricing }: DemographicLandingProps) {
     <main className="min-h-screen bg-black">
 
       {/* ── Hero ── */}
-      <section className={`relative min-h-screen flex flex-col justify-center bg-gradient-to-b ${demo.accentClass} via-black to-black`}>
+      <section className={`relative min-h-screen flex flex-col justify-center bg-gradient-to-br ${demo.accentClass} via-zinc-950 to-black`}>
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(255,255,255,0.04)_0%,transparent_60%)]" />
 
         {/* Nav back link */}
@@ -99,32 +102,45 @@ export function DemographicLanding({ demo, pricing }: DemographicLandingProps) {
           </Link>
         </div>
 
-        {/* Hero content */}
-        <div className="relative z-10 px-8 md:px-16 lg:px-24 pt-24 pb-16 max-w-4xl">
-          <p className="text-slate-400 tracking-[0.3em] text-sm uppercase mb-4">{demo.ageRange}</p>
-          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl tracking-tight text-slate-50 mb-6 leading-tight">
-            {demo.headline}
-          </h1>
-          <p className="text-xl md:text-2xl text-slate-300 font-light mb-10 max-w-2xl leading-relaxed">
-            {demo.subheadline}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href={waUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#25D366] hover:bg-[#20BA5A] text-white font-medium tracking-wide transition-all"
-            >
-              <WhatsAppIcon />
-              Enquire on WhatsApp
-            </a>
-            <a
-              href="#styles"
-              className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-slate-50 tracking-wide transition-all"
-            >
-              See Classes
-              <ArrowRight className="w-4 h-4" />
-            </a>
+        {/* Hero content — split layout */}
+        <div className="relative z-10 px-8 md:px-16 lg:px-24 pt-24 pb-16 grid lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto w-full">
+          {/* Left: text */}
+          <div>
+            <p className="text-slate-400 tracking-[0.3em] text-sm uppercase mb-4">{demo.ageRange}</p>
+            <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl tracking-tight text-slate-50 mb-6 leading-tight">
+              {demo.headline}
+            </h1>
+            <p className="text-xl md:text-2xl text-slate-300 font-light mb-10 leading-relaxed">
+              {demo.subheadline}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <a
+                href={waUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#25D366] hover:bg-[#20BA5A] text-white font-medium tracking-wide transition-all"
+              >
+                <WhatsAppIcon />
+                Enquire on WhatsApp
+              </a>
+              <a
+                href="#styles"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-slate-50 tracking-wide transition-all"
+              >
+                See Classes
+                <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+
+          {/* Right: hero image placeholder */}
+          <div className="hidden lg:block">
+            <ImagePlaceholder
+              label={`${demo.name} Hero Image`}
+              prompt={demo.heroImagePrompt ?? `Professional photo of ${demo.name.toLowerCase()} dance class in a Malaysian studio, 16:9`}
+              className="w-full rounded-2xl"
+              style={{ aspectRatio: "16/9" }}
+            />
           </div>
         </div>
       </section>
@@ -151,16 +167,25 @@ export function DemographicLanding({ demo, pricing }: DemographicLandingProps) {
               <Link
                 key={style.slug}
                 href={`/${demo.slug}/${style.slug}`}
-                className="group p-8 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/25 transition-all"
+                className="group rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/25 transition-all overflow-hidden"
               >
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="font-serif text-2xl tracking-tight text-slate-50 group-hover:text-white transition-colors">
-                    {style.name}
-                  </h3>
-                  <ArrowRight className="w-5 h-5 text-slate-500 group-hover:text-slate-300 group-hover:translate-x-1 transition-all flex-shrink-0 mt-1" />
+                {/* Style card image placeholder */}
+                <ImagePlaceholder
+                  label={style.name}
+                  prompt={style.imagePrompt ?? `Dance class photo for ${style.name}, Malaysian students, professional studio`}
+                  className="w-full h-44"
+                  showPrompt={false}
+                />
+                <div className="p-6">
+                  <div className="flex items-start justify-between mb-2">
+                    <h3 className="font-serif text-2xl tracking-tight text-slate-50 group-hover:text-white transition-colors">
+                      {style.name}
+                    </h3>
+                    <ArrowRight className="w-5 h-5 text-slate-500 group-hover:text-slate-300 group-hover:translate-x-1 transition-all flex-shrink-0 mt-1" />
+                  </div>
+                  <p className="text-slate-500 text-sm tracking-wide mb-3 italic">{style.tagline}</p>
+                  <p className="text-slate-400 leading-relaxed">{style.cardDescription}</p>
                 </div>
-                <p className="text-slate-500 text-sm tracking-wide mb-3 italic">{style.tagline}</p>
-                <p className="text-slate-400 leading-relaxed">{style.cardDescription}</p>
               </Link>
             ))}
           </div>

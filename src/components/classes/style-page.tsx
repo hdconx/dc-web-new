@@ -3,6 +3,7 @@
 import Link from "next/link"
 import { ArrowRight, CheckCircle } from "lucide-react"
 import { CONTACT } from "@/lib/config"
+import { ImagePlaceholder } from "./image-placeholder"
 
 interface StyleData {
   slug: string
@@ -12,6 +13,7 @@ interface StyleData {
   whatYoullLearn: string[]
   whoItsFor: string
   whatsappMessage: string
+  imagePrompt?: string
 }
 
 interface RelatedStyle {
@@ -62,11 +64,20 @@ export function StylePage({ demoName, demoAgeRange, demoSlug, style, relatedStyl
       </div>
 
       {/* ── Hero ── */}
-      <section className="py-20 px-8 md:px-16 lg:px-24 bg-zinc-950">
-        <div className="max-w-3xl">
-          <p className="text-slate-500 text-sm tracking-widest uppercase mb-4">{demoAgeRange}</p>
-          <h1 className="font-serif text-5xl md:text-6xl tracking-tight text-slate-50 mb-4">{style.name}</h1>
-          <p className="text-xl text-slate-400 italic">{style.tagline}</p>
+      <section className="bg-zinc-950">
+        <div className="grid lg:grid-cols-2 items-stretch">
+          {/* Text side */}
+          <div className="px-8 md:px-16 lg:px-24 py-20 flex flex-col justify-center">
+            <p className="text-slate-500 text-sm tracking-widest uppercase mb-4">{demoAgeRange}</p>
+            <h1 className="font-serif text-5xl md:text-6xl tracking-tight text-slate-50 mb-4">{style.name}</h1>
+            <p className="text-xl text-slate-400 italic">{style.tagline}</p>
+          </div>
+          {/* Image side */}
+          <ImagePlaceholder
+            label={`${style.name} — ${demoAgeRange}`}
+            prompt={style.imagePrompt ?? `${style.name} dance class, Malaysian students, professional studio, 3:2`}
+            className="min-h-64 lg:min-h-0"
+          />
         </div>
       </section>
 
