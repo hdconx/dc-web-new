@@ -1,0 +1,4 @@
+2026-02-14T18:11:09.010Z [INFO]: Starting Google Photos MCP server in STDIO mode
+2026-02-14T18:11:09.011Z [INFO]: Using bypassed refresh token from environment variables
+2026-02-14T18:11:09.012Z [INFO]: Found valid authentication tokens.
+2026-02-14T18:11:09.015Z [INFO]: Google Photos MCP server connected via STDIO

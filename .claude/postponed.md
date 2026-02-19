@@ -118,40 +118,46 @@ Items agreed upon but deferred — waiting for content, a discussion session, or
 
 ## Homepage — Pending Redesign
 
-### HOME-01: Homepage Redesign — Awaiting Design Decision
+### HOME-01: Homepage Content Section — Needs Full Rethink
 **Priority:** High
-**Status:** Blocked — owner consulting multiple AI models for design direction
-**What is needed:** Owner is gathering input from Claude Opus and other AI models on homepage redesign. Once a direction is chosen, implementation will proceed.
+**Status:** Active — owner wants to start from scratch in next session
+**Last updated:** 2026-02-15
 
-**Current homepage state (as of 2026-02-14):**
-- Identity Grid (6 tiles, full viewport) — KEEP, non-negotiable
-- Header with nav: Dance Classes | Studio Rentals | Contact | My Portal — KEEP
-- 3 alternating editorial rows (Move better / People worth knowing / Express yourself) — PLACEHOLDER, will be replaced
-- BeginnerReassurance — PLACEHOLDER, may be replaced
-- StudioPremises — PLACEHOLDER, may be replaced
-- StudioRentals teaser — PLACEHOLDER, may be replaced
-- Student portal strip — KEEP (or move to nav only)
-- QuickAccessStrip — LIKELY TO DELETE
-- Footer — KEEP
+**What's locked in (do not change):**
+- Identity Grid (6 tiles, full viewport) — KEEP, non-negotiable, hover overlay complete
+- Header always visible, nav correct — KEEP
+- Quick Choice Bar (sticky, "Find a Class" / "Rent a Studio") — KEEP
+- Final CTA → Getting Started → FAQs → Footer order — KEEP
 
-**Agreed constraints for redesign:**
-- No credentials (ISTD-UK, DMIA-AU, Est. 1999) on homepage
-- No location/nationality-specific taglines
-- No pricing
-- No instructor photos
-- Universal emotional messaging — why people want to dance (joy, freedom, expression, community, confidence)
-- WhatsApp as the only CTA
-- Dark premium aesthetic maintained
+**What needs redesign:**
+The section between Quick Choice Bar and Final CTA. Multiple approaches tried and rejected:
+1. Alternating image/text rows — generic, too long
+2. 3 image cards in a row — looked like more identity grid tiles on mobile
+3. Pure typography staggered — looked like "philosophy section", not experience flow
+4. Emotional moments + image interrupt — owner not satisfied, wants fresh approach
 
-**Opus full recommendation saved in:** `knowledge/supplemental/entries.md` → S-2026-02-14-01
+**The 7 approved copy lines (Opus-curated, owner likes the words, not the layout):**
+- "Dance is a skill. It's learned, not inherited."
+- "Good teaching removes fear. What's left is movement."
+- "Confidence isn't performed. It's practiced."
+- "Some come alone. No one feels that way for long."
+- "For an hour, the rest of the day can wait."
+- "Over time, dance becomes part of your life — not an event."
+- "Everyone here started exactly where you are."
+
+**ChatGPT structural insight (valid, apply to whatever layout is chosen):**
+- No section label/heading — kills the mood
+- Each moment must feel discovered, not presented
+- Emotion needs contrast and pacing, not density
+- Use asymmetry and intimacy, not centered symmetry
+- One image interrupt (no caption) works as visual pause
+
+**Constraints:** No credentials, no location copy, no real photos (AI only), universal/inclusive, dark premium
 
 ### HOME-02: Homepage Hero Tagline
-**Priority:** Medium
-**Status:** Needs decision
-**Current:** "Dance Classes · Studio Rentals · Bandar Sunway" (feature list, cold)
-**Rejected:** "Teaching Malaysians to move since 1999" (too specific)
-**Required:** Universal emotional tagline that makes any visitor feel there is something here for them
-**Examples to explore:** "Movement for every age. Space for every vision." or similar
+**Priority:** Low
+**Status:** RESOLVED in practice
+**Current:** "Movement for every age. Space for every vision." — in use, owner has not objected
 
 ### CLASSES-01: `/classes` — Demographic Router Page
 **Status:** RESOLVED — `/classes` now redirects to `/` homepage. Homepage IS the router.

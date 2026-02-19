@@ -1,10 +1,22 @@
 # Dance Connexions Web Project
 
+## ⚠ Read This First — Session Continuity
+
+**At the start of every session, read these two files before doing anything else:**
+
+1. **Most recent handover** — `.claude/` folder, pick the file with the latest date (format: `handover-YYYY-MM-DD.md` or `YYYY-MM-DD_*.md`). Contains: what was built last session, what is unresolved, decisions made, mistakes to avoid repeating.
+
+2. **Pending work** — `.claude/postponed.md`. Contains all deferred tasks, blocked items, and active priorities with their current status.
+
+Do not ask the user to re-explain context that is already in these files.
+
+---
+
 ## Project Overview
 Premium dance studio website for Dance Connexions, a facility in Bandar Sunway, Petaling Jaya, Malaysia (operating since 1999).
 
-**Current Phase:** Studio Rentals
-**Future Phase:** Dance Classes
+**Current Phase:** Homepage redesign + Dance Classes (both active)
+**Completed:** Studio Rentals section (fully built)
 
 ## Tech Stack
 - **Framework**: Next.js 16 (App Router, Turbopack)

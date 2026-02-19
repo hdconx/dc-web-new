@@ -1,10 +1,21 @@
 # Knowledge Base Version
 
-**Current Version:** v2.5.0
-**Last Updated:** 2026-02-14
+**Current Version:** v2.6.0
+**Last Updated:** 2026-02-15
 **Status:** Active Development
 
 ## Changelog
+
+### v2.6.0 (2026-02-15 - Homepage Structure Complete, Content Section Pending)
+- Header fixed: always visible from page load (was hidden until scroll)
+- Identity Grid upgraded: per-tile hover overlay with caption + WhatsApp prefill button
+- Homepage subtitle: "Movement for every age. Space for every vision."
+- Quick Choice Bar added (sticky, Find a Class / Rent a Studio)
+- Section order finalised: Grid → Quick Bar → [Content TBD] → CTA → Getting Started → FAQs → Footer
+- Deleted: beginner-reassurance, studio-premises, studio-rentals, quick-access-strip components
+- Content section between Quick Bar and CTA: multiple approaches tried (alternating rows, image cards, typography manifesto, emotional moments) — none approved. Owner rethinking from scratch next session.
+- 7 Opus-curated copy lines approved for content section (layout to be decided)
+- postponed.md updated with HOME-01 full status
 
 ### v2.5.0 (2026-02-14 - Homepage Consolidated + Navigation Built)
 - Homepage is now the single router page for both classes and rentals

@@ -17,7 +17,10 @@
       "Bash(tar:*)",
       "Bash(identify:*)",
       "Bash(Pay?\" — removes the uncertainty framing\n- CTA subtext: \"clear,)",
-      "Bash(no-obligation quote\" lowers inquiry resistance\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+      "Bash(no-obligation quote\" lowers inquiry resistance\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
+      "Bash(ip route:*)",
+      "mcp__figma-desktop__get_design_context",
+      "mcp__figma-desktop__get_screenshot"
     ],
     "additionalDirectories": []
   }

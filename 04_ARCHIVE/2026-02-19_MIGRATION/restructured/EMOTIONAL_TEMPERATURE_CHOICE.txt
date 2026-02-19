@@ -1,0 +1,97 @@
+========================================
+🎨 EMOTIONAL TEMPERATURE FOR CONTENT SECTION
+Dance Connexions Website Redesign
+========================================
+
+QUESTION FOR HAAN:
+How should the content section (Quick Choice Bar → Final CTA) feel?
+
+----------------------------------------
+OPTION A: INSPIRATIONAL ✨
+----------------------------------------
+What it is:
+- Aspirational, elite energy
+- "You could be like them"
+- World-class, polished, premium
+- Transformation through excellence
+
+Best examples found:
+✓ Equinox (equinox.com)
+✓ CLI Studios (clistudios.com) — "global leader"
+✓ SLT NYC (sltnyc.com) — prestige
+
+Copy flavor:
+- "Unlock your highest performance"
+- "World-renowned instructors"
+- "Transform your body and mind"
+- Empower through aspiration
+
+Visual feel:
+- Polished, clean, intimidating at times
+- Show the best, the elite, the peak
+- Photography: peak performance moments
+- Sometimes feels exclusive (in a good way)
+
+----------------------------------------
+OPTION B: EXPERIENTIAL 🎭
+----------------------------------------
+What it is:
+- Immersive, warm, accessible
+- "What this feels like right now"
+- Come-as-you-are, belonging first
+- Connection through immediacy
+
+Best examples found:
+✓ Arthur Murray (arthurmurray.com) — "dancing in 5 minutes"
+✓ Rumble Boxing (rumbleboxinggym.com) — authentic, raw
+✓ Centre Stage Dance Academy (dancecsda.com) — inclusive
+
+Copy flavor:
+- "You'll be dancing in 5 minutes"
+- "Some come alone. No one feels that way for long."
+- "For an hour, the rest of the day can wait"
+- Embrace through belonging
+
+Visual feel:
+- Warm, relatable, immediate
+- Show the journey, not just the peak
+- Photography: mid-movement, feeling, expression
+- Feels welcoming to everyone
+
+----------------------------------------
+HAAN'S 7 COPY LINES ANALYSIS
+----------------------------------------
+
+They lean EXPERIENTIAL:
+1. "Dance is a skill. It's learned, not inherited." → Demystify (not "elite")
+2. "Good teaching removes fear. What's left is movement." → Relief, discovery
+3. "Confidence isn't performed. It's practiced." → Journey, not product
+4. "Some come alone. No one feels that way for long." → PURE belonging
+5. "For an hour, the rest of the day can wait." → Escape, peace
+6. "Over time, dance becomes part of your life — not an event." → Integration
+7. "Everyone here started exactly where you are." → PURE inclusivity
+
+These are NOT about "elite training" or "world-class instruction"
+These ARE about feeling, transformation over time, and belonging
+
+RECOMMENDATION: Confirm EXPERIENTIAL direction
+
+----------------------------------------
+KEY INSIGHT
+----------------------------------------
+
+Both can feel PREMIUM.
+Both can use dark backgrounds + whitespace.
+
+The difference is:
+- INSPIRATIONAL: "Be like the best"
+- EXPERIENTIAL: "Discover what you're capable of"
+
+Dance Connexions is clearly EXPERIENTIAL.
+
+========================================
+NEXT STEP: Haan chooses A or B
+Then: Lisa shows 8-12 real website screenshots
+Then: Extract design patterns from his reactions
+Then: Propose 3-4 specific design directions
+========================================

@@ -5,18 +5,15 @@ import Link from "next/link"
 
 interface HeaderProps {
   onMenuClick: () => void
-  isVisible: boolean
 }
 
-export function Header({ onMenuClick, isVisible }: HeaderProps) {
+export function Header({ onMenuClick }: HeaderProps) {
   return (
     <header
-      className={`fixed left-0 right-0 z-40 transition-all duration-300 ${
-        isVisible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
-      }`}
+      className="fixed left-0 right-0 z-40 bg-black/80 backdrop-blur-md border-b border-white/10"
       style={{ top: "var(--promo-bar-height, 0px)" }}
     >
-      <div className="flex items-center justify-between px-6 py-4 bg-black/80 backdrop-blur-md border-b border-white/10">
+      <div className="flex items-center justify-between px-6 py-4">
 
         {/* Logo */}
         <Link href="/" className="flex items-center">
@@ -43,7 +40,7 @@ export function Header({ onMenuClick, isVisible }: HeaderProps) {
           </Link>
         </nav>
 
-        {/* Mobile: login icon + hamburger */}
+        {/* Mobile: portal icon + hamburger */}
         <div className="flex items-center gap-3 md:hidden">
           <Link
             href="/dashboard"

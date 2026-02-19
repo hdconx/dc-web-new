@@ -1,0 +1,106 @@
+╔════════════════════════════════════════════════════════════════════╗
+║                    SESSION EXPORTS - START HERE                     ║
+╚════════════════════════════════════════════════════════════════════╝
+
+Your Telegram session that hit the token limit has been exported.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📋 WHAT TO DO NOW (in order):
+
+1. READ: SESSION_EXPORTS_README.md (5 KB, 2-3 min read)
+   ↓
+   This explains what was exported and how to use these files
+
+2. SKIM: SESSION_SUMMARY_ANALYSIS.md (4 KB, 1 min read)
+   ↓
+   Shows the topics you discussed and what needs to continue
+
+3. SEARCH: TELEGRAM_SESSION_EXPORT_2026-02-18.md
+   ↓
+   Use grep or search for keywords to find specific discussions
+   Example: grep -i "design" TELEGRAM_SESSION_EXPORT_2026-02-18.md
+
+4. TELL SAM: "We were working on..."
+   ↓
+   Share a brief summary of what you remember
+   Include which task got interrupted
+
+5. CONTINUE: Sam will load context and pick up where you left off
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 FILES AVAILABLE:
+
+✅ SESSION_EXPORTS_README.md
+   Best for: Understanding what's exported and why
+   Read first
+
+✅ TELEGRAM_SESSION_EXPORT_2026-02-18.md
+   Best for: Reading conversations naturally, searching with grep
+   Size: 359 KB (9,600+ lines)
+
+✅ TELEGRAM_SESSION_EXPORT_2026-02-18.json
+   Best for: Parsing with scripts, programmatic analysis
+   Size: 7.2 MB (628 messages, all metadata)
+
+✅ SESSION_SUMMARY_ANALYSIS.md
+   Best for: Quick overview of what was discussed
+   Topics: Design, Implementation, Folder Org, Research, Context Loss
+
+✅ SESSION_TOPICS_INDEX.md
+   Best for: Finding specific discussion points by category
+   Categories: Design, Implementation, Technical Stack, etc.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔍 QUICK SEARCH TIPS:
+
+Find design discussions:
+  grep -i "design" TELEGRAM_SESSION_EXPORT_2026-02-18.md
+
+Find implementation topics:
+  grep -i "specification\|implementation" TELEGRAM_SESSION_EXPORT_2026-02-18.md
+
+Count messages about a topic:
+  grep -i "folder\|organize" TELEGRAM_SESSION_EXPORT_2026-02-18.md | wc -l
+
+See only your messages:
+  grep "^## 👤" TELEGRAM_SESSION_EXPORT_2026-02-18.md
+
+See only Sam's responses:
+  grep "^## 🤖" TELEGRAM_SESSION_EXPORT_2026-02-18.md
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 SESSION STATS:
+
+Session ID:         28b9b52a-0d74-47df-8c85-67f2f15c2567
+Total Messages:     628
+  - Your messages:  145
+  - Sam's messages: 311
+  - Tool calls:     ~170
+Date:               Feb 16–18, 2026
+Channel:            Telegram (Direct Message)
+Status:             Token limit exceeded
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ EVERYTHING IS SAVED
+
+No data was lost. Your entire conversation is backed up in multiple
+formats. Even the original JSONL session file is stored at:
+
+  /home/node/.openclaw/agents/main/sessions/28b9b52a-*.jsonl.reset*
+
+You can download these files or keep them here for reference.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 NEXT STEP:
+
+Open SESSION_EXPORTS_README.md now and start there.
+
+═════════════════════════════════════════════════════════════════════
+Ready when you are! 🌿
+═════════════════════════════════════════════════════════════════════
