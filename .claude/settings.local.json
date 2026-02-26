@@ -20,7 +20,8 @@
       "Bash(no-obligation quote\" lowers inquiry resistance\n\nCo-Authored-By: Claude Sonnet 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
       "Bash(ip route:*)",
       "mcp__figma-desktop__get_design_context",
-      "mcp__figma-desktop__get_screenshot"
+      "mcp__figma-desktop__get_screenshot",
+      "Bash(xargs:*)"
     ],
     "additionalDirectories": []
   }
